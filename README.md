@@ -29,5 +29,9 @@ source e312/bin/activate
 
 pip install mojo
 
+## Version check
+
+mojo -v
+
 
 

@@ -1,0 +1,5970 @@
+The Project Gutenberg EBook of An Anthology of Jugoslav Poetry; Serbian
+Lyrics, by Various
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: An Anthology of Jugoslav Poetry; Serbian Lyrics
+
+Author: Various
+
+Editor: Beatrice Stevenson Stanoyevich
+
+Release Date: May 13, 2011 [EBook #36091]
+
+Language: English
+
+Character set encoding: ASCII
+
+*** START OF THIS PROJECT GUTENBERG EBOOK ANTHOLOGY OF JUGOSLAV POETRY ***
+
+
+
+
+Produced by Roberta Staehlin, Carol Ann Brown, and the
+Online Distributed Proofreading Team at https://www.pgdp.net
+(This file was produced from images generously made
+available by The Internet Archive/American Libraries.)
+
+
+
+
+
+  Transcriber's Notes:
+
+  ['c] represents accent over letter "c".
+  [vc] represents caron over letter "c".
+  [vs] represents caron over letter "s".
+  [vz] represents caron over letter "z".
+
+  Corrected mis-numbered footnote anchors.
+  Added close quote at end of line 8, poem I ...and others cursing."...
+  Removed open quote at beginning of a page break of poem IX.
+  Added period to end of poem XXI.
+  Added close quote to end of first stanza of poem XXIX.
+  Added final period to J. W. W. at end of poem CXXIV.
+
+
+
+
+  AN ANTHOLOGY OF
+  JUGOSLAV POETRY
+
+  SERBIAN LYRICS
+
+  EDITED BY
+  DR. B. STEVENSON STANOYEVICH
+
+  [Illustration: Printer's logo]
+
+  BOSTON
+  RICHARD G. BADGER
+  THE GORHAM PRESS
+
+
+  COPYRIGHT, 1920, BY RICHARD G. BADGER
+  All Rights Reserved
+
+
+
+
+  Made in the United States of America
+  The Gorham Press, Boston, U. S. A.
+
+
+
+
+  TRANSLITERATION OF UNUSUAL
+  JUGOSLAV SCRIPT:
+
+  a = a in father, garden
+  e = e in men, envoy
+  i = i in tin, ill
+  o = o in son, note
+  u = u in rule, rumor
+  j = y in yoke, yes
+  c = ts in cats, lots
+  lj = ly in William, million
+  dj = dy in endure, verdure
+  gj = gy in George
+  nj = ny in Kenyon, opinion
+  [vc] = tch in watch, catch
+  ['c] = ch in culture, literature
+  [vs] = sh in ship, shade
+  [vz] = zh in azure, seizure
+  d[vz] = dzh in Badger, or j in James
+
+  The rest of the letters correspond to the English sounds.
+
+
+
+
+PREFACE
+
+
+"Give me the making of a nation's songs, and let who will make their
+laws," was the maxim of a Scottish patriot. We would prefer to modify
+this rule, and say, "Give us the poems which the people make for
+themselves, and then we shall obtain a clear insight into the national
+character and learn what customs and laws they are likely to accept or
+reject." Folk-songs are the intimate expressions of the ideas of the
+people. What the comic drama is to the cultured, and the music-hall to
+the ill-educated portions of urban population, the popular song has
+been, and in some countries still is, to the rural peasantry, a true
+exponent of their sentiments, though too frequently inaccurate in
+statements of facts. Critics, as is well known, have censured Lord
+Macaulay for his indiscriminate adoption of the vulgar and often
+malignant rhapsodies sung in the streets of London. But the Russian
+_bylina_, collected by Danilov, Rybnikov, Sreznevsky and others, may be
+taken as furnishing unimpeachable evidence of the state of Russia during
+the invasions of the Mongols and Turks. The Jacobite poems give us the
+real feelings of the people of Scotland for nearly an entire century.
+The popular and rustic strains which are handed down from the reign of
+Henry III have rehabilitated the memory of Simon de Montfort. Moore's
+Irish melodies, originally composed for the delectation of English
+aristocrats, have been so generally admired in his native land that they
+exhibit pretty clear indications of what the Irish patriots would like
+to do if they had the power. And the battle-hymn by Rouget de Lisle is
+not only popular in France, but has recently been sung by the Russian
+bolsheviki when marching to occupy Tsarskoe Selo and other imperial
+lands.
+
+The songs to which the English form has been given in the following
+volume have been taken mostly from Vuk Karad[vz]i['c]'s invaluable
+collection: _Srpske Narodne Pjesme_ (Serbian National Songs).
+Karad[vz]i['c], of whom the literary world has heard so much, is the
+father of modern Serbian literature. He spent many years among the
+peasants in collecting the national treasures: ballads, tales, proverbs,
+anecdotes and other folklore. Before his time the songs had never been
+reduced to written form, and were kept out of reach of the public ear.
+He was only able to hear them partly because of a ruse and partly in
+secret, when he listened with inexhaustible patience to the girls
+spinning, or the _guslars_ (bards) trolling in taverns and at fairs, or
+the reapers chanting at their work. In the preface of his first book of
+_Srpske Narodne Pjesme_ Karad[vz]i['c] tells us that in Serbia two sorts
+of popular poetry exist--the historical ballads, and popular songs of a
+character which caused them to be described as _[vz]enske pjesme_
+(women's songs) chanted by country folk, both men and women and mostly
+in duet. It is the latter, _[vz]enske pjesme_, which having been
+translated into English are gathered together in the following
+anthology, _Serbian Lyrics_.
+
+Sir John Bowring, who unveiled to his countrymen the rich treasures of
+Slavic popular songs in general, is also distinguished by being the
+pioneer to point out the Serbian in particular. But the claims, which
+we, at the present day, feel ourselves entitled to make on a translator,
+are very different from those current in Bowring's time. Correctness and
+fidelity are now considered necessary requisites in a good translation,
+just as antiquarian exactness is expected in the publication of an old
+manuscript.
+
+Jugoslav lyric poetry is divided into several groups, as, for instance,
+one grouping contains poems concerning marriage. These songs tell of the
+beauty of the bride, of her joy and sorrow before departure from the
+home of her parents, as well as her feelings upon other occasions during
+wedlock. There are poems belonging to the group of bacchanalian songs,
+pronounced during the toast, and resounding with many refrains. Then
+there are lamentations (_tu[vz]balice_) which are mostly provincial,
+from Montenegro and Dalmatia. They are also accompanied by refrains,
+expressing sorrow after the death of some loved one, and extolling the
+virtues of the deceased, or the great misfortune felt by those left
+behind. All this emotion is described very fitly and in a touching
+manner. Further, there are poems commemorating the holy seasons and
+"red-letter days," as _sve[vc]arske pjesme_ sung on the _Slava_
+celebration of some _svetac_ (saint). To the same grouping belong
+Christmas poems hailing the glory of the Christ, and depicting the
+customs of that season (_koledo_). Saints, such as Sts. John, George,
+Peter, and others, have their own eulogies. There are besides poems
+exalting the Holy Ghost (_kralji[vc]ke pjesme_). _Dodole_, which
+originated from old customs of heathenism, are sung during the summer
+droughts. Others are reapers' songs, mostly sung at _prelo_ time (social
+gatherings). There are poems that are connected neither with marriage,
+nor death, nor harvests, but which treat of mythological or religious
+subjects; they are called _pobo[vz]ne_, describing the spiritual virtues
+of the Virgin, or the Christ, or the apostles. Here are also to be found
+humoristic and satirical compositions, directed against women, or
+especially against monks, widows, and old bachelors. They are as a rule
+sprightly songs and piquant, pleasant and witty.
+
+Critics who have written of the Serbian national songs declare that they
+are characterized by extreme delicacy both of feeling and workmanship,
+and that they are noble in their childlike purity, simple treatment of,
+and sympathy with, every phase of natural human experience. But these
+Serbian songs have quite a peculiar character of their own. They are
+directly, passionately, fiercely human, and rich with poetic sympathy.
+Love, glory, sorrow, death--are the themes constantly handled in a
+thousand weird and poetic phrases. There is a strong Indian flavor of
+the joy of rest in Mother Earth; and again, a keen thirst for the fight
+which smacks of the men who lived with Moslems around them. Although
+these chants occasionally recall something of the martial lilt of old
+Spanish ballads, they have an individual original turn which cannot be
+compared with any extant popular poetry. They have the uncanny mystery
+of the Celtic tales of love in death, which is very rare.
+
+The love songs of the Jugoslav lands have a dreamy, calm and exalted
+sweetness that reminds us of the Alps and the Cevennes. Among these the
+Bosnian _sevdalinke_ (love songs of Bosnia) are especially worthy of
+remark, for they are full of emotion, yearning and tender passion. The
+greater warmth of the songs of Herzegovina and Montenegro is owing more
+to the sonorous language than to any superiority in melody. Here are
+mostly to be found _tu[vz]balice_. As to Dalmatia, Croatia and Slovenia,
+their melodies are chiefly marked by simplicity and a feeling for the
+domestic side of life. Ba[vc]ka and Banat, blessed with much open air
+and sunshine, possess no love-songs in the strict sense of the term; but
+they have _serenade_ and _posko[vc]ice_, although for these there is
+little or no original melody. To the light-minded and bright-witted
+singers of these provinces imagination is easier than memory.
+
+A country very rich in melody is Serbia. Here one may find a truer and
+more intense musical feeling, a stronger love of the soil, and more
+sincere devotion to the beauty of nature, especially of spring and
+summer, than in any other part of Jugoslavia. The love songs of Serbia
+seem to have a special inspiration of their own. We may hear the
+shepherds singing in green pastures and among the fir-woods, or in the
+silence of the mountains. From the vineyards, from the fair and dances,
+and from the daily round of work the strains arise. Everywhere that
+youth is seen a poem is heard, and every occupation is accompanied by a
+song.
+
+We cannot, however, leave this part of our subject without mentioning
+some of the burlesque poems, which the Jugoslavs possess in great
+number, partly narrative and partly lyric. The Americans are accustomed
+to think of the Jugoslavs and their kinsmen as grave and sombre, or,
+when their passions are excited, prone to deeds of tragic violence.
+Those who are better acquainted with them know full well that they are
+as loquacious and sarcastically sportive in their social gatherings as
+any nation, and many of their verses are redolent of these qualities.
+They display all the gradations of the comic, from the diverting
+simplicity of the innocent confession of an enamoured girl, together
+with the ludicrous situation and disappointed vanity of her cheated
+lover, up to a strain of bitter satire and merciless irony. Poems marked
+by that simplicity which borders between the touching and the humorous
+are also represented in this volume. Such is the song, "Trouble with the
+Husband":
+
+    I married last year,
+    This year I repent.
+    Bad husband have I,
+    With temper like nettle:
+    My lot I resent.
+
+    The frost kills the nettle,
+    But this husband of mine,
+    He thinks the frost fine:
+    By the stove all day long
+    He does nothing but sit,
+    And says that the frost
+    He minds not one bit!
+
+    In Celovec 'tis market-day,
+    'Tis market-day to-morrow;
+    I will take my husband there,
+    And will either there him change,
+    Or else will sell him at the fair.
+
+    Not too cheap I'll let him go,
+    Because he was so hard to get;
+    Rather than too cheaply sell him,
+    Back home again I'll take the man,
+    And love him--howsomuch I can!
+
+The western world has already heard of the rich mine of Jugoslav
+folk-literature. Nevertheless, comparatively speaking, only a very small
+number have been translated into English. The extreme simplicity of
+these verses, the peculiar character of the Serbian language, with its
+melodiously protracted words, its pompously sonorous sounds, and its
+harmonious diffuseness, all render it exceedingly difficult to translate
+Serbian lyrics without encountering the danger of making constant
+additions; especially when rendering it into a language with so many
+monosyllabic words, and so philosophically condensed, as the English.
+
+                   MILIVOY STANOYEVICH.
+
+New York, 1920.
+
+
+
+
+                      TABLE OF CONTENTS
+
+
+                     POEMS TRANSLATED BY
+                       SIR JOHN BOWRING
+
+    CHAPTER                                          PAGE
+
+         I. THE CURSE                                 21
+        II. FAREWELL                                  23
+       III. THE VIOLET                                24
+        IV. SMILIA                                    24
+         V. HARVEST SONG                              25
+        VI. MAIDEN'S PRAYER                           25
+       VII. KISSES                                    26
+      VIII. HARVEST SONG                              27
+        IX. CURSE                                     27
+         X. SALUTATION OF THE MORNING STAR            28
+        XI. THE KNITTER                               29
+       XII. ROYAL CONVERSE                            30
+      XIII. ROSA                                      31
+       XIV. THE MAIDEN AND THE SUN                    31
+        XV. THE MAIDEN'S WISH                         32
+       XVI. THE FALCON                                33
+      XVII. DEER AND VILA                             34
+     XVIII. VIRGIN AND WIDOW                          35
+       XIX. NIGHTINGALES                              36
+        XX. THE RING                                  37
+       XXI. FRATRICIDE                                38
+      XXII. LOVE                                      40
+     XXIII. MAPLE TREE                                40
+      XXIV. SEMENDRIAN BEAUTY                         41
+       XXV. SELF-ADMIRATION                           42
+      XXVI. ASSIGNATION                               42
+     XXVII. FOOLISH VOW                               43
+    XXVIII. VILAS                                     43
+      XXIX. LEPOTA                                    44
+       XXX. IMPRECATIONS                              45
+      XXXI. SECRETS DIVULGED                          46
+     XXXII. WISHES                                    47
+    XXXIII. LOVER ASLEEP                              47
+     XXXIV. EARLY SORROWS                             48
+      XXXV. THE YOUNG SHEPHERDS                       49
+     XXXVI. THOUGHTS OF A MOTHER                      51
+    XXXVII. COUNSEL                                   52
+   XXXVIII. DESOLATION                                52
+     XXXIX. APPREHENSION                              53
+        XL. MILICA                                    54
+       XLI. THE CHOICE                                55
+      XLII. FOR WHOM?                                 55
+     XLIII. LIBERTY                                   56
+      XLIV. THE DANCE                                 57
+       XLV. ELEGY                                     58
+      XLVI. INQUIRY                                   59
+     XLVII. DOUBT                                     60
+    XLVIII. THE SULTANESS                             61
+      XLIX. BETROTHING                                61
+         L. CAUTIONS                                  62
+        LI. MAIDEN'S CARES                            63
+       LII. MOHAMMEDAN SONG                           65
+      LIII. MINE EVERYWHERE                           65
+       LIV. MAID AWAKING                              67
+        LV. MOTHER'S LOVE                             67
+       LVI. THE GREYBEARD                             68
+      LVII. MOHAMMEDAN TALE                           69
+     LVIII. LOVE'S DIFFICULTIES                       71
+       LIX. WITCHES                                   72
+        LX. PLEDGES                                   72
+       LXI. COMPLAINT                                 73
+      LXII. SONG                                      74
+     LXIII. MOHAMMEDAN SONG                           74
+      LXIV. BROTHERLESS SISTERS                       75
+       LXV. MISFORTUNES                               76
+      LXVI. TIMIDITY                                  77
+     LXVII. YOUTH ENAMOURED                           78
+    LXVIII. BLACK EYES AND BLUE                       79
+      LXIX. THE WIDOW                                 80
+       LXX. ALARMS                                    80
+      LXXI. FOND WIFE                                 81
+     LXXII. UNHAPPY BRIDE                             81
+    LXXIII. LAST PETITION                             82
+     LXXIV. LOVE FOR A BROTHER                        83
+      LXXV. REBUKE                                    84
+     LXXVI. MAN'S FAITH                               85
+    LXXVII. MAIDEN'S AFFECTION                        85
+   LXXVIII. MARRIAGE SONGS                            86
+     LXXIX. HEROES SERVED                             89
+      LXXX. YOUTH AND AGE                             89
+     LXXXI. CHOICE                                    90
+    LXXXII. ANXIETY                                   91
+   LXXXIII. INQUIRY                                   91
+    LXXXIV. FROZEN HEART                              92
+     LXXXV. UNION IN DEATH                            92
+
+
+                     POEMS TRANSLATED BY
+              EARL OF LYTTON (OWEN MEREDITH)
+
+    LXXXVI. LOVE AND SLEEP                            93
+   LXXXVII. LOVE CONFERS NOBILITY                     95
+  LXXXVIII. A SOUL'S SWEETNES                         95
+    LXXXIX. REMINISCENCES                             96
+        XC. SLEEP AND DEATH                           97
+       XCI. IMPERFECTION                              98
+      XCII. EMANCIPATION                              99
+     XCIII. PLUCKING A FLOWER                        100
+      XCIV. A WISH                                   102
+       XCV. A SERBIAN BEAUTY                         102
+      XCVI. SLEEPLESSNESS                            103
+     XCVII. A MESSAGE                                104
+    XCVIII. TRANSPLANTING A FLOWER                   104
+      XCIX. ISOLATION                                105
+         C. FATIMA AND MEHMED                        106
+
+
+                     POEMS TRANSLATED BY
+                      J. W. WILES, M.A.
+
+        CI. MORAVA HORSES                            107
+       CII. THE GIRL AND THE GRASS                   108
+      CIII. THE SUN AND THE GIRL                     108
+       CIV. CURSE AND BLESSING                       109
+        CV. THE NICEST FLOWER IN THE WORLD           110
+       CVI. THE PRETTY TOMB                          111
+      CVII. TODA AND HER FATE                        112
+     CVIII. THE VILA                                 113
+       CIX. THREE ROSES                              113
+        CX. HER DREAM                                114
+       CXI. TROUBLE WITH THE HUSBAND                 115
+      CXII. THE PEACOCK AND THE NIGHTINGALE          116
+     CXIII. THE FIRST TOAST                          116
+      CXIV. THE HOD[VZ]A                             117
+       CXV. WOES                                     118
+      CXVI. HARD TO BELIEVE                          119
+     CXVII. THE CONDITIONS                           119
+    CXVIII. PRAYER BEFORE GOING TO BED               120
+      CXIX. VISION BEFORE SLEEP                      120
+       CXX. PRAYER IN THE FIELD                      121
+      CXXI. A CHILD IN HEAVEN                        121
+     CXXII. CHRISTMAS                                122
+    CXXIII. CHRIST THINKS OF HIS MOTHER              123
+     CXXIV. THE BLESSED MARY AND JOHN THE BAPTIST    124
+      CXXV. THE HOLY MOTHER                          125
+     CXXVI. DREAM OF THE HOLY VIRGIN                 126
+    CXXVII. MOTHER AT THE TOMB OF HER SON            127
+   CXXVIII. MOTHER OVER HER DEAD SON                 128
+     CXXIX. MOTHER'S LAMENT FOR HER SON              129
+      CXXX. GREATEST GRIEF FOR A BROTHER             130
+     CXXXI. THE DEATH CHAMBER OF HER FATHER-IN-LAW   131
+    CXXXII. KOLEDO                                   132
+   CXXXIII. A HORSE'S COMPLAINT                      133
+    CXXXIV. A DANCE AT VIDIN                         134
+     CXXXV. THE PRICE                                135
+    CXXXVI. PREFERENCES                              135
+   CXXXVII. A BRIDE'S DEVOTION                       136
+  CXXXVIII. FIDELITY                                 136
+    CXXXIX. A SISTER'S LAMENT                        137
+
+
+                     POEMS TRANSLATED BY
+            BEATRICE STEVENSON STANOYEVICH, Ph.D.
+
+
+       CXL. THE PRAYER OF KARAGEORGE'S LADY          138
+      CXLI. THOU ART EVER, EVER MINE                 139
+     CXLII. SEA MERCHANT                             139
+    CXLIII. ANGELA AS WATCHMAN                       140
+     CXLIV. A LAD AND HIS BETROTHED                  140
+      CXLV. DIREFUL SICKNESS                         141
+     CXLVI. ALL AS IT SHOULD BE                      141
+    CXLVII. BEAUTY PREENS HERSELF                    141
+   CXLVIII. HARVEST SONG                             142
+     CXLIX. LONG NIGHTS                              142
+        CL. EYEBROW LURE                             143
+       CLI. GIRLHOOD                                 143
+      CLII. YOUTH WITH YOUTH                         144
+     CLIII. COME MY LOVER, TO ME                     144
+      CLIV. SIGHS                                    145
+       CLV. A BOUQUET OF LITTLE ROSES                145
+      CLVI. DREAM INTERPRETATION                     146
+     CLVII. WITH SWEETHEART NIGHTS ARE SHORTEST      146
+    CLVIII. DAWN AWAKENED LAZAR                      148
+      CLIX. A DEVILISH YOUNG MATRON                  148
+       CLX. GIRL IS ETERNAL POSSESSION               149
+      CLXI. JOVO AND MARIA                           150
+     CLXII. ROSE TREE                                150
+    CLXIII. DARLING'S WRATH                          151
+     CLXIV. LAD PIERCED WITH ARROW                   151
+      CLXV. NOUGHT BUT KISSES                        152
+     CLXVI. UNITED                                   152
+    CLXVII. GIRL PLEADS WITH JEWELLER                152
+   CLXVIII. WIFE DEARER THAN SISTER                  153
+     CLXIX. GREATEST SORROW                          154
+      CLXX. YOUTH AND GIRL                           154
+
+
+
+
+  I
+
+  THE CURSE[1]
+
+
+  I heard a sprightly swallow say
+  To a gray cuckoo t'other day,--
+  "Thou art a happy bird indeed;
+  Thou dost not in the chimney breed,
+  Thou dost not hear the eternal jarring,
+  Of sisters and step-sisters warring;
+  Their woes and grievances rehearsing,
+  Cursing themselves, and others cursing."
+  A young step-sister once I saw,
+  Foul language at the elder throw;
+  "Perdition's daughter! hence depart;
+  Thou hast no fruit beneath thy heart."
+  And thus the elder one replied:
+  "Curse thy perverseness and thy pride!
+  Mihailo is a son of thine;
+  Now thou shalt bring forth daughters nine,
+  And madness shall their portion be.
+  Thy son shall cross the parting sea;
+  He never shall return to thee,
+  But, bathed in blood and wounded, pine!"
+  And thus she cursed;--the curse was true;[2]
+  Her sister's nine fair daughters grew;
+  And madness seized them,--seized them all:
+  Mihailo,--far away, and wounded,
+  By solitude and woe surrounded,
+  I heard him on his mother call:
+  "O mother! mother! send me now
+  A bandage of that snowy linen
+  Which you so thoughtlessly were spinning,
+  When curses wander'd to and fro.
+  In your rage you wove it,--now remove it;
+  Tear it for bandages, as you tore
+  Love and affection all asunder.
+  Where it was bleach'd thy son lies under;
+  With it cover his hot wounds o'er.
+  Rend it, mother; and send it, mother!
+  May it thy suffering son restore!"
+
+                             S. J. B.
+
+
+
+
+  II
+
+  FAREWELL[3]
+
+
+  Against white Buda's walls, a vine
+  Doth its white branches fondly twine;
+  O, no! it was no vine-tree there;
+  It was a fond, a faithful pair,
+  Bound each to each in earliest vow--
+  And, O! they must be severed now!
+  And these their farewell words:--"We part--
+  Break from my bosom--break--my heart!
+  Go to a garden--go, and see,
+  Some rose-branch blushing on the tree;
+  And from that branch of rose-flower tear,
+  Then place it on thy bosom bare;
+  And as its leaflets fade and pine,
+  So fades my sinking heart in thine."
+  And thus the other spoke: "My love!
+  A few short paces backward move,
+  And to the verdant forest go;
+  There's a fresh water-fount below;
+  And in the fount a marble stone,
+  Which a gold cup reposes on;
+  And in the cup a ball of snow--
+  Love! take that ball of snow to rest
+  Upon thine heart within thy breast.
+  And as it melts unnoticed there,
+  So melts my heart in thine, my dear!"
+
+                             S. J. B.
+
+
+
+
+  III
+
+  THE VIOLET[4]
+
+
+  How captivating is to me,
+  Sweet flower! thine own young modesty!
+  Though did I pluck thee from thy stem,
+  There's none would wear thy purple gem.
+  I thought, perchance, that Ali Bey--
+  But he is proud and lofty--nay!
+  He would not prize thee--would not wear
+  A flower so feeble though so fair:
+  His turban for its decorations
+  Had full blown roses and carnations.
+
+                             S. J. B.
+
+
+
+
+  IV
+
+  SMILIA[5]
+
+
+  Sweet Smilia-flowers did Smilia pull,
+  Her sleevelets and her bosom full;
+  By the cool stream she gather'd them,
+  And twined her many a diadem--
+  A diadem of flowery-wreaths;--
+  One round her brows its fragrance breathes;
+  One to her bosom-friend she throws;
+  The other where the streamlet flows
+  She flings, and says in gentlest tone--
+  "Swim on, thou odorous wreath! swim on,
+  Swim to my Juris' home, and there
+  O whisper in his mother's ear:
+  'Say, wilt thou not thy Juris wed?--
+  Then give him not a widow's bed;
+  But some sweet maiden, young and fair.'"
+
+                             S. J. B.
+
+
+
+
+  V
+
+  HARVEST SONG
+
+
+  Take hold of your reeds, youths and maidens! and see
+  Who the kissers and kiss'd of the reapers shall be.
+  Take hold of your reeds, till the secret be told,
+  If the old shall kiss young, and the young shall kiss old
+  Take hold of your reeds, youths and maidens! and see
+  What fortune and chance to the drawers decree:
+  And if any refuse, may God smite them--may they
+  Be cursed by Paraskeva, the saint of to-day!
+  Now loosen your hands--now loosen, and see
+  Who the kissers and kiss'd of the reapers shall be.[6]
+
+                             S. J. B.
+
+
+
+
+  VI
+
+  MAIDEN'S PRAYER
+
+
+  Beauty's maiden thus invoked the Heavens:
+  "Send me down a whirlwind! let it scatter
+  Yonder stony tower--its halls lay open!
+  Let me look on Ger[vc]i['c] Manoilo.
+  If the otter on his knee is playing--
+  If the falcon sits upon his shoulder--
+  If the rose is blooming on his kalpak."[7]
+  What she pray'd for speedily was granted:
+  And a storm-wind came across the ocean;
+  And the stony tower fell down before it:
+  And she look'd on Ger[vc]i['c] Manoilo:
+  Saw the otter on his knees disporting:
+  Saw the falcon sitting on his shoulder:
+  Saw the rose upon his kalpak blooming.
+
+                             S. J. B.
+
+
+
+
+  VII
+
+  KISSES
+
+
+  What's the time of night, my dear?
+  For my maiden said, "I'll come"--
+  Said "I'll come,"--but is not here:
+  And 'tis now the midnight's gloom.
+  Lone and silent home I turn'd;
+  But upon the bridge I met her--
+  Kiss'd her: How my hot lips burned!--
+  How forget it--how forget her!
+  In one kiss full ten I drew:
+  And upon my lips there grew,
+  From that hour, a honey-dew,
+  As if sugar were my meat,
+  And my drink metheglin sweet.
+
+                             S. J. B.
+
+
+
+
+  VIII
+
+  HARVEST SONG
+
+
+  Lord and master! let us homewards, let us homewards haste:
+  Far, far distant are our dwellings--far across the waste.[8]
+  Some have aged mothers threat'ning--"Ne'er allow another:"
+  Some male-children[9] in the cradle, crying for their mother;
+  Some impatient lovers chiding;--dearer they than brother.
+
+                             S. J. B.
+
+
+
+
+  IX
+
+  CURSE
+
+
+  The maiden cursed her raven eyes,
+  She cursed them for their treacheries.
+  "Be blinded now, to you if heaven
+  All that is visible has given!
+  If ye see all, ye traitors, say
+  Why saw ye not my love to-day:--
+  He pass'd my door,--but, truants, ye
+  Gave not the gentlest hint to me.
+  He had a nosegay in his hand,--
+  He wore a gold embroider'd band.[10]
+  'Twas made by other hands than mine!
+  Upon it wreathing branches twine:
+  May every branch embroidered there,
+  A miserable heart-wound bear;--
+  Upon each branch, may every leaf
+  Bring and betoken toil and grief."
+
+
+
+
+  X
+
+  SALUTATION OF THE MORNING STAR
+
+
+  Lo! the maiden greets the day-star! "Sister!
+  Sister star of morning! well I greet thee;
+  Thou dost watch the world from thine uprising
+  To thy sinking hour.  In Hercegovina,
+  Tell me didst thou see the princely Stephan?
+  Tell me, was his snowy palace open,
+  Were his steeds caparisoned, and ready;
+  And was he equipp'd his bride to visit?"
+
+  Gently then the morning star responded:
+  "Lovely sister! beautiful young maiden,
+  True, I watch the world from my uprising
+  To my setting;--and in Hercegovina
+  Saw the palace of the princely Stephan;
+  And that snowy palace was wide open,
+  And his horse was saddled, and was ready,
+  And he was equipp'd his bride to visit:
+  But not thee--not thee--another maiden;
+  False tongues three have whisper'd evil of thee;
+  One has said--thine origin is lowly;
+  One, that thou art treacherous as a serpent;
+  And the third, that thou art dull and dreamy."
+
+  Then the maiden pour'd her imprecations:
+  "He who said my origin was lowly,
+  Never let a child of love be born him;
+  He who called me treacherous as a serpent,
+  Round his heart, O! let a serpent wreathe it;
+  Through hot summers in his hair be tangled,
+  Through cold winters in his bosom nestle;
+  He who dar'd to call me dull and dreamy,
+  Nine long years may he be worn by sickness,
+  And no sleep renew his strength to bear it."
+
+                             S. J. B.
+
+
+
+
+  XI
+
+  THE KNITTER
+
+
+  The maiden sat upon the hill,
+  Upon the hill and far away,
+  Her fingers wove a silken cord,
+  And thus I heard the maiden say:
+  "O with what joy, what ready will,
+  If some fond youth, some youth adored,
+  Might wear thee, should I weave thee now!
+  The finest gold I'd interblend,
+  The richest pearls as white as snow.
+  But if I knew, my silken friend,
+  That an old man[11] should wear thee, I
+  The coarsest worsted would inweave,
+  Thy finest silk for dog-grass leave,
+  And all thy knots with nettles tie."
+
+
+
+
+  XII
+
+  ROYAL CONVERSE
+
+
+  The king from the queen an answer craves;
+  "How shall we now employ our slaves?"
+  The maidens in fine embroidery,
+  The widows shall spin flax-yarn for me,
+  And the men shall dig in the fields for thee.
+
+  The king from the queen an answer craves,
+  "How shall we, lady, feed our slaves?"
+  The maidens shall have the honey-comb sweet,
+  The widows shall feed on the finest wheat,
+  And the men of maize-meal bread shall eat.
+
+  The king from the queen an answer craves;
+  "Where for the night shall rest our slaves?"
+  The maidens shall sleep in the chambers high,
+  The widows on mattress'd beds shall lie,
+  And the men on the nettles under the sky.
+
+                             S. J. B.
+
+
+
+
+  XIII
+
+  ROSA
+
+
+  Under roses slept the maiden Rosa,
+  And a rose fell down and waken'd Rosa;
+  To the flower-rose, said the maiden Rosa--
+  "Rose of mine! O fall, not on the maiden,
+  I am in no tune of soul to love thee,
+  For a heavy grief o'erwhelms my spirit;
+  Youth would have me--but old age hath won me.
+  An old bridegroom is a worthless maple;
+  When the wind is up it faints and trembles;
+  When the rain descends, decay decays it:
+  But a young bride, is a roselet budding;
+  When the wind is up, its fair leaves open,
+  When the rain descends, it shines in beauty,--
+  When the sun comes forth, it smiles and glories."
+
+                             S. J. B.
+
+
+
+
+  XIV
+
+  THE MAIDEN AND THE SUN
+
+
+  A maiden proudly thus the sun accosted:
+  "Sun! I am fairer far than thou,--far fairer;
+  Fairer than is thy sister[12] or thy brethren,--
+  Fairer than yon bright moon at midnight shining,
+  Fairer than yon gay star in heav'n's arch twinkling,
+  That star, all other stars preceding proudly,
+  As walks before his sheep the careful shepherd."
+  The sun complain'd to God of such an insult:
+  "What shall be done with this presumptuous maiden?"
+  And to the sun God gave a speedy answer:
+  "Thou glorious Sun! thou my beloved daughter![13]
+  Be joyous yet! say, why art thou dejected?
+  Wilt thou reward the maiden for her folly--
+  Shine on, and burn the maiden's snowy forehead.
+  But I a gloomier dowry yet will give her;
+  Evil to her shall be her husband's brother;
+  Evil to her shall be her husband's father.
+  Then shall she think upon the affront she gave thee."
+
+                             S. J. B.
+
+
+
+
+  XV
+
+  THE MAIDEN'S WISH
+
+
+  If I had, ah Laso!
+  All the emp'ror's treasures,
+  Well I know, ah Laso!
+  What with these I'd purchase;
+  I would buy, ah Laso!
+  Garden on the Sava;
+  Well I know, ah Laso!
+  What my hands would plant there;
+  I would plant, ah Laso!
+  Hyacinths, carnations.
+  If I had, ah Laso!
+  All the emp'ror's treasures,
+  Well I know, ah Laso!
+  What with these I'd purchase;
+  I would buy, ah Laso!
+  I would purchase Laso,
+  He should be, ah Laso!
+  Gardener in my Garden.
+
+                             S. J. B.
+
+
+
+
+  XVI
+
+  THE FALCON
+
+
+  The falcon soars both far and high,
+  He spreads his pinions in the sky,
+  Then from his cloudy heights he lowers,
+  And seats him on the city's towers:
+  He sees a laughing girl of grace,
+  In crystal water bathe her face;
+  And looks with open, eager eye
+  Upon her neck of ivory:
+  White as the snow upon the mountain;
+  And there he hears a youth recounting
+  His tale of love.--"Now bend thy head
+  Upon thy snowy neck," he said;
+  "Its whiteness is too bright for me:
+  And 'neath it sorrowing heart may be."
+
+                             S. J. B.
+
+
+
+
+  XVII
+
+  DEER AND VILA
+
+
+  A young deer tracked his way through the green forest,
+  One lonely day--another came in sadness;
+  And the third dawn'd, and brought him sighs and sorrow:
+  Then he address'd him to the forest Vila:
+  "Young deer!" she said, "thou wild one of the forest,
+  Now tell me what great sorrow has oppress'd thee?
+  Why wanderest thou thus in the forest lonely:
+  Lonely one day,--another day in sadness,--
+  And the third day with sighs and anguish groaning?"
+
+  And thus the young deer to the Vila answer'd:
+  "O thou sweet sister! Vila of the forest!
+  Me has indeed a heavy grief befallen;
+  For I had once a fawn, mine own beloved,
+  And one sad day she sought the running water:
+  She enter'd it, but came not back to bless me:
+  Then tell me, had she lost her way and wander'd?
+  Was she pursued and captured by the huntsman?
+  Or has she left me?--has she wholly left me?--
+  Loving some other deer--and I forgotten.
+  O! if she has but lost her way, and wanders,
+  Teach her to find it--bring her back to love me.
+  O! if she has been captured by the huntsman,
+  Then may a fate as sad as mine await him.
+  But if she has forsaken me--if, faithless,
+  She loves another deer--and I forgotten--
+  Then may the huntsman speedily o'er take her."
+
+                             S. J. B.
+
+
+
+
+  XVIII
+
+  VIRGIN AND WIDOW
+
+
+  Over Sarajevo flies a falcon,
+  Looking round for cooling shade to cool him.
+  Then he finds a pine on Sarajevo;
+  Under it a well of sparkling water;
+  By the water, Hyacinth, the widow,
+  And the Rose, the young, unmarried virgin.
+  He look'd down--the falcon--and bethought him:
+  "Shall I kiss grave Hyacinth, the widow;
+  Or the Rose, the young, unmarried virgin?"
+  Thinking thus--at last the bird determined--
+  And he whisper'd to himself sedately,
+  "Gold--though long employ'd, is far, far better
+  Than the finest silver freshly melted,"
+  So he kiss'd--kiss'd Hyacinth, the widow.
+  Very wroth wax'd then young Rose, the virgin:
+  "Sarajevo! let a ban be on thee!
+  Cursed be thy strange and evil customs!
+  For thy youths they love the bygone widows,
+  And thy aged men the untried virgins."
+
+                             S. J. B.
+
+
+
+
+  XIX
+
+  NIGHTINGALES
+
+
+  All the night two nightingales were singing
+  At the window of th'affianced maiden;
+  And th'affianced maiden thus address'd them:
+  "Tell me, ye two nightingales, O tell me!
+  Are ye brothers? are ye brothers' children?"
+
+  Thus the nightingales made speedy answer:
+  "Brothers are we not, nor brothers' children:
+  We are friends--friends of the verdant forest.
+  Once we had another friend--another--
+  But that friend is lost to us for ever.
+  We have heard that nuptial bliss awaits him;
+  And we came the youthful bride to look on,
+  And to offer her a golden spindle,
+  With the flax of Egypt bound around it."
+
+                             S. J. B.
+
+
+
+
+  XX
+
+  THE RING
+
+
+  The streamlet ripples through the mead, beneath the maple tree;
+  There came a maiden that stream to draw--a lovely maid was she;
+  From the white walls of old Belgrade that maid came smilingly.
+
+  Young Mirko saw, and offer'd her a golden fruit and said:
+  "O take this apple, damsel fair! and be mine own sweet maid!"
+  She took the apple--flung it back--and said, in angry tone,
+  "Neither thine apple, Sir! nor thee--presumptuous boy, be gone!"
+
+  The streamlet ripples through the mead, beneath the maple tree;
+  There came a maid that stream to draw--a lovely maid was she;
+  From the white walls of old Belgrade that maid came smilingly.
+
+  Young Mirko saw, and proffer'd her a golden brooch, and said:
+  "O take this brooch, thou damsel fair! and be mine own sweet maid!"
+  She took the brooch, and flung it back and said, in peevish tone,
+  "I'll neither have thee nor thy brooch--presumptuous boy, be gone!"
+
+  The streamlet ripples through the mead, beneath the maple tree;
+  There came a maid that stream to draw--the loveliest maid was she;
+  From the white walls of old Belgrade that maid came smilingly.
+
+  Young Mirko saw, and proffer'd her a golden-ring, and said:
+  "O take this ring, my damsel fair! and be mine own sweet maid!"
+  She took the ring--she slipp'd it on--and said, in sprightliest tone,
+  "I'll have thee and thy golden ring, and be thy faithful one."
+
+                             S. J. B.
+
+
+
+
+  XXI
+
+  THE FRATRICIDE
+
+
+  Between two mountains sank the sun--
+  Between two maids the enamour'd one.
+  He gave his kiss to one alone;
+  The other maid grew jealous then:
+  "Most faithless thou of faithless men!"
+
+  She said--and he replied--"Fair maid!
+  I fain would kiss thy cheeks of red,
+  But thou hast got a bickering brother,
+  Who loves to quarrel with another,
+  And I no quarrel seek, my love!"
+
+  She hied her to the darksome grove--
+  Silent--she turn'd o'er many a rock,
+  And look'd 'neath many a broken stock;
+  Probed weeds and briars, till she found
+  A poisonous serpent on the ground.
+  She smote it with her golden ring,
+  Tore from its mouth the venomy fang;
+  Its poisonous juice her hands did wring
+  Into a wine cup--and she sprang
+  On swiftest feet to Raduli--
+
+  Her own--her only brother he--
+  Her hands the fatal cup supplied--
+  He drank the poison--and he died.
+
+  Then sped she to the youth--"A kiss--
+  At least one kiss of love for this--
+  For this--for thee--I dress'd the cup
+  With poison--and he drank it up--
+  The brother that thou lov'st not--he
+  I poison'd for a kiss from thee"--
+
+  Away! away! thou murd'rous maid!
+  Avaunt! Avaunt!--the lover said:
+  "What fame--what courage could confide
+  In thee--a heartless fratricide."
+
+                             S. J. B.
+
+
+
+
+  XXII
+
+  LOVE
+
+
+  The youth he struck on the tambourine,
+  And nought was so bright as its golden sheen;
+  Of the hair of maidens twined together
+  Its strings, which he struck with a falcon's feather.
+  The maid look'd down from the balcony,
+      And thus to her inner self said she:--
+
+  "O heaven! what a noble youth is he!
+  Would'st thou but give this youth to me,
+  I would make of the garden-pinks his bed,
+  I would lay fair roses under his head;
+  And waked by perfume, with what delight
+  Would he kiss the maiden's forehead white!"
+
+                             S. J. B.
+
+
+
+
+  XXIII
+
+  MAPLE TREE
+
+
+  O thou brotherly maple tree!
+  Wilt thou be a friend to me?
+  Be a brother, and a friend!
+  To the green grass thy branches bend,
+  That I may climb to their highest tip!
+  Look o'er the sea, and see the ship,
+  Where my lover sits smiling now;
+  He binds the turban round his brow,
+  And over his shoulders the shawl he flings,
+  Which is full of mine own embroiderings.
+  For three long years my hands inwove
+  Those golden flowers to deck my love:
+  The richest silk of the brightest dyes
+  I work'd for him, and now my eyes
+  Would fain my absent lover see:
+  Assist me, brotherly maple tree!
+  And tell me, if he thinks of me!
+
+                             S. J. B.
+
+
+
+
+  XXIV
+
+  SEMENDRIAN BEAUTY
+
+
+  Lovely maiden of Semendria!
+  Hail thee, youth! and health be with thee!
+  Hast thou visited the markets?
+  Saw'st thou there a sheet of paper?
+  Like that paper is my forehead.
+  Hast thou ever seen the vineyard,
+  Seen the rosy wine that flows there?
+  Youth! my cheeks that wine resemble.
+  Didst thou ever walk the meadows,
+  Hast thou seen the black sloe-berry?
+  That black sloe my eyes will paint thee:
+  Hast thou wandered near the ocean?
+  Hast thou seen the _pijavica_?[14]
+  Like it are the maiden's eye-brows.
+
+                             S. J. B.
+
+
+
+
+  XXV
+
+  SELF-ADMIRATION
+
+
+  A maiden to the fountain went;
+  I saw her overhang the place--
+  And--she was young and innocent--
+  I heard her say with simple grace,
+  "Indeed she has a pretty face;
+  And if she had a spring-flower wreath,
+  How well 'twould sit upon her brow;
+  And she might hear the shepherd breathe,
+  Yes! thou shalt be my maiden now!
+  The shepherd--'midst his fleecy drove,
+  Goes like a moon the stars above."
+
+                             S.J.B.
+
+
+
+
+  XXVI
+
+  ASSIGNATION
+
+
+  Maiden! let us share each other's kisses!
+  Tell me, tell me, where shall be our meeting,
+  In thy garden, or in mine, sweet maiden?
+  Under thine, or under my green rose-tree;
+  Thou shalt be a rose, my gentle angel:
+  I to a fond butterfly will change me,
+  Everlastingly o'er thee to flutter--
+  On thy flowers untired I will suspend me,
+  Living blest upon mine own love's kisses.
+
+                             S.J.B.
+
+
+
+
+  XXVII
+
+  FOOLISH VOW
+
+
+  The maiden made a foolish vow:
+  "I'll never wear a flow'ret now:--
+  No flow'ret shall be ever mine--
+  I'll never drink the proffer'd wine.
+  No wine I'll drink--no friend I'll kiss
+  No, never more--my vow is this."
+  So rashly, rashly spoke the maid,
+  But soon--ah, soon--repentance said:
+
+    "A flowery garland o'er me,
+    How beautiful 'twould be:
+    And wine--it would restore me,
+      My heart's own gaiety:
+    And love might play before,
+      If one sweet kiss were free."
+
+                             S.J.B.
+
+
+
+
+  XXVIII
+
+  VILAS
+
+
+  Vi[vs]nja,[15] lovely vi[vs]nja!
+  Lift thy branches higher;
+  For beneath thy branches,
+  Vilas[16] dance delight:
+  While Radi[vs]a[17] dashes
+  From the flow'rs the dewdrops.
+  Vilas two conveying,
+  To the third he whispers:
+  "O be mine, sweet Vila!
+  Thou, with mine own mother,
+  In the shade shalt seat thee;
+  Silken vestments spinning,
+  Weaving golden garments."
+
+                             S. J. B.
+
+
+
+
+  XXIX
+
+  LEPOTA[18]
+
+
+  Lepota went forth to the harvest--she held
+  A sickle of silver in fingers of gold:
+  And the sun mounted high o'er the parched harvest field;
+  And the maiden in song all her sympathies told,
+  "I'll give my white forehead to him who shall bind
+  All the sheaves which my sickle leaves scatter'd behind:
+  I'll give my black eyes to the friend who shall bring
+  A drought of sweet waters just fresh from the spring;
+  And to him who shall bear me to rest in the shade,
+  I will be--and for aye--an affectionate maid."
+
+  And she thought that her words were all wasted in air:
+  But a shepherd--just watching his sheepfold, was there;
+  And he flew, and with sedges he bound all the sheaves;
+  And he made her an arbor of hazelwood leaves;
+  And he ran to the spring, and he brought the sweet water;
+  And he look'd on the face of Beauty's young daughter,
+  And he said, "Lovely maiden, thy promise I claim;"
+  But the cheeks of the maiden were cover'd with shame,
+  And she said to the shepherd, while blushing--"Not so!
+  Go back to thy sheepfold--thou wanderer, go!
+  For if thou didst bind the loose sheaves, thou hast left
+  Thy sheep in the stubble, to wander bereft;
+  And if from the fountain the water thou beared'st,
+  Its freshness and coolness thou equally shared'st;
+  And if thou hast reared up an arbor of shade,
+  For thyself as for me it refreshment has made."
+
+                             S. J. B.
+
+
+
+
+  XXX
+
+  IMPRECATIONS
+
+
+  Through the long night a falcon cried,
+  "Awake, awake thee! youth! anon
+  Thy maiden will become a bride:
+  She puts her marriage garments on.
+  Awake! awake thee, youth! and send
+  A marriage blessing to thy friend."
+
+  "What! shall I be a marriage guest?
+  And shall I bid the maid be blest?
+  Hear then my marriage blessing hear!
+  No son her barren womb shall bear:
+  May every bit of bread she breaks
+  Bring with it wretchedness and woe,--
+  For every drop her thirst that slakes
+  May tears of bitter anguish flow!"
+
+                             S. J. B.
+
+
+
+
+  XXXI
+
+  SECRETS DIVULGED
+
+
+  Two lovers kiss each other in the meadows;
+  They think that no one sees the fond betrayal,
+  But the green meadows see them, and are faithless;
+  To the white flocks incontinent they say all;
+  And the white flocks proclaim it to the shepherd,
+  The shepherd to a high-road traveller brings it
+  He to a sailor on the restless ocean tells it,
+  The sailor to his spice-ship thoughtless sings it;
+  The spice-ship whispers it upon the waters,
+  The waters rush to tell the maiden's mother.
+
+  And thus impassioned spoke the lovely maiden--
+  "Meadows! of spring-days never see another!
+  Flocks! may the cruel ravenous wolves destroy ye.
+  Thee, shepherd! may the cruel Moslem slaughter.
+  Wanderer! may oft thy slippery footsteps stumble.
+  Thee, sailor! may the ocean billows smother.
+  Ship! may a fire unquenchable consume thee;
+  And sink into the earth, thou treacherous water!"
+
+                             S. J. B.
+
+
+
+
+  XXXII
+
+  WISHES
+
+
+  O that I were a little stream,
+  That I might flow to him--to him!
+  How should I dance with joy, when knowing
+  To whom my sparkling wave was flowing!
+  Beneath his window would I glide,
+  And linger there till morning-tide;
+  When first he rouses him to dress
+  In comely garb his manliness,--
+  Then should he weak, or thirsty be,
+  O he might stoop to drink of me!
+  Or baring there his bosom, lave
+  That bosom in my rippling wave
+  O what a bliss, if I could bear
+  The cooling power of quiet there!
+
+                             S. J. B.
+
+
+
+
+  XXXIII
+
+  LOVER ASLEEP
+
+
+  O nightingale! thy warblings cease,
+  And let my master sleep in peace:
+  'Twas I who lull'd him to repose,
+  And I will wake from his rest;
+  I'll seek the sweetest flower that grows,
+  And bear it to his presence blest;
+  And gently touch his cheeks, and say,
+  "Awake, my master! for 'tis day."
+
+
+
+
+  XXXIV
+
+  EARLY SORROWS
+
+
+  O nightingale! sweet bird--they say,
+    That peace abides with thee;
+  But thou hast brought from day to day
+    A triple woe to me.
+  The first, first woe my spirit knew,
+    My first, first woe was this,
+  My mother never train'd me to
+    A lover's early bliss
+  My second woe, my second woe,
+    Was that my trusty steed,
+  Whene'er I mounted, seem'd to show
+    Nor eagerness nor speed.
+  My third, third woe--of all the worst,
+    Is that the maid I woo,
+  The maid I lov'd the best--the first,
+    Is angry with me, too.
+  Then dig an early grave for me,
+    Yon whiten'd fields among;
+  In breadth two lances let it be,
+    And just four lances long.
+  And o'er my head let roses grow,
+    There plant the red-rose tree;
+  And at my feet a fount shall flow,
+    O scoop that fount for me!
+  So when a youthful swain appears,
+    The roses he shall wreathe;
+  And when an old man bent with years,
+    He'll drink the stream beneath.
+
+                             S. J. B.
+
+
+
+
+  XXXV
+
+  THE YOUNG SHEPHERDS
+
+
+  The sheep, beneath old Buda's wall,
+  Their wonted quiet rest enjoy;
+  But ah! rude stony fragments fall,
+  And many a silk-wool'd sheep destroy;
+  Two youthful shepherds perish there,
+  The golden George, and Mark the fair.
+
+  For Mark, O many a friend grew sad,
+  And father, mother wept for him:
+  George--father, friend, nor mother had,
+  For him no tender eye grew dim:
+  Save one--a maiden far away,
+  She wept--and thus I heard her say:
+
+  My golden George--and shall a song,
+  A song of grief be sung for thee--
+  'Twould go from lip to lip--ere long
+  By careless lips profaned to be;
+  Unhallow'd thoughts might soon defame
+  The purity of woman's name.
+
+  Or shall I take thy picture fair,
+  And fix that picture in my sleeve?
+  Ah! time will soon the vestment tear,
+  And not a shade, nor fragment leave:
+  I'll give not him I love so well
+  To what is so corruptible.
+
+  I'll write thy name within a book;
+  That book will pass from hand to hand,
+  And many an eager eye will look,
+  But ah! how few will understand!
+  And who their holiest thoughts can shroud
+  From the cold insults of the crowd?[19]
+
+                             S. J. B.
+
+
+
+
+  XXXVI
+
+  THOUGHTS OF A MOTHER
+
+
+  Lo! a fir-tree towers o'er Sarajevo,
+  Spreads o'er half the face of Sarajevo--
+  Rises up to heaven from Sarajevo:
+  Brothers and half-sisters there were seated;
+  And the brother cuts a silken garment,
+  Which he holds, and questions thus his sister:
+
+  "Brother's wife! thou sweet and lovely dovelet!
+  Wherefore art thou looking at the fir-tree?
+  Art thou rather dreaming of the poplar,
+  Or art thinking of my absent brother?"
+
+  To her brother thus the lady answer'd:
+  "Golden-ring of mine! my husband's brother!
+  Not about the fir-tree was I dreaming,
+  Nor the noble stem of lofty poplar;
+  Neither was I dreaming of my brother.
+  I was thinking of my only mother,
+  She with sugar and with honey reared me;
+  She for me the red wine pour'd at even,
+  And at midnight gave the sweet metheglin;
+  In the morning milk, with spirit chasten'd
+  So to give me cheeks of rose and lily;
+  And with gentle messages she waked me,
+  That her child might grow both tall and slender."
+
+                             S. J. B.
+
+
+
+
+  XXXVII
+
+  COUNSEL
+
+
+  "My Misho! tell me, tell me, pray,
+  Where wert thou wandering yesterday?"
+  "I did not ramble--did not roam;
+  A wretched headache kept me home."
+  "A thousand times I've said, I think
+  No widows love--no water drink!
+  But thou, a thoughtless unbeliever,
+  Wilt water drink, and get a fever;
+  Wilt give to widows thine affection,
+  And find remorse, or find rejection;
+  Now take my counsel,--drink of wine,
+  And be a virgin maiden thine!"
+
+                             S. J. B.
+
+
+
+
+  XXXVIII
+
+  DESOLATION
+
+
+  Gloomy night! how full thou art of darkness!
+  Thou, my heart! art fuller yet of sorrow,
+  Sorrow which I bear, but cannot utter!
+  I have now no mother who will hear me,
+  I have now no sister who will soothe me,--
+  Yet I had a friend--but he is absent!
+  Ere he comes, the night will be departed;
+  Ere he wakes, the birds will sing their matins,
+  Ere his kiss, the twilight hour will brighten:
+  Go thy way, my friend; the day is dawning!
+
+                             S. J. B.
+
+
+
+
+  XXXIX
+
+  APPREHENSION
+
+
+  "Sweet maiden mine! thou blushing rose!
+    Sweet, blushing roselet mine!
+  For me, what thought of honey flows
+    From those sweet lips of thine?"
+  'I dare not speak with thee, my dear,
+    My mother has forbid me.'
+
+  "Sweet maid! thy mother is not here."
+    'She saw me once, and chid me.
+  Sir, she is in the garden there,
+    Plucking the evergreen:--
+  O may her heart like mine decay,
+    Like mine decay unseen,--
+  Ere love's sweet power has pass'd away,
+    As it had never been.'
+
+                             S. J. B.
+
+
+
+
+  XL
+
+  MILICA
+
+
+  Long and lovely are Milica's eyebrows,
+  And they overhang her cheeks of roses--
+  Cheeks of roses, and her snowy forehead,
+  Three long years have I beheld the maiden,
+  Could not look upon her eyes so lovely--
+  On her eyes--nor on her snowy forehead.
+  To our country dance I lured the maiden,
+  Lured Milica,--lured her to our dances,
+  Hoping to look on her eyes so lovely.
+
+  While they danced upon the greensward, verdant
+  In the sunshine, sudden darkness gather'd,
+  And the clouds broke out in fiery lightning,
+  And the maidens all look'd up to heaven,--
+  All the maidens--all, except Milica.
+  She still look'd on the green grass, untrembling,
+  While the maidens trembled as they whisper'd:
+
+  "O Milica! thou our friend and playmate,
+  Art thou overwise--or art thou silly?
+  Thus to look upon the grass beneath us,
+  And not look up to the heaven above us,
+  To the clouds, round which the lightnings wind them?"
+  And Milica gave this quiet answer:
+  "I am neither overwise nor silly.
+  Not the _Vila,_ nor the cloud-upgatherer;
+  I am yet a maid--and look before me."
+
+                             S. J. B.
+
+
+
+
+  XLI
+
+  THE CHOICE
+
+
+  He slept beneath a poplar tree:
+  And three young maidens cross'd the way;
+  I listen'd to the lovely three,
+  And heard them to each other say:--
+  "Now what is dearest, love! to thee?"
+  The eldest said--'Young Ranko's ring
+  Would be to me the dearest thing.'
+  "No! not for me," the second cried;
+  "I'd choose the girdle from his side."
+  'Not I,' the youngest said--'In truth,
+  I'll rather have the sleeping youth.
+  The ring, O sister! will grow dim,
+  The girdle will ere long be broken;
+  But this is an eternal token,--
+  His love for me and mine for him.'
+
+                             S. J. B.
+
+
+
+
+  XLII
+
+  FOR WHOM?
+
+
+  Sweet fountain, that so freshly flows!
+  And thou, my own carnation-rose,
+  That shines like a shining gem!
+  And shall I tear thee from thy stem?
+  For whom? my mother? ah! for whom?
+  My mother slumbers in the tomb.
+  For whom? my sister? who has fled,
+  To seek a foreign bridal bed.
+  For whom? my brother? he is far,
+  Far off, in dark and bloody war.
+  For whom, for whom, but thee, my love?
+  But thou art absent far above,
+  Above these three green mountains,
+  Beyond these three fresh fountains!
+
+                             S. J. B.
+
+
+
+
+  XLIII
+
+  LIBERTY
+
+
+  Nightingale sings sweetly
+  In the verdant forest;
+  In the verdant forest,
+  On the slender branches.
+
+  Thither came three sportsmen,
+  Nightingale to shoot at.
+  She implored the sportsmen,
+  "Shoot me not, ye sportsmen!
+
+  Shoot me not, ye sportsmen!
+  I will give you music,
+  In the verdant garden,
+  On the crimson rose-tree."
+
+  But the sportsmen seize her;
+  They deceive the songster,
+  In a cage confine her,
+  Give her to their loved one.
+
+  Nightingale will sing not--
+  Hangs its head in silence:
+  Then the sportsmen bear her
+  To the verdant forests.
+
+  Soon her song is waken'd;
+  "Woe! woe! betides us,
+  Friend from friend divided,
+  Bird from forest banish'd!"
+
+                             S. J. B.
+
+
+
+
+  XLIV
+
+  THE DANCE
+
+
+  Omar's court is near to Sarajevo;
+  All around it is a woody mountain:
+  In the midst there is a verdant meadow;
+  There the maidens dance their joyous Kolo[20]
+  In the Kolo there is Damian's loved one;
+  O'er the Kolo her fair head uprises,
+  Rises gay and lustrous in her beauty.
+  'Midst the Kolo Nicholas address'd her:
+  "Veil your face, thou Damian's best beloved!
+  For to-day death's summons waits on Damian.
+  Half thy face veil over, lovely maiden!"
+  Hardly the prophetic words were utter'd,
+  Ere a gun was heard from the green forest;
+  Damian, wounded, fell amidst the Kolo--
+  Damian fell, and thus his love address'd him:
+  "O my Damian! O my sun of spring time!
+  Wherefore, wherefore, didst thou shine so brightly,
+  Thus so soon to sink behind the mountain?"
+  "My beloved! O thou rose all beauteous!
+  Wherefore didst thou bloom so fair, so lovely,
+  And I never can enjoy, nor wear thee?"
+
+                             S. J. B.
+
+
+
+
+  XLV
+
+  ELEGY
+
+
+  Konda died--his mother's only offspring.
+  O what grief was hers the youth to bury
+  Far away from his own natural dwelling,
+  So she bore him to a verdant garden,
+  And 'neath pomegranate trees interr'd him.
+  Every, every day she wandered thither:
+  "Doth the earth, sweet son, lie heavy on thee?
+  Heavy are the planks of maple round thee?"
+  From his grave the voice of Konda answers:
+  "Lightly presses the green earth upon me,
+  Lightly press the planks of maple round me.
+  Heavy is the virgins' malediction;
+  When they sigh, their sighs reach God's high presence;
+  When they curse, the world begins to tremble;
+  When they weep, even God is touch'd with pity."
+
+                             S. J. B.
+
+
+
+
+  XLVI
+
+  INQUIRY
+
+
+  A maiden sat on th' ocean shore,
+  And held this converse with herself:
+  "O God of goodness and of love!
+  What's broader than the mighty sea,
+  And what is longer than the field,
+  And what is swifter than the steed,
+  What sweeter than the honey dew,
+  What dearer than a brother is?"
+  A fish thus answer'd from the sea:
+  "O maid! thou art a foolish girl.
+  And heaven is broader than the sea;
+  The sea is longer than the field;
+  The eye is swifter than the steed;
+  Sugar more sweet than honey dew;
+  Dearer than brother is thy love."
+
+                             S.J.B.
+
+
+
+
+  XLVII
+
+  DOUBT
+
+
+  Three young travellers travell'd forth to travel:
+  On their travels met a lovely maiden:
+  Each will give the lovely maiden a present:
+  One presents her with a fresh-pluck'd apple:
+  One presents her with _bosiljak_[21] flowering:
+  One a gold ring for the maiden's finger.
+  He who gave the maiden the _bosiljak_
+  Said, "The maid is mine--I claim the maiden."
+  He who gave the maid the fresh-pluck'd apple
+  Said, "The maid is _mine_--I claim the maiden."
+  He who gave the gold ring to the maiden
+  Said, "We'll go and seek the Judge together:
+  He shall say to whom belongs the maiden."
+
+  So they went and sought the Judge's presence:
+  "Judge, thou honourable, judge between us:
+  We three travell'd forth together,
+  And we met a maiden in our travels,
+  And we gave her--gave her each a present:
+  One of us a green and fresh-pluck'd apple:
+  One presented her _bosiljak_ flowering;
+  And the third a gold ring for her finger:--
+  Now decide to whom belongs the maiden."
+
+  Thus the honourable judge decided:
+  "We present _bosiljak_ for its odour:
+  As a pledge of love we give an apple:
+  But to give a ring is a betrothing;--
+  He who gave the ring must have the maiden."
+
+                             S. J. B.
+
+
+
+
+  XLVIII
+
+  THE SULTANESS
+
+
+  Listen! I hear a cry, a cry!
+  The bells are ringing lustily;
+  And the hens are cackling all in riot.
+  No! no! no! the bells are quiet;
+  The hens at rest with one another:
+  'Tis the sister calls the brother:
+  "Brother! I am a Moslem slave!
+  Tear me from my Turkish grave.
+  Small the price which sets me free:
+  Of pearls two measures--of gold but three."
+
+  In vain she calls her brother.--'O no!
+  My treasures to my apparel go:
+  The gold my horse's bridle must deck:
+  My pearls must grace my maiden's neck;
+  Must buy a kiss--must buy a kiss.'
+  The maid her brother answer'd with this:
+  "I am no slave! I am no less
+  Than the sultan's chosen sultaness."
+
+                             S. J. B.
+
+
+
+
+  XLIX
+
+  BETROTHING
+
+
+  Here there is a maiden,
+  Young, and yet a virgin:
+  Give her then a husband,
+  Or give us the maiden,
+  And we will betroth her
+  To Ivan the student.
+  He's our parson's nephew--
+  He has art to write[22] on
+  Pinions of the eagle.
+  What shall be his subject?
+  What--but bright-eyed maidens
+  And the brows of heroes?
+
+                             S. J. B.
+
+
+
+
+  L
+
+  CAUTIONS
+
+
+  O thou lovely maiden!
+  Lo! thy praise has mounted
+  To the monarch's city
+  Maiden! thou hast planted
+  The six-branch'd _kaloper_[23]
+  And bosilka early.
+  But the youths unmarried
+  Long have been in waiting
+  To tear up thy balsam--
+  Thy bosilka pillage.
+  Know'st thou not they linger
+  Just to steal thy kisses?
+  Maiden! Maiden! never
+  Let those youths betray thee!
+
+                             S. J. B.
+
+
+
+
+  LI
+
+  MAIDEN'S CARES
+
+
+  O sleep! sweet sleep! in vain, in vain
+    I bid thee visit me:
+  The anxious thought disturbs my brain--
+    Whose shall the maiden be?
+  My mother says, "The goatherd, child!
+    The goatherd, child! for thee."
+  Nay, mother, nay! not he, not he;
+  That were no happiness for me:
+  He tracks the mountains steep and wild
+  Where rocks and dangers be.
+
+  O sleep! sweet sleep! in vain, in vain
+    I bid thee visit me:
+  The anxious thought disturbs my brain--
+    Whose shall the maiden be?
+  My mother says, "The shepherd, maid!
+    The shepherd, maid! for thee."
+  Nay, mother, nay! not he, not he;
+  That were no happiness for me:
+  He wanders through the distant glade
+  Where wolves and perils be.
+
+  O sleep! sweet sleep! in vain, in vain
+    I bid thee visit me:
+  The anxious thought disturbs my brain--
+    Whose shall the maiden be?
+  My mother says, "The tradesman, dear!
+    The tradesman, dear! for thee."
+  Nay, mother, nay! not he, not he;
+  That were no happiness for me:
+  He is a wanderer far and near,
+  His house no home may be.
+
+  O sleep! sweet sleep! in vain, in vain
+    I bid thee visit me:
+  The anxious thought disturbs my brain--
+    Whose shall the maiden be?
+  My mother says, "The tailor, then
+    The tailor, then, for thee!"
+  Nay, mother! nay; not he, not he!
+  That were no happiness for me:
+  The tailor's needle may be keen,
+  His children hungry be.
+
+  O sleep! sweet sleep! in vain, in vain
+    I bid thee visit me;
+  The anxious thought disturbs my brain--
+    Whose shall the maiden be?
+  My mother says,--"The peasant, take
+    The peasant, child! for thee."
+  Yes! mother, yes! in him I see
+  Both love and happiness for me;
+  For though his labouring hands are black,
+  The whitest bread eats he.
+
+                             S. J. B.
+
+
+
+
+  LII
+
+  MOHAMMEDAN SONG
+
+
+  His breath is amber,--sharp his reed;
+  The hand which holds it, O! how white.
+  He writes fair talismans,--a creed,
+  For maidens doth the loved one write:
+  "Of him that will not have thee,--think not!
+  From him that fain would have thee, shrink not."
+
+                             S. J. B.
+
+
+
+
+  LIII
+
+  MINE EVERYWHERE
+
+
+  "Come with me, thou charming maiden!
+  Be my love and come with me."
+  'Wherefore play with words so foolish?
+  That can never, never be;
+  I had rather in the tavern
+  Bear the golden cup, than ever,--
+  Ever promise to be thine.'
+  "I am the young tavern-keeper,
+  So thou wilt indeed be mine."
+
+  'Wherefore play with words so foolish?
+  No such fate will e'er befall;
+  In the coffee-house I'd rather
+  Serve, envelop'd in my shawl,
+  Rather than be thine at all.'
+  "But I am the coffee boiler,
+  Thee, my maiden, will I call."
+
+  'Wherefore play with words so foolish?
+  That can never, never be;
+  Rather o'er the field I'll wander,
+  Changed into a quail, than ever,
+  Ever give myself to thee.'
+  "But I am a vigorous sportsman,
+  And thou wilt belong to me."
+
+  'Play not, youth! with words so foolish,
+  That can never, never be;
+  Rather to a fish I'd change me,
+  Dive me deep beneath the sea,
+  Rather than belong to thee.'
+  "But I am the finest network,
+  Which into the sea I'll cast;
+  Mine thou art, and mine thou shalt be,--
+  Yes; thou must be mine at last;
+  Be it here, or be it there,
+  Mine thou must be everywhere."
+
+                             S. J. B.
+
+
+
+
+  LIV
+
+  MAID AWAKING
+
+
+  Lovely maiden gather'd roses,
+    Sleep o'ertook her then;
+  Pass'd a youth and call'd the maiden,
+    Waked the maid again:
+  "Wake! O wake! thou lovely maiden,
+    Why art slumbering now?
+  All the rosy wreaths are fading,
+    Fading on thy brow.
+  He, thy heart's own love, will marry;
+    He will break his vow!"
+  'Let him marry, let him marry,
+    I shall not complain;
+  But the thunderbolt of heav'n
+    Shall destroy him then.'
+
+                             S. J. B.
+
+
+
+
+  LV
+
+  MOTHER'S LOVE
+
+
+  On the balcony young Jovan sported,
+  While he sported, lo! it crash'd beneath him,
+  And he fell,--his right arm broke in falling!
+  Who shall find a surgeon for the sufferer?
+  Lo! the Vila[24] of the mountain sends one,
+  But the recompense he asks is heavy;
+  Her white hand demands he of the mother,--
+  Of the sister all her silken ringlets,--
+  Of the wife he asks her pearl-strung necklace.
+
+  Freely gave her hand young Jovan's mother,
+  Freely gave her silken hair his sister,
+  But his wife refus'd her pearly treasure:--
+  "Nay! I will not give my pearl-strung necklace,
+  For it was a present of my father."
+  Anger then incens'd the Mountain-Vila,
+  Into Jovan's wounds she pour'd her poison,
+  And he died,--Alas! for thee, poor mother!
+
+  Then began the melancholy cuckoos,[25]
+  Cuckoos then began their funeral dirges;
+  One pour'd out her mournful plaints unceasing,
+  One at morning mourn'd, and mourn'd at ev'ning,
+  And the third when'er sad thoughts came o'er her.
+  Tell me which is the unceasing mourner?
+  'Tis the sorrowing mother of young Jovan.
+  Which at morning mourns and late at evening?
+  'Tis the grieving sister of young Jovan.
+  Which when melancholy thoughts come o'er her?
+  'Tis the youthful wife,--the wife of Jovan.
+
+                             S. J. B.
+
+
+
+
+  LVI
+
+  THE GREYBEARD
+
+
+  I heard young Falisava say:
+  "I'll have no ancient greybeard, nay!
+  A sprightly beardless youth for me."
+  An aged man the maiden heard,
+  He shaves his long and snowy beard,
+  And paints his chin like ebony:
+  To Falisava then he goes--
+  "My heart! my soul! my garden rose!
+  A beardless youth is come for thee."
+  And then she listen'd--they were wed--
+  And to the old man's home they sped.
+
+  Then twilight came, and evening's shade--
+  And said the old man to the maid:
+  "Sweet Falisava! maiden fair!
+  Our bed beside the stove prepare,
+  And the warm feather-mattress bear"--
+  The maiden heard--the maiden went,
+  And gather'd flowers of sweetest scent--
+  Of sweetest scent and fairest hue,
+  Which on the old man's bed she threw,
+  And like on a strong-wing'd eagle then
+  Flew to her father's home again.
+
+                             S. J. B.
+
+
+
+
+  LVII
+
+  MOHAMMEDAN TALE
+
+
+  Who is mourning there in Glamodelec's fortress?
+  'Tis the Vila--'tis an angry serpent?
+  'Tis no Vila--'tis no angry serpent!
+  'Tis the maid Emina there lamenting--
+  There lamenting, for her woe is grievous!
+  Lo! the Ban[26] the maiden hath imprison'd--
+  Hath imprison'd her, and will baptize her;
+  But Emina never will be faithless--
+  From the white-wall'd tower will fling her rather.
+
+  Thus the unbelieving Ban address'd her:
+  "Unbelieving Ban! a moment tarry,
+  While I hasten to the upper story."
+  And she hasten'd to the upper story;
+  Look'd around her from the white-wall'd fortress:
+  In the distance saw her father's dwelling--
+  Saw the white school where she pass'd her childhood
+  "O my father's home! my poor heart's sorrow!
+  School of childhood! once that childhood's terror!
+  Many a day of weariness and sorrow
+  Did thy small-writ lessons give Emina."
+
+  Then she wrapp'd her snowy robes around her--
+  Thought not of the band that bound her tresses,
+  And she flung her from the fortress turret.
+  But her hair-band caught the open window--
+  From the window, ah she hung suspended--
+  Hung a week suspended from the window--
+  Then her hair gave away--and then the maiden
+  On the greensward fell.
+
+                        The Christian heard it--
+  He, the Christian Ban, and hasten'd thither;
+  Oft and oft he kiss'd the dead Emina;
+  And he peacefully entom'd the maiden.
+  O'er her grave a chapel he erected,
+  And with golden apples he adorn'd it.
+  Ere a week had pass'd away, descended
+  On her tomb a beauteous light from heaven;
+  At her head a beauteous light was kindled;
+  At her feet another light shone sweetly;
+  And her aged mother saw and wonder'd
+  From her chain she took her knife, and plunged it--
+  Plunged it deep within her troubled bosom--
+  Fell, and died--O melancholy mother!
+
+                             S. J. B.
+
+
+
+
+  LVIII
+
+  LOVE'S DIFFICULTIES
+
+
+  I loved her from her infancy,
+      Lado![27] Lado!
+  From childhood to maturity,
+      Lado! Lado!
+  And when I claim'd the smiling maid,
+      Lado! Lado!
+  "Ye are of kindred blood!" they said,
+      Lado! Lado!
+  "Brother and sister's children ye,
+      Lado! Lado!
+  It were a sin to steal a kiss,"
+      Lado! Lado!
+  Oh what a sacrifice is this!
+      Lado! Lado!
+  I'll steal a kiss though I be riven,
+      Lado! Lado!
+  From every, every hope of heaven,
+      Lado! Lado!
+  For what would heaven become to me
+      Lado! Lado!
+  When the long nights of autumn flee,
+      Lado! Lado!
+
+                             S. J. B.
+
+
+
+
+  LIX
+
+  WITCHES
+
+
+  The sky is cover'd with stars again:
+  The plains are cover'd with flocks of sheep:
+  But where is the shepherd? On the plain
+  The shepherd is lost in careless sleep:
+  The youthful Radoje sleeps:--Arise!
+  Awake! his sister Jania cries.
+
+  "Jania! sister nay! depart!
+  My body to witches is plighted:
+  My mother has torn away my heart,
+  And my aunt my mother lighted."
+
+                             S. J. B.
+
+
+
+
+  LX
+
+  PLEDGES
+
+
+  The wind was with the roses playing:
+    To Ranko's tent it blew their leaves:
+  Milica, Ranko, there were staying,
+    And Ranko writes--Milica weaves.
+  His letter done, he drops his pen:
+    Her finish'd web she throws aside:
+  And lo! I heard the lover then
+    Low whisper to his promised bride:
+  "Milica! tell me truly now
+    And dost thou love me--love me best?
+  Or heavy is thy nuptial vow?"--
+    And thus the maid the youth address'd:
+  "O trust me--thou my heart--my soul--
+    That thou art dearer far to me--
+  Far dearer, Ranko! than the whole
+    Of brothers--many though they be:
+  And that the vows we pledged together
+  Are lighter than the lightest feather."
+
+                             S. J. B.
+
+
+
+
+  LXI
+
+  COMPLAINT
+
+
+  O flower! so lovely in thy bloom,
+  Be evil fate thy mother's doom!
+  Thy mother, who so kindly nurst,
+  And sent thee to our village first.
+  Where heroes o'er their cups romancing,
+  And our young striplings stones are flinging,
+  And our delighted brides are dancing,
+  And our gay maidens songs are singing--
+  'Twas then I saw thee, lovely flower!
+  And lost my quiet from that hour.
+
+                             S. J. B.
+
+
+
+
+  LXII
+
+  SONG
+
+
+  The winter is gone,
+    Beloved, arise!
+  The spring is come on,
+  The birds are all singing:
+    Beloved, arise!
+
+  The roses are springing;
+  Earth laughs out in love:
+    Beloved, arise!
+  And thou, my sweet dove!
+  O waste not thy time:
+    Beloved, arise.
+
+  Enjoy the sweet bliss
+  Of a kiss--of a kiss:
+    Beloved, arise
+  In the hour of thy prime,
+    Beloved, arise!
+
+                             S. J. B.
+
+
+
+
+  LXIII
+
+  MOHAMMEDAN SONG
+
+
+  I have piercing eyes--the eyes of falcons:
+  I am of undoubted noble lineage:
+  I can read the heart of Osman Aga:
+  I was ask'd by Osman Aga's mother:
+
+  "Cursed witch: and yet most lovely maiden!
+  Why with white and red dost paint thy visage?
+  Fascinate no longer Osman Aga!
+  I will speed me to the verdant forest,
+  Build me up of maple-trees a dwelling,
+  And lock up within it Osman Aga."
+
+  Then the maid replied to Osman's mother:
+  "Lady Anka! Osman Aga's mother--
+  I have falcon eyes--and eyes of devils:
+  With them I can ope thy ample dwelling--
+  With them visit, too, thy Osman Aga."
+
+                             S. J. B.
+
+
+
+
+  LXIV
+
+  BROTHERLESS SISTERS
+
+
+  Two solitary sisters, who
+  A brother's fondness never knew,
+  Agreed, poor girls, with one another,
+  That they would make themselves a brother:
+  They cut them silk, as snow-drops white;
+  And silk, as richest rubies bright;
+  They carved his body from a bough
+  Of box-tree from the mountain's brow;
+  Two jewels dark for eyes they gave;
+  For eyebrows, from the ocean's wave
+  They took two leeches; and for teeth
+  Fix'd pearls above, and pearls beneath;
+  For food they gave him honey sweet,
+  And said, "Now live, and speak, and eat."
+
+                             S. J. B.
+
+
+
+
+  LXV
+
+  MISFORTUNES
+
+
+  On the hill, the fir-tree hill,
+    Grows a tall fir-tree:
+  There a maiden, calm and still,
+    Sits delightedly.
+  To a youthful swain she pledges
+    Vows: "O come to me:
+  Lightly spring across the hedges:
+    Come--but slightly.
+  Come at eve--lest harm betide thee.
+    If any home thou seek,
+  In our quiet dwelling hide thee;
+    Not a whisper speak."
+  And he o'er the hedges sprung,
+    Lo! a twig he tore:
+  When the house-door ope he flung,
+    Noisy was the door.
+  When he enter'd in, there fell
+    Shelves upon the floor,
+  'Twas the broken china's knell--
+    O the luckless hour!
+  Then her mother comes afeard,
+    Trips and cuts her knee;
+  And her father burns his beard
+    In perplexity.
+  And the youth must quench the fire,
+    And the maiden must retire.
+
+                             S. J. B.
+
+
+
+
+  LXVI
+
+  TIMIDITY
+
+
+  Lo! upon the mountain green
+  Stands a fir-tree tall and thin--
+  'Tis no fir-tree--none at all--
+  'Tis a maiden thin and tall.
+  Three long years the enamour'd one
+  Fed upon her eyes alone;
+  On the fourth, he sought the bliss
+  Of the maiden's primal kiss
+  "Why, thou witching maid! repel me--
+  Why with foot of scorn dost tread,
+  On my feet, my boots of red!
+  Why despise me, maiden! tell me."
+
+  "No, my friend, I will not tread
+  On thy feet, thy boots of red!
+  Come at evening--come and string
+  Pearls for me--and thou shalt fling
+  O'er me my embroider'd shawl.
+  We will go at morning's call
+  To the kolo--Friend! but thou
+  Must not touch the maiden now--
+
+  Know'st thou not that busy slander
+  Follows us wher'er we wander?
+  Evil tongues are ever talking;
+  Calumny abroad is walking
+  Know'st thou that a simple kiss
+  Ample food for slander is?
+  'Never did we kiss,' you'll say,
+  'Till last evening and to-day.'
+  Come at evening--come, my dear.
+  Sisters' eyes will watch thee here."
+
+                             S. J. B.
+
+
+
+
+  LXVII
+
+  YOUTH ENAMOURED
+
+
+  "Where wert thou! Misho! yesterday?"
+  "O 'twas a happy day for me!
+  A lovely maiden cross'd my way
+  A maiden smiling lovelily
+  And those sweet smiles for me were meant;
+  I claimed her--mother answer'd, 'No!'
+  Would steal her--vain was the intent,
+    For many guardians watch'd her so.
+  There grows a verdant almond-tree
+  Before her house--its boughs I'll climb;
+  Wail like a cuckoo mournfully,
+  And swallow-like, at evening time,
+  Pour forth my woe in throbbings deep
+  And like a sorrowing widow sigh,
+  And like a youthful maiden weep.
+  So may her mother turn her eye,
+  Pitying my grief, her heart may move,
+  And she may give me her I love."
+
+                             S. J. B.
+
+
+
+
+  LXVIII
+
+  BLACK EYES AND BLUE
+
+
+  I wish the happy time were nigh,
+  When youths are sold, that I might buy.
+  But for an azure-eyed Mlinar,[28]
+  I would not give a single dinar,
+  Though for a raven-black eyed youth,
+  A thousand golden coins, in truth.
+  Alas! alas! and is it true?
+  My own fair youth has eyes of blue;
+  Yes! they are blue--yet dear to me--
+  Will he forgive my levity?
+  Ye maidens! pray him to forgive me;
+  Nay! spare me now--and rather leave me
+  To tell him "I am yours"--and smile
+  In fond affection all the while.
+
+                             S. J. B.
+
+
+
+
+  LXIX
+
+  THE WIDOW
+
+
+  Rose! O smile upon the youth no longer;
+  He in his impatience to be wedded,
+  Chose a widow for his years unsuited,
+  And wher'er she goes, where'er she tarries,
+  She is mourning for her ancient husband.
+  "O my husband! first and best possession!
+  Happy were the days we spent together!
+  Early we retired and late we waken'd
+  Thou didst wake me kissing my white forehead,
+  'Up, my heart! the sun is high in heaven,
+  And our aged mother is arisen.'"
+
+                             S. J. B.
+
+
+
+
+  LXX
+
+  ALARMS
+
+
+  Fairest youths are here--but not the fairest!
+  Could I hear him now, or could I see him,--
+  Could I know if he be sick, or faithless!
+  Were he sick, my ears would rather hear it,
+  Than that he had loved another maiden.
+  Sickness may depart, and time restore him,--
+  If enamour'd,--never! never! never!
+
+                             S. J. B.
+
+
+
+
+  LXXI
+
+  FOND WIFE
+
+
+  O! If I were a mountain streamlet,
+    I know where I would flow
+  I'd spring into the crystal Sava,
+    Where the gay vessels go,
+  That I might look upon my lover--
+    For fain my heart would know
+  If, when he holds the helm, he ever
+    Looks on my rose, and thinks
+  Of her who gave it;--if the nosegay
+    I made of sweetest pinks
+  Is faded yet, and if he wear it.
+    On Saturday I cull
+  To give him for a Sabbath present
+    All that is beautiful.
+
+                             S. J. B.
+
+
+
+
+  LXXII
+
+  UNHAPPY BRIDE
+
+
+  The maiden gave the ring she wore
+  To him who gave it her before:
+  "O take the ring--for thou and thine
+  Are hated,--not by me--but mine--
+  Father and mother will not hear thee
+  Brother and sister both forswear thee
+  Yet, think not, youth,--I think not ill
+  Of her who needs must love thee still!
+  I am a poor unhappy maid,
+  Whose path the darkest clouds o'ershade,
+  I sowed sweet basil, and there grew
+  On that same spot the bitterest rue
+  And wormwood, that unholy flower,
+  I now alone my marriage dower;
+  The only flower which they shall wear
+  Who to the maiden's marriage comes,
+  When for my marriage altar there
+  The guests shall find the maiden's tomb."
+
+                             S. J. B.
+
+
+
+
+  LXXIII
+
+  LAST PETITION
+
+
+  Upon her mother's bosom lay
+  Young Mira, and she pined away.
+  'Twas in her own maternal bed;
+  And thus the anxious mother said:--
+  "What ails thee, tell me, Mira, pray?"
+
+  "O ask me not, my mother dear!
+  I feel that death approaches near,
+  I shall not rise from this my bed;
+  But, mother mine! when I am dead--
+  O mother mine! call round me all
+  My playmates to my funeral;
+  And let the friends I loved receive
+  The little gifts that I shall leave;
+  Then let me sleep in peace beneath.--
+
+  There's one, my mother, I should grieve
+  To be divided from in death.
+  Then call around me priests divine,
+  And pious pilgrims, mother mine!
+  The forehead of thy dying daughter
+  Steep in the rose's fragrant water.
+  And, mother, let my forehead be
+  Dried with the rose-leaves from the tree;
+  And pillow not thy daughter's head,
+  O mother! with the common dead;
+  But let me have a quiet tomb
+  Adjacent to my Mirjo's home,
+  And near my Mirjo's nightly bed;
+  So when he wakes his thoughts shall dwell
+  With her he loved and loved so well."
+
+                             S. J. B.
+
+
+
+
+  LXXIV
+
+  LOVE FOR A BROTHER
+
+
+  The sun sank down behind the gold-flower'd hill;
+    The warriors from the fight approach the shore:
+  There stood young George's wife, serene and still:
+    She counted all the heroes o'er and o'er,
+  And found not those she loved--though they were three:--
+    Her husband, George; her marriage friend, another
+  Who late had led the marriage revelry;
+    The third, her best-loved, her only brother.
+
+  Her husband he was dead; she rent her hair
+    For him--Her friend was gone,--for him she tore
+  Her cheeks--Her only brother was not there:
+    For him she pluck'd her eye-balls from their bed.
+  Her hair grew forth as lovely as before;
+    Upon her cheeks her former beauties spread;
+  But nothing could her perish'd sight restore:
+    Nought heals the heart that mourns a brother dead.
+
+                             S. J. B.
+
+
+
+
+  LXXV
+
+  REBUKE
+
+
+  "Maiden! hast thou seen my steed?"
+  "Faithless one! not I, indeed!
+  But I heard that thou hadst tied him
+  To the mountain-maple tree;
+  When a stranger pass'd beside him,
+  Full of scorn and rage was he:
+  With his hoofs the ground he beat;
+  Of his master's guilt he knew.
+  Not one maiden did he cheat.
+  No; that master cheated two:
+  One has borne a wretched child;
+  One with grief and shame is wild."
+
+                             S. J. B.
+
+
+
+
+  LXXVI
+
+  MAN'S FAITH
+
+
+  Say! dost thou remember when under the vine,
+  Thy tears fell in streams on the breast of thy maid;
+  When thy heart burst in joy as I own'd thee for mine?
+  Alas! for the maiden whose peace is betray'd
+  By the tears and the vows of a falsehood like thine!
+  As the changeable sky--now o'erclouded, now bright,
+  Is the faith of thy race--their language to-day,
+  "I will wed thee to-morrow, my love and my light!"
+  To-morrow--"Let's wait till the harvest's away."
+  The harvest is ended, the winter is nigh
+  And another maid dwells in their hearts and their eye.
+
+                             S. J. B.
+
+
+
+
+  LXXVII
+
+  MAIDEN'S AFFECTION
+
+
+  "Black is the night--an outcast lad
+  Is wandering in our village, mother!
+  Thy daughter's heart is very sad,
+  Sad even to death! He has no home:
+  O give him ours, he has no other,
+  And bid the lad no longer roam!"
+  "Nay! daughter, let this outcast stray,
+  He is a proud and city youth;
+  Will ask for wine at break of day,
+  And costly meats at eve, forsooth,
+  And for his city-tutor'd head
+  Will want a soft and stately bed."
+
+  "O mother! In God's name divine,
+  Give the poor lad a shelter now:
+  My eyes shall serve instead of wine,
+  For costly meats my maiden brow.
+  My neck shall be his honey comb.
+  His bed the dewy grass shall be,
+  And heaven his stately canopy.
+  His head shall rest upon my arm.
+  O mother! give the youth a home,
+  And shelter, shelter him from harm."
+
+                             S. J. B.
+
+
+
+
+  LXXVIII
+
+
+  MARRIAGE SONGS
+
+
+  The Marriage Leader:
+
+  "Make ready! make ready,"
+  To his sister the youth is repeating;
+  "Make ready my steed for the wedding,
+  O sister! the young Doge[29] is waiting.
+  I'm bid to the wedding, I'm summon'd to guide
+  To the wedding the maiden--the Doge's young bride."
+
+
+  The approaching bridegroom:
+
+  What is shining on the verdant mountain?
+  Sun--or moon--that shines so brightly,
+  'Tis not sun, or moon that shines so brightly,
+  'Tis the bridegroom hasting to the marriage.
+
+
+  Parting of the bride:
+
+  Sweetest of maidens! O be still,
+  Be silent--prithee weep not now
+  Thy mother she will weep--wilt fill
+  Her sorrowing eyes with tears, for thou
+  Wilt leave thy cherish'd home ere long:
+  And when thy young companions go
+  To the fresh stream, amidst the throng
+  She'll seek thee--will she find thee! No!
+
+
+  Departure of the wedding guests:
+
+  O thou young bridegroom, thou rose in its beauty,
+  Lo! we have brought thee a rosemary branch,
+  And if the rosemary branch should decay,
+  Thine will the shame be, the sorrow be ours.
+  Scatter the rosemary leaves o'er thy way;
+  Let not destruction disparage its flowers.
+
+
+  To the bride, when the marriage hood is first put on:
+
+  Maid from a distant forest tree,
+  A verdant leaf is blown to thee;
+  And that green leaf has fixed it now,
+  In the green garland on thy brow:
+  The garland green, that we have bound
+  Maiden! thy auburn ringlets round:
+  O no! it is no leaf, that we
+  Have braided in a wreath for thee;
+  'Tis the white hood that thou must wear,
+  The token of domestic care:
+  Thou hast no mother now--another,
+  A stranger must be called thy mother;
+  And sister-love thy heart must share,
+  With one who was not born thy brother.
+
+
+  At the marriage:
+
+  An apple tree at Ranko's door was growing,
+  Its trunk was silver, golden were its branches;
+  Its branches golden and of pearls its foliage,
+  Its leaves were pearls, and all its apple corals.
+  And many dovelets, on the branches seated,
+  Coo'd in their fond affection to each other;
+  Coo'd loudly, and they pluck'd the pearls--one only
+  One, only one was silent, one was silent--
+  It coo'd not, pluck'd no pearls from off the branches:
+  That one was terrified by Ranko's mother:
+  "Begone--grey dovelet! thou art an intruder!
+  Was not the apple-tree by Ranko planted?
+  By Ranko planted, and by Ranko watered,
+  That it might shade the guests at Ranko's marriage,
+  Shade all his guests beneath its joyous branches."
+
+                             S. J. B.
+
+
+
+
+  LXXIX
+
+  HEROES SERVE
+
+
+  Upon the silent Danube's shore,
+    When ev'ning wastes, 'tis sweet to see
+  'Their golden wine cups flowing o'er';
+    Our heroes in their revelry.
+
+  A youthful beauty pours the wine,
+    And each will pledge a cup to her;
+  And each of charms that seem divine,
+    Would fain become a worshipper.
+
+  "Nay! heroes, nay!" the virgin cried,
+    "My service--not my love--I give:
+  For one alone--for none beside:
+    For one alone I love and live."
+
+                             S. J. B.
+
+
+
+
+  LXXX
+
+  YOUTH AND AGE
+
+
+  Lo! the maid her rosy cheeks is laving.
+  Listen! while she bathes her snowy forehead:
+  "Forehead! if I thought an old man's kisses
+  Would be stamp'd upon thee, I would hasten
+  To the forest, and would gather wormwood
+  Into boiling water press its bitters:
+  With it steep my forehead ev'ry morning,
+  That the old man's kiss might taste of wormwood.
+  But, if some fair youth should come to kiss me,
+  I would hurry to the verdant garden:
+  I would gather all its sweetest roses,
+  Would condense their fragrance,--and at morning,
+  Every morning, would perfume my forehead
+  So the youth's sweet kiss would breathe of fragrance,
+  And his heart be gladden'd with the odour.
+  Better dwell with youth upon the mountains,
+  Than with age in luxury's richest palace:
+  Better sleep with youth on naked granite,
+  Than with eld on silks howe'er voluptuous."
+
+                             S. J. B.
+
+
+
+
+  LXXXI
+
+  CHOICE
+
+
+  In my court the morning's twilight found me;
+  At the chase the early sun while rising,
+  I upon the mountain--and behind it,
+  On that mountain, 'neath a dark-green pine tree
+  Lo! I saw a lovely maiden sleeping;
+  On a clover-sheaf her head was pillow'd;
+  On her bosom lay two snowy dovelets;
+  In her lap there was a dappled fawnkin.
+  There I tarried till the fall of ev'ning:
+  Bound my steed at night around the pine-tree:
+  Bound my falcon to the pine-tree branches:
+  Gave the sheaf of clover to my courser:
+  Gave the two white dovelets to my falcon:
+  Gave the dappled fawn to my good greyhound:
+  And, for me,--I took the lovely maiden.
+
+                             S. J. B.
+
+
+
+
+  LXXXII
+
+  ANXIETY
+
+
+  I fain would sing--but will be silent now,
+  For pain is sitting on my lover's brow;
+  And he would hear me--and, though silent, deem
+  I pleased myself, but little thought of him,
+  While of nought else I think; to him I give
+  My spirit--and for him alone I live;
+  Bear him within my heart, as mothers bear
+  The last and youngest object of their care.
+
+                             S. J. B.
+
+
+
+
+  LXXXIII
+
+  INQUIRY
+
+
+  Say, heavenly spirit! kindly say,
+    Where tarries now this youth of mine;
+  Say, is he speeding on his way,
+    Or doth he linger, drinking wine?
+
+  If he be speeding on,--elated
+    With joy and gladness let him be:
+  If quaffing wine,--in quiet seated,
+    O! his be peace and gaiety!
+
+  But if he love another maiden,
+    I wish him nought but sorrow:--No!
+  Then be his heart with anguish laden!
+    And let Heaven smite his path with woe!
+
+                             S. J. B.
+
+
+
+
+  LXXXIV
+
+  FROZEN HEART
+
+
+  Thick fell the snow upon St. George's day;
+  The little birds all left their cloudy bed;
+  The maiden wander'd bare-foot on her way;
+  Her brother bore her sandals, and he said:
+  "O sister mine! cold, cold thy feet must be."
+  "No! not my feet, sweet brother! not my feet--
+  But my poor heart is cold with misery.
+  There's nought to chill me in the snowy sleet
+  My mother--tis my mother who hath chill'd me,
+  Bound me to one who with disgust hath fill'd me."
+
+                             S. J. B.
+
+
+
+
+  LXXXV
+
+  UNION IN DEATH
+
+
+  Fondly lov'd a youth and youthful maiden,
+  And they wash'd them in the self-same water,
+  And they dried them with the self-same linen
+  Full a year had pass'd, and no one knew it
+  Yet another year--'twas all discover'd,
+  And the father heard it, and the mother;
+  But the mother check'd their growing fondness,
+  Banish'd love, and exiled them for ever.
+
+  To the stars he look'd, and bade them tell her:
+  "Die, sweet maiden! on the week's last even;
+  Early will I die on Sabbath morning."
+
+  As the stars foretold the event, it happen'd;
+  On the eve of Saturday the maiden
+  Died--and died the youth on Sunday morning:
+  And they were, fond pair, together buried;
+  And their hands were intertwined together:
+  In those hands they placed the greenest apples;
+  When behold! ere many moons had shone there,
+  From the grave sprung up a verdant pine-tree,
+  And a fragrant crimson rose-tree follow'd:
+  Round the pine the rose-tree fondly twined it,
+  As around the straw the silk clings closely.
+
+                             S. J. B.
+
+
+
+
+  LXXXVI
+
+  LOVE AND SLEEP[30]
+
+
+  I walkt the high and hollow wood, from dawn to even-dew,
+  The wild-eyed wood stared at me, and unclaspt, and let me through,
+  Where mountain pines, like great black birds, stood percht against
+    the blue.
+
+  Not a whisper heaved the woven woof of those warm trees:
+  All the little leaves lay flat, unmoved of bird or breeze:
+  Day was losing light all round, by indolent degrees.
+
+  Underneath the brooding branches, all in holy shade,
+  Unseen hands of mountain things a mossy couch had made:
+  There asleep among pale flowers my beloved was laid.
+
+  Slipping down, a sunbeam bathed her brows with bounteous gold,
+  Unmoved upon her maiden breast her heavy hair was roll'd,
+  Her smile was silent as the smile on corpses three hours old.
+  "O God!" I thought, "if this be death, that makes not sound nor stir."
+  My heart stood still with tender awe, I dared not waken her,
+  But to the dear God, in the sky, this prayer I did prefer:
+
+  "Grant, dear Lord, in the blessed sky, a warm wind from the sea,
+  Then shake a leaf down on my love from yonder leafy tree;
+  That she may open her sweet eyes, and haply look on me."
+
+  The dear God, from the distant sea, a little wind releast,
+  It shook a leaflet from the tree, and laid it on her breast,
+  Her sweet eyes ope'd and looked on me. How can I tell the rest?
+
+                             O. M.
+
+
+
+
+  LXXXVII
+
+  LOVE CONFERS NOBILITY
+
+
+  He. Violet, little one mine,
+      I would love thee, but thou art so small.
+
+  She. Love me, my love, from those heights of thine,
+       And I shall grow tall, so tall,
+       The pearl is small, but it hangs above
+       The royal brow, and a kingly mind
+       The quail is little, little, my love,
+       But she leaves the hunter behind.
+
+                             O. M.
+
+
+
+
+  LXXXVIII
+
+  A SOUL'S SWEETNESS
+
+
+  He. O maiden of my soul!
+      What odour from the orange hast thou stole,
+      That breathes about thy breast with such sweet power?
+      What sweetness, unto me
+      More sweet than amber honey to the bee
+      That builds in the oaken hole,
+      And sucks the essential summer of the year
+      To store with sweetest sweets her hollow tower?
+      Or is it breath of basil, maiden dear?
+      Or of the immortal flower?
+
+  She. By the sweet heavens, young lover!
+       No odour from the orange have I stole;
+       Nor have I robb'd for thee,
+       Dearest the amber dower
+       Of the building bee,
+       From any hollow tower
+       In oaken bole:
+       But if, on this poor breast thou dost discover
+       Fragrance of such sweet power,
+       Trust me, O my beloved and my lover,
+       'Tis not of basil, nor the immortal flower,
+       But from a virgin soul.
+
+                             O. M.
+
+
+
+
+  LXXXIX
+
+  REMINISCENCES
+
+
+  He. "And art thou wed, my beloved?
+      My Beloved of long ago?"
+
+  She. "I am wed, my Beloved. And I have given
+       A child to this world of woe.
+       And the name I have given my child is thine:
+       So that, when I call to me my little one,
+       The heaviness of this heart of mine
+       For a little while may be gone.
+       For I say not ... 'Hither, hither, my son!'
+       But ... 'Hither, my Love, my Beloved.'"
+
+
+
+
+  XC
+
+  SLEEP AND DEATH
+
+
+  The morning is growing: the cocks are crowing:
+  Let me away, love, away!
+
+  'Tis not the morning light;
+  Only the moonbeam white.
+  Stay, my white lamb, stay,
+  And sleep on my bosom, sleep.
+
+  The breeze is blowing: the cattle are lowing:
+  Let me away, love, away!
+
+  'Tis not the cattle there;
+  Only the call to prayer.
+  Stay, my white lamb, stay,
+  And sleep on my bosom, sleep.
+
+  The Turks are warning to the mosque, 'tis morning!
+  Let me away, love, away!
+
+  'Tis not the Turks, sweet soul!
+  Only the wolves that howl.
+  Stay, my white lamb, stay,
+  And sleep on my bosom, sleep.
+
+  The white roofs are gleaming: the glad children screaming:
+  Let me away, love, away!
+
+  'Tis the night-clouds that gleam:
+  The night winds that scream.
+  Stay, my white lamb, stay,
+  And sleep on my bosom, sleep.
+
+  My mother in the gateway calls to me.... "Come straightway"
+  And I must away, love, away!
+
+  Thy mother's in her bed,
+  Dumb, holy, and dead.
+  Stay, my white lamb, stay,
+  And sleep on my bosom, sleep.
+
+                             O. M.
+
+
+
+
+  XCI
+
+  IMPERFECTION
+
+
+  All in the spring,
+  When little birds sing,
+  And flowers do talk
+  From stalk to stalk;
+  Whispering to a silver shower,
+  A violet did boast to be
+  Of every flower the fairest flower
+  That blows by lawn or lea.
+  But a rose that blew thereby
+  Answer'd her reproachfully,
+  (All in the spring,
+  When little birds sing,
+  And flowers do talk
+  From stalk to stalk):
+  "Violet, I marvel me
+  Of fairest flowers by lawn or lea
+  The fairest thou should'st boast to be;
+  For one small defect I spy,
+  Should make thee speak more modestly:
+  Thy face is fashion'd tenderly,
+  But then it hangs awry."
+
+                             O. M.
+
+
+
+
+  XCII
+
+  EMANCIPATION
+
+
+  The Day of Saint George! and a girl pray'd thus:
+  "O Day of Saint George, when again to us
+  Thou returnest, and they carouse
+  Here in my mother's house,
+  May'st thou find me either a corpse or a bride,
+  Either buried or wed;
+  Rather married than dead;
+  But, however, that may betide,
+  And whether a corpse or a spouse,
+  No more in my mother's house."
+
+                             O. M.
+
+
+
+
+  XCIII
+
+  PLUCKING A FLOWER
+
+
+  He. O maiden, vermeil rose!
+      Unplanted, unsown,
+      Blooming alone
+      As the wild-flower blows,
+      With a will of thine own!
+      Neither grafted nor grown,
+      Neither gather'd nor blown,
+      O maiden, O rose!
+      Blooming alone
+      In the green garden-close
+      Unnoticed, unknown,
+      Unpropt, unsupported,
+      Unwater'd, and uncourted,
+      Unwoo'd and unwed,
+      A sweet wild rose,
+      Who knows? Who knows?
+      Might I kiss thee, and court thee?
+      My kiss would not hurt thee!
+      A sweet, sweet rose,
+      In the green garden-close,
+      If a gate were undone,
+      And if I might come to thee
+      And meet thee alone?
+      Sue thee, and woo thee,
+      And make thee my own?
+      Clasp thee, and cull thee, what harm would be done?
+
+  She. Beside thy field my garden blows,
+       Were a gate in the garden left open ... who knows?
+       And I water'd my garden at eventide?
+       (Who knows?)
+       And if somebody silently happen'd to ride
+       That way? And a horse to the gate should be tied?
+       And if somebody (Who knows who,), unespied,
+       Were to enter my garden to gather a rose?
+       Who knows?... I suppose
+       No harm need be done. My beloved one,
+       Come lightly, come softly, at set of the sun!
+       Come, and caress me!
+       Kiss me, and press me,
+       Fold me, and hold me!
+       Kiss me with kisses that leave not a trace,
+       But set not the print of thy teeth on my face,
+       Or my mother will see it, and scold me.
+
+                             O. M.
+
+
+
+
+  XCIV
+
+  A WISH
+
+
+  I would I were a rivulet,
+  And I know where I would run!
+  To Save, the chilly river,
+  Where the market boats pass on;
+  To see my dear one stand
+  By the rudder; and whether the rose
+  Which, at parting, I put in his hand,
+  Warm with a kiss in it, blows;
+  Whether it blows or withers:
+  I pluckt it on Saturday;
+  I gave it to him on Sunday;
+  On Monday he went away.
+
+                             O. M.
+
+
+
+
+  XCV
+
+  A SERBIAN BEAUTY
+
+
+  'Tis the Kolo[31] that dances before the white house,
+  And 'tis Stojan's fair sister, O fair, fair is she!
+  Too fair she is truly, too fair, heaven knows,
+  (God forgive her!) so cruel to be.
+  The fair Vila, whom the wan clouds fondly follow
+  O'er the mountain wherever she roam it,
+  Is not fairer nor whiter than she.
+  Her long soft eyelash is the wing of the swallow
+  When the dew of the dawn trembles from it,
+  And as dawn-stars her blue eyes to me:
+  Her eyebrows so dark are the slender sea-leeches;
+  Her rich-bloomed cheeks are the ripe river peaches,
+  Her teeth are white pearls from the sea;
+  Her lips are two half-open'd roses;
+  And her breath the south wind, which discloses
+  The sweetness that soothes the wild bee.
+  She is tall as the larch, she is slender
+  As any green bough the birds move;
+  See her dance--'tis the peacock's full splendour!
+  Hear her talk--'tis the coo of the dove!
+  And, only but let her look tender--
+  'Tis all heaven melting down from above!
+
+                             O. M.
+
+
+
+
+  XCVI
+
+  SLEEPLESSNESS
+
+
+  Sleep will not take the place of Love,
+  Nor keep the place from Sorrow.
+  Oh, when the long nights slowly move
+  To meet a lonely morrow,
+  The burden of the broken days,
+  The grief that on the bosom weighs,
+  And all the heart oppresses,
+  But lightly lies on restless eyes
+  Love seals no more with kisses.
+
+                             O. M.
+
+
+
+
+  XCVII
+
+  A MESSAGE
+
+
+  Sweet sister of my loved, unloving one,
+  Kiss thy wild brother, kiss him tenderly!
+  Ask him what is it, witless, I have done
+  That he should look so coldly upon me?
+  Ah, well ... I know he recks not! Let it be.
+  Yet say ... "There's many a woodland nodding yet
+  For who needs wood when winter nights be cold."
+  Say ... "Love to give finds ever love to get.
+  There lack not goldsmiths where there lacks not gold.
+  The wood will claim the woodman by-and-by;
+  The gold (be sure!) the goldsmith cannot miss;
+  Each maid to win finds lads to woo: and I...."
+  Well, child, but only tell him, tell him this!
+  Sweet sister, tell him this!
+
+                             O. M.
+
+
+
+
+  XCVIII
+
+  TRANSPLANTING A FLOWER
+
+
+  O maiden, mother's golden treasure!
+  Purest gold of perfect pleasure!
+  Do they beat thee, and ill-treat thee,
+  That I meet thee all alone?
+  Do they beat thee, that I meet thee
+  All too often, all too late,
+  After nightfall, at the gate
+  Of the garden, all alone?
+  Tell me, tell me, little one,
+  Do they do it? If I knew it,
+  They should rue it! I would come
+  Oftener, later, yet again,
+  (Hail, or snow, or wind, or rain!)
+  Oftener, later! Nor in vain:
+  For if mother, for my sake,
+  Were to drive thee out of home,
+  Just three little steps 'twould take
+  (Think upon it, little one!)--
+  Just three little steps, or four,
+  To my door from mother's door.
+  Love is wise. I say no more.
+  Ponder on it, little one!
+
+                             O. M.
+
+
+
+
+  XCIX
+
+  ISOLATION
+
+
+  The night is very dark and very lonely:
+  And as dark, and all as lonely, is my heart:
+  And the sorrow that is in it night knows only:
+  For the dawn breaks, and my heart breaks. Far apart
+  From my old self seems my new self. And my mother
+  And my sister are in heaven,--so they say:
+  And the dear one dearer yet than any other
+  Is far, far away.
+  The sweet hour of his coming ... night is falling!
+  The hour of our awakening ... bird on bough!
+  The hour of last embraces ... friends are calling
+  "Love, farewell!" ... and every hour is silent now.
+
+                             O. M.
+
+
+
+
+  C
+
+  FATIMA AND MEHMED
+
+
+  Beneath a milk-white almond tree,
+  Fatima and Mehmed be.
+  The black earth is their bridal bed;
+  The thick-starred sky clear-spread
+  Is their coverlet all the night,
+  As they lie in each other's arms so white.
+  The grass is full of honey-dew;
+  The crescent moon, that glimmers through
+  The unrippled leaves, is faint and new:
+  And the milk-white almond blossoms
+  All night long fall on their bosoms.
+
+                             O. M.
+
+
+
+
+  CI
+
+  MORAVA HORSES[32]
+
+
+  On the banks of Morava,
+  Sleek black horses danced,
+  "Could not we," one horse did say,
+  "Over this river swim to-day?"
+  But the second cried, "Beware,
+  Deep flows the stream, beware, beware!
+  'Twas by these banks of Morava,
+  At set of sun a knight was drowned,
+  And dawn had broke ere he was found.
+  If mother this poor knight had had,
+  Within a day his fate she'd know,
+  And him to seek next day would go;
+  The third day, finding him, would weep,
+  And who knows how long sad heart keep?"
+  To which a third black horse replied
+  "No mother mourns him as lost son,
+  But mother-in-law the knight has one!
+  She in one year would surely cry:
+  'What has my daughter's husband done?'
+  And in two years find time to go
+  Toward the place where he lay low;
+  And when there should have passed years three,
+  His grave, perchance, she then might see--
+  Where long since green grass had grown,
+  The peacock preened himself and flown."
+
+                             J. W. W.
+
+
+
+
+  CII
+
+  THE GIRL AND THE GRASS
+
+
+  In the green grass a girl fell asleep;
+  When she awoke the grass was red,
+  And her ruddy cheeks were green instead.
+  Before the Kadi the girl sued the grass:
+  Give me, O grass, my color red!"
+  And to the girl the red grass said:
+  "Thy color red, I'll give it thee,
+  When my color green thou dost give me."
+  Then before the Kadi they exchanged color
+  And became bosom-sisters for ever and ever.
+
+                             J. W. W.
+
+
+
+
+  CIII
+
+  THE SUN AND THE GIRL
+
+
+  To the great sun a radiant maiden cried:
+  "Bright sun, thy beauty cannot equal mine!"
+  Whereon the burning orb complained to God:
+  "Let me bring low her pride, and scorch her face."
+  To which request his mighty Maker said:
+  "The burden that she bears is weight enough;
+  Her father and her mother, both I've taken;
+  One simple, smiling youth alone is left to her;
+  Touch not their joy, let him be fond of her."
+
+                             J. W. W.
+
+
+
+
+  CIV
+
+  CURSE AND BLESSING
+
+
+  To the river ran the mother,
+  To her Mary by the water,
+  Dreaming there, the pretty daughter:
+  "Have you washed the linen, Mary?"
+  "Why, mother dear, not yet begun;
+  A naughty youth did come my way,
+  And muddy made the silvery water."
+  "I'll curse him, then; I'll curse him, daughter!
+  Cold be his heart as ice is cold."
+  "As cold as the sun o'er the corn-fields, mother!"
+  "May his face be black before all men!"
+  "As black as the snow on the mountains, mother!"
+  "May he be hanged!--Dost hear, my daughter!"
+  "But hanged upon my neck, dear mother!"
+  "From grievous wounds he then shall suffer!"
+  "Let my own teeth, then, cause them, mother!"
+  "May the wild torrent take him, daughter!"
+  "And bring him home to me, my mother!"
+
+                             J. W. W.
+
+
+
+
+  CV
+
+  THE NICEST FLOWER IN THE WORLD
+
+
+  A yellow orange by the sea
+    Vaunted much his beauty,
+  This boast the red, round apple heard,
+  Scolded the orange for his word,
+    "See my superiority!"
+
+  The apple's boast the meadow heard,
+    The meadow rich beflowered:
+  "Boast not, thou smooth, round apple red,
+  But see how I am carpeted,
+    So green and richly dowered!"
+
+  The meadow's boast the maiden heard:
+    "Deem'st flowery mead, so great thy worth!
+  Though sweetly thou art sure bedight,
+  Yet still I am the sweetest sight,
+    That can be found in all the earth."
+
+  These vaunts heard all a daring youth:
+    "This maid, I see she is in truth,
+  She is by far the sweetest flower
+    That can be found in all the earth.
+  That orange, I will bring it down,
+    That apple-tree, I'll root it up,
+  That meadow's flowers shall all be mown,
+  And thou, fair maid, shalt be mine own!"
+
+                             J. W. W.
+
+
+
+
+  CVI
+
+  THE PRETTY TOMB
+
+
+  "Wait, my girl, I want to talk,
+  Though my talk will wound thee!"
+  "Speak, O Youth; I'll listen, speak!
+  Even though thou wound me"
+  "Well, I am about to die."
+  "Die! Where will they bury thee?"
+  "I pray to rest upon thy breast."
+  "Ah! blind and foolish is thy prayer!
+  That were unseemly cemet'ry.
+  My bosom is no graveyard lone,
+  An apple orchard is my breast
+  Where fruits do ripen, birds do rest!"
+
+                             J. W. W.
+
+
+
+
+  CVII
+
+  TODA AND HER FATE
+
+
+  Many youths paid court to Toda,
+  She, the blithesome shepherd girl;
+  So with mirthful laugh she cried:
+  "The youth on whom my apple falls,
+  'Tis henceforth he my heart enthralls."
+  Then Toda threw her apple red,
+  Which fell upon a grey-haired head.
+  Toda had not wished such love,
+  So sent him off to draw her water.
+  She sent him thus unto the river,
+  That no more trouble he might give her!
+  But safely back the old man came,
+  Brought the water, smiled and spake:
+  "O love me, Toda, love me, Toda."
+  Toda did not want to love him,
+  So sent him off to cut down branches,
+  Not caring should they fall upon him;
+  But safely back the old man came,
+  Brought the wood, and smiled and spake:
+  "O love me, Toda, little Toda!"
+  Toda did not want to love him,
+  So sent him to the war to fight,
+  Not caring what might be his plight:
+  But safely back the old man came,
+  Back from the war, and spake the same:
+  "O love me, Toda, Toda, love me!
+  That which must be, let it be."
+
+                             J. W. W.
+
+
+
+
+  CVIII
+
+  THE VILA
+
+
+  Under the clouds there's nought to me
+  So handsome as a falcon bird.
+  A falcon I did wish to be,
+  And my wish by God was heard.
+  High to the clouds I flew,
+  And over the clouds too!
+  Then to a nut-tree I shot down.
+  Under the tree a vila sleeping!
+  Or else some being strange to me!
+  Oh, God Himself, and He alone, can say,
+  But she was fairer than the fairest summer day.
+
+                             J. W. W.
+
+
+
+
+  CIX
+
+  THREE ROSES
+
+
+  Red Sun! too quickly art thou hasting down;
+  A little while prolong thy stay,
+  Smile from thy evening gate on me,
+  Till I've adorned with roses three--
+  Roses of silk in purest gold--
+  My darling's garment that I hold:
+  The first rose, a rose for my own country dear,
+  The second, a rose for sweet mother,
+  The third, the rose of my own bridal crown.
+  O stay, glad Sun! too quickly art thou going down!
+
+                             J. W. W.
+
+
+
+
+  CX
+
+  HER DREAM
+
+
+  The girl awoke at dawn of day,
+  Aroused by trilling roundelay;
+  "Nightingale, oh, stop thy singing!
+  Stop thy singing, pray!
+  Cease thy songs, and fly away
+  To Cattaro, down by the bay.
+
+  To Cattaro now speed thy flight,
+  To tell the dream I've dreamt this night:
+  I found me in his garden gay,
+  Gathering fair roses;
+  With his eye he followed me,
+  As I passed from tree to tree.
+
+  I brought him then red roses fair,
+  And tied them in his steed's black hair.
+  Smiling, then a ring he gave me;
+  Ah, a ring so rare!
+  And he kissed me where I stood;
+  A kiss that made to me all good.
+
+  Smiling, yes, a kiss he gave me!
+  Than golden ring with diamond bright
+  More precious far in my heart's sight.
+  Stop singing, bird!
+  This is my dream; go, tell him so,
+  Go! wing thy way to Cattaro."
+
+                             J. W. W.
+
+
+
+
+  CXI
+
+  TROUBLE WITH THE HUSBAND
+
+
+  I married last year,
+  This year I repent.
+  Bad husband have I,
+  With temper like nettle:
+  My lot I resent.
+
+  The frost kills the nettle,
+  But this husband of mine,
+  He thinks the frost fine:
+  By the stove all day long
+  He does nothing but sit,
+  And says that the frost
+  He minds not one bit!
+
+  In Celovec 'tis market-day,
+  'Tis market-day to-morrow;
+  I will take my husband there,
+  And will either there him change,
+  Or else will sell him at the fair.
+  Not too cheap I'll let him go,
+  Because he was so hard to get;
+  Rather than too cheaply sell him,
+  Back home again I'll take the man,
+  And love him--howsomuch I can!
+
+                             J. W. W.
+
+
+
+
+  CXII
+
+  THE PEACOCK AND THE NIGHTINGALE
+
+
+  How beautiful it is this evening-time!
+  The noblemen, they quaff the cool wine,
+  And to their knee there comes a little stag,
+  With golden peacock proudly on one shoulder,
+  While on the other, perching there as neighbour,
+  Behold a silver-throated nightingale!
+  Upon whom gazing, saith the peacock golden:
+  "How now, my silver-throated friend!
+  If mine it were to trill thy liquid note,
+  To every noble knight I'd sing a song,
+  And honour each in turn from my clear throat."
+  Answered the nightingale in silver voice:
+  "List, lustrous peacock in thy blue and gold!
+  If mine it were, that sheeny fan of thine,
+  Its golden feathers all I would pluck out,
+  And decorate these nobles round about."
+
+                             J. W. W.
+
+
+
+
+  CXIII
+
+  THE FIRST TOAST
+
+
+  Rising at the banquet table,
+  Now acclaim we our first toast,
+  To our God's high honour drink we,
+  Only of His glory think we--
+  No first place to human boast!
+  To celebrate the Lord's great glory--
+  What equal duty to be found?
+  Say, all ye who sit around,
+  Save truly to have earned the dinner!
+
+                             J. W. W.
+
+
+
+
+  CXIV
+
+  THE HOD[vZ]A[33]
+
+
+  In Mostar was a sheker-meyteph,[34]
+    Thirty young ladies were learning there,
+  Omer-effendia was their hod[vz]a,
+    And pretty Maru[vs]a their kalfa.[35]
+
+  One day Maru[vs]a opened the Koran:
+    "Tell us now, hod[vz]a, tell what is written!'
+  Hod[vz]a reads silently, then he speaks loudly:
+    "First page--The hod[vz]a is going to marry!
+
+  "Willeth so Allah, so willeth hod[vz]a--thus on page two!
+  And on page three--Whom will he marry, whom will he marry?
+  Thus on page three--He'll marry the pretty Maru[vs]a."
+
+                             J. W. W.
+
+
+
+
+  CXV
+
+  WOES
+
+
+  Woe to the wolf that eats not flesh,
+  Woe to the knight who drinks not wine,
+  Woe to the maid who counteth love
+      No gift divine.
+
+  Woe to legs with a foolish head,
+  And woe to gilt on an unclean bed.
+
+  Woe to satin on humped shoulders.
+
+  Woe to the gun in a fearsome hand,
+  Woe to the strong in that village where
+      But cowards stand.
+
+  Woe to the mother-in-law in the house of her son-in-law.
+
+  Woe to the wolf whom the ravens feed,
+  And to the knight who children doth need
+      Him to defend.
+
+  Woe to the cock who strutteth on ice,
+  Woe to the nightingale singing in the mill;
+  In such a din, far better to be still!
+
+                             J. W. W.
+
+
+
+
+  CXVI
+
+  HARD TO BELIEVE
+
+
+  A man ne'er born once told a tale
+  To seven stout ghosts so hearty and hale;
+  A ship went sailing 'mid greenwood trees,
+  While the burning sun her crew did freeze.
+  A horse danced o'er the billowy sea,
+  From him a duck with hoofs did flee.
+  From an empty cup two knights did quaff,
+  Served by a maid whose head was off.
+  Two wingless geese flew up in the sky,
+  As a legless hero ran hard by;
+  While near him scampered two roasted hares,
+  Hotly pursued by three dogs in pairs.
+  Then to the deaf man the dumb man spoke:
+  "What a monstrous lie! but I hope it's a joke."
+
+                             J. W. W.
+
+
+
+
+  CXVII
+
+  THE CONDITIONS
+
+
+  Listen, listen man of God,
+  If thou wouldest serve thy God,
+  In thy lifetime do thou good,
+  And revere thine elder brother,
+  So thy younger thee revere.
+  Neither boast when fortune smileth,
+  Nor complain in days of trouble;
+  Grasp not an another's good;
+  For when death befalleth man,
+  Nought he takes from out the world,
+  Save his deeds and crossed white hands--
+  When he goeth to the Judgment,
+  Where king's rank is unaccounted,
+  Rich men can no more be proud,
+  Poor men be no more despised.
+
+                             J. W. W.
+
+
+
+
+  CXVIII
+
+  PRAYER BEFORE GOING TO BED
+
+
+  With a cross I lay me down,
+  With a cross I get me up,
+  All day long it doth protect,
+  And angels in the night are near;
+  Archangels, they shall ward my death,
+  And God's my guard till all things end.
+
+                             J. W. W.
+
+
+
+
+  CXIX
+
+  VISION BEFORE SLEEP
+
+
+  To sleep I laid me down,
+  Making my prayer to God;
+  I called upon His angels;
+  Heaven was unveiled to me;
+  The Seraphim, they worshipped there,
+  And prayed this prayer to Christ our Lord:
+  "While he doth rest, all through his sleep,
+  Frome visions dark do Thou him keep."
+
+                             J. W. W.
+
+
+
+
+  CXX
+
+  PRAYER IN THE FIELD
+
+
+  We pray unto the Heavenly Lord,
+        Koledo, Koledo![36]
+  Dew to send upon our fields,
+        Koledo!
+  To give grain to wheat and maize,
+        Koledo, Koledo!
+  To give fruits in all the glades,
+        Koledo!
+  To give colours to the flowers,
+        Koledo, Koledo!
+  To give health to sheep and cattle,
+        Koledo!
+  And pardon, joy and song to all,
+        Koledo, Koledo!
+
+                             J. W. W.
+
+
+
+
+  CXXI
+
+  A CHILD IN HEAVEN
+
+
+  Yesternight was born a Child,
+  But it passed from earth at morn,
+  Unbaptized to heaven's door.
+  "Open, heavenly watchman, open!"
+  "Nay, foolish babe, thou must away!
+  Sinful thou art, away, away!"
+
+  "Foolish I am--but sinful, nay;
+  Born yesternight, I died to-day;
+  In the green forest I was born,
+    Where no sponsor, where no priest;
+    Therefore unbaptized I come!"
+
+  Then the heavenly watcher answered:
+  "Go thou yet a short way on;
+  Go on, my babe, and thou shalt find
+  Three watersprings; from one to drink,
+  From one to wash, the third a font of blessing.
+  The first shall breast-milk be to thee;
+  The second is thy mother's tears,
+  And from the third thou shalt baptized be,
+  And joyful entrance gain to heaven."
+
+                             J. W. W.
+
+
+
+
+  CXXII
+
+  CHRISTMAS
+
+
+  Why trembleth so the earth,
+  Set in this sphere of blue?
+  Christ our God was born hereon,
+  He, the Virgin's Holy Son,
+  Christ Who heaven and earth created,
+  And us sinners on the earth.
+  In awe when He shall come to judge,
+  We all shall stand before Him then,
+  Both righteous and unrighteous men.
+
+                             J. W. W.
+
+
+
+
+  CXXIII
+
+  CHRIST THINKS OF HIS MOTHER
+
+
+  On angel wing in upward flight
+  Rise soul and body of our Lord,
+  When piercing heaven with high gaze,
+  He calleth for one down to go,
+  Down to darksome Golgotha,
+  Where Mary bending near the Cross,
+  Weepeth in bitter agony:
+  "Let herald hasten now to tell her
+  I am risen unto heaven."
+  Great Michael heard, two angels sent,
+  Swift to convey the tidings glad:
+  "O thou of women all most blest,
+  Let not thy heart with fear be filled;
+  From the tomb thy Son is risen,
+  Risen to the Father's throne,
+  Saving men from Death's dominion."
+
+                             J. W. W.
+
+
+
+
+  CXXIV
+
+  THE BLESSED MARY AND JOHN THE BAPTIST
+
+
+  The Blessed Mary sent an angel
+  Unto John the Camel-girdled--
+  "God's wish it is, and my wish too,
+  That thou shouldst now my Son baptize."
+  John went responsive to the river,
+  Down into Jordan with the Christ,
+  And there upon him with his Lord,
+  Open wide the gate of heaven,
+  The roseate sun did light the east,
+  Sign of that Spirit-first of which spake John,
+  Whose purging heat doth purify from sin,
+  And in Jordan's flowing river
+  Man's sin was taken all away!
+  Our salvation is in heaven!
+  Save, O God, all trusting souls,
+  Save them from the devil's toils.
+
+                             J. W. W.
+
+
+
+
+  CXXV
+
+  THE HOLY MOTHER
+
+
+  Sadly walked the Holy Mother
+  On the Holy Mountain.
+  Suddenly espied she something
+  Brightly shining in the dust:
+  The Cross, it was, of her own Son.
+  With gentlest hands she caressed it,
+  She did wash it with her tears,
+  And after dried it with her hair.
+  Kneeling then she uttered prayer.
+  Speaking to the Holy Cross:
+  "O sweet Cross, thou Cross of honour,
+  Upon thee my Son has died,
+  Hellish pains on thee He suffered,
+  Hellish pains from those hot nails,
+  To redeem our sinful souls.
+  When He did upon thee bleed,
+  His blood it fell in priceless seed,
+  Whence there sprang all lovely flowers,
+  And angels, coming down to gather,
+  Made them into wreathes and garlands
+  That they might adorn all heaven."
+
+                             J. W. W.
+
+
+
+
+  CXXVI
+
+  DREAM OF THE HOLY VIRGIN
+
+
+  The Holy Virgin dreaming slept,
+  And in her dream a great tree grew,
+  Its branches from her own heart crept,
+  O'er spreading earth, north, south, east, west,
+  And piercing, spire-like, heaven's blue.
+  Sore troubled by her dream she rose
+  And sought straightway a saintly brother;
+  "Hear Saint Basil, my brother hear!
+  Let me tell my vision wondrous
+  I dreamed and lo! a great tree grew,
+  Its branches from my own heart crept,
+  O'erspreading earth north, south, east, west,
+  And towering up through heaven's blue.
+  What saith this vision Saint, to you?"
+  Then Basil answered to the Virgin:
+  "O sister dear, thy vision's clear:
+  'A tree did spring from thy warm heart?'
+  To bear the Christ shall be thy part.
+  'Those spreading branches covering all?'
+  Sinners He'll save from evil's thrall.
+  'That height spire-piercing heaven's blue?'
+  To God the Father Christ shall rise
+  Passing from earth and fleshly view."
+
+                             J. W. W.
+
+
+
+
+  CXXVII
+
+  MOTHER AT THE TOMB OF HER SON
+
+
+  Alas! my son, how fareth it with thee,
+  In thy new dwelling, new and strange and dark?
+  Strange thy dwelling without windows!
+  At daybreak, Vinko, thy sad mother rose,
+  Her earliest thought as but of thee,
+  Her first thought, Vinko; Vinko her first call!
+  Thorns are growing at the house-door,
+  Cuckoos mourn around the house,
+  Downcast thy brothers wait for thee,
+  To talk with thee, to walk with thee--
+  But now that ne'er can be.
+  With head bent down and brow o'ercast,
+  They make their way--for where art thou!
+  In ashes our hearth fire is hidden,
+  And when I saw the sun this morning,
+  I thought: It is the moon,
+  When thy sisters said to me:
+  "Dim thine eyes, it is the sun!"
+  "For me no sun," said I to them,
+  "Pale in the dust now is my sun,
+  No light have I above the earth."
+  Down in thy dwelling, oh my son,
+  Say, is it cold, my Sun, my Sun;
+  If it be cold as is my breast
+  It is too cold, too cold to rest.[37]
+
+                             J. W. W.
+
+
+
+
+  CXXVIII
+
+  MOTHER OVER HER DEAD SON
+
+
+  Where art thou flying? Where, oh where?
+    My falcon?
+  To what silent land and lone?
+    Say, hero mine!
+  Around thy friends and brothers ask me:
+    How shall I answer them!
+  "Where goes Perko? Tell us, Mother!"
+    Woe to me, oh woe to me!
+  If I answered, I might blame thee!
+    How blame _thee_?
+  Alway thou askedst me: May I go here--or should
+    I stay?
+    I knew thy way!
+  But now thou askedst not; nor may I give thee
+  "Yea" or "nay,"--
+    O blank, blank day!
+  Better, child, I went to thee, than to stay
+    As mother here
+    Having lost the light of day!
+
+                             J. W. W.
+
+
+
+
+  CXXIX
+
+  MOTHER'S LAMENT FOR HER SON
+
+
+  Wherefore do I marvel, wherefore need I wonder?
+        Traveller the dearest!
+  That through this lower world already thou hast sped,
+        Ray of light the fleetest!
+  Together we'd a little talk, but we looked for more,
+        Thou my golden store!
+  To the realms of heaven thou from earth art gone,
+        Thou my heaven and earth!
+  Thou thy flight hast taken, sure, to a land of flowers,
+        Dearest of my flowers!
+  Thy journey leadeth up to God, unto the blest in Paradise,
+        Thou my Paradise!
+  Thou shalt behold the Judgment Place,
+        Merciful my son!
+  Soon shalt reach those halls of rest,
+        Thou who gav'st me labour!
+  There shalt find the noble dead,
+        Thou my sweetest life!
+  Greet them all, the rich and poor,
+        Best of all my riches!
+  Salute the noblemen and princes.
+        Thou my prince of princes!
+
+                             J. W. W.
+
+
+
+
+  CXXX
+
+  GREATEST GRIEF FOR A BROTHER
+
+
+  O'er Neven woods the sun went down,
+  The sun went down behind the forest,
+  As came the heroes off the sea.
+  The young wife counted anxiously,
+  The wife of George the Hospodar,
+  Counted the warriors, found them all,
+  Save her three treasures who were missing.
+  She could not find her Hospodar
+  Nor the best man at their wedding,
+  And the third treasure was not there;
+  This treasure was her dearest brother.
+  For her brave lord she cuts her tresses,
+  For her best man she wounds her cheeks,
+  And for her brother puts out both her eyes.
+  She cuts her hair, it grows again;
+  She wounds her cheeks, the wounds do heal;
+  But none can heal those hurt blind eyes,
+  Nor yet her heart for her lost brother.
+
+                             J. W. W.
+
+
+
+
+  CXXXI
+
+  THE DEATH CHAMBER OF HER FATHER-IN-LAW
+
+
+  Why art thou thus attired?
+      My more than father!
+  Why art thou thus bedight, so knightly armed?
+      My fearless knight!
+  Thou art departing for the city?
+      My shining city!
+  In order there to meet the lords and knights,
+      O my wise lord!
+  Or go'st thou to a marriage feast?
+      My pride, my noble guest!
+  --But why! thine eyes are closed to me!
+      O closed, O closed to me!
+  And--can it be!--thy mouth is bound!
+      This black, black morning!
+  If thou art gone, and com'st not back--
+      How empty is the house!
+  How is it thou couldst leave us so?
+      To us, O woe, O woe!
+  Far, far thy journey, and the end not here!
+      But better is it there!
+  Mother and father, they will greet thee there,
+      Among the Blest!
+  Thy brothers, too, and children in celestial light,--
+      O blessed, blessed sight!
+  Thee will they greet: we in their thoughts shall be,
+      O heavenly harmony!
+  But thou wilt stay, and ne'er return to us,
+      O woe, O woe to us!
+
+                             J. W. W.
+
+
+
+
+  CXXXII
+
+  KOLEDO
+
+
+  The king came to court our Margaret fair,
+      Koledo, Koledo!
+  And mother sang clear to our Margaret fair:
+      Koledo, Koledo!
+  "Oh, Margaret, haste! my daughter dear,
+      Koledo, Koledo!
+  The King, he has come to court you here,
+      Koledo, Koledo!"
+  Then thus sweet Margaret to mother's call:
+      "Koledo, Koledo!
+  I told you, mother mine, I told you,
+      Koledo, Koledo!
+  I want not kings, I want not knights,
+      Koledo, Koledo!
+  'Tis Jesus Himself alone doth bind me,
+      Koledo, Koledo!
+  I've vowed to Him, true shall He find me,
+      Koledo, Koledo!"
+
+                             J. W. W.
+
+
+
+
+  CXXXIII
+
+  A HORSE'S COMPLAINT
+
+
+  A horse left his knight on Kossovo,
+  On a dreadsome place on Kossovo.
+  Finding his steed, the knight put question:
+  "O horse of mine, my greatest treasure,
+  Why hast thou left me here so lonely,
+  In this deadsome place on Kossovo?
+  What have I done thus to displease thee?
+  Say, horse of mine, why didst thou leave me?
+  Did press my saddle hard upon thee?
+  Thy jewelled bridle, was it heavy?
+  Or have I ridden thee too far?"
+  To his knight the horse made answer:
+  "Thy saddle pressed not hard upon me,
+  Thy jewelled bridle was not heavy,
+  Nor hast thou ridden me too far.
+  But this it is that doth displease me:
+  So oft thou tarriest at the tavern,
+  While I am tethered at the door.
+  Three maidens fair are dwelling there,
+  Whose beauty makes thee all forgetful,
+  While I am out here cold and fretful;
+  Then angrily I paw the earth,
+  And eat the grass down to its root,
+  And drink the water dry as stone,
+  While thou dost leave me here alone."
+
+                             J. W. W.
+
+
+
+
+  CXXXIV
+
+  A DANCE AT VIDIN
+
+
+  One day at Vidin they did dance the Kolo:
+      "Oh, let me, mother, go and see!"
+      "There is thy brother, go with him!"
+      "My brother! he can stay at home,
+      I do not want to go with him."
+
+  One day at Vidin they did dance the Kolo:
+      "Oh! let me, mother, go and see!"
+      "There is thy father, go with him!"
+      "Oh, let my father stay at home,
+      I do not want to go with him."
+
+  One day at Vidin they did dance the Kolo:
+      "Oh! let me, mother, go and see!"
+      "There is thy darling, go with him!"
+      "Oh, come, my sweetheart, come with me!
+      I'll dance the Kolo there with thee!"
+
+                             J. W. W.
+
+
+
+
+  CXXXV
+
+  THE PRICE
+
+
+  How many towns from here to the coast?
+  Seventy-seven sunlit towns,
+  And villages green a thousand!
+  And all of these I'd give for the street
+  Where I my sweetheart first did meet,
+  And e'en the street I'd give as the price
+  To meet him again--aye, but for a trice!
+
+                             J. W. W.
+
+
+
+
+  CXXXVI
+
+  PREFERENCES
+
+
+  Three maids were talking on a night,
+  Upon a silvery moonlight night.
+  They walked and talked of many things,
+  They asked what each preferred to have.
+  Two did listen to the eldest:
+  "A castle white is what I'd like."
+  Then two did hear the second say:
+  "'Tis velvet blue with gold I like."
+  Then two listened to the youngest:
+  "A sweetheart true I would prefer.
+  Should the castle all be ruined,
+  My darling would rebuild it up;
+  The velvet would with time wear out,
+  My darling he could buy me more--
+  A sweetheart true is richer store!"
+
+                             J. W. W.
+
+
+
+
+  CXXXVII
+
+  A BRIDE'S DEVOTION
+
+
+  A Bride most fair fed a swan and a lion,
+  A swan and a lion and a falcon grey.
+  To her came merchants from far away:
+  "Sell us, sweet maid, your swan and your lion,
+  This swan and this lion and falcon grey!"
+  "Ye men from afar, go away, go away,
+  My godfather cometh to see me wed,
+  And this lion I tend till the time be sped;
+  And for my true friend who best man shall be,
+  This white swan I keep, and for none but he!
+  But this falcon grey ye covet so much,
+  'Tis my true love's own; none shall it touch."
+
+                             J. W. W.
+
+
+
+
+  CXXXVIII
+
+  FIDELITY
+
+
+  A youth to God did pray,
+    About his sweetheart dear,
+  That he the gem might be
+    Which trembled in her ear.
+
+  He wished to be the beads
+    Reposing on her breast,
+  That he might hear her say
+    That she loved him best.
+
+  The prayer he prayed was heard
+    A pearl beside the shore,
+  His darling picked him up,
+    And on her necklet bore.
+
+  He listened and he heard
+    How true her loving heart:
+  She told the other maids
+    She ne'er from him would part.
+
+                             J. W. W.
+
+
+
+
+  CXXXIX
+
+  A SISTER'S LAMENT
+
+
+  Sister was I of kingly brothers three,
+  But now my kings are gone from me,
+        Woe, woe, woe!
+
+  Better kingdoms they are asking,
+  Better work than this world's tasking,
+  And God will grant it, where they go,
+  Better service He'll bestow,
+        But for me, alas! Oh! woe!
+
+  So kingly brothers ne'er were known,
+  Now my heart breaketh here alone.
+  This world for me too dark is now,
+  And I took dark for it, I trow!
+        Woe, woe, woe!
+
+                             J. W. W.
+
+
+
+
+  CXL
+
+  THE PRAYER OF KARAGEORGE'S LADY[38]
+
+
+  Prayed of God the Karageorge's Lady!
+  "Give me, God, to bear a maiden lovely,
+  Patternized by Carapi['c]a Vasa,
+  Grant us, O God, to choose name of beauty,
+  Name of beauty, precious gold of mother.
+  When shall come the baby, christen'd Goldie,
+  Swaddling clothes her mother will then make her,
+  Flowing clothes of linen for her infant,
+  All of silk and cloth of gold so beauteous,
+  As she's Goldie let gold bless her slumber.
+  When she's come to her little cradle,
+  Then her mother will make little cradle,
+  Little cradle of gold will she make her,
+  As she's Goldie, let cradle be golden.
+  When Goldie is grown up to be spinner,
+  Spinning-wheel her mother then will make her,
+  Of gold will she make her golden spindle,
+  As she's Goldie let her wheel be golden.
+  When Goldie knows how to embroider,
+  Golden frame her mother will then make her,
+  Of gold will she make her spinning trinket,
+  As she's Goldie, may her work be golden."[39]
+
+                             B. S. S.
+
+
+
+
+  CXLI
+
+  THOU ART EVER, EVER MINE[40]
+
+
+  O my girl, O my soul,
+  What does mother say to you?
+  Will she marry you to me?
+  Her son-in-law can I be?
+  She might give you, she might not,
+  Thou art ever, ever mine!
+
+                             B. S. S.
+
+
+
+
+  CXLII
+
+  SEA MERCHANT[41]
+
+
+  Listen, my girl, listen, my beauty!
+  Thy eyes are corals in the sea,
+  I am a merchant on the sea
+  Buying the riches of the sea.
+
+  Listen, my girl, listen, my beauty!
+  Thy teeth are tiniest pearls,
+  I am a merchant on the sea
+  Buying tiniest pearls of the sea.
+
+  Listen, my girl, listen, my beauty!
+  Thy hands are whiter than the wool,
+  I am a merchant on the sea
+  Trading in wool o'er the sea.
+
+                             B. S. S.
+
+
+
+
+  CXLIII
+
+  ANGELA AS WATCHMAN[42]
+
+
+  Falcon is winging high,
+  But the fortress gates are higher;
+  And Angela is watching there
+  Aureoled in sunshine,
+  Belted with the moonbeams,
+  And flowering with the stars.
+
+                             B. S. S.
+
+
+
+
+  CXLIV
+
+  A LAD AND HIS BETROTHED[43]
+
+
+  Little lad is wandering
+  Through a wooded copse,
+  Strutting with a green bough
+  Walking down the slopes.
+  Looking on a courtyard
+  Sees young Jana sweeping:
+
+  "O thou pearl, my sweet one,
+  Whence my ring in keeping?"
+  Thus she answered proudly:
+  "May thy brother know, perchance,
+  And should it bring God's blessing
+  He'll join our wedding dance."
+
+                             B. S. S.
+
+
+
+
+  CXLV
+
+  DIREFUL SICKNESS[44]
+
+
+  What shall I do, what shall I do?
+  My nights are sleepless,
+  My heart is so restless--
+  Ah, sorrow, anew,
+  I'll die,
+  My love, for you.
+
+                             B. S. S.
+
+
+
+
+  CXLVI
+
+  ALL AS IT SHOULD BE[45]
+
+
+  When the sun sets at even,
+  My love is just coming to me
+  And when the moon has passed Heaven
+  My lover is going from me.
+  So the paths are all darken'd with shadow,
+  Just as it should be, should be
+  In shadow that no one can see.
+
+                             B. S. S.
+
+
+
+
+  CXLVII
+
+  BEAUTY PREENS HERSELF[46]
+
+
+  For whom powders face so lovely, Beauty?
+  For whom has she dropped her hair on shoulder,
+  For whom is she wearing charms in bosom?
+  Is it for Valach, or for a Magyar?
+  It is not for Valach nor for Magyar,
+  It is for this Stojan, mighty reaper,
+  Who in Kolo always takes the leadship,
+  When he's playing, every heart is touched.
+  When he's dancing, dances like a puppet.
+
+                             B. S. S.
+
+
+
+
+  CXLVIII
+
+  HARVEST SONG[47]
+
+
+  Hurry, hurry, robust harvesters,
+  At field's end there's water and a maiden,
+  Cooling water, and a maiden youthful,
+  Drink ye water, and embrace your maiden.
+
+                             B. S. S.
+
+
+
+
+  CXLIX
+
+  LONG NIGHT[48]
+
+
+  These are long nights, these are long nights,
+  For him who does not kiss black eyes,
+  He it is who cannot slumber,
+  For his heart is pierced with sorrow.
+
+                             B. S. S.
+
+
+
+
+  CL
+
+  EYEBROW LURE[49]
+
+
+  Oh, my girl, my sweetest flower,
+  Curl not ends of eyebrow bower,
+  Do not grieve your youthful laddies,
+  As your way doth torment me:
+  Leading horse, I wander barefoot--
+  Carrying boots, I wander barefoot--
+  Bearing bread, I cannot eat it--
+  Treading water, cannot drink it.
+
+                             B. S. S.
+
+
+
+
+  CLI
+
+  GIRLHOOD[50]
+
+
+  Girlhood was my golden tsardom!
+  Tsar was I while girlhood lasted;
+  Ah, if I could turn me backward,
+  Well I know how I'd live girlhood.
+
+                             B. S. S.
+
+
+
+
+  CLII
+
+  YOUTH WITH YOUTH[51]
+
+
+  On the river Sitnitsa
+  Little green fir standeth!
+  Who's young and stripling,
+  Youth with green youth sleepeth.
+  Ah, but see that youthful Jovo,
+  All alone is he,
+  Seeing that the youthful Mara
+  Joins him secretly.
+
+                             B. S. S.
+
+
+
+
+  CLIII
+
+  COME, MY LOVER, TO ME[52]
+
+
+  Full and thick is shadow,
+  Come, my love, to meadow,
+  For I've a verdant garden,
+  Red roses for a warden;
+  Golden kerchief will I make thee,
+  Christmas gift of love from me,
+  To carry so splendidly
+  In the memory of thy darling.
+
+                             B. S. S.
+
+
+
+
+  CLIV
+
+  SIGHS[53]
+
+
+  Oh my heart, I feel me sighing,
+  Methinks that my lover calls me to him,
+  But in truth my sweetheart's love hath ceased.
+  Cried out falcon from a fir branch lofty:
+  "O girl lovely! Sinfully you are speaking,
+  Only past night your love called you lovely,
+  Drinking wine unto your bounteous pleasure:
+  'O my girl, my soul of me most dearest,
+  I have made for thee a hiding,
+  Half my bed and half my arm,
+  Half a pillow, half a cover,
+  Half a cushion, heart of mine in bosom.'"
+
+                             B. S. S.
+
+
+
+
+  CLV
+
+  A BOUQUET OF LITTLE ROSES[54]
+
+
+  O girl of my soul, my soul,
+  Take this bunch of rosebuds neat,
+  Should thy bouquet fade and fail,
+  Come once more, my soul, to me
+  I will pluck again for thee.
+
+                             B. S. S.
+
+
+
+
+  CLVI
+
+  DREAM INTERPRETATION[55]
+
+
+  Darling sweetheart on his free arm sleeping,
+  Makes he motion to sound gong in waking:
+  "Awake, my dear, dearer than mine own eyes,
+  Last night I a strange dream was a-dreaming:
+  My fez swept 'way on the troubled water,
+  Pearls were strewing richly in my lap-robe,
+  And my watch in pieces four was broken."
+  Sweetheart waking, calmly speaking this-wise:
+  "Easy is it to interpret dreaming,
+  That your fez was swept by troubled water
+  Means you're to go forth to battle army;
+  That pearls richly scatter'd in your lap-robe
+  Must mean our tears, thine with mine are mingling;
+  That your watch in pieces four was broken
+  Means in truth that our hearts will be breaking
+  When we're forced to take leave of each other."
+
+                             B. S. S.
+
+
+
+
+  CLVII
+
+  WITH SWEETHEART NIGHTS ARE SHORTEST[56]
+
+
+  Cyclone downward rumbling,
+  All the castle trembling.
+  In castle is a girl
+  Crying, never ceasing:
+  "Alas, how long nights are!
+  When sleeping near to papa;
+  On nine soft mattresses,
+  On nine softest cushions,
+  'Neath nine fine coverlets."
+
+  "Alas, how long nights are!
+  When sleeping near to mother;
+  On nine soft mattresses,
+  On nine softest cushions,
+  'Neath nine fine coverlets."
+
+  "Alas, how long nights are!
+  When sleeping near to brother;
+  On nine soft mattresses,
+  On nine softest cushions,
+  'Neath nine fine coverlets."
+
+  "Alas, how long nights are!
+  When sleeping near to sister;
+  On nine soft mattresses,
+  On nine softest cushions,
+  'Neath nine fine coverlets."
+
+  Cyclone downward rumbling,
+  All the castle trembling.
+  In castle is a girl
+  Crying, never ceasing:
+  "Alas, how short the nights are!
+  Sleeping with my darling,
+  Just on single mattress,
+  On a single pillow,
+  'Neath a single cover."
+
+                             B. S. S.
+
+
+
+
+  CLVIII
+
+  DAWN AWAKENED LAZAR[57]
+
+
+  'Wakening Lazar dawn was stealing:
+  "Get up, Lazar; rise up, Lazar!
+  Horse of thine has thirst for water."
+  Forthwith up leaps Lazar quickly,
+  Grasps his horse's bridle lightly,
+  Leading horse, he goes to water,
+  But at water's edge was maiden,
+  With his foot he touched hers gently,
+  Kissed the while her black eyes sparkling,
+  Clasping her about the bosom.
+
+                             B. S. S.
+
+
+
+
+  CLIX
+
+  A DEVILISH YOUNG MATRON[58]
+
+
+  When I lived a girl with mother,
+  Good advice was given me often,
+  That I should not drink the red wine,
+  That I should not wear green wreathlets,
+  That I shouldn't kiss a stranger.
+    But I poor girl deeply thinking over:
+  There's no red cheek without red wine sparkling,
+  There's no pleasure without green wreath glistening,
+  Neither amour without stranger wooer.
+
+                             B. S. S.
+
+
+
+
+  CLX
+
+  GIRL IS ETERNAL POSSESSION[59]
+
+
+  In a garden works a maiden,
+  Digging furrow, water decoy,
+  To the garden 'luring water,
+  To give drink to early flowers,
+  Early flowers, whitest basil,
+  Whitest basil, gold carnation;
+  Where she's furrowing, there she's sleeping.
+  Putting head in sweetest basil,
+  Hands are lying in carnations,
+  Feet are plac'd in shallow hollow,
+  Covered with a fragile kerchief;
+  Beat upon her dew-drops slender,
+  Like a rain-soaked watermelon.
+  Now there comes a callow youth,
+  Callow youth and not yet married,
+  Grasping two posts, leaps the railing,
+  Springing lightly into garden,
+  Then commences soliloquizing:
+  "Should I pluck a bunch of flowers?
+  Should I kiss a sleeping maiden?
+  Bunch of flowers lasts till mid-day,
+  But a maiden lasts forever."
+
+                             B. S. S.
+
+
+
+
+  CLXI
+
+  JOVO AND MARIA[60]
+
+
+  Breeze fans up o'er roses 'long the meadow,
+  To the rich white tent of Jovo, youthful,
+  Where there's Jovo with Maria sitting:
+  Jovo writing and Maria sewing;
+  Ink runs short for Jovo where he's writing,
+  And Maria golden thread is losing,
+  Then to Maria, Jovo thus is speaking:
+  "Oh, my Maria, mine own cherish'd lov'd one!
+  Is my soul to thee a dear possession?
+  For a pillow is my right hand doughty?"
+  Mara to him gently whispering slowly:
+  "Believe me, Jovo, darling of my heart-throb,
+  Dearer to me is thy soul much dearer,
+  Than are altogether four of brothers;
+  Softer to me thy own right hand doughty,
+  Than four softest pillows of my choosing."
+
+                             B. S. S.
+
+
+
+
+  CLXII
+
+  ROSE TREE[61]
+
+
+  Planted rose-tree midst of Novi-Sad town,
+  O my rose-bud, O my sorrow rose tree,
+  Cannot pick you, neither give you sweetheart:
+  For my sweetie vents her anger on me,
+  Gliding past my courtyard stealthy,
+  Like the slave who passes Turkish graveyard.
+
+                             B. S. S.
+
+
+
+
+  CLXIII
+
+  DARLING'S WRATH[62]
+
+
+  O my darling, be not wrathful;
+  Should I, myself, show my hot displeasure,
+  All of Bosnia never could appease us,
+  Not all Bosnia nor the Hercegovina.
+
+                             B. S. S.
+
+
+
+
+  CLXIV
+
+  LAD PIERCED WITH ARROW[63]
+
+
+  Alas hero I'm with arrow pierced,
+  O my Yetsa, thy white face is guilty,
+  Thy black eye-balls are the piercing arrows,
+  Thy white arms are now a very torment.
+  Come, my love bird, to my white court homing,
+  Come to heal my heart's own sore displeasure,
+  To bind up my wounds with thy throat's whiteness,
+  To salve suffering with thy honey kisses.
+
+                             B. S. S.
+
+
+
+
+  CLXV
+
+  NOUGHT BUT KISSES[64]
+
+
+  Up and down went youth in mountain,
+  In a garden, girl round fountain;
+      On her threw he hawthorn red,--
+      Lightly answering, blackthorn sped,--
+  Think you they intend to kill?
+  Nought but kisses that they will.
+
+                             B. S. S.
+
+
+
+
+  CLXVI
+
+  UNITED[65]
+
+
+  Little girl, the small black-eyed,
+  Hero, wondering stupefied:
+      'Had we means of barter!
+      To lead us near together!
+  I my life long would not quit her,
+  None could make our friendship wither.'
+
+                             B. S. S.
+
+
+
+
+  CLXVII
+
+  GIRL PLEADS WITH JEWELLER[66]
+
+
+  Oh, my jeweller, for your trade's sake, listen!
+  Make me hero, all of gold my hero,
+  I will spoil him, as his mother dares not,
+  I will kiss him until dawns the twilight,
+  Till day breaks ever will caress him.
+
+                             B. S. S.
+
+
+
+
+  CLXVIII
+
+  WIFE DEARER THAN SISTER[67]
+
+
+  Lo! behold behind the forest
+  Someone loudly screams--
+  "'Tis a voice," says youthful hero,
+  "Girlish-like it seems."
+  When behold! he looked and spied her,
+  Tiny girl, tree-bound they'd tied her,
+  With fine silken seams.
+  Hear! she prays of youthful hero, dazzled by his might:
+  "Come to me, thou youthful hero, O most beauteous, wonderknight.
+  Come to free me, youthful hero, and I'll be thy sister true."
+  Thus she spake, but laughing he, "O, there's one at home like you."
+  "Come to free me then, my brother; sister-in-law I'll be no other."
+  ('But at home she sits by mother.')
+  "Then I'll be thy golden bride.
+  Take me to thy meadows wide,
+  Take me to thy castles white,
+  Take me, take me from this plight."
+  So she spake to gallant lover,
+  Hovering near and just above her,
+  Clasps her in his arms to love her--
+  Such a gallant knight!
+
+                             B. S. S.
+
+
+
+
+  CLXIX
+
+  GREATEST SORROW[68]
+
+
+  All young heroes here save mine,
+  All young gallant heroes brave.
+  O! that I were sure he'd tarry,
+  Lingering in some sickness grave,
+  Rather than the wish to marry
+  Sends him courting another maid.
+  O! may he be too ill to travel,
+  May him dread illness cause to pine,
+  Rather than to court another,
+  Never, never to be mine.
+
+                             B. S. S.
+
+
+
+
+  CLXX
+
+  YOUTH AND GIRL[69]
+
+
+  O maiden, thou gentlest rose
+  When thou wert growing what didst thou behold?
+  Hast thou observed a pine-tree growing
+  Or the slender, proud fir-tree blowing,
+  Or did'st gaze at my youngest brother?--
+
+  O glad, young hero, brilliant Sun!
+  Never at the pine-tree blowing
+  Have I look'd in wonder gazing
+  Neither at the slender fir-tree,
+  Nor thy youngest brother, free,
+  Rather have I grown to suit thee,
+  Tender knight, to suit but thee.
+
+                             B. S. S.
+
+
+
+
+NOTES
+
+
+[Footnote 1: This song as also those signed "S. J. B." has been
+transversified and published by (Sir) John Bowring, "Servian Popular
+Poetry," London, 1827.]
+
+[Footnote 2: The Serbian peasants, especially women, firmly believe that
+saints, parents, rulers, bishops and clergymen have the privilege of
+cursing and that the person to whom the curse is addressed is bound to
+undergo the consequences pronounced by the curser. There are several
+instances in the Serbian heroic ballads by which it is proven that the
+national Serbian bards, and indeed all the peasants who participated in
+the composition of their epic poetry, believe that curses pronounced by
+privileged persons always come true. Thus in the ballad _Uros and
+Mrnjavcevici_ King Vukasin of Macedonia, angry with his son Marko
+Kralyevich because the latter, when chosen for arbiter, said that the
+imperial crown belonged to Carevic Uros and not to him (Vukasin),
+exclaimed:
+
+  "O son Marko, may God smother thee!
+  Mayest thou have no tomb, nor progeny
+  May thy soul not leave thy body
+  Before thou hast served the Turkish emperor!"
+
+While Marko's kingly father cursed him, Carevic Uros blesses him thus:
+
+  "O my Kum Marko, God second thee!
+  Thy face shine at divan
+  Thy sabre smother in duels!
+  May no one excel thee in heroism
+  Thy name be reverently remembered.
+  As long as Sun and Moon shine!"
+
+And the bard finishes his poem with, "Whatever they said, it came true."
+
+Another oral tradition tells us how a nobleman _Velimir Bogati_ (Velimir
+the Rich) who once refused hospitality to Knez Lazar, the emperor of
+Serbia (1389), was cursed by the noble prince and how Velimir's first
+son indeed drowned himself in the river Lepenica, his second son fell
+from his horse and died in consequence of the accident and how his
+third, and now only son, was imprisoned by his father in one of the
+remotest towers of his castle in order to avoid any danger of
+experiencing the prince's curse. One day, however, Velimir Bogati
+brought to his imprisoned son some grapes from his own vineyard, in
+order that the poor young fellow should at least know what time of the
+year it was, and lo! while the boy was eating the grapes a small viper
+jumped out of the bunch and mortally bit him. The news of the sudden
+death of the young nobleman spread rapidly amongst the neighboring
+villages and fortified the peasants in their belief that one cannot
+escape the curse.
+
+Par extension a _kletva_ (curse) can be effective even if pronounced, as
+in the above song, by other persons than those privileged.
+
+Another saga narrates how a peasant greedily coveted and wished to
+appropriate a corn field that belonged to his neighbour and, in order to
+attain his evil end, he buried in the middle of that field his only son
+whom he had previously taught what to say when interrogated. The judge
+and the plaintiffs came with the defender to the spot and the
+mischievous peasant in order to mystify those present, exclaimed: "O
+black earth, speak of thy own free will, to whom dost thou rightly
+belong?"
+
+"I belong to thee," the voice from below was heard.
+
+The lawful owner, hearing this, started aback. And the judge's verdict
+appointed the field to belong to the covetous and wrong claimant. And
+the parties dispersed in wonder.
+
+Then the father began to dig the ground in order to disinter his son.
+But--there was not the shadow of one! He called loudly and the child
+answered the call but the voice from beneath the earth was ever fainter
+and fainter. Finally the child turned to a mole.
+
+Thus became, according to Serbian tradition, the first mole. (Edit.)]
+
+[Footnote 3: Sir John Bowring, although a remarkable transversifier and
+at times a true interpreter of popular songs of the Slavs, has taken too
+much of that _licentia poetica_ in his rendering of this, one of the
+most beautiful lyrics ever composed by Serbian peasant women. The reader
+may judge for himself, when comparing Sir John Bowring's liberal
+transversification with the following _verbatim_ translation (which he,
+himself, felt absolutely indispensable to reproduce) what a great
+injustice is inflicted upon the popular songs of any people by even the
+most conscientious transversifier and how infinitely less untrue to the
+original a rendering can be. (Edit.)
+
+Of this little poem, which Goethe calls "wonderful," the following is an
+almost literal translation:
+
+  Full of wine, white branches of the vine-trees
+  To white Buda's fortress white had clung them:
+  No! it was no vine-tree, white and pregnant!
+  No! it was a pair of faithful lovers,
+  From their early youth betrothed together.
+  Now they are compell'd to part untimely.
+  One address'd the other at their parting,
+  "Go! my soul! burst out and leave my bosom!
+  Thou wilt find a hedge-surrounded garden,
+  And a red-rose branch within the garden;
+  Pluck a rose from off the branch, and place it,
+  Place it on thy heart, within thy bosom;
+  Then behold!--ev'n as that rose is fading,
+  Fades my heart within thy heart thou loved one!"
+  And thus answer'd then the other lover:
+  "Thou, my soul! turn back a few short paces.
+  There thou wilt discern a verdant forest;
+  In it is a fount of crystal water;
+  In the fount there is a block of marble;
+  On the marble block a golden goblet;
+  In the goblet thou wilt find a snow-ball.
+  Love! take out that snow-ball from the goblet,
+  Lay it on thy heart within thy bosom;
+  See it melt--and as it melts, my lov'd one!
+  So my heart within thy heart is melting."
+
+                             (S. J. B.)
+]
+
+[Footnote 4: This song has obviously been composed by a Serbian woman of
+Mohammedan faith. A large percentage of Serbians in Bosnia, Hercegovina
+and even Macedonia are still adhering to the Koran. Ali Bey surely must
+have been a Serbian bey. (Edit.)]
+
+[Footnote 5: Smilia, the _grapharium arenarium_, or "lovely love." Also
+a woman's name. (S. J. B.)]
+
+[Footnote 6: This song is sung at the close of the harvest, when all the
+reapers are gathered together. Half as many reeds as the number of
+persons present are so bound that no one can distinguish the two ends
+which belong to the same reed. Each man takes one end of the reeds on
+one side, each of the women takes one end at the other. The withes that
+bind the reeds are severed, and the couples that hold the same reed kiss
+one another. (S. J. B.)]
+
+[Footnote 7: _Kalpak_, the fur cap of the Serbians. (S. J. B.)]
+
+[Footnote 8: This is one of the songs sung at the breaking up of the
+company, addressed to the giver of the festival. (S. J. B.)]
+
+[Footnote 9: _Musko cedo_ (male child). The male sex is in Serbia, as
+elsewhere, deemed entitled to more care and attention than the other.
+(S. J. B.)]
+
+[Footnote 10: A handkerchief embroidered and given by a girl to a boy is
+considered in Jugoslavia as a symbol of love and faith. (Edit.)]
+
+[Footnote 11: As unfortunately Serbian parents often, very often, select
+the husband of their marriageable daughter, the poor girl, unless
+disobedient and rebellious, meekly accedes to the choice even if her
+bridegroom should be an old man. This is obviously a remnant of Turkish
+dominion in Serbia. (Edit.)]
+
+[Footnote 12: _Zvezda_, star, is of the feminine gender. (S. J. B.)]
+
+[Footnote 13: Sun is feminine in Serbian. (S. J. B.)]
+
+[Footnote 14: The leech, _Sanguisuga_; but in Serbian there is no
+disagreeable association with the word. It is the name usually employed
+to describe the beauty of the eyebrows, as swallows' wings are the
+simile used for eyelashes. (S. J. B.)]
+
+[Footnote 15:  _Visnja_, the universal Slavonian name of the Vistula
+cherry-tree. The _Cerasum apronianum_ of Linne. (S. J. B.)]
+
+[Footnote 16: The _Vila_ nearly corresponds to the _Peri_ of the
+Persians, and the _Woela_ of the Scandinavians. (S. J. B.)]
+
+[Footnote 17: _Radisa_ is the name of a man. _Radovanje_--joy. (S. J.
+B.)]
+
+[Footnote 18: _Lepota_ is the Serbian word for beauty. (S. J. B.)]
+
+[Footnote 19: I shall be accused of having _decorated_ this. The
+translation is more free than I have generally given; but in order to
+show how little I have deviated from the thought of the original, I give
+the conclusion. (S. J. B.)
+
+  "Ako bi te u pjesmu pjevala,
+  Pjesma ide od usta do usta,
+  Pa ce doci u pogana usta;
+  Ako bi te u rukave vezla,
+  Rukav ce se odma izderati,
+  Pa ce tvoje ime poginuti;
+  Ako bi te u knjigu pisala
+  Knjiga ide od ruke do ruke,
+  Pa ce doci u pogane ruke."
+
+                             Vuk i. p. 200
+]
+
+[Footnote 20: The popular national dance of the Serbians. (S. J. B.)]
+
+[Footnote 21: _Bosiljak_, the _Ocimum basilicum_ of Linne (S. J. B.)]
+
+[Footnote 22: As the Serbians have had during the long Ottoman rule to
+attend to much sterner duties than that of cultivating literature and
+art, and, as the greater part of the population (sixty per cent at
+least) are even to this day completely illiterate, ability to read and
+write is still considered an 'art' with the peasantry. (Edit.)]
+
+[Footnote 23: _Kaloper_, balsamita vulgaris of Linne. (S. J. B.)]
+
+[Footnote 24: _Vila_ (pronounced veelah) is with the Serbians a female
+deity (Muse or Grace) of incomparable beauty and tenderness. But she can
+be very hostile to mortals. (Cf. note 16. Edit.)]
+
+[Footnote 25: The cuckoo (_Kukavica_), according to Serbian tradition,
+was a maiden who mourned so unceasingly for a dead brother, that she was
+changed into a bird, and thence continues without rest her melancholy
+note. A Serbian girl who has lost a brother never hears a cuckoo without
+shedding tears.--"I a poor cuckoo," is equivalent to "woe is me!" (S. J.
+B.)]
+
+[Footnote 26: _Ban_ is obviously a corrupt form of the Polish or Cech or
+Ruthenian title _Pan_, meaning "Mr." or, in direct address, "Sir." To
+this day that word has been conserved only by those Serbians who have
+lived in the Austro-Hungarian territory called Croatia, and is applied
+as a title to their political chief. (Edit.)]
+
+[Footnote 27: Lado is the vocative of _Lada_, the goddess of love, in
+the old Slavonian mythology. _Lado!_ is a melancholy interjection in
+Serbian, whereas _Lele!_ the vocative of Lela, the god of love, has
+frequently a cheerful association. _Polela_ (after love) the goddess of
+marriage, is also sometimes apostrophised. Talvj remarks, that _Ljad_,
+in Russian, signifies misfortune. In common parlance, _Lele mene_
+(Serbian) imports "Woe is me!" (S. J. B.)]
+
+[Footnote 28: _Mlinar_, the miller. (S. J. B.)]
+
+[Footnote 29: Wesely imagines that this expression has been introduced
+into Serbian poetry by the influence of the interesting ballad on the
+marriage of Maxim Cernojevic (see _Quarterly Review_ for December,
+1826). The intimate intercourse which existed between Serbia and Venice
+may account for the phraseology. (S. J. B.)]
+
+[Footnote 30: This song, as also others signed "O. M.", has been
+transversified by Robert Bulwer Lytton (Owen Meredith), "Serbske Pesme;
+or National Songs of Serbia," London, 1861. (Edit.)]
+
+[Footnote 31: _Kolo_, signifying literally a wheel, is the generic term
+for all the Serbian national dances in most of which the dancers, either
+taking hands, or united each to each by a handkerchief tied round the
+waist or to the girdle, form a ring and advance or retreat to and from
+the centre to a monotonous music, either of the voice or some very
+simple wind instruments. Both sexes take part in these dances, which are
+frequently in the open air. (O. M.)]
+
+[Footnote 32: This song as also those signed "J. W. W.", has been
+transversified and published by J. W. Wiles, "Serbian Songs and Poems:
+Chords of the Yugoslav Harp," New York, 1917.]
+
+[Footnote 33: _Hodza_, i. e. Mohammedan priest. (J. W. W.)]
+
+[Footnote 34: Turkish seminary. (J. W. W.)]
+
+[Footnote 35: _Kalfa_, governess. (J. W. W.)]
+
+[Footnote 36: _Koledo_: In ancient times the Serbians, as all the Slavs,
+often used this word as a refrain in their bucolic songs. It was an
+address to _Ledo_, the ancient Slav divinity who presided over the
+process of fertility and protected fields and flowers. (J. W. W.)]
+
+[Footnote 37: Loud lamentations, by women rather than men, are an
+ancient custom among the Serbs. These dirges are again and again
+extemporized with spontaneous poetic feeling. Girls let down their hair
+and lament in the orchards and precincts of the house. (J. W. W.)]
+
+[Footnote 38: This song, as well as others signed "B. S. S.," has been
+rendered into English by the Editor.]
+
+[Footnote 39: "The Prayer of Karageorge's Lady" is number 685 of Vol. I
+of Vuk Karadzic's collection.  (Edition of 1891.)
+
+[Footnote 40: No. 428 Vol. I. (Edition of 1891).]
+
+[Footnote 41: No. 445 Vol. I. (Edition of 1891).]
+
+[Footnote 42: No. 468 Vol. I. (Edition of 1891).]
+
+[Footnote 43: No. 474 Vol. I. (Edition of 1891).]
+
+[Footnote 44: No. 581 Vol. I. (Edition of 1891).]
+
+[Footnote 45: No. 792 Vol. I. (Edition of 1891).]
+
+[Footnote 46: No. 765 Vol. I. (Edition of 1891).]
+
+[Footnote 47: No. 247 Vol. I. (Edition of 1891).]
+
+[Footnote 48: No. 314 Vol. I. (Edition of 1891).]
+
+[Footnote 49: No. 338 Vol. I. (Edition of 1891).]
+
+[Footnote 50: No. 409 Vol. I. (Edition of 1891).]
+
+[Footnote 51: No. 446 Vol. V. (Edition of 1898).]
+
+[Footnote 52: No. 298 Vol. V. (Edition of 1898).]
+
+[Footnote 53: No. 279 Vol. V. (Edition of 1898).]
+
+[Footnote 54: No. 335 Vol. I. (Edition of 1891).]
+
+[Footnote 55: No. 309 Vol. V. (Edition of 1898).]
+
+[Footnote 56: No. 294 Vol. I. (Edition of 1891).]
+
+[Footnote 57: No. 466 Vol. I. (Edition of 1891).]
+
+[Footnote 58: No. 459 Vol. I. (Edition of 1891).]
+
+[Footnote 59: No. 453 Vol. I. (Edition of 1891).]
+
+[Footnote 60: No. 287 Vol. I. (Edition of 1891).]
+
+[Footnote 61: No. 472 Vol. I. (Edition of 1891).]
+
+[Footnote 62: No. 473 Vol. I. (Edition of 1891).]
+
+[Footnote 63: No. 482 Vol. I. (Edition of 1891).]
+
+[Footnote 64: No. 487 Vol. I. (Edition of 1891).]
+
+[Footnote 65: No. 488 Vol. I. (Edition of 1891).]
+
+[Footnote 66: No. 491 Vol. I. (Edition of 1891).]
+
+[Footnote 67: No. 300 Vol. I. (Edition of 1891).]
+
+[Footnote 68: No. 359 Vol. I. (Edition of 1891).]
+
+[Footnote 69: No. 422 Vol. I. (Edition of 1891).]
+
+
+
+
+
+End of the Project Gutenberg EBook of An Anthology of Jugoslav Poetry;
+Serbian Lyrics, by Various
+
+*** END OF THIS PROJECT GUTENBERG EBOOK ANTHOLOGY OF JUGOSLAV POETRY ***
+
+***** This file should be named 36091.txt or 36091.zip *****
+This and all associated files of various formats will be found in:
+        https://www.gutenberg.org/3/6/0/9/36091/
+
+Produced by Roberta Staehlin, Carol Ann Brown, and the
+Online Distributed Proofreading Team at https://www.pgdp.net
+(This file was produced from images generously made
+available by The Internet Archive/American Libraries.)
+
+
+Updated editions will replace the previous one--the old editions
+will be renamed.
+
+Creating the works from public domain print editions means that no
+one owns a United States copyright in these works, so the Foundation
+(and you!) can copy and distribute it in the United States without
+permission and without paying copyright royalties.  Special rules,
+set forth in the General Terms of Use part of this license, apply to
+copying and distributing Project Gutenberg-tm electronic works to
+protect the PROJECT GUTENBERG-tm concept and trademark.  Project
+Gutenberg is a registered trademark, and may not be used if you
+charge for the eBooks, unless you receive specific permission.  If you
+do not charge anything for copies of this eBook, complying with the
+rules is very easy.  You may use this eBook for nearly any purpose
+such as creation of derivative works, reports, performances and
+research.  They may be modified and printed and given away--you may do
+practically ANYTHING with public domain eBooks.  Redistribution is
+subject to the trademark license, especially commercial
+redistribution.
+
+
+
+*** START: FULL LICENSE ***
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full Project
+Gutenberg-tm License (available with this file or online at
+https://gutenberg.org/license).
+
+
+Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
+electronic works
+
+1.A.  By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement.  If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or destroy
+all copies of Project Gutenberg-tm electronic works in your possession.
+If you paid a fee for obtaining a copy of or access to a Project
+Gutenberg-tm electronic work and you do not agree to be bound by the
+terms of this agreement, you may obtain a refund from the person or
+entity to whom you paid the fee as set forth in paragraph 1.E.8.
+
+1.B.  "Project Gutenberg" is a registered trademark.  It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement.  There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement.  See
+paragraph 1.C below.  There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this agreement
+and help preserve free future access to Project Gutenberg-tm electronic
+works.  See paragraph 1.E below.
+
+1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
+or PGLAF), owns a compilation copyright in the collection of Project
+Gutenberg-tm electronic works.  Nearly all the individual works in the
+collection are in the public domain in the United States.  If an
+individual work is in the public domain in the United States and you are
+located in the United States, we do not claim a right to prevent you from
+copying, distributing, performing, displaying or creating derivative
+works based on the work as long as all references to Project Gutenberg
+are removed.  Of course, we hope that you will support the Project
+Gutenberg-tm mission of promoting free access to electronic works by
+freely sharing Project Gutenberg-tm works in compliance with the terms of
+this agreement for keeping the Project Gutenberg-tm name associated with
+the work.  You can easily comply with the terms of this agreement by
+keeping this work in the same format with its attached full Project
+Gutenberg-tm License when you share it without charge with others.
+
+1.D.  The copyright laws of the place where you are located also govern
+what you can do with this work.  Copyright laws in most countries are in
+a constant state of change.  If you are outside the United States, check
+the laws of your country in addition to the terms of this agreement
+before downloading, copying, displaying, performing, distributing or
+creating derivative works based on this work or any other Project
+Gutenberg-tm work.  The Foundation makes no representations concerning
+the copyright status of any work in any country outside the United
+States.
+
+1.E.  Unless you have removed all references to Project Gutenberg:
+
+1.E.1.  The following sentence, with active links to, or other immediate
+access to, the full Project Gutenberg-tm License must appear prominently
+whenever any copy of a Project Gutenberg-tm work (any work on which the
+phrase "Project Gutenberg" appears, or with which the phrase "Project
+Gutenberg" is associated) is accessed, displayed, performed, viewed,
+copied or distributed:
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
+from the public domain (does not contain a notice indicating that it is
+posted with permission of the copyright holder), the work can be copied
+and distributed to anyone in the United States without paying any fees
+or charges.  If you are redistributing or providing access to a work
+with the phrase "Project Gutenberg" associated with or appearing on the
+work, you must comply either with the requirements of paragraphs 1.E.1
+through 1.E.7 or obtain permission for the use of the work and the
+Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
+1.E.9.
+
+1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any additional
+terms imposed by the copyright holder.  Additional terms will be linked
+to the Project Gutenberg-tm License for all works posted with the
+permission of the copyright holder found at the beginning of this work.
+
+1.E.4.  Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5.  Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6.  You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including any
+word processing or hypertext form.  However, if you provide access to or
+distribute copies of a Project Gutenberg-tm work in a format other than
+"Plain Vanilla ASCII" or other format used in the official version
+posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
+you must, at no additional cost, fee or expense to the user, provide a
+copy, a means of exporting a copy, or a means of obtaining a copy upon
+request, of the work in its original "Plain Vanilla ASCII" or other
+form.  Any alternate format must include the full Project Gutenberg-tm
+License as specified in paragraph 1.E.1.
+
+1.E.7.  Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8.  You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works provided
+that
+
+- You pay a royalty fee of 20% of the gross profits you derive from
+     the use of Project Gutenberg-tm works calculated using the method
+     you already use to calculate your applicable taxes.  The fee is
+     owed to the owner of the Project Gutenberg-tm trademark, but he
+     has agreed to donate royalties under this paragraph to the
+     Project Gutenberg Literary Archive Foundation.  Royalty payments
+     must be paid within 60 days following each date on which you
+     prepare (or are legally required to prepare) your periodic tax
+     returns.  Royalty payments should be clearly marked as such and
+     sent to the Project Gutenberg Literary Archive Foundation at the
+     address specified in Section 4, "Information about donations to
+     the Project Gutenberg Literary Archive Foundation."
+
+- You provide a full refund of any money paid by a user who notifies
+     you in writing (or by e-mail) within 30 days of receipt that s/he
+     does not agree to the terms of the full Project Gutenberg-tm
+     License.  You must require such a user to return or
+     destroy all copies of the works possessed in a physical medium
+     and discontinue all use of and all access to other copies of
+     Project Gutenberg-tm works.
+
+- You provide, in accordance with paragraph 1.F.3, a full refund of any
+     money paid for a work or a replacement copy, if a defect in the
+     electronic work is discovered and reported to you within 90 days
+     of receipt of the work.
+
+- You comply with all other terms of this agreement for free
+     distribution of Project Gutenberg-tm works.
+
+1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
+electronic work or group of works on different terms than are set
+forth in this agreement, you must obtain permission in writing from
+both the Project Gutenberg Literary Archive Foundation and Michael
+Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
+Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1.  Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+public domain works in creating the Project Gutenberg-tm
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at https://www.pglaf.org.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Its 501(c)(3) letter is posted at
+https://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at https://pglaf.org
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit https://pglaf.org
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including including checks, online payments and credit card
+donations.  To donate, please visit: https://pglaf.org/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart was the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+
+Most people start at our Web site which has the main PG search facility:
+
+     https://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.

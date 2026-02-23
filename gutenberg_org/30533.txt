@@ -1,0 +1,1281 @@
+Project Gutenberg's Genera and Subgenera of Chipmunks, by John A. White
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: Genera and Subgenera of Chipmunks
+
+Author: John A. White
+
+Release Date: November 23, 2009 [EBook #30533]
+
+Language: English
+
+Character set encoding: ASCII
+
+*** START OF THIS PROJECT GUTENBERG EBOOK GENERA AND SUBGENERA OF CHIPMUNKS ***
+
+
+
+
+Produced by Chris Curnow, Joseph Cooper, Anne Storer and
+the Online Distributed Proofreading Team at
+http://www.pgdp.net
+
+
+
+
+
+
+ Genera and Subgenera of Chipmunks
+ BY
+ JOHN A. WHITE
+
+ University of Kansas Publications
+ Museum of Natural History
+
+ Volume 5, No. 32, pp. 543-561, 12 figures in text
+
+ December 1, 1953
+
+ University of Kansas
+ LAWRENCE
+ 1953
+
+
+
+
+ UNIVERSITY OF KANSAS PUBLICATIONS, MUSEUM OF NATURAL HISTORY
+
+ Editors: E. Raymond Hall, Chairman, A. Byron Leonard,
+ and Robert W. Wilson
+
+ Volume 5, No. 32, pp. 543-561, 12 figures in text
+
+ December 1, 1953
+
+ UNIVERSITY OF KANSAS
+ Lawrence, Kansas
+
+ PRINTED BY
+ FERD VOILAND, JR., STATE PRINTER
+ TOPEKA, KANSAS
+ 1953
+
+
+
+
+ Genera and Subgenera of Chipmunks
+ By
+ JOHN A. WHITE
+
+
+CONTENTS
+
+
+                                                      PAGE
+ Introduction                                          546
+ Historical                                            546
+ Methods, Materials, and Acknowledgments               547
+ Evaluation of Characters                              548
+   Characters in which the Subgenera _Eutamias_
+       and _Neotamias_ Agree, but Differ from the
+       Genus _Tamias_                                  548
+     Structure of the Malleus                          548
+     Structure of the Baculum                          549
+     Structure of the Hyoid Apparatus                  552
+     Presence or Absence of P3                         553
+     Length of Tail in Relation to Total Length        553
+     Color Pattern                                     554
+   Characters in which the Subgenus _Eutamias_
+       and the Genus _Tamias_ Agree, but Differ
+       from the Subgenus _Neotamias_                   554
+     Shape of the Infraorbital Foramen                 554
+     Width of the Postorbital Process at Base          554
+     Position of the Supraorbital Notch                554
+     Degree of Convergence of the Upper Tooth-rows     554
+     Degree of Constriction of the Interorbital Region 555
+     Shape of the Pinna                                555
+   Structural Features that are too Weakly Expressed
+     to be of Taxonomic Use                            555
+   Discussion                                          555
+ Genera and Subgenera                                  557
+   Genus _Eutamias_ Trouessart                         557
+     Subgenus _Eutamias_ Trouessart                    558
+     Subgenus _Neotamias_ Howell                       558
+   Genus _Tamias_ Illiger                              559
+ Discussion                                            559
+ Conclusions                                           560
+ Literature Cited                                      561
+
+
+ILLUSTRATIONS
+
+ Figs. 1-3. Dorsomedial Views of Malleus               549
+ Figs. 4-10. Lateral Views of Baculum                  551
+ Figs. 11-12. Ventral Views of Hyoid Apparatus         552
+
+
+
+
+INTRODUCTION
+
+
+The supraspecific categories of the chipmunks, as in most other groups
+of squirrels, have been a source of controversy for many years. Before
+presenting new evidence and a review of older evidence bearing on the
+problem, it seems desirable to review briefly in chronological order,
+the taxonomic history of the genera and subgenera of the chipmunks.
+
+
+HISTORICAL
+
+Linnaeus (1758:64) described the eastern North American chipmunks under
+the name _Sciurus striatus_ and based his description on that of Catesby
+(1743:75). The Asiatic chipmunk was first described, under the name
+_Sciurus sibiricus_, by Laxmann (1769:69). Schreber (1785, 4:790)
+separated the Asiatic and North American chipmunks into the Asiatic and
+American varieties. Gmelin (1788:50) followed Schreber and, employing
+trinomials, used the names _Sciurus striatus asiaticus_ and _S. s.
+americanus_. Illiger (1811:83) proposed _Tamias_ as the generic name of
+the chipmunk of eastern North America. Say (1823:45) described _Sciurus
+quadrivittatus_, the first species of chipmunk known from western North
+America.
+
+Trouessart (1880:86-87) proposed _Eutamias_ as the subgeneric name to
+include the western North American and Asiatic chipmunks.
+
+Merriam (1897:189-190) raised _Eutamias_ to full generic rank. In so
+doing he neither listed nor described any characters but wrote that "it
+will be observed that the name _Eutamias_, proposed by Trouessart in
+1880 as a subgenus of _Tamias_ is here adopted as a full genus. This is
+because of the conviction that the superficial resemblance between the
+two groups is accidental parallelism, in no way indicative of affinity.
+In fact the two groups, if my notion of their relationship is correct,
+had different ancestors, _Tamias_ being an offshoot of the
+ground-squirrels of the subgenus _Ictidomys_ of Allen, and _Eutamias_
+of the subgenus _Ammospermophilus_, Merriam."
+
+Howell (1929:23) proposed _Neotamias_ as the subgeneric name for the
+chipmunks of western North America, of the genus _Eutamias_.
+
+Ellerman (1940, 1:426) gave _Eutamias_ and _Neotamias_ equal subgeneric
+rank with _Tamias_ under the genus _Tamias_; on pages 427-428 he quoted
+Merriam, as I have done above, and later, after quoting the key to the
+genera and subgenera of chipmunks of Howell (1929:11), Ellerman wrote
+(_op. cit._: 428-429), "This key convinces me that all these forms
+must be referred to one genus only. The characters given to separate
+'_Eutamias_' from _Tamias_ are based only on the absence or presence of
+the functionless premolar, and on the colour pattern. If colour pattern
+is to be used as a generic character, it seems _Citellus suslicus_ will
+require a new name when compared with _C. citellus_, etc." And again,
+"The Asiatic chipmunk is intermediate between typical _Tamias_ and the
+small American forms in many characters." To substantiate this, Ellerman
+(_loc. cit._) quotes Howell (_loc. cit._), in comparing the subgenera
+_Eutamias_ and _Neotamias_, as follows: "'the ears [of subgenus
+_Eutamias_] are broad, rounded, of medium height, much as in _Tamias_;
+postorbital broad at base, tapering to a point, much as in _Tamias_;
+interorbital constriction slight, as in _Tamias_; upper molariform tooth
+rows slightly convergent posteriorly, as in _Tamias_.'" Ellerman (_loc.
+cit._) again quotes Howell (_loc. cit._), "'_Eutamias_ of Asia resembles
+_Tamias_ of North America and differs from American _Eutamias_ in a
+number of characters, notably the shape of the anteorbital foramen,
+the postorbital process, the breadth of the interorbital region, the
+development of the lambdoidal crest, and the shape of the external ears.
+On the other hand, American _Eutamias_ agrees with the Asiatic members
+of the genus in the shape of the rostrum, the well-defined striations of
+the upper incisors, the presence of the extra peg-like premolar, and in
+the pattern of the dorsal stripes.'"
+
+Bryant (1945:372) wrote, "I am convinced that Ellerman's interpretation
+of the relationships of the chipmunks is correct." After commenting
+that the presence or absence of P3, "is of significance only in
+distinguishing between species of squirrels," Bryant adds that "The
+other differences between the eastern and the western chipmunks do not
+appear to be of sufficient phylogenetic importance to warrant the
+retention of the two groups as genera."
+
+
+METHODS, MATERIALS, AND ACKNOWLEDGMENTS
+
+     Characters previously mentioned in the literature as having
+     taxonomic worth for supraspecific categories of chipmunks were
+     checked by me on specimens old enough to have worn permanent
+     premolars. Some structural features not previously used were
+     found to have taxonomic significance. The baculum in each of
+     the supraspecific categories of sciurids of North America was
+     examined; the bacula were processed by the method described by
+     White (1951:125) to obviate "variation" caused by shriveling of
+     the smaller bacula or breaking of the more delicate parts of
+     the larger bacula. Mallei and hyoid bones of the genera and
+     subgenera of the chipmunks were mostly studied in the dry
+     state. Part of the hyoid musculature in these same groups of
+     chipmunks was dissected.
+
+     In all, I studied more than 1,000 skulls and skins of the
+     subgenus _Neotamias_, approximately 50 skulls and skins of
+     _Tamias striatus_, and 15 skulls and skins of the subgenus
+     _Eutamias_ (_Eutamias sibiricus asiaticus_ from Manchuria).
+     Numerous other specimens were examined but not in such detail.
+
+     I am grateful to Professor E. Raymond Hall for guidance in
+     the study. For encouragement and advice I am grateful also
+     to Doctors Robert W. Wilson, Cecil G. Lalicker, Edwin C.
+     Galbreath, Keith R. Kelson, E. Lendell Cockrum, Olin L. Webb,
+     and others at the Museum of Natural History, and in the
+     Department of Zoology of the University of Kansas. My wife,
+     Alice M. White, made the drawings and helped me in many other
+     ways. For lending specimens I thank Dr. David H. Johnson of the
+     United States National Museum, and Dr. George C. Rinker of the
+     Department of Anatomy, University of Michigan.
+
+     Assistance with field work is acknowledged from the Kansas
+     University Endowment Association, the National Science
+     Foundation, and the United States Navy, Office of Naval
+     Research, through contract No. NR161 791.
+
+
+EVALUATION OF CHARACTERS
+
+The following paragraphs treat the characters listed by Howell,
+Ellerman, and Bryant, and such additional characters as I have found
+useful in characterizing the genera and subgenera of chipmunks. Some of
+the findings, I think, illustrate how study of such mammalian structures
+as the baculum, malleus, and hyoid apparatus--structures that seem to
+be little influenced by the changing external environment--clarifies
+relationships, if these previously were estimated only from other parts
+of the anatomy of Recent specimens.
+
+The structural features and characters to be discussed, or listed, below
+may be arranged in three categories as follows: 1) Characters in which
+the subgenera _Eutamias_ and _Neotamias_ agree but are different from
+the genus _Tamias_; 2) Characters in which the subgenus _Eutamias_
+and the genus _Tamias_ agree but are different from the subgenus
+_Neotamias_; 3) Structural features that are too weakly expressed to
+be of taxonomic use.
+
+
+CHARACTERS IN WHICH THE SUBGENERA EUTAMIAS AND NEOTAMIAS AGREE, BUT
+DIFFER FROM THE GENUS TAMIAS
+
+_Structure of the Malleus._--The malleus in chipmunks is composed of
+a head and neck, a manubrium which has a spatulate process at the end
+opposite the head, and a muscular process situated about halfway between
+the spatulate process and the head of the malleus. An articular facet
+begins on the manubrium near the neck and spirals halfway around the
+head of the malleus. A lamina extends from the anterior edge of the head
+and neck, tapers to a point and joins the tympanic bulla anteriorly
+where there is a suture between the lamina and bulla. The lamina is one
+half as long as the rest of the malleus (see figs. 1-3).
+
+The head of the malleus in _Tamias_ is clearly more elongated than in
+_Eutamias_. The plane formed by the lamina in _Eutamias_ makes an angle
+of approximately 90 degrees with the plane formed by the manubrium; in
+_Tamias_ the two planes make an angle of approximately 60 degrees.
+
+Examination of series of mallei of _Eutamias_ and _Tamias_ indicate that
+there is slight individual variation, slight variation with age, and no
+secondary sexual variation. Intraspecific variation in the subgenus
+_Neotamias_ is slight, consisting of differences in size. Specimens
+of the subgenus _Eutamias_ from Manchuria have mallei which are
+morphologically close to the mallei of the subgenus _Neotamias_.
+
+ [Illustration: FIGS. 1-3. Dorsomedial views of left malleus.
+
+ FIG. 1. _Tamias striatus lysteri_, No. 11920 sex?;
+ from Carroll Co., New Hampshire.
+
+ FIG. 2. _Eutamias sibiricus asiaticus_, No. 199637 male NM;
+ from I-mien-po, N. Kirin, Manchuria.
+
+ FIG. 3. _Eutamias townsendii senex_, No. 165 male;
+ from Lake Tahoe, California.]
+
+_Structure of the Baculum._--In discussing the baculum in _Eutamias_ and
+_Tamias_, it seems desirable to do so in the light of the structure of
+the baculum in other sciurids.
+
+The bacula of North American sciurids are divisible into six distinct
+types represented by those of the genera _Spermophilus_, _Marmota_,
+_Sciurus_, _Tamiasciurus_, _Eutamias_, and _Glaucomys_.
+
+The type of baculum in _Spermophilus_ is spoonshaped with a ventral
+process that is spinelike or keellike. Also, spines usually are present
+along the margin of the "spoon." The base (proximal end) of the baculum
+is broad, and some species have a winglike process extending dorsally
+and partly covering a longitudinal groove. The shaft is more or less
+curved downward in the middle (see figs. 7, 10).
+
+In _Marmota_ the baculum is greatly enlarged at the posterior end and
+forms a shieldlike surface. The ventral surface of the base is flattened
+and the ventral surface of the shaft curves slightly ventrally then
+dorsally to the tip. The dorsal region of the base culminates in a
+point, from which there is a ridge that extends anteriorly and that
+tapers rapidly into the shaft near the tip. The tip, dorsally, has a
+slight depression surrounded by knobs, which are more or less well
+defined, and which resemble, topographically, the spines described for
+_Spermophilus_ (see fig. 8).
+
+In _Sciurus_ the baculum is semispoonshaped and asymmetrical. There
+is a winglike process on one side and a spine, which projects
+lateroventrally, on the other side of the tip. The base of the baculum
+is broad but not so broad as in most species of _Spermophilus_.
+Extending posteriorly from the region of the tip, at which point a
+spine projects lateroventrally, there is a ridge, which is often
+partly ossified and that extends to a point near the base (see fig. 4).
+
+In _Tamiasciurus_ the baculum is absent or vestigial (Layne,
+1952:457-459).
+
+In _Eutamias_ the baculum is broad at the base and the shaft tapers
+distally to the junction of the shaft and tip, or the base is only
+slightly wider than any part of the shaft. The tip often forms an abrupt
+angle with the shaft and there is a keel on the dorsal surface of the
+tip (see figs. 5, 6).
+
+The baculum in _Glaucomys_ is the most distinctive of that of any
+American sciurid. According to Pocock (1923:243-244), "The baculum [of
+_G. volans_] is exceedingly long and slender, slightly sinuous in its
+proximal third, and inclined slightly upwards distally. The extreme apex
+is bifid, the lower process being rounded, the upper more pointed. On
+the left side there is a long crest running from the summit of the
+upper terminal process and ending abruptly behind the left side about
+one-third of the distance from the proximal end of the bone. It lies
+over a well-marked groove, and there is a second shallower groove on the
+right side of the bone." The baculum of _G. sabrinus_ is markedly wider,
+more flattened and shorter than in _G. volans_. The crest, which is also
+present in _G. volans_, starts from the upper terminal process and
+extends to the base of the baculum on the left side. There is a knoblike
+process on the crest at a point three fourths the length of the baculum
+from its base. The distal one third of the baculum curves sharply but
+smoothly upwards (see fig. 9).
+
+Keeping in mind that the baculum in the North American sciurids can be
+classified into six structural groups, as given above, the baculum in
+each of the subgenera _Eutamias_ and _Neotamias_ and in the genus
+_Tamias_ is briefly described.
+
+In the subgenus _Neotamias_ the baculum resembles a leg and foot of man,
+with a narrow ridge (keel) in the center of the "instep" of the foot
+(Howell 1929:27). The tip (=foot) curves dorsally at the distal end
+(see figs. 5, 6).
+
+ [Illustration: FIGS. 4-10. Lateral views of right side
+ (except left-lateral view in fig. 9) of baculum.
+
+ FIG. 4. _Sciurus aureogaster aureogaster_,
+ No. 37000; from 70 km. S C. Victoria (by highway), and 6 km. W of
+ highway, Tamaulipas.
+
+ FIG. 5. _Eutamias quadrimaculatus_, No. 95780 BS;
+ from Mountains near Quincy, Plumas Co., California.
+
+ FIG. 6. _Eutamias sibiricus asiaticus_, No. 199632 NM;
+ from 120 mi. up the Yalu River, Korea.
+
+ FIG. 7. _Tamias striatus lysteri_, No. 193493 NM;
+ from Locust Grove, New York.
+
+ FIG. 8. _Marmota flaviventer dacota_, No. 41641;
+ from 1-1/2 mi. E Buckhorn, 6,150 ft., Weston Co., Wyoming.
+
+ FIG. 9. _Glaucomys sabrinus bangsi_, No. 15079;
+ from 10 mi. NE Pinedale, 8,000 ft., Sublette Co., Wyoming.
+
+ FIG. 10. _Spermophilus armatus_, No. 14888;
+ from W end Half Moon Lake, 7,900 ft., Sublette Co., Wyoming.]
+
+In the subgenus _Eutamias_, the baculum "tapers gradually from base
+to tip, the distal portion upturned in an even curve and slightly
+flattened ..." (_op. cit._:26). Microscopic examination reveals that
+there is a faint keel on the dorsal surface of the tip.
+
+_Eutamias_, like _Callosciurus_, _Menetes_, _Dremomys_, _Lariscus_,
+_Rhinosciurus_, and _Nannosciurus_, has a keel on the dorsal surface of
+the tip of the baculum (compare figures 5 and 6 with the descriptions
+and figures in Pocock, 1923:217-225).
+
+In _Tamias_ the baculum is "a slender bone 4.5-5 millimeters in length,
+nearly straight, upturned at the tip and slightly expanded into the
+shape of a narrow spoon or scoop, with a slight median ridge on the
+under surface." (Howell _op. cit._:13.) The "median ridge" is a keel on
+the ventral surface. In having a keel on the ventral surface of the tip,
+the baculum of _Tamias_ is comparable to that of _Spermophilus_.
+
+Examination of series of bacula of the subgenus _Neotamias_ and the
+genus _Tamias_ indicates, as in the case of the mallei, that there is
+slight individual variation and slight variation with age. In the
+subgenus _Neotamias_ interspecific variation in the baculum is
+considerable, but the general plan of structure remains constant. From
+this study of variation of the baculum in American chipmunks, it can be
+extrapolated that the baculum in the Asiatic _Eutamias_ would show
+little individual variation in structure. I have seen only two bacula
+of the Asiatic _Eutamias_.
+
+ [Illustration:
+ FIGS. 11-12. Ventral views of the hyoid apparatus in
+ _Tamias_ and _Eutamias_.
+
+ FIG. 11. _Tamias striatus venustus_, No. 11072 female;
+ from Winslow, Washington Co., Arkansas.
+
+ FIG. 12. _Eutamias minimus operarius_, No. 5376 male;
+ from 14 mi. N El Rito, Rio Arriba Co., New Mexico.]
+
+_Structure of the Hyoid Apparatus._--The hyoid apparatus in the
+chipmunks is made up of an arched basihyal with a thyrohyal attached to
+each limb of this "arch." To each junction between the "arch" and the
+thyrohyals, a hypohyal is attached by ligaments to a flat articular
+surface. A ceratohyal then is attached posteriorly to the hypohyal and
+a stylohyal ligament is attached to each ceratohyal posteriorly. The
+stylohyal is loosely attached along its sides to the tympanic bulla and
+finally attached, at the posterior end, to the bulla at a point slightly
+ventral and posterior to the auditory meatus.
+
+In the genus _Eutamias_ the hypohyal and ceratohyal are completely fused
+in adults, the suture between these two bones being visible in juvenal
+specimens (see fig. 12).
+
+In the genus _Tamias_ the hypohyal and ceratohyal remain distinct
+throughout life. The hypohyal may frequently be divided into two parts,
+a variation which is also present in _Marmota_.
+
+The musculature associated with the hyoid apparatus in _Eutamias_ and
+_Tamias_ is as described by Bryant (1945:310, 316) for the Nearctic
+squirrels. However, the conjoining tendon of the anterior and posterior
+pairs of digastric muscles is ribbonlike in _Eutamias_ and rodlike
+(rounded in cross section) in _Tamias_.
+
+_The presence or absence of P3 and the projection of the anterior root
+of P4 in relation to the masseteric knob._--Only rarely is P3 absent
+in _Eutamias_ or present in _Tamias_. P3 in specimens of old adult
+_Eutamias_, shows wear, thus suggesting that P3 is functional in older
+chipmunks. In _Eutamias_, which normally has a P3, the anterior root of
+P4 projects to the outside of the masseteric knob, whereas in _Tamias_,
+which normally lacks a P3, the anterior root of P4 projects directly
+to the masseteric knob or to the lingual side of this structure. The
+projection of the anterior root of P4 seems to be correlated with the
+presence or absence of P3. However, in a specimen of _Tamias striatus
+rufescens_ (No. 11117 KU), the left P3 is present, yet the anterior
+root of P4 still projects to the lingual side of the masseteric knob.
+
+Ellerman (1940:48) and Bryant (1945:368-369, 372) think that the
+presence or absence of P3 is not of generic significance in chipmunks,
+since P3 is vestigial and probably is in the process of being lost, and
+since this character is rarely used as a generic character in other
+sciurids. I think that the presence or absence of P3, together with the
+projection of the anterior root of P4 in relation to the masseteric
+knob, is of generic significance, for, squirrels in general have
+retained the dentition and dental formula of a primitive rodent, and
+any change in the pattern of the teeth or in dental formula is, in my
+opinion, of a fundamental nature.
+
+_Length of tail in relation to total length._--The tail in _Eutamias_ is
+more than 40 per cent of the total length, whereas in _Tamias_ the tail
+is less than 38 per cent of the total length. In this respect _Tamias_
+resembles most ground squirrels of the genus _Spermophilus_.
+
+_Color pattern._--The chipmunks vary but little in color pattern, for,
+even in _Eutamias dorsalis_, which is one of the most aberrant of the
+chipmunks in color pattern, the pattern is characteristic of _Eutamias_.
+
+The width of the longitudinal stripes is uniform in _Eutamias_ whereas
+in _Tamias_ the dorsal, longitudinal light stripes are more than twice
+as wide as the other stripes.
+
+In _Eutamias_, only the two lateralmost dark stripes are short, whereas
+in _Tamias_ all four of the lateral dark stripes are short; none extends
+to the rump or to the shoulder.
+
+The dark median stripe is present in both _Eutamias_ and _Tamias_ as
+well as in other genera such as _Callosciurus_ and _Menetes_ (Ellerman
+1940:390).
+
+
+CHARACTERS IN WHICH THE SUBGENUS EUTAMIAS AND THE GENUS TAMIAS AGREE,
+BUT DIFFER FROM THE SUBGENUS NEOTAMIAS
+
+_Shape of the infraorbital foramen._--In the subgenus _Eutamias_ and
+in the genus _Tamias_ the infraorbital foramen is rounded, whereas in
+most species of the subgenus _Neotamias_ the foramen is slitlike. In
+_Eutamias townsendii_, however, the infraorbital foramen is rounded
+as much as in the subgenus _Eutamias_ and in the genus _Tamias_.
+
+_Width of the postorbital process at base._--The postorbital process is
+broader at the base in the subgenus _Eutamias_ and in the genus _Tamias_
+than in most species of the subgenus _Neotamias_. In _E. townsendii_,
+however, this process is relatively as broad as in the subgenus
+_Eutamias_ and in the genus _Tamias_.
+
+_Position of the supraorbital notch in relation to the posterior notch
+of the zygomatic plate._--In the subgenus _Eutamias_ and in the genus
+_Tamias_ the supraorbital notch is distinctly anterior to the posterior
+notch of the zygomatic plate, whereas in the subgenus _Neotamias_, the
+supraorbital notch is only slightly anterior to the posterior notch of
+the zygomatic plate. This difference may be correlated with differences
+in size, since specimens of the subgenus _Eutamias_ and the genus
+_Tamias_ are larger than specimens of the subgenus _Neotamias_.
+
+_Degree of convergence of the upper tooth-rows._--The rows of upper
+cheek-teeth converge posteriorly in the subgenus _Eutamias_ and in
+the genus _Tamias_, except that in some specimens of _E. sibiricus
+asiaticus_ the rows of upper cheek-teeth are nearly parallel to each
+other. In most species of the subgenus _Neotamias_ the rows of upper
+cheek-teeth are nearly parallel to each other, although in the specimens
+that I have seen of _E. townsendii_, the upper rows of cheek-teeth
+converge posteriorly.
+
+_Degree of constriction of the interorbital region._--The interorbital
+region is more constricted in most species of the subgenus _Neotamias_
+than in the subgenus _Eutamias_ and the genus _Tamias_. In specimens of
+_E. t. townsendii_ of the subgenus _Neotamias_, however, the degree of
+constriction of the interorbital region is approximately the same as in
+the subgenus _Eutamias_ and the genus _Tamias_.
+
+_Shape of the pinna._--The pinna is narrower and more pointed in the
+subgenus _Neotamias_ than in the subgenus _Eutamias_ and the genus
+_Tamias_.
+
+
+STRUCTURAL FEATURES THAT ARE TOO WEAKLY EXPRESSED TO BE OF TAXONOMIC USE
+
+The following alleged characters have been mentioned in the literature.
+Since the degree of expression of these features is so slight, or
+since there is marked variation within one or more natural groups of
+chipmunks, no reliance is here placed on these features. They are as
+follows: (1) Degree of the posterior projection of the palate; (2)
+relative size of the auditory bullae; (3) position, in relation to P4,
+of the notch in the posterior edge of the zygomatic plate; (4) size of
+m3 in relation to m2; (5) degree of development of the mesoconid and
+ectolophid of the lower molars; (6) shape and length of the rostrum;
+(7) degree of distinctness of minute longitudinal grooves on the upper
+incisors.
+
+A variation that does not readily fall in any one of the three
+categories mentioned above is the degree of development of the
+lambdoidal crest. The crest is least developed in the subgenus
+_Neotamias_ and most developed in the genus _Tamias_. The larger the
+skull, the more the lambdoidal crest is developed; seemingly, therefore,
+the degree of development is an expression of size of the skull and may
+be determined by heterogonic growth.
+
+
+DISCUSSION
+
+As shown in table 1, there are ten characters by means of which
+_Eutamias_ and _Tamias_ can be separated consistently. The subgenus
+_Eutamias_ occurs on the Asiatic side and the subgenus _Neotamias_
+occurs on the North American side of Bering Strait, yet the two
+subgenera agree in the ten features referred to. Although the subgenus
+_Neotamias_ and the genus _Tamias_ occur together in parts of the United
+States and Canada, they differ in the ten features, indicating that the
+subgenera _Eutamias_ and _Neotamias_ are more closely related to each
+other than either is to _Tamias_.
+
+TABLE 1.--CHARACTERS BY MEANS OF WHICH THE GENERA EUTAMIAS AND TAMIAS
+CAN BE DISTINGUISHED
+
+=======================================================================
+            Character                |   _Eutamias_   |   _Tamias_
+-------------------------------------+----------------+----------------
+Shape of head of malleus.            | not elongated. | elongated.
+-------------------------------------+----------------+----------------
+Angle formed by planes of lamina and | approximately  | approximately
+manubrium of malleus.                | 90 degrees.    | 60 degrees.
+-------------------------------------+----------------+----------------
+Position of keel on tip of baculum.  | dorsal.        | ventral.
+-------------------------------------+----------------+----------------
+Relation of hypohyal and ceratohyal  | fused in       | never fused.
+bones of hyoid apparatus.            | adults.        |
+-------------------------------------+----------------+----------------
+Appearance in cross section of       | flattened.     | rounded.
+conjoining tendon of anterior and    |                |
+posterior digastric muscles.         |                |
+-------------------------------------+----------------+----------------
+Presence or absence of P3.           | present.       | absent.
+-------------------------------------+----------------+----------------
+Projection of anterior root of P4 in | buccal.        | lingual.
+relation to masseteric knob.         |                |
+-------------------------------------+----------------+----------------
+Length of tail in relation to total  | more than      | less than
+length.                              | 40 per cent.   | 38 per cent.
+-------------------------------------+----------------+----------------
+Width of longitudinal stripes.       | subequal.      | median pair of
+                                     |                | light stripes
+                                     |                | twice as wide
+                                     |                | as others.
+-------------------------------------+----------------+----------------
+Length of lateral longitudinal light | outermost      | both pairs
+stripes.                             | pair short.    | short.
+-----------------------------------------------------------------------
+
+It must be pointed out here that the subgenus _Neotamias_ always differs
+from both the subgenus _Eutamias_ and the genus _Tamias_ in pointed
+_versus_ rounded pinna of ear (see table 2) and in the supraorbital
+notch being slightly posterior to or even with, instead of distinctly
+anterior to, the posterior notch of the zygomatic plate. The relative
+position of these two notches, however, seems to be a matter of relative
+(heterogonic) growth. Further, the base of the postorbital process of
+the frontal usually is narrower (relative to the length of the process)
+in the subgenus _Neotamias_ but there is a gradation in this feature in
+_Neotamias_ culminating in the species _E. townsendii_ in which the
+bases of the processes are relatively as broad as in the subgenus
+_Eutamias_ and the genus _Tamias_. The same condition obtains in the
+shape of the infraorbital foramen which is subovate to rounded in the
+subgenus _Neotamias_ and always rounded in the other chipmunks.
+
+TABLE 2.--CHARACTERS BY MEANS OF WHICH THE SUBGENUS EUTAMIAS AND THE
+GENUS TAMIAS MAY BE DISTINGUISHED FROM THE SUBGENUS NEOTAMIAS
+
+========================================================================
+        Character              | subgenus     | subgenus    | genus
+                               | _Neotamias_  | _Eutamias_  | _Tamias_
+-------------------------------+--------------+-------------+-----------
+Shape of infraorbital foramen. | subovate to  | always      | always
+                               | rounded.     | rounded.    | rounded.
+-------------------------------+--------------+-------------+-----------
+Relative width of the          | narrow to    |             |
+postorbital process at base.   | broad.       | broad.      | broad.
+-------------------------------+--------------+-------------+-----------
+Position of supraorbital notch | even with or |             |
+in relation to posterior       | slightly     | anterior.   | anterior.
+notch of zygomatic plate.      | posterior.   |             |
+-------------------------------+--------------+-------------+-----------
+Convergence, posteriorly,      | not always.  | not always. | always.
+of upper tooth-rows.           |              |             |
+-------------------------------+--------------+-------------+-----------
+Degree of constriction of      | slight       | marked.     | marked.
+interorbital region.           | to marked.   |             |
+-------------------------------+--------------+-------------+-----------
+Shape of pinna.                | long and     | broad and   | broad and
+                               | pointed.     | rounded.    | rounded.
+------------------------------------------------------------------------
+
+These differences of _Neotamias_ are so slight in comparison with the
+similarities (ten features mentioned above) that _Neotamias_ here is
+accorded only subgeneric rank under the genus _Eutamias_, instead of
+generic rank.
+
+Howell's (1929) arrangement of the genera and subgenera of chipmunks is
+judged to be correct as indicated by the following arrangement that I
+propose.
+
+
+GENERA AND SUBGENERA
+
+Genus #Eutamias# Trouessart
+
+ _Eutamias_ Trouessart, E. L. Catal. Mamm. viv. et foss., Rodentia,
+   in Bull. Soc. d'Etudes Sci. d'Angers, 10:86-87, 1880. Type
+   _Sciurus striatus asiaticus_ Gmelin.
+
+ _Eutamias_, Merriam, C. H., Proc. Biol. Soc. Washington,
+   11:189-190, July 1, 1897.
+
+ _Eutamias_, Howell, A. H., N. Amer. Fauna, 52:26, November 30, 1929.
+
+ _Tamias_, Ellerman, J. R., The families and genera of living rodents.
+   British Mus. (Nat. Hist.), 1:426, June 8, 1940.
+
+ _Tamias_, Bryant, M. D., Amer. Midland Nat., 33:732, March 1945.
+
+_Diagnosis._--Skull lightly built, narrow; postorbital process light
+and weak; lacrimal not elongated; infraorbital foramen lacks canal,
+relatively larger than in most sciurids; P3 present; head of malleus not
+elongated; plane of manubrium of malleus 90 degrees to plane of lamina;
+hypohyal and ceratohyal bones of hyoid apparatus fused in adults;
+conjoining tendon between anterior and posterior sets of digastric
+muscles ribbonlike; keel on dorsal side of tip of baculum; tail more
+than 40 per cent of total length; five longitudinal dark stripes evenly
+spaced and subequal in width; two lateral dark stripes short.
+
+
+
+Subgenus #Eutamias# Trouessart
+
+ _Eutamias_ Trouessart, E. L. Catal. Mamm. viv. et foss., Rodentia, in
+   Bull. Soc. d'Etudes Sci. d'Angers 10:86-87, 1880. Type _Sciurus
+   striatus asiaticus_ Gmelin.
+
+ _Eutamias_, Howell, A. H., N. Amer. Fauna, 52:26, November 30, 1929.
+
+ _Eutamias_, Ellerman, J. R., The families and genera of living rodents.
+   British Mus. (Nat. Hist.), 1:426, June 8, 1940.
+
+ _Eutamias_, Bryant, M. D., Amer. Midland Nat. 33:732, March 1945.
+
+_Diagnosis._--Size large; lambdoidal crest moderately developed;
+supraorbital notches distinctly anterior to posterior notch of zygomatic
+plate; baculum with faint keel on dorsal surface of tip which curves
+upward; pelage coarse; ears broad, rounded, of medium height.
+
+_Geographic range._--Palearctic. West to Dvina and Kama rivers, Vologda,
+and Kazan, in European Russia. South to southern Ural Mountains, Altai
+Mountains; Kansu, Szechwan, Shensi, Shansi, and Chihli provinces of
+China; Manchuria and Korea. East to Hokkaido Island, Japan; Kunashiri
+Island, southern Kurile Islands; Sakhalin Island, and Yakutsk, Siberia.
+North nearly to Arctic Coast in Siberia and European Russia (Ellerman
+and Morrison-Scott 1951:503).
+
+
+
+Subgenus #Neotamias# Howell
+
+ _Neotamias_ Howell, A. H., N. Amer. Fauna, 52:26, November 30, 1929.
+   Type, _Eutamias merriami_ J. A. Allen [=_Tamias asiaticus merriami_
+   J. A. Allen].
+
+ _Neotamias_, Ellerman, J. R., The families and genera of living rodents.
+   British Mus. (Nat. Hist.), 1:426, June 8, 1940.
+
+ _Neotamias_, Bryant, M. D., Amer. Midland Nat., 33:372, March, 1945.
+
+_Diagnosis._--Size small to medium; lambdoidal crest barely discernible;
+supraorbital notches even with, or posterior to, posterior notch of
+zygomatic plate; baculum with distinct keel on dorsal surface of tip
+which curves upward; pelage silky; ears long and pointed.
+
+_Geographic range._--Western Nearctic. West to Pacific Coast. South
+to Lat. 20 deg.30' in Baja California and to northwestern Durango and
+southeastern Coahuila, Mexico. East to eastern New Mexico, westernmost
+Oklahoma, eastern Colorado, Wyoming, northwestern Nebraska, western
+and northwestern South Dakota, western and northwestern North Dakota,
+northeastern Minnesota, northern Wisconsin and Upper Peninsula of
+Michigan, and eastern Ontario. North to southwestern shore of Hudson
+Bay, southern shore of Great Slave Lake and Yukon River, Yukon.
+
+
+
+Genus #Tamias# Illiger
+
+ _Tamias_ Illiger, J. K. W., Prodromus Syst. Mam. Avium, pp. 83, 1811.
+   Type, _Sciurus striatus_ Linnaeus.
+
+ _Tamias_, Howell, A. H., N. Amer. Fauna, 52:26, November 30, 1929.
+
+ _Tamias_, Ellerman, J. R., The families and genera of living rodents.
+   British Mus. (Nat. Hist.), 1:426, June 8, 1940.
+
+ _Tamias_, Bryant, M. D., Amer. Midland Nat. 33:372, March, 1945.
+
+_Diagnosis._--Skull lightly built, narrow; postorbital process small
+and weak; lacrimal not elongated; infraorbital foramen lacks canal,
+relatively larger than in most sciurids; P3 absent; head of malleus
+elongated; plane of manubrium of malleus forms 60 degree angle with
+plane of lamina; hypohyal and ceratohyal bones of hyoid apparatus fused
+in adults; conjoining tendon of anterior and posterior digastric muscles
+rounded in cross section; keel on ventral surface of tip which curves
+upward in baculum; tail less than 38 per cent of total length; five
+longitudinal dark and four longitudinal light stripes present but two
+dorsal light stripes at least twice as broad as other stripes; four
+lateral dark stripes short.
+
+_Geographic range._--Eastern Nearctic. West to Turtle Mountains, North
+Dakota; eastern North Dakota, eastern South Dakota, Nebraska, Kansas,
+and Oklahoma. South to southern Louisiana, Mississippi, Alabama,
+northwestern Georgia. East to Atlantic Coast from South Carolina to Nova
+Scotia. North to northeastern Quebec and southern tip of Hudson Bay.
+
+
+DISCUSSION
+
+Chipmunks are small striped squirrels that inhabit the Holarctic Realm
+and that are found in similar niches in each of the three regions:
+Palearctic, western Nearctic, and eastern Nearctic. Ellerman (1940) and
+Bryant (1945) placed the chipmunks in three subgenera, corresponding to
+the regions mentioned above, under the one genus _Tamias_. Critical
+examination of new and old evidence reveals, nevertheless, that the
+subgenera _Eutamias_ and _Neotamias_ of the genus _Eutamias_ are more
+closely related to one another than either is to the genus _Tamias_.
+This relationship can be seen clearly in the structure of the malleus,
+baculum, hyoid apparatus, hyoid musculature, the presence or absence of
+P3, the projection of the anterior root of P4 in relation to the
+masseteric knob, and in the color pattern.
+
+Because the genera _Eutamias_ and _Tamias_ occupy similar ecological
+niches, the structural similarities that permit these animals to be
+called chipmunks, show convergence, and thus can be assumed to be
+adaptive. These similarities are in the molars, in shape of the skull,
+in color pattern and in other features which have been used by many
+systematists to interpret the phylogenetic relationships of the
+squirrels. Pocock (1923:211), however, reviewed the taxonomic literature
+on sciurids and wrote: "The conclusion very forcibly suggested by the
+literature of the subject is the untrustworthiness of such characters."
+Pocock (_op. cit._), correctly in my opinion, then established a
+supraspecific classification of the sciurids based almost exclusively
+on the structure of the baculum and glans penis. I have studied the
+baculum in chipmunks and in all the major supraspecific groups of
+Nearctic squirrels. The bacula of the Nearctic squirrels and those
+of the Palearctic and Indian squirrels, other than the chipmunks, are
+described and figured by Pocock (_op. cit._).
+
+The baculum in _Eutamias_, in general plan of structure, resembles
+the baculum in the genera _Callosciurus_, _Menetes_, _Rhinosciurus_,
+_Lariscus_, _Dremomys_, and _Nannosciurus_, of the tribe Callosciurini
+Simpson. The baculum in _Tamias_, in general plan of structure,
+resembles that in _Spermophilus_ (=_Citellus_) and _Cynomys_ of the
+tribe Marmotini Simpson. These tribes, designated by Simpson (1945:79),
+are based on the corresponding subfamilies defined by Pocock
+(1923:239-240) primarily on differences in the structure of the baculum.
+I assign _Tamias_ to the tribe Marmotini. I assign _Eutamias_ to the
+tribe Callosciurini, but do so only tentatively because I have not, at
+first hand, studied the bacula of most of the Callosciurini. The fossil
+record is too incomplete to reveal the time when the two tribes
+diverged. The subgenera _Eutamias_ and _Neotamias_ are closely related.
+Indications are that the divergence of the two subgenera occurred,
+geologically, but a short time ago, possibly in Pleistocene time.
+
+
+CONCLUSIONS
+
+1. _Eutamias_ and _Tamias_ are distinct genera of chipmunks.
+
+2. The subgenera _Eutamias_ and _Neotamias_ are valid, for, _Eutamias
+sibiricus_ differs from all the species of the subgenus _Neotamias_ to a
+greater degree than these species differ from one another.
+
+3. The genera _Eutamias_ and _Tamias_ probably evolved from two distinct
+lines of sciurids; one line (_Eutamias_) is represented by the tribe
+Callosciurini, and the other (_Tamias_) by the tribe Marmotini.
+
+
+LITERATURE CITED
+
+ CATESBY, M.
+ 1743. The natural history of Carolina, Florida, and the Bahama Islands,
+       etc., 2:i-xliv, 1-20, 1-100.
+
+ ELLERMAN, J. R.
+ 1940. The families and genera of living rodents. British Mus. (Nat.
+       Hist.), Vol. 1, pp. xxvi + 689, 189 figs., June 8.
+
+ ELLERMAN, J. R., and T. C. S. MORRISON-SCOTT.
+ 1951. Checklist of Palearctic and Indian mammals. British Mus. (Nat.
+       Hist.), pp. 1-810, 1 map, November 30.
+
+ GMELIN, J. F.
+ 1788. Systema Naturae. 1:1-500.
+
+ HOWELL, A. H.
+ 1929. Revision of the American chipmunks (genera _Tamias_ and _Eutamias_).
+       N. Amer. Fauna 52:1-157, 10 pls., 9 maps, November 30.
+
+ ILLIGER, J. K. W.
+ 1811. Prodromus systematis mammalium et avium additis terminis
+       zoographicis utriuque classis, pp. xviii + 302, C. Salfeld.
+
+ LAXMANN, M. E.
+ 1769. Sibiriche Brief, pp. iv + 104, Gottingen and Gotha.
+
+ LAYNE, J. N.
+ 1952. The os genitale of the red squirrel, _Tamiasciurus_. Jour. Mamm.
+       33:457-459, 1 fig., November 19.
+
+ LINNAEUS, C.
+ 1758. Systema Naturae. 1:1-824.
+
+ MERRIAM, C. H.
+ 1897. Notes on the chipmunks of the genus _Eutamias_ occurring west of
+       the east base of the Cascade-Sierra system, with descriptions of
+       new forms. Proc. Biol. Soc. Washington, 11:189-212, July 1.
+
+ POCOCK, R. I.
+ 1923. The classification of the Sciuridae. Proc. Zool. Soc. London,
+       1923:209-246, June.
+
+ SAY, T. (_in_ Edwin James).
+ 1823. Account of an expedition from Pittsburgh to the Rocky Mountains,
+       performed in the years 1819 and 1820, under the command of Major
+       Stephen H. Long. From the notes of Major Long, Mr. T. Say, and
+       other gentlemen of the exploring party. Compiled by Edwin James.
+       Vol. 1, pp. 1-503; Vol. 2, pp. 1-442 + appendix i-xcviii.
+
+ SCHREBER, J. C. D.
+ 1785. Saugthiere, 4:790-802.
+
+ SIMPSON, G. G.
+ 1945. The principles of classification and a classification of mammals.
+       Bull. Amer. Mus. Nat. Hist., 85:xvi + 350, October 5.
+
+ TROUESSART, E. L.
+ 1880. Catalogue des mammiferes vivants et fossiles. Ordre des Rongeurs.
+       Bull. Soc. d'Etudes Sci. d'Angers, 10:58-212.
+
+ WHITE, J. A.
+ 1951. A practical method for mounting the bacula of small mammals.
+       Jour. Mamm. 32:125, February 15.
+
+
+_Transmitted June 26, 1953._
+
+
+
+
+
+End of Project Gutenberg's Genera and Subgenera of Chipmunks, by John A. White
+
+*** END OF THIS PROJECT GUTENBERG EBOOK GENERA AND SUBGENERA OF CHIPMUNKS ***
+
+***** This file should be named 30533.txt or 30533.zip *****
+This and all associated files of various formats will be found in:
+        http://www.gutenberg.org/3/0/5/3/30533/
+
+Produced by Chris Curnow, Joseph Cooper, Anne Storer and
+the Online Distributed Proofreading Team at
+http://www.pgdp.net
+
+
+Updated editions will replace the previous one--the old editions
+will be renamed.
+
+Creating the works from public domain print editions means that no
+one owns a United States copyright in these works, so the Foundation
+(and you!) can copy and distribute it in the United States without
+permission and without paying copyright royalties.  Special rules,
+set forth in the General Terms of Use part of this license, apply to
+copying and distributing Project Gutenberg-tm electronic works to
+protect the PROJECT GUTENBERG-tm concept and trademark.  Project
+Gutenberg is a registered trademark, and may not be used if you
+charge for the eBooks, unless you receive specific permission.  If you
+do not charge anything for copies of this eBook, complying with the
+rules is very easy.  You may use this eBook for nearly any purpose
+such as creation of derivative works, reports, performances and
+research.  They may be modified and printed and given away--you may do
+practically ANYTHING with public domain eBooks.  Redistribution is
+subject to the trademark license, especially commercial
+redistribution.
+
+
+
+*** START: FULL LICENSE ***
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full Project
+Gutenberg-tm License (available with this file or online at
+http://gutenberg.org/license).
+
+
+Section 1.  General Terms of Use and Redistributing Project Gutenberg-tm
+electronic works
+
+1.A.  By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement.  If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or destroy
+all copies of Project Gutenberg-tm electronic works in your possession.
+If you paid a fee for obtaining a copy of or access to a Project
+Gutenberg-tm electronic work and you do not agree to be bound by the
+terms of this agreement, you may obtain a refund from the person or
+entity to whom you paid the fee as set forth in paragraph 1.E.8.
+
+1.B.  "Project Gutenberg" is a registered trademark.  It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement.  There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement.  See
+paragraph 1.C below.  There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this agreement
+and help preserve free future access to Project Gutenberg-tm electronic
+works.  See paragraph 1.E below.
+
+1.C.  The Project Gutenberg Literary Archive Foundation ("the Foundation"
+or PGLAF), owns a compilation copyright in the collection of Project
+Gutenberg-tm electronic works.  Nearly all the individual works in the
+collection are in the public domain in the United States.  If an
+individual work is in the public domain in the United States and you are
+located in the United States, we do not claim a right to prevent you from
+copying, distributing, performing, displaying or creating derivative
+works based on the work as long as all references to Project Gutenberg
+are removed.  Of course, we hope that you will support the Project
+Gutenberg-tm mission of promoting free access to electronic works by
+freely sharing Project Gutenberg-tm works in compliance with the terms of
+this agreement for keeping the Project Gutenberg-tm name associated with
+the work.  You can easily comply with the terms of this agreement by
+keeping this work in the same format with its attached full Project
+Gutenberg-tm License when you share it without charge with others.
+
+1.D.  The copyright laws of the place where you are located also govern
+what you can do with this work.  Copyright laws in most countries are in
+a constant state of change.  If you are outside the United States, check
+the laws of your country in addition to the terms of this agreement
+before downloading, copying, displaying, performing, distributing or
+creating derivative works based on this work or any other Project
+Gutenberg-tm work.  The Foundation makes no representations concerning
+the copyright status of any work in any country outside the United
+States.
+
+1.E.  Unless you have removed all references to Project Gutenberg:
+
+1.E.1.  The following sentence, with active links to, or other immediate
+access to, the full Project Gutenberg-tm License must appear prominently
+whenever any copy of a Project Gutenberg-tm work (any work on which the
+phrase "Project Gutenberg" appears, or with which the phrase "Project
+Gutenberg" is associated) is accessed, displayed, performed, viewed,
+copied or distributed:
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+1.E.2.  If an individual Project Gutenberg-tm electronic work is derived
+from the public domain (does not contain a notice indicating that it is
+posted with permission of the copyright holder), the work can be copied
+and distributed to anyone in the United States without paying any fees
+or charges.  If you are redistributing or providing access to a work
+with the phrase "Project Gutenberg" associated with or appearing on the
+work, you must comply either with the requirements of paragraphs 1.E.1
+through 1.E.7 or obtain permission for the use of the work and the
+Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
+1.E.9.
+
+1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any additional
+terms imposed by the copyright holder.  Additional terms will be linked
+to the Project Gutenberg-tm License for all works posted with the
+permission of the copyright holder found at the beginning of this work.
+
+1.E.4.  Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5.  Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6.  You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including any
+word processing or hypertext form.  However, if you provide access to or
+distribute copies of a Project Gutenberg-tm work in a format other than
+"Plain Vanilla ASCII" or other format used in the official version
+posted on the official Project Gutenberg-tm web site (www.gutenberg.org),
+you must, at no additional cost, fee or expense to the user, provide a
+copy, a means of exporting a copy, or a means of obtaining a copy upon
+request, of the work in its original "Plain Vanilla ASCII" or other
+form.  Any alternate format must include the full Project Gutenberg-tm
+License as specified in paragraph 1.E.1.
+
+1.E.7.  Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8.  You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works provided
+that
+
+- You pay a royalty fee of 20% of the gross profits you derive from
+     the use of Project Gutenberg-tm works calculated using the method
+     you already use to calculate your applicable taxes.  The fee is
+     owed to the owner of the Project Gutenberg-tm trademark, but he
+     has agreed to donate royalties under this paragraph to the
+     Project Gutenberg Literary Archive Foundation.  Royalty payments
+     must be paid within 60 days following each date on which you
+     prepare (or are legally required to prepare) your periodic tax
+     returns.  Royalty payments should be clearly marked as such and
+     sent to the Project Gutenberg Literary Archive Foundation at the
+     address specified in Section 4, "Information about donations to
+     the Project Gutenberg Literary Archive Foundation."
+
+- You provide a full refund of any money paid by a user who notifies
+     you in writing (or by e-mail) within 30 days of receipt that s/he
+     does not agree to the terms of the full Project Gutenberg-tm
+     License.  You must require such a user to return or
+     destroy all copies of the works possessed in a physical medium
+     and discontinue all use of and all access to other copies of
+     Project Gutenberg-tm works.
+
+- You provide, in accordance with paragraph 1.F.3, a full refund of any
+     money paid for a work or a replacement copy, if a defect in the
+     electronic work is discovered and reported to you within 90 days
+     of receipt of the work.
+
+- You comply with all other terms of this agreement for free
+     distribution of Project Gutenberg-tm works.
+
+1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
+electronic work or group of works on different terms than are set
+forth in this agreement, you must obtain permission in writing from
+both the Project Gutenberg Literary Archive Foundation and Michael
+Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
+Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1.  Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+public domain works in creating the Project Gutenberg-tm
+collection.  Despite these efforts, Project Gutenberg-tm electronic
+works, and the medium on which they may be stored, may contain
+"Defects," such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.
+
+1.F.2.  LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees.  YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH F3.  YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3.  LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from.  If you
+received the work on a physical medium, you must return the medium with
+your written explanation.  The person or entity that provided you with
+the defective work may elect to provide a replacement copy in lieu of a
+refund.  If you received the work electronically, the person or entity
+providing it to you may choose to give you a second opportunity to
+receive the work electronically in lieu of a refund.  If the second copy
+is also defective, you may demand a refund in writing without further
+opportunities to fix the problem.
+
+1.F.4.  Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
+WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5.  Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of damages.
+If any disclaimer or limitation set forth in this agreement violates the
+law of the state applicable to this agreement, the agreement shall be
+interpreted to make the maximum disclaimer or limitation permitted by
+the applicable state law.  The invalidity or unenforceability of any
+provision of this agreement shall not void the remaining provisions.
+
+1.F.6.  INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in accordance
+with this agreement, and any volunteers associated with the production,
+promotion and distribution of Project Gutenberg-tm electronic works,
+harmless from all liability, costs and expenses, including legal fees,
+that arise directly or indirectly from any of the following which you do
+or cause to occur: (a) distribution of this or any Project Gutenberg-tm
+work, (b) alteration, modification, or additions or deletions to any
+Project Gutenberg-tm work, and (c) any Defect you cause.
+
+
+Section  2.  Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of computers
+including obsolete, old, middle-aged and new computers.  It exists
+because of the efforts of hundreds of volunteers and donations from
+people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need, are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come.  In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future generations.
+To learn more about the Project Gutenberg Literary Archive Foundation
+and how your efforts and donations can help, see Sections 3 and 4
+and the Foundation web page at http://www.pglaf.org.
+
+
+Section 3.  Information about the Project Gutenberg Literary Archive
+Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service.  The Foundation's EIN or federal tax identification
+number is 64-6221541.  Its 501(c)(3) letter is posted at
+http://pglaf.org/fundraising.  Contributions to the Project Gutenberg
+Literary Archive Foundation are tax deductible to the full extent
+permitted by U.S. federal laws and your state's laws.
+
+The Foundation's principal office is located at 4557 Melan Dr. S.
+Fairbanks, AK, 99712., but its volunteers and employees are scattered
+throughout numerous locations.  Its business office is located at
+809 North 1500 West, Salt Lake City, UT 84116, (801) 596-1887, email
+business@pglaf.org.  Email contact links and up to date contact
+information can be found at the Foundation's web site and official
+page at http://pglaf.org
+
+For additional contact information:
+     Dr. Gregory B. Newby
+     Chief Executive and Director
+     gbnewby@pglaf.org
+
+
+Section 4.  Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment.  Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States.  Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements.  We do not solicit donations in locations
+where we have not received written confirmation of compliance.  To
+SEND DONATIONS or determine the status of compliance for any
+particular state visit http://pglaf.org
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States.  U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses.  Donations are accepted in a number of other
+ways including checks, online payments and credit card donations.
+To donate, please visit: http://pglaf.org/donate
+
+
+Section 5.  General Information About Project Gutenberg-tm electronic
+works.
+
+Professor Michael S. Hart is the originator of the Project Gutenberg-tm
+concept of a library of electronic works that could be freely shared
+with anyone.  For thirty years, he produced and distributed Project
+Gutenberg-tm eBooks with only a loose network of volunteer support.
+
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the U.S.
+unless a copyright notice is included.  Thus, we do not necessarily
+keep eBooks in compliance with any particular paper edition.
+
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.

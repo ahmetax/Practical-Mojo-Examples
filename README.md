@@ -10,6 +10,9 @@ I preferred pip installation of mojo. For the other installation methods
 please refer to https://docs.modular.com/mojo/manual/install page.
 My Python version is Python 3.12.
 
+We will use the text files in gutenberg_org in some of our examples. These
+files are shared in https://gutenberg.org and selected randomly.
+
 ## Cloning
 mkdir github
 

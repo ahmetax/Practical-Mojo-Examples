@@ -1,2 +1,24 @@
 # Practical-Mojo-Examples
 Practical Mojo Examples Especially For Beginners
+
+In this repository I will try to share some practical and tested mojo examples.
+My examples are written and tested on an Ubuntu machine.
+These examples are generally for the beginner level.
+Maybe in future I can also share some advanced examples.
+
+I preferred pip installation of mojo. For the other installation methods
+please refer to https://docs.modular.com/mojo/manual/install page.
+My Python version is Python 3.12.
+
+## Cloning
+mkdir github
+cd github
+git clone https://github.com/ahmetax/Practical-Mojo-Examples.git
+cd Practical-Mojo-Examples
+
+## Installation
+python3.12 -m venv e312
+source e312/bin/activate
+pip install mojo
+
+

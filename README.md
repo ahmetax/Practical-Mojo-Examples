@@ -12,13 +12,19 @@ My Python version is Python 3.12.
 
 ## Cloning
 mkdir github
+
 cd github
+
 git clone https://github.com/ahmetax/Practical-Mojo-Examples.git
+
 cd Practical-Mojo-Examples
 
 ## Installation
 python3.12 -m venv e312
+
 source e312/bin/activate
+
 pip install mojo
+
 
 

@@ -145,6 +145,9 @@ env.bak/
 venv.bak/
 e312/
 
+file_list_worker*.txt
+temp_worker_*.txt
+
 # Spyder project settings
 .spyderproject
 .spyproject

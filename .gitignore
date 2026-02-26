@@ -147,8 +147,9 @@ e312/
 
 file_list_worker*.txt
 temp_worker_*.txt
-mojo_takip.mojo
+mojo_takip.py
 mojo_karsilastirma_raporu.csv
+kgen.trace.json.time-*
 
 # Spyder project settings
 .spyderproject

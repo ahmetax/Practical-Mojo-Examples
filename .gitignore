@@ -151,7 +151,7 @@ mojo_takip.py
 mojo_karsilastirma_raporu.csv
 kgen.trace.json.time*.*
 file_list.txt
-
+*.py
 
 # Spyder project settings
 .spyderproject

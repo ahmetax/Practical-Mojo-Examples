@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-25
+Revision Date: 2026-02-27
+Mojo version no: 0.26.1
+"""
+
 from time import perf_counter_ns
 fn fib(n: Int) raises -> Int:
     if n < 2:

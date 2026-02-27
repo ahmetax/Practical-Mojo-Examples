@@ -2,6 +2,7 @@
 Author: Ahmet Aksoy
 Date: 2026-02-26
 Revision Date: 2026-02-27
+Mojo version no: 0.26.1
 """
 
 import time

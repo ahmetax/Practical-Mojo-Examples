@@ -2,6 +2,7 @@
 Author: Ahmet Aksoy
 Date: 2026-02-27
 Revision Date: 2026-02-27
+Mojo version no: 0.26.1
 """
 
 # Armstrong number -> abcd... = pow(a,n) + pow(b,n) + pow(c,n) + pow(d,n) + ....

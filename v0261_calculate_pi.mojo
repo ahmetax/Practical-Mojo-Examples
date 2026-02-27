@@ -1,3 +1,9 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02.26
+Revision Date: 2026-02-27
+"""
+
 from math import factorial, sqrt
 
 # Use Gregory-Leibniz Series -> PI = 4*(1-1/3+1/5-1/7+1/9...)

@@ -37,11 +37,18 @@ mojo -v
 
 If you wish, you can share your own mojo examples also.
 You can use a header on top of your code as follows:
+
 """
+
 Author: Your name
+
 Date: Creation date
+
 Revision Date: Revision date
+
 Mojo version no: x.y.z
+
 """
+
 
 

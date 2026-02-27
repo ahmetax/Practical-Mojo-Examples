@@ -1,6 +1,6 @@
 """
 Author: Ahmet Aksoy
-Date: 2026-02.26
+Date: 2026-02-26
 Revision Date: 2026-02-27
 """
 

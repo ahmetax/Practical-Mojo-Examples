@@ -1,3 +1,9 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-27
+Revision Date: 2026-02-27
+"""
+
 # Armstrong number -> abcd... = pow(a,n) + pow(b,n) + pow(c,n) + pow(d,n) + ....
 
 fn is_armstrong(n: Int) -> Bool:

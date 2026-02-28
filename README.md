@@ -59,5 +59,6 @@ Now, I will prepare a list for the solution of this problem.
 | Explanation                                    | Code name                                                  |
 | :------------------------------------ | :--------------------------------------------- |
 | Calculation of PI number | v0261_calculate_pi.mojo |
-| Check if a number is Armstrong Number | : v0261_check_armstrong_number.mojo |
+| Check if a number is Armstrong Number  or not | v0261_check_armstrong_number.mojo |
+| Prepare a countdown counter | v0261_countdown.mojo |
 

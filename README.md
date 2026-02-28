@@ -54,11 +54,15 @@ Mojo version no: x.y.z
 
 It is not very easy to get the topic of the codes just looking their names.
 
-Now, I will prepare a list for the solution of this problem.
+I will remove version numbers from file names. I hope they will be more readable.
 
-| Explanation                                    | Code name                                                  |
-| :------------------------------------ | :--------------------------------------------- |
-| Calculation of PI number | v0261_calculate_pi.mojo |
-| Check if a number is Armstrong Number  or not | v0261_check_armstrong_number.mojo |
-| Prepare a countdown counter | v0261_countdown.mojo |
+Tested Mojo version number will be included both in the table, and in the headers.
+
+Here is the table
+
+| ** Explanation **                                   | ** Mojo version ** | ** Code name **                                                 |
+| :------------------------------------ | :-------------: | :--------------------------------------------- |
+| Calculation of PI number | 0.26.1 | calculate_pi.mojo |
+| Check if a number is Armstrong Number  or not | 0.26.1 | check_armstrong_number.mojo |
+| Prepare a countdown counter | 0.26.1 | countdown.mojo |
 

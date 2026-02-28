@@ -56,7 +56,7 @@ It is not very easy to get the topic of the codes just looking their names.
 
 I will remove version numbers from file names. I hope they will be more readable.
 
-Tested Mojo version number will be included both in the table, and in the headers.
+Tested Mojo version numbers will be included both in the table, and in the headers in the files.
 
 Here is the table
 
@@ -65,4 +65,5 @@ Here is the table
 | Calculation of PI number | 0.26.1 | calculate_pi.mojo |
 | Check if a number is Armstrong Number  or not | 0.26.1 | check_armstrong_number.mojo |
 | Prepare a countdown counter | 0.26.1 | countdown.mojo |
+| Calculate factorial of a number | 0.26.1 | factorial.mojo |
 

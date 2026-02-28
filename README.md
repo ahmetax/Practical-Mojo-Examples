@@ -66,4 +66,6 @@ Here is the table
 | Check if a number is Armstrong Number  or not | 0.26.1 | check_armstrong_number.mojo |
 | Prepare a countdown counter | 0.26.1 | countdown.mojo |
 | Calculate factorial of a number | 0.26.1 | factorial.mojo |
+| Calculate Fibonacci number | 0.26.1 | fibonacci.mojo |
+
 

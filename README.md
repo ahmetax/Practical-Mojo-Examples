@@ -57,7 +57,7 @@ It is not very easy to get the topic of the codes just looking their names.
 I will remove version numbers from file names, and transfer the source files
 into sources-v0.26.1 folder.  I hope it will be more readable.
 
-Mojo version numbers used in the tests will be included both in the table, and in the headers in the files.
+Version numbers of Mojo used while testing example codes will be included both in the table, and in the headers in the files.
 
 Here is the table
 

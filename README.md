@@ -55,7 +55,7 @@ Mojo version no: x.y.z
 It is not very easy to get the topic of the codes just looking their names.
 
 I will remove version numbers from file names, and transfer the source files
-into 0.26.1 folder.  I hope it will be more readable.
+into sources-v0.26.1 folder.  I hope it will be more readable.
 
 Tested Mojo version numbers will be included both in the table, and in the headers in the files.
 

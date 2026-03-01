@@ -70,7 +70,8 @@ Here is the table
 | Calculate Fibonacci number | 0.26.1 | fibonacci.mojo |
 | File and word counter for the files in a folder | 0.26.1 | file_and_word_counter_01.mojo |
 | Printing "Hello World" | 0.26.1 | hello_world.mojo |
- 
+| Using implicit typing | 0.26.1 | implicit_types_01.mojo |
+
 
 
 

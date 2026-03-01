@@ -73,6 +73,7 @@ Here is the table
 | Using implicit typing | 0.26.1 | implicit_types_01.mojo |
 | List comprehensions | 0.26.1 | list_comprehensions.mojo |
 | Multiply two integer numbers | multiply_01.mojo |
+| Simple check for parallelize | parallelize_check_mojo |
 
 
 

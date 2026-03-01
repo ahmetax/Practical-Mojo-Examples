@@ -68,5 +68,7 @@ Here is the table
 | Prepare a countdown counter | 0.26.1 | countdown.mojo |
 | Calculate factorial of a number | 0.26.1 | factorial.mojo |
 | Calculate Fibonacci number | 0.26.1 | fibonacci.mojo |
+| File and word counter for the files in a folder | 0.26.1 | file_and_word_counter_01.mojo |
+
 
 

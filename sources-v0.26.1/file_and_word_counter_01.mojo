@@ -34,7 +34,7 @@ fn process_txt_files(path: Path, mut counter: FileCounter) raises:
 
 fn main() raises:
     var counter = FileCounter()
-    var path = Path("./gutenberg_org/")
+    var path = Path("../gutenberg_org/")
     
     if not path.exists():
         print("Folder not found: ", path)

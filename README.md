@@ -72,8 +72,8 @@ Here is the table
 | Printing "Hello World" | 0.26.1 | hello_world.mojo |
 | Using implicit typing | 0.26.1 | implicit_types_01.mojo |
 | List comprehensions | 0.26.1 | list_comprehensions.mojo |
-| Multiply two integer numbers | multiply_01.mojo |
-| Simple check for parallelize | parallelize_check_mojo |
+| Multiply two integer numbers | 0.26.1 | multiply_01.mojo |
+| Simple check for parallelize | 0.26.1 | parallelize_check_mojo |
 
 
 

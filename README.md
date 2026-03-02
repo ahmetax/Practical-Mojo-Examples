@@ -74,6 +74,7 @@ Here is the table
 | List comprehensions | 0.26.1 | list_comprehensions.mojo |
 | Multiply two integer numbers | 0.26.1 | multiply_01.mojo |
 | Simple check for parallelize | 0.26.1 | parallelize_check_mojo |
+| Parallelize() method in order to read multiple files| 0.26.1 |  parallelize_file_read.mojo |
 
 
 

@@ -154,7 +154,7 @@ fn load_file_for_worker(worker_id: Int, index: Int) -> String:
 
 fn main() raises:
     var files = List[String]()
-    var path = Path("./gutenberg_turkish/")
+    var path = Path("../gutenberg_turkish/")
     
     print("Dosyalar toplanıyor...")
     collect_txt_files(path, files)

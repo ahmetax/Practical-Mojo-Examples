@@ -76,6 +76,7 @@ Here is the table
 | Simple check for parallelize | 0.26.1 | parallelize_check_mojo |
 | Parallelize() method in order to read multiple files| 0.26.1 |  parallelize_file_read.mojo |
 | Parallelize() method in order to read some multiple Turkish files| 0.26.1 |  parallelize_turkish_files.mojo |
+| Printing prime numbers between 0 and 127 | 0.26.1 | prime_numbers.mojo |
 
 
 

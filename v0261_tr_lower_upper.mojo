@@ -1,3 +1,9 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-18
+Revision Date: 2026-02-25
+Mojo version no: 0.26.1
+"""
 
 fn tr_lower(word: String) -> String:
     var nword: String = word

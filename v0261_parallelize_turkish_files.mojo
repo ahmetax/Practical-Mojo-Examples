@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-25
+Revision Date: 2026-03-01
+Mojo version no: 0.26.1
+"""
+
 from algorithm import parallelize
 from pathlib import Path
 from collections import Dict

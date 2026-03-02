@@ -152,6 +152,7 @@ mojo_karsilastirma_raporu.csv
 kgen.trace.json.time*.*
 file_list.txt
 *.py
+v0261*.mojo
 
 # Spyder project settings
 .spyderproject

@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-25
+Revision Date: 2026-03-01
+Mojo version no: 0.26.1
+"""
+
 from python import Python
 
 fn main() raises:

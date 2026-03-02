@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-24
+Revision Date: 2026-02-25
+Mojo version no: 0.26.1
+"""
+
 from pathlib import Path
 from builtin.sort import sort
 from time import perf_counter_ns

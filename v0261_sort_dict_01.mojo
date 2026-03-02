@@ -1,3 +1,9 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-23
+Revision Date: 2026-02-25
+Mojo version no: 0.26.1
+"""
 
 fn main() raises:
 

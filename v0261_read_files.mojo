@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-24
+Revision Date: 2026-03-01
+Mojo version no: 0.26.1
+"""
+
 from pathlib import Path
 
 struct FileCounter:
@@ -70,7 +77,7 @@ fn find_txt_files(directory: String) raises:
     print("\nToplam", counter.count, ".txt file found.")
 
 fn main() raises:
-    my_folder:String ="./gutenberg_org/"
+    my_folder:String ="../gutenberg_org/"
     # give the folder tame
     find_txt_files(my_folder)
     

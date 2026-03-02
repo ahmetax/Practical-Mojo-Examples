@@ -1,3 +1,9 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-26
+Revision Date: 2026-03-01
+Mojo version no: 0.26.1
+"""
 
 fn main() raises:
     var lownum: UInt = 0

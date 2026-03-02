@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-23
+Revision Date: 2026-02-25
+Mojo version no: 0.26.1
+"""
+
 from builtin.sort import sort
 
 struct WordCount(Comparable & Copyable & Movable):

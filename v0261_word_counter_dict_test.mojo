@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-15
+Revision Date: 2026-02-25
+Mojo version no: 0.26.1
+"""
+
 from pathlib import Path
 from collections import Dict
 

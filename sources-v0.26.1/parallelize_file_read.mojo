@@ -1,3 +1,10 @@
+"""
+Author: Ahmet Aksoy
+Date: 2026-02-26
+Revision Date: 2026-03-01
+Mojo version no: 0.26.1
+"""
+
 from algorithm import parallelize
 from pathlib import Path
 from collections import Dict
@@ -34,7 +41,7 @@ fn load_file_at_index_safe(index: Int) -> String:
 fn main() raises:
     # 1. Dosya listesini topla ve kaydet
     var files = List[String]()
-    var path = Path("./gutenberg_org/")
+    var path = Path("../gutenberg_org/")
     
     print("Dosyalar toplanıyor...")
     collect_txt_files(path, files)

@@ -75,7 +75,7 @@ Here is the table
 | Multiply two integer numbers | 0.26.1 | multiply_01.mojo |
 | Simple check for parallelize | 0.26.1 | parallelize_check_mojo |
 | Parallelize() method in order to read multiple files| 0.26.1 |  parallelize_file_read.mojo |
-
+| Parallelize() method in order to read some multiple Turkish files| 0.26.1 |  parallelize_turkish_files.mojo |
 
 
 

@@ -82,6 +82,7 @@ Here is the table
 | Reversing a list | 0.26.1 | reverse_a_list.mojo |
 | Sort a dict by values | 0.26.1 | sort_dict_01.mojo |
 | Sort integers in a list | 0.26.1 | sort_integers_01.mojo |
+| Sort integers in a list by sort() | 0.26.1 | sort_integers_02.mojo |
 
 
 

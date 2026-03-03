@@ -81,6 +81,8 @@ Here is the table
 | Read multiple files in given folder | 0.26.1 | read_files.mojo |
 | Reversing a list | 0.26.1 | reverse_a_list.mojo |
 | Sort a dict by values | 0.26.1 | sort_dict_01.mojo |
+| Sort integers in a list | 0.26.1 | sort_integers_01.mojo |
+
 
 
 

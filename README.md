@@ -78,6 +78,8 @@ Here is the table
 | Using parallelize() method in order to read some multiple Turkish files simultaneously | 0.26.1 |  parallelize_turkish_files.mojo |
 | Printing prime numbers between 0 and 127 | 0.26.1 | prime_numbers.mojo |
 | Importing and using Python time module | 0.26.1 | python_time.mojo |
+| Read multiple files in given folder | 0.26.1 | read_files.mojo |
+
 
 
 

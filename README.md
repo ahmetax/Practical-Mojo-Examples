@@ -80,6 +80,8 @@ Here is the table
 | Importing and using Python time module | 0.26.1 | python_time.mojo |
 | Read multiple files in given folder | 0.26.1 | read_files.mojo |
 | Reversing a list | 0.26.1 | reverse_a_list.mojo |
+| Sort a dict by values | 0.26.1 | sort_dict_01.mojo |
+
 
 
 

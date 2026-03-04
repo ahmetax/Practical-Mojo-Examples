@@ -84,6 +84,8 @@ Here is the table
 | Sort integers in a list in ascending and descending orders | 0.26.1 | sort_integers_01.mojo |
 | Sort integers in a list by sort() | 0.26.1 | sort_integers_02.mojo |
 | Simple sort for word count | 0.26.1 | sort_word_count.mojo |
+| Simple sum of an array | 0.26.1 | sum_of_array.mojo |
+
 
 
 

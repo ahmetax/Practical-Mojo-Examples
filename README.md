@@ -61,7 +61,7 @@ Version numbers of Mojo used while testing example codes will be included both i
 
 Here is the table
 
-| ** Explanation **                                   | ** Mojo version ** | ** Code name **                                                 |
+| <b>Explanation</b>                                   | <b>Mojo version</b> | <b>Code name</b>                                                 |
 | :------------------------------------ | :-------------: | :--------------------------------------------- |
 | Calculation of PI number | 0.26.1 | calculate_pi.mojo |
 | Check if a number is Armstrong Number  or not | 0.26.1 | check_armstrong_number.mojo |

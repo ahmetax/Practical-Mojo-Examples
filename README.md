@@ -83,6 +83,7 @@ Here is the table
 | Sort a dict by values | 0.26.1 | sort_dict_01.mojo |
 | Sort integers in a list in ascending and descending orders | 0.26.1 | sort_integers_01.mojo |
 | Sort integers in a list by sort() | 0.26.1 | sort_integers_02.mojo |
+| Simple sort for word count | 0.26.1 | sort_word_count.mojo |
 
 
 

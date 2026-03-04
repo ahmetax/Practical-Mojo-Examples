@@ -85,6 +85,7 @@ Here is the table
 | Sort integers in a list by sort() | 0.26.1 | sort_integers_02.mojo |
 | Simple sort for word count | 0.26.1 | sort_word_count.mojo |
 | Simple sum of an array | 0.26.1 | sum_of_array.mojo |
+| Using time module | 0.26.1 |time_module.mojo |
 
 
 

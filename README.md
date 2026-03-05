@@ -88,6 +88,7 @@ Here is the table
 | Using time module | 0.26.1 |time_module.mojo |
 | Word counting in files | 0.26.1 | total_word_counter.mojo |
 | Turkish lower and upper correction | 0.26.1 | tr_lower_upper.mojo |
+| Printing values in a list | 0.26.1 | vals_in_list_01.mojo |
 
 
 

@@ -91,6 +91,8 @@ Here is the table
 | Printing values in a list | 0.26.1 | vals_in_list_01.mojo |
 | Testing Dict in word counter | 0.26.1 | word_counter_dict_test.mojo |
 | Summarize a file using Python modules | 0.26.1 | summary_python.mojo |
+| Collecting rss news from different countries | 0.26.1 | rss_news_with_python.mojo |
+
 
 
 

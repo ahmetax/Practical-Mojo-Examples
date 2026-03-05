@@ -86,6 +86,7 @@ Here is the table
 | Simple sort for word count | 0.26.1 | sort_word_count.mojo |
 | Simple sum of an array | 0.26.1 | sum_of_array.mojo |
 | Using time module | 0.26.1 |time_module.mojo |
+| Word counting in files | 0.26.1 | total_word_counter.mojo |
 
 
 

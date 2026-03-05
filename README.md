@@ -90,6 +90,7 @@ Here is the table
 | Turkish lower and upper correction | 0.26.1 | tr_lower_upper.mojo |
 | Printing values in a list | 0.26.1 | vals_in_list_01.mojo |
 | Testing Dict in word counter | 0.26.1 | word_counter_dict_test.mojo |
+| Summarize a file using Python modules | 0.26.1 | summary_python.mojo |
 
 
 

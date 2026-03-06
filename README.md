@@ -97,10 +97,5 @@ Here is the table
 | Python numpy example | 0.26.1 | python_numpy_01.mojo |
 | Python request and json using http get | 0.26.1 | http_get_json_api.mojo |
 | Python request and json using http post | 0.26.1 | http_post_json.mojo |
-
-
-
-
-
-
+| Python request and json using http auth | 0.26.1 | http_auth_headers.mojo |
 

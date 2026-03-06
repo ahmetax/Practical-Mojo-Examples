@@ -96,6 +96,7 @@ Here is the table
 | Simple sum of an array (using SIMD) | 0.26.1 | simple_sum_of_an_array.mojo |
 | Python numpy example | 0.26.1 | python_numpy_01.mojo |
 | Python request and json using http get | 0.26.1 | http_get_json_api.mojo |
+| Python request and json using http post | 0.26.1 | http_post_json.mojo |
 
 
 

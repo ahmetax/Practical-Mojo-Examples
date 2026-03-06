@@ -94,7 +94,7 @@ Here is the table
 | Collecting rss news from different countries using Python modules| 0.26.1 | rss_news_with_python.mojo |
 | Cloning (copying) a list | 0.26.1 | clone_a_list.mojo |
 | Simple sum of an array (using SIMD) | 0.26.1 | simple_sum_of_an_array.mojo |
-
+| Python numpy example | 0.26.1 | python_numpy_01.mojo |
 
 
 

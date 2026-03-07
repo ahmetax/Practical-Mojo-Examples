@@ -3,7 +3,7 @@ Author: Ahmet Aksoy
 Date: 2026-03-06
 Revision Date: 2026-03-06
 Mojo version no: 0.26.1
-AI: Claude
+AI: Claude Sonnet 4.6
 
 Description:
     Managing HTTP sessions in Mojo using Python's requests.Session object.

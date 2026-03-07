@@ -99,4 +99,6 @@ Here is the table
 | Python request and json using http post | 0.26.1 | http_post_json.mojo |
 | Python request and json using http auth | 0.26.1 | http_auth_headers.mojo |
 | Managing HTTP sessions in Mojo using Python's requests.Session object. | 0.26.1 | http_session.mojo |
+| Handling timeouts and automatic retries for HTTP requests in Mojo. | 0.26.1 | http_timeout_retry.mojo |
+
 

@@ -101,5 +101,6 @@ Here is the table
 | Managing HTTP sessions in Mojo using Python's requests.Session object. | 0.26.1 | http_session.mojo |
 | Handling timeouts and automatic retries for HTTP requests in Mojo. | 0.26.1 | http_timeout_retry.mojo |
 | Downloading files efficiently using HTTP streaming in Mojo. | 0.26.1 | http_download_streaming.mojo |
+| Common pitfalls when using Python modules and objects in Mojo. | 0.26.1 | python_interop_gotchas.md |
 
 

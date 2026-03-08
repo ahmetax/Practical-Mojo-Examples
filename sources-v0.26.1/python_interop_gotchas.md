@@ -312,23 +312,54 @@ keys.append("version")
 keys.append("missing_key")
 ```
 
-## 12 — String.format() alignment formats are not supported
+## 12. String.format() alignment specifiers are not supported
 
 **Problem:**
-Alignment specifiers like "{:<16}".format(val) don't work in Mojo
+Mojo's `String.format()` does not support alignment specifiers like `{:<16}` or `{:>10}`.
 
-Correct solution:
-Print columns side-by-side with plain print(), or use format() via Python's built-ins
+**Error:**
+```
+constraint failed: Index :<16 not in kwargs
+```
 
-## 13 — Int(String(...)) doesn't accept decimal number strings
+**Wrong:**
+```mojo
+print("{:<16} {:>10}".format("Product", "Total"))
+```
 
-Libraries like Pandas can even return integers in 5.0 format
+**Correct:**
+```mojo
+# Print columns side-by-side with plain print()
+print("Product          Total")
+
+# Or use Python's built-in format() via builtins
+builtins = Python.import_module("builtins")
+print(builtins.format("Product", "<16"), builtins.format("Total", ">10"))
+```
+
+---
+
+## 13. Int(String(...)) does not accept decimal number strings
 
 **Problem:**
-Int(String("5.0")) gives an error
+Libraries like Pandas may return integer values as decimal strings (e.g. `"5.0"`).
+`Int(String(...))` cannot parse these — it expects a plain integer string.
 
-**Correct solution:**
-Int(Float64(String(py_obj))) — first to Float64, then to Int
+**Error:**
+```
+String is not convertible to integer with base 10: '5.0'
+```
+
+**Wrong:**
+```mojo
+var count: Int = Int(String(py_obj))   # fails if py_obj is "5.0"
+```
+
+**Correct:**
+```mojo
+# Convert to Float64 first, then to Int
+var count: Int = Int(Float64(String(py_obj)))
+```
 
 ---
 

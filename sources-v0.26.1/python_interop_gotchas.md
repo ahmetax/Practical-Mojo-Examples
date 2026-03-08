@@ -211,6 +211,127 @@ This is particularly useful for:
 
 ---
 
+---
+
+## 8. Converting PythonObject to numeric Mojo types
+
+**Problem:**
+`Int(py_obj)` and `Float64(py_obj)` do not work directly with PythonObject.
+
+**Error:**
+```
+no matching function in initialization
+```
+
+**Wrong:**
+```mojo
+var x: Int     = Int(py_obj)
+var y: Float64 = Float64(py_obj)
+```
+
+**Correct:**
+```mojo
+# Convert via String as an intermediate step
+var x: Int     = Int(String(py_obj))
+var y: Float64 = Float64(String(py_obj))
+```
+
+---
+
+## 9. Comparing PythonObject to None
+
+**Problem:**
+`Bool(obj == Python.none())` is unreliable — it returns `True` even when
+the object is not None.
+
+**Wrong:**
+```mojo
+if Bool(obj == Python.none()):
+    print("is none")
+```
+
+**Correct:**
+```mojo
+# Check the Python type name instead
+var builtins: PythonObject = Python.import_module("builtins")
+var type_name = String(builtins.type(obj).__name__)
+if type_name == "NoneType":
+    print("is none")
+```
+
+---
+
+## 10. Iterating over a Mojo List and passing elements to Python
+
+**Problem:**
+`for item in list:` yields a `Reference` in Mojo, not the value itself.
+Using `item[]` to dereference does not work for `String` — it is interpreted
+as `__getitem__` (index access) instead.
+
+**Error:**
+```
+no matching method in call to '__getitem__'
+```
+
+**Wrong:**
+```mojo
+for key in keys:
+    data.get(key[], Python.none())   # key[] fails for String
+```
+
+**Correct:**
+```mojo
+# Use index-based iteration to get a clean String value
+for i in range(len(keys)):
+    var k: String = keys[i]
+    data.get(k, Python.none())
+```
+
+---
+
+## 11. Initializing List[T] with values
+
+**Problem:**
+`List[T]` constructor does not accept initial values as positional arguments.
+
+**Error:**
+```
+no matching function in initialization
+```
+
+**Wrong:**
+```mojo
+var keys = List[String]("name", "version", "missing_key")
+```
+
+**Correct:**
+```mojo
+var keys = List[String]()
+keys.append("name")
+keys.append("version")
+keys.append("missing_key")
+```
+
+## 12 — String.format() alignment formats are not supported
+
+**Problem:**
+Alignment specifiers like "{:<16}".format(val) don't work in Mojo
+
+Correct solution:
+Print columns side-by-side with plain print(), or use format() via Python's built-ins
+
+## 13 — Int(String(...)) doesn't accept decimal number strings
+
+Libraries like Pandas can even return integers in 5.0 format
+
+**Problem:**
+Int(String("5.0")) gives an error
+
+**Correct solution:**
+Int(Float64(String(py_obj))) — first to Float64, then to Int
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -219,6 +340,10 @@ This is particularly useful for:
 | Exception handling | `except Exception as e:` | `except:` |
 | bytes() built-in | `bytes(obj)` | `Python.import_module("builtins").bytes(obj)` |
 | Binary file write | `open(path, "wb")` | `Python.import_module("builtins").open(path, "wb")` |
-| Python None | `None` or `Python.None` | `Python.none()` |
+| Python None value | `None` or `Python.None` | `Python.none()` |
 | Dict for Python API | `Dict[String, String]()` | `Python.dict()` |
 | Lambda / key functions | *(not possible inline)* | `Python.evaluate("lambda ...")` |
+| Numeric conversion | `Int(py_obj)` | `Int(String(py_obj))` |
+| None comparison | `Bool(obj == Python.none())` | `String(builtins.type(obj).__name__) == "NoneType"` |
+| List iteration | `for item in list: item[]` | `for i in range(len(list)): list[i]` |
+| List initialization | `List[String]("a", "b")` | `list.append("a"); list.append("b")` |

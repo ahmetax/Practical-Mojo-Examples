@@ -103,8 +103,7 @@ Here is the table
 | Downloading files efficiently using HTTP streaming in Mojo. | 0.26.1 | http_download_streaming.mojo |
 | Common pitfalls when using Python modules and objects in Mojo. | 0.26.1 | python_interop_gotchas.md |
 | Introduction to PythonObject — Mojo's explicit type for Python values | 0.26.1 | python_object_basics.mojo |
-| Collecting system information in Mojo using Python's os, platform,
-    and psutil modules with explicit PythonObject typing (Style B). | 0.26.1 | system_info.mojo |
+| Collecting system information in Mojo using Python's os, platform, and psutil modules with explicit PythonObject typing (Style B). | 0.26.1 | system_info.mojo |
 | Reading and processing CSV files in Mojo using PythonObject (Style B). | 0.26.1 | csv_processing.mojo |
     
 

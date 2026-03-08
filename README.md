@@ -102,5 +102,8 @@ Here is the table
 | Handling timeouts and automatic retries for HTTP requests in Mojo. | 0.26.1 | http_timeout_retry.mojo |
 | Downloading files efficiently using HTTP streaming in Mojo. | 0.26.1 | http_download_streaming.mojo |
 | Common pitfalls when using Python modules and objects in Mojo. | 0.26.1 | python_interop_gotchas.md |
-| Introduction to PythonObject — Mojo's explicit type for Python values | 0.26.1 | python_object_basics.mojo
+| Introduction to PythonObject — Mojo's explicit type for Python values | 0.26.1 | python_object_basics.mojo |
+| Collecting system information in Mojo using Python's os, platform,
+    and psutil modules with explicit PythonObject typing (Style B). | 0.26.1 | system_info.mojo |
+    
 

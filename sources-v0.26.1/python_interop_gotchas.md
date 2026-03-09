@@ -312,6 +312,8 @@ keys.append("version")
 keys.append("missing_key")
 ```
 
+---
+
 ## 12. String.format() alignment specifiers are not supported
 
 **Problem:**
@@ -363,6 +365,135 @@ var count: Int = Int(Float64(String(py_obj)))
 
 ---
 
+---
+
+## 14. NumPy multi-dimensional slicing is not supported in Mojo
+
+**Problem:**
+NumPy's multi-dimensional slice syntax (`arr[:, :, 0]`, `arr[0:10, 0:10, 2]`)
+causes a `__getitem__` error in Mojo. Mojo cannot pass Python slice objects
+with multiple dimensions directly.
+
+**Error:**
+```
+no matching method in call to '__getitem__'
+```
+
+**Wrong:**
+```mojo
+var channel = array[:, :, 0]          # fails
+array[20:120, 20:120, 0] = 220        # fails
+```
+
+**Correct:**
+```mojo
+# Move slice operations into a Python helper module (helpers.py)
+# and call them via Python.import_module()
+
+# In helpers.py:
+# def get_channel(arr, ch):
+#     return arr[:, :, ch].astype(np.float32)
+
+var helpers: PythonObject = Python.import_module("helpers")
+var channel = helpers.get_channel(array, 0)
+```
+
+This pattern applies to any NumPy operation that requires multi-dimensional
+indexing, boolean masking, or fancy indexing.
+
+---
+
+## 15. Python.evaluate() does not accept multi-line strings
+
+**Problem:**
+`Python.evaluate()` only accepts single-line Python expressions.
+Multi-line function definitions inside `Python.evaluate()` cause a syntax error.
+
+**Error:**
+```
+invalid syntax (<string>, line 2)
+```
+
+**Wrong:**
+```mojo
+Python.evaluate("""
+def my_func(arr):
+    import numpy as np
+    arr[:, :, 2] = 0
+""")(img_array)
+```
+
+**Correct:**
+```mojo
+# Place the function in a separate .py file and import it
+# my_helpers.py:
+#   def my_func(arr):
+#       arr[:, :, 2] = 0
+
+var helpers: PythonObject = Python.import_module("my_helpers")
+helpers.my_func(img_array)
+```
+
+---
+
+## 16. 'import sys' refers to Mojo's sys, not Python's
+
+**Problem:**
+Mojo has its own `sys` module. Writing `import sys` imports Mojo's module,
+not Python's. Accessing `sys.path` then fails because Mojo's `sys`
+does not have a `path` attribute.
+
+**Error:**
+```
+use of unknown declaration 'path'
+```
+
+**Wrong:**
+```mojo
+import sys
+sys.path.insert(0, ".")   # refers to Mojo's sys, not Python's
+```
+
+**Correct:**
+```mojo
+# Import Python's sys explicitly via Python.import_module()
+var sys: PythonObject = Python.import_module("sys")
+sys.path.insert(0, ".")
+```
+
+This applies to any Python standard library module that shares a name
+with a Mojo built-in module (e.g. `sys`, `math`).
+
+---
+
+## 17. Docstrings must end with a period
+
+**Problem:**
+Mojo enforces a style rule that docstring summary lines must end with a period.
+This triggers a lint warning if omitted.
+
+**Warning:**
+```
+doc string summary should end with a period '.', but this ends with '<last_word>'
+```
+
+**Wrong:**
+```mojo
+fn load_image(path: String) raises -> PythonObject:
+    """Load an image and return it as a NumPy array"""
+```
+
+**Correct:**
+```mojo
+fn load_image(path: String) raises -> PythonObject:
+    """Load an image and return it as a NumPy array."""
+```
+
+Applies to both single-line and multi-line docstrings — the closing line
+before the `"""` must end with `.`.
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -378,3 +509,9 @@ var count: Int = Int(Float64(String(py_obj)))
 | None comparison | `Bool(obj == Python.none())` | `String(builtins.type(obj).__name__) == "NoneType"` |
 | List iteration | `for item in list: item[]` | `for i in range(len(list)): list[i]` |
 | List initialization | `List[String]("a", "b")` | `list.append("a"); list.append("b")` |
+| String alignment | `"{:<16}".format(val)` | `Python.import_module("builtins").format(val, "<16")` |
+| Decimal int string | `Int(String("5.0"))` | `Int(Float64(String(py_obj)))` |
+| NumPy slicing | `arr[:, :, 0]` | helper `.py` modülüne taşı |
+| Multi-line evaluate | `Python.evaluate("""...""")` | helper `.py` modülüne taşı |
+| Mojo sys vs Python sys | `import sys` | `Python.import_module("sys")` |
+| Docstring period | `"""Load image"""` | `"""Load image."""` |

@@ -22,7 +22,7 @@ git clone https://github.com/ahmetax/Practical-Mojo-Examples.git
 
 cd Practical-Mojo-Examples
 
-## Installation
+## Mojo Installation
 python3.12 -m venv e312
 
 source e312/bin/activate
@@ -51,6 +51,8 @@ Date: Creation date
 Revision Date: Revision date
 
 Mojo version no: x.y.z
+
+AI: ?
 
 """
 

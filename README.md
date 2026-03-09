@@ -29,6 +29,10 @@ source e312/bin/activate
 
 pip install mojo
 
+cd sources-v0.26.1
+
+pip install -r requirements.txt
+
 ## Version check
 
 mojo -v

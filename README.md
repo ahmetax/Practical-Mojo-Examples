@@ -108,5 +108,6 @@ Here is the table
 | Image processing in Mojo using NumPy and Pillow via PythonObject. | 0.26.1 | numpy_image_processing.mojo img_helpers.py |
 | Data preprocessing for machine learning in Mojo using NumPy via PythonObject. | 0.26.1 | numpy_ml_preprocessing.mojo ml_helpers.py |
 | Frequency analysis of vibration sensor data using NumPy FFT in Mojo. | 0.26.1 | numpy_fft.mojo fft_helpers.py |
+| Time series analysis in Mojo using NumPy via PythonObject. | 0.26.1 | numpy_time_series.mojo ts_helpers.py |
     
 

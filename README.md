@@ -106,5 +106,6 @@ Here is the table
 | Collecting system information in Mojo using Python's os, platform, and psutil modules with explicit PythonObject typing (Style B). | 0.26.1 | system_info.mojo |
 | Reading and processing CSV files in Mojo using PythonObject (Style B). | 0.26.1 | csv_processing.mojo |
 | Image processing in Mojo using NumPy and Pillow via PythonObject. | 0.26.1 | numpy_image_processing.mojo img_helpers.py |
+| Data preprocessing for machine learning in Mojo using NumPy via PythonObject. | 0.26.1 | numpy_ml_preprocessing.mojo ml_helpers.py |
     
 

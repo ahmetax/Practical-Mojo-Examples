@@ -107,5 +107,6 @@ Here is the table
 | Reading and processing CSV files in Mojo using PythonObject (Style B). | 0.26.1 | csv_processing.mojo |
 | Image processing in Mojo using NumPy and Pillow via PythonObject. | 0.26.1 | numpy_image_processing.mojo img_helpers.py |
 | Data preprocessing for machine learning in Mojo using NumPy via PythonObject. | 0.26.1 | numpy_ml_preprocessing.mojo ml_helpers.py |
+| Frequency analysis of vibration sensor data using NumPy FFT in Mojo. | 0.26.1 | numpy_fft.mojo fft_helpers.py |
     
 

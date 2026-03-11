@@ -116,5 +116,6 @@ Here is the table
 | Frequency analysis of vibration sensor data using NumPy FFT in Mojo. | 0.26.1 | numpy_fft.mojo fft_helpers.py |
 | Time series analysis in Mojo using NumPy via PythonObject. | 0.26.1 | numpy_time_series.mojo ts_helpers.py |
 | Classic Snake game implemented in Mojo using Python's tkinter library. | 0.26.1 | snake_game.mojo snake_helpers.py |
-    
+| Terminal-based number guessing game implemented in Mojo. | 0.26.1 | number_guessing.mojo |
+     
 

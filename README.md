@@ -86,7 +86,7 @@ Here is the table
 | Importing and using Python time module | Time | 0.26.1 | python_time.mojo |
 | Read multiple files in given folder | Files | 0.26.1 | read_files.mojo |
 | Reversing a list | Lists | 0.26.1 | reverse_a_list.mojo |
-| Sort a dict by values Dict sort | 0.26.1 | sort_dict_01.mojo |
+| Sort a dict by values Dict sort | Sort | 0.26.1 | sort_dict_01.mojo |
 | Sort integers in a list in ascending and descending orders | Sort | 0.26.1 | sort_integers_01.mojo |
 | Sort integers in a list by sort() | Sort | 0.26.1 | sort_integers_02.mojo |
 | Simple sort for word count | Sort | 0.26.1 | sort_word_count.mojo |

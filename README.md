@@ -117,5 +117,6 @@ Here is the table
 | Time series analysis in Mojo using NumPy via PythonObject. | 0.26.1 | numpy_time_series.mojo ts_helpers.py |
 | Classic Snake game implemented in Mojo using Python's tkinter library. | 0.26.1 | snake_game.mojo snake_helpers.py |
 | Terminal-based number guessing game implemented in Mojo. | 0.26.1 | number_guessing.mojo |
+| Terminal-based word guessing (Hangman) game implemented in Mojo. | 0.26.1 | word_guessing.mojo |
      
 

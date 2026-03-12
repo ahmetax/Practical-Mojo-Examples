@@ -753,6 +753,108 @@ var idx = Int(Float64(String(random.randint(0, n - 1))))
 
 ---
 
+## 26. Flask route handlers cannot be defined inline in Mojo
+
+**Problem:**
+Flask's `@app.route()` decorator syntax requires multi-line Python function
+definitions. These cannot be passed via `Python.evaluate()` (gotcha #15),
+and Mojo closures cannot be registered as Flask route handlers.
+
+**Wrong:**
+```mojo
+# Python.evaluate() does not accept multi-line strings
+var setup = Python.evaluate("""
+def setup_routes(app):
+    @app.route('/')
+    def index():
+        return 'Hello!'
+setup_routes
+""")(app)
+```
+
+**Correct:**
+```mojo
+# Define all route handlers in a separate Python helper file
+# flask_helpers.py:
+#   from flask import jsonify
+#   def setup_routes(app):
+#       @app.route('/')
+#       def index():
+#           return 'Hello from Mojo + Flask!'
+
+flask_helpers: PythonObject = Python.import_module("flask_helpers")
+flask_helpers.setup_routes(app)
+```
+
+This pattern cleanly separates concerns: Mojo handles startup and
+configuration, while Python handles Flask route definitions.
+
+---
+
+## 27. Flask app name must be passed as a Python string
+
+**Problem:**
+`flask.Flask("__main__")` passes a Mojo `StringLiteral` to Flask's
+constructor. Flask may not recognize it correctly as the application name.
+
+**Wrong:**
+```mojo
+var app = flask.Flask("__main__")   # Mojo StringLiteral, not Python str
+```
+
+**Correct:**
+```mojo
+builtins: PythonObject = Python.import_module("builtins")
+var app = flask.Flask(builtins.str("__main__"))
+```
+
+---
+
+## 28. SQLite row access requires string keys via Python dict-style indexing
+
+**Problem:**
+When `conn.row_factory = sqlite3.Row` is set, rows can be accessed by
+column name. However, passing a Mojo `String` or `StringLiteral` directly
+as the key may fail. The key must be passed as a Python string.
+
+**Wrong:**
+```mojo
+var title = String(row["title"])   # may fail — Mojo string key
+```
+
+**Correct:**
+```mojo
+# Wrap the key with String() to ensure proper PythonObject conversion,
+# or use the column index instead
+var title = String(row[String("title")])   # explicit String conversion
+var title = String(row[0])                 # index-based access
+```
+
+---
+
+## 29. SQLite query parameters must be passed as Python tuples
+
+**Problem:**
+SQLite's `execute()` expects query parameters as a Python tuple.
+Mojo tuples cannot be passed directly (gotcha #1).
+
+**Wrong:**
+```mojo
+conn.execute("SELECT * FROM books WHERE id = ?", (book_id,))
+# Mojo tuple — causes type error
+```
+
+**Correct:**
+```mojo
+# Use Python.evaluate() to build the parameter tuple on the Python side
+conn.execute(
+    "SELECT * FROM books WHERE id = ?",
+    Python.evaluate("lambda x: (x,)")(book_id)
+)
+```
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -782,3 +884,7 @@ var idx = Int(Float64(String(random.randint(0, n - 1))))
 | Tuple return type | `fn f() -> (Int, Int)` | iki ayrı `fn` veya `Python.dict()` |
 | Unused variable | `var x = val` (kullanılmıyor) | `_ = val` veya tanımı kaldır |
 | Mojo `len()` to Python | `random.randint(0, len(mojo_list))` | `builtins.len(py_list)` kullan |
+| Flask route handlers | `Python.evaluate("""@app.route...""")` | ayrı `flask_helpers.py` dosyası |
+| Flask app name | `flask.Flask("__main__")` | `flask.Flask(builtins.str("__main__"))` |
+| SQLite row key | `row["title"]` | `row[String("title")]` veya `row[0]` |
+| SQLite parameters | `execute(sql, (val,))` | `execute(sql, Python.evaluate("lambda x: (x,)")(val))` |

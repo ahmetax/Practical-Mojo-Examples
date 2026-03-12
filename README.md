@@ -120,4 +120,6 @@ Here is the table
 | Terminal-based word guessing (Hangman) game implemented in Mojo. |Games | 0.26.1 | word_guessing.mojo |
 | Terminal-based jumbled words game implemented in Mojo. |Games | 0.26.1 | jumbled_words.mojo |
 | Terminal-based Memory Card Game implemented in Mojo using Python's tkinter library for the graphical interface. |Games | 0.26.1 | mem_games.mojo mem_helpers.py |
+| Minimal Flask web server started from Mojo via Python interop.| Flask | 0.26.1 | flask_hello.mojo flask_helpers.py |
+
 

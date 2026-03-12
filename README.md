@@ -123,5 +123,5 @@ Here is the table
 | Minimal Flask web server started from Mojo via Python interop.| Flask | 0.26.1 | flask_hello.mojo flask_helpers.py |
 | A simple REST API built with Mojo + Flask + SQLite. | Flask Sqlite | 0.26.1 | flask_sqlite_api.mojo flask_sqlite_helpers.py |
 | SQLite database access from Mojo using Python's sqlite3 module. | 0.26.1 | sqlite | sqlite_crud.mojo |
-| File-based SQLite database access from Mojo using Python's sqlite3 module. | sqlite | 0.26.1 | sqlite_crud.mojo |
+| File-based SQLite database access from Mojo using Python's sqlite3 module. | sqlite | 0.26.1 | sqlite_file.mojo |
 

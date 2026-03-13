@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Add Expense{% endblock %}
+
+{% block extra_style %}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+.form-group.full { grid-column: 1 / -1; }
+
+label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+{% endblock %}
+
+{% block content %}
+<div class="card" style="max-width:560px; margin:0 auto 1.5rem;">
+  <h2>New Expense</h2>
+  <form method="POST" action="/add">
+    <div class="form-grid">
+
+      <div class="form-group full">
+        <label>Description</label>
+        <input type="text" name="description"
+               placeholder="e.g. Grocery shopping" required>
+      </div>
+
+      <div class="form-group">
+        <label>Amount ($)</label>
+        <input type="number" name="amount"
+               step="0.01" min="0.01" placeholder="0.00" required>
+      </div>
+
+      <div class="form-group">
+        <label>Category</label>
+        <select name="category">
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Housing">Housing</option>
+          <option value="Health">Health</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Education">Education</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group full">
+        <label>Date</label>
+        <input type="date" name="date" value="{{ today }}" required>
+      </div>
+
+      <div class="form-group full" style="flex-direction:row; gap:0.5rem; margin-top:0.5rem;">
+        <button type="submit" class="btn btn-primary">💾 Save</button>
+        <a href="/" class="btn btn-secondary">Cancel</a>
+      </div>
+
+    </div>
+  </form>
+</div>
+{% endblock %}

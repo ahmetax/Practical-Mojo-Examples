@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Expense Tracker{% endblock %}
+
+{% block extra_style %}
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-box {
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-left: 4px solid #0f766e;
+}
+
+.stat-box.danger  { border-color: #ef4444; }
+.stat-box.warning { border-color: #f59e0b; }
+.stat-box.info    { border-color: #3b82f6; }
+
+.stat-box .amount {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.stat-box .label {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.2rem;
+}
+
+.cat-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.amount-cell {
+  font-weight: 600;
+  color: #0f766e;
+}
+
+.chart-wrap {
+  max-width: 340px;
+  margin: 0 auto;
+}
+{% endblock %}
+
+{% block content %}
+
+<!-- Stat Cards -->
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="amount">${{ "%.2f"|format(stats.total) }}</div>
+    <div class="label">Total Spending</div>
+  </div>
+  <div class="stat-box warning">
+    <div class="amount">${{ "%.2f"|format(stats.this_month) }}</div>
+    <div class="label">This Month</div>
+  </div>
+  <div class="stat-box info">
+    <div class="amount">${{ "%.2f"|format(stats.this_week) }}</div>
+    <div class="label">This Week</div>
+  </div>
+  <div class="stat-box danger">
+    <div class="amount">{{ stats.count }}</div>
+    <div class="label">Total Entries</div>
+  </div>
+</div>
+
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; flex-wrap:wrap;">
+
+  <!-- Category chart -->
+  <div class="card">
+    <h2>Spending by Category</h2>
+    {% if cat_data %}
+    <div class="chart-wrap">
+      <canvas id="catChart"></canvas>
+    </div>
+    {% else %}
+    <p style="color:#9ca3af; text-align:center; padding:2rem 0;">No data yet.</p>
+    {% endif %}
+  </div>
+
+  <!-- Top categories -->
+  <div class="card">
+    <h2>Top Categories</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Amount</th><th>%</th></tr>
+      </thead>
+      <tbody>
+        {% for row in cat_data %}
+        <tr>
+          <td><span class="cat-badge">{{ row.category }}</span></td>
+          <td class="amount-cell">${{ "%.2f"|format(row.total) }}</td>
+          <td style="color:#6b7280;">
+            {% if stats.total > 0 %}
+              {{ "%.0f"|format(row.total / stats.total * 100) }}%
+            {% else %}0%{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- Recent expenses -->
+<div class="card">
+  <h2>Recent Expenses</h2>
+  {% if expenses %}
+  <table>
+    <thead>
+      <tr><th>Date</th><th>Description</th><th>Category</th><th>Amount</th><th></th></tr>
+    </thead>
+    <tbody>
+      {% for e in expenses %}
+      <tr>
+        <td style="color:#6b7280;">{{ e.date }}</td>
+        <td>{{ e.description }}</td>
+        <td><span class="cat-badge">{{ e.category }}</span></td>
+        <td class="amount-cell">${{ "%.2f"|format(e.amount) }}</td>
+        <td>
+          <form method="POST" action="/delete/{{ e.id }}"
+                onsubmit="return confirm('Delete this entry?')">
+            <button type="submit" class="btn btn-danger"
+                    style="padding:0.2rem 0.6rem; font-size:0.78rem;">🗑</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:#9ca3af; text-align:center; padding:2rem 0;">
+    No expenses yet. <a href="/add" style="color:#0f766e;">Add one!</a>
+  </p>
+  {% endif %}
+</div>
+
+{% if cat_data %}
+<script>
+  const labels = {{ cat_labels | tojson }};
+  const values = {{ cat_values | tojson }};
+  const colors = [
+    '#0f766e','#3b82f6','#f59e0b','#ef4444',
+    '#8b5cf6','#10b981','#f97316','#6b7280'
+  ];
+  new Chart(document.getElementById('catChart'), {
+    type: 'doughnut',
+    data: {
+      labels: labels,
+      datasets: [{ data: values, backgroundColor: colors, borderWidth: 2 }]
+    },
+    options: {
+      plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } }
+    }
+  });
+</script>
+{% endif %}
+
+{% endblock %}

@@ -124,7 +124,7 @@ Here is the table
 | A simple REST API built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.1 | flask_sqlite_api.mojo flask_sqlite_helpers.py |
 | SQLite database access from Mojo using Python's sqlite3 module | Sqlite | 0.26.1 | sqlite_crud.mojo |
 | File-based SQLite database access from Mojo using Python's sqlite3 module | Sqlite | 0.26.1 | sqlite_file.mojo |
-| A To-Do List web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.1 | todo_app.mojo todo_helpers.py |
+| A To-Do List web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.1 | todo_app.mojo todo_helpers.py todo_templates/ |
 | Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.1 | expense_app.mojo expense_helpers.py expense_templates/ |
 | Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.1 |weather_app.mojo weather_helpers.py |
 

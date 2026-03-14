@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+{% block title %}File Manager{% endblock %}
+
+{% block extra_style %}
+/* Upload area */
+.upload-area {
+  border: 2px dashed #93c5fd;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  background: #eff6ff;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.upload-area:hover,
+.upload-area.dragover {
+  border-color: #3b82f6;
+  background: #dbeafe;
+}
+
+.upload-area .icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+.upload-area p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.upload-area input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.upload-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+#file-list-preview {
+  font-size: 0.85rem;
+  color: #374151;
+  flex: 1;
+}
+
+/* Stats */
+.stat-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.stat-pill {
+  background: white;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  color: #374151;
+}
+
+.stat-pill span { font-weight: 700; color: #1e293b; }
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.filters a {
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  text-decoration: none;
+  background: #e5e7eb;
+  color: #374151;
+  transition: background 0.2s;
+}
+
+.filters a.active,
+.filters a:hover {
+  background: #1e293b;
+  color: white;
+}
+
+/* File grid */
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.file-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.file-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.file-card .thumb {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.file-card .file-icon {
+  font-size: 3rem;
+  line-height: 90px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.file-card .name {
+  font-size: 0.78rem;
+  color: #374151;
+  word-break: break-all;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.file-card .meta {
+  font-size: 0.7rem;
+  color: #9ca3af;
+  margin-bottom: 0.6rem;
+}
+
+.file-card .actions {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  padding: 3rem 0;
+  font-size: 0.95rem;
+}
+{% endblock %}
+
+{% block content %}
+
+<!-- Upload -->
+<div class="card">
+  <h2>Upload Files</h2>
+  <form method="POST" action="/upload" enctype="multipart/form-data" id="upload-form">
+    <div class="upload-area" id="drop-zone">
+      <div class="icon">📁</div>
+      <p>Drag & drop files here, or click to select</p>
+      <p style="font-size:0.78rem; color:#9ca3af;">
+        Images, PDFs, text, code files — max {{ max_mb }}MB each
+      </p>
+      <input type="file" name="files" id="file-input" multiple>
+    </div>
+    <div class="upload-actions">
+      <div id="file-list-preview">No files selected.</div>
+    </div>
+  </form>
+</div>
+
+<!-- Stats -->
+<div class="stat-row">
+  <div class="stat-pill">Total: <span>{{ stats.count }}</span> files</div>
+  <div class="stat-pill">Size: <span>{{ stats.total_size }}</span></div>
+  <div class="stat-pill">🖼 Images: <span>{{ stats.images }}</span></div>
+  <div class="stat-pill">📄 PDFs: <span>{{ stats.pdfs }}</span></div>
+  <div class="stat-pill">📝 Other: <span>{{ stats.others }}</span></div>
+</div>
+
+<!-- File list -->
+<div class="card">
+  <h2>Files</h2>
+
+  <div class="filters">
+    <a href="/"              class="{{ 'active' if filter == 'all' }}">All ({{ stats.count }})</a>
+    <a href="/?filter=image" class="{{ 'active' if filter == 'image' }}">Images ({{ stats.images }})</a>
+    <a href="/?filter=pdf"   class="{{ 'active' if filter == 'pdf' }}">PDFs ({{ stats.pdfs }})</a>
+    <a href="/?filter=other" class="{{ 'active' if filter == 'other' }}">Other ({{ stats.others }})</a>
+  </div>
+
+  {% if files %}
+  <div class="file-grid">
+    {% for f in files %}
+    <div class="file-card">
+      {% if f.is_image %}
+        <img class="thumb" src="/uploads/{{ f.filename }}" alt="{{ f.filename }}">
+      {% else %}
+        <span class="file-icon">{{ f.icon }}</span>
+      {% endif %}
+
+      <div class="name" title="{{ f.filename }}">
+        {{ f.filename | truncate(22, True, '…') }}
+      </div>
+      <div class="meta">{{ f.size }} · {{ f.date }}</div>
+
+      <div class="actions">
+        <a href="/preview/{{ f.filename }}" class="btn btn-secondary"
+           style="padding:0.25rem 0.6rem; font-size:0.75rem;">👁</a>
+        <a href="/download/{{ f.filename }}" class="btn btn-success"
+           style="padding:0.25rem 0.6rem; font-size:0.75rem;">⬇️</a>
+        <form method="POST" action="/delete/{{ f.filename }}"
+              onsubmit="return confirm('Delete {{ f.filename }}?')">
+          <button type="submit" class="btn btn-danger"
+                  style="padding:0.25rem 0.6rem; font-size:0.75rem;">🗑</button>
+        </form>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty">No files yet. Upload something! ☝️</div>
+  {% endif %}
+</div>
+
+<script>
+  const input   = document.getElementById('file-input');
+  const preview = document.getElementById('file-list-preview');
+  const dropZone= document.getElementById('drop-zone');
+  const form    = document.getElementById('upload-form');
+
+  function submitWithFiles(files) {
+    if (!files.length) return;
+    const names = Array.from(files).map(f => f.name).join(', ');
+    preview.textContent = `⏳ Uploading ${files.length} file(s): ${names}`;
+    form.submit();
+  }
+
+  // Dosya seçilince hemen gönder
+  input.addEventListener('change', () => {
+    if (input.files.length) submitWithFiles(input.files);
+  });
+
+  // Drag & drop
+  dropZone.addEventListener('dragover', e => {
+    e.preventDefault();
+    dropZone.classList.add('dragover');
+  });
+
+  dropZone.addEventListener('dragleave', () => {
+    dropZone.classList.remove('dragover');
+  });
+
+  // Drop edilince hemen gönder
+  dropZone.addEventListener('drop', e => {
+    e.preventDefault();
+    dropZone.classList.remove('dragover');
+    const dt = e.dataTransfer;
+    if (dt.files.length) {
+      const dataTransfer = new DataTransfer();
+      Array.from(dt.files).forEach(f => dataTransfer.items.add(f));
+      input.files = dataTransfer.files;
+      submitWithFiles(input.files);
+    }
+  });
+</script>
+{% endblock %}

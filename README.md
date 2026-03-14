@@ -127,4 +127,5 @@ Here is the table
 | A To-Do List web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.1 | todo_app.mojo todo_helpers.py todo_templates/ |
 | Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.1 | expense_app.mojo expense_helpers.py expense_templates/ |
 | Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.1 |weather_app.mojo weather_helpers.py weather_templates/ |
+| General File Manager web application built with Mojo + Flask. | Flask | 0.26.1 | filemanager_app/ |
 

@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — MojoBlog{% endblock %}
+
+{% block extra_style %}
+.dash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dash-header h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.stat-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-pill {
+  background: white;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.stat-pill span { font-weight: 700; color: #6366f1; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+
+th {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #f8fafc; }
+
+.post-title-link {
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-title-link:hover { color: #6366f1; }
+
+.actions { display: flex; gap: 0.4rem; }
+
+.empty {
+  text-align: center;
+  padding: 3rem;
+  color: #94a3b8;
+}
+{% endblock %}
+
+{% block content %}
+<div class="dash-header">
+  <h1>📋 My Dashboard</h1>
+  <a href="/post/new" class="btn btn-primary">+ New Post</a>
+</div>
+
+<div class="stat-row">
+  <div class="stat-pill">Total posts: <span>{{ posts | length }}</span></div>
+</div>
+
+<div class="card" style="padding:0; overflow:hidden;">
+  {% if posts %}
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Created</th>
+        <th>Updated</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in posts %}
+      <tr>
+        <td>
+          <a class="post-title-link" href="/post/{{ post.id }}">
+            {{ post.title | truncate(50) }}
+          </a>
+        </td>
+        <td style="color:#94a3b8;">{{ post.created_at[:10] }}</td>
+        <td style="color:#94a3b8;">{{ post.updated_at[:10] }}</td>
+        <td>
+          <div class="actions">
+            <a href="/post/edit/{{ post.id }}" class="btn btn-warning"
+               style="padding:0.3rem 0.7rem; font-size:0.8rem;">✏️ Edit</a>
+            <form method="POST" action="/post/delete/{{ post.id }}"
+                  onsubmit="return confirm('Delete \'{{ post.title }}\'?')"
+                  style="display:inline;">
+              <button type="submit" class="btn btn-danger"
+                      style="padding:0.3rem 0.7rem; font-size:0.8rem;">🗑</button>
+            </form>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="empty">
+    <p>You haven't written any posts yet.</p>
+    <a href="/post/new" class="btn btn-primary" style="margin-top:1rem;">
+      Write your first post!
+    </a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

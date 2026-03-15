@@ -65,7 +65,9 @@ into sources-v0.26.1 folder.  I hope it will be more readable.
 
 Version numbers of Mojo used while testing example codes will be included both in the table, and in the headers in the files.
 
-Here is the table
+More detailed explanations for the explanations can be found at https://gurmezin.com/category/mojo/.
+
+Here is the code list table
 
 | <b>Explanation</b> | <b>Category</b> | <b>Mojo version</b> | <b>Code name</b> |
 | :------------------------------------ | :----------| :-------------: | :--------------------------------------------- |

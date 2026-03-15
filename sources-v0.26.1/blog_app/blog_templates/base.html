@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}MojoBlog{% endblock %}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      min-height: 100vh;
+    }
+
+    /* NAV */
+    nav {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .nav-brand {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #6366f1;
+      text-decoration: none;
+    }
+
+    .nav-links { display: flex; align-items: center; gap: 0.3rem; }
+
+    .nav-links a {
+      color: #64748b;
+      text-decoration: none;
+      padding: 0.4rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: all 0.15s;
+    }
+
+    .nav-links a:hover { background: #f1f5f9; color: #1e293b; }
+    .nav-links a.active { background: #eef2ff; color: #6366f1; font-weight: 600; }
+
+    .nav-links .btn-nav {
+      background: #6366f1;
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+    }
+
+    .nav-links .btn-nav:hover { background: #4f46e5; color: white; }
+
+    .nav-user {
+      font-size: 0.85rem;
+      color: #64748b;
+      padding: 0.4rem 0.9rem;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 860px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+    }
+
+    /* CARDS */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+      margin-bottom: 1.5rem;
+    }
+
+    /* FORMS */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #475569;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+      padding: 0.65rem 0.9rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border 0.2s;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    input:focus, textarea:focus { border-color: #6366f1; }
+    textarea { resize: vertical; min-height: 180px; line-height: 1.6; }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.3rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.15s;
+      font-family: inherit;
+    }
+
+    .btn:hover { opacity: 0.85; }
+    .btn-primary   { background: #6366f1; color: white; font-weight: 600; }
+    .btn-danger    { background: #ef4444; color: white; }
+    .btn-secondary { background: #e2e8f0; color: #374151; }
+    .btn-success   { background: #10b981; color: white; }
+    .btn-warning   { background: #f59e0b; color: white; }
+
+    /* ALERTS */
+    .alert {
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .alert-success { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
+    .alert-error   { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+    .alert-info    { background: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
+
+    /* BADGES */
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 10px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+
+    .badge-indigo { background: #eef2ff; color: #6366f1; }
+    .badge-gray   { background: #f1f5f9; color: #64748b; }
+
+    {% block extra_style %}{% endblock %}
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="/">✍️ MojoBlog</a>
+    <div class="nav-links">
+      <a href="/" class="{{ 'active' if request.path == '/' }}">Home</a>
+      {% if session.user_id %}
+        <a href="/dashboard" class="{{ 'active' if request.path == '/dashboard' }}">Dashboard</a>
+        <a href="/post/new"  class="{{ 'active' if request.path == '/post/new' }}">+ New Post</a>
+        <span class="nav-user">👤 {{ session.username }}</span>
+        <a href="/profile"   class="{{ 'active' if request.path == '/profile' }}">Profile</a>
+        <a href="/logout">Logout</a>
+      {% else %}
+        <a href="/login"    class="{{ 'active' if request.path == '/login' }}">Login</a>
+        <a href="/register" class="btn-nav">Register</a>
+      {% endif %}
+    </div>
+  </nav>
+
+  <main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+      {% endfor %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

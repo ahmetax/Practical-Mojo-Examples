@@ -130,5 +130,5 @@ Here is the code list table
 | Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.1 | expense_app.mojo expense_helpers.py expense_templates/ |
 | Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.1 |weather_app.mojo weather_helpers.py weather_templates/ |
 | General File Manager web application built with Mojo + Flask. | Flask | 0.26.1 | filemanager_app/ |
-| Blog / Content Management System built with Mojo + Flask + SQLite.| Flask + SQLite | blog_app/ |
-
+| Blog / Content Management System built with Mojo + Flask + SQLite.| Flask + SQLite | 0.26.1 | blog_app/ |
+| Real-time Chat Application built with Mojo + Flask + Flask-SocketIO. | Flask | 0.26.1 | chat_app/ |

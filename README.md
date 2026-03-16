@@ -132,3 +132,5 @@ Here is the code list table
 | General File Manager web application built with Mojo + Flask. | Flask | 0.26.1 | filemanager_app/ |
 | Blog / Content Management System built with Mojo + Flask + SQLite.| Flask + SQLite | 0.26.1 | blog_app/ |
 | Real-time Chat Application built with Mojo + Flask + Flask-SocketIO. | Flask | 0.26.1 | chat_app/ |
+| Library REST API built with Mojo + Flask + SQLite. | Flask + SQLite | 0.26.1 | library_api/ |
+

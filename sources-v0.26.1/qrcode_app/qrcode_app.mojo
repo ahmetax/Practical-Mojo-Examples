@@ -39,7 +39,7 @@ Description:
     Then open http://localhost:8117
 
 Requirements:
-    pip install flask qrcode[pil] pyzbar pillow
+    pip install flask qrcode[pil] pyzbar pillow opencv-python
     
     Note: pyzbar also requires the zbar shared library:
       Ubuntu/Debian: sudo apt-get install libzbar0

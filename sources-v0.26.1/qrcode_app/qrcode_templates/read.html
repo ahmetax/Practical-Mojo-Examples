@@ -1,0 +1,398 @@
+{% extends "base.html" %}
+{% block title %}Read QR Code{% endblock %}
+
+{% block extra_style %}
+.read-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.read-tab {
+  padding: 0.45rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.read-tab.active {
+  background: #312e81;
+  border-color: #7c3aed;
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.read-panel { display: none; }
+.read-panel.active { display: block; }
+
+/* Upload drop zone */
+.drop-zone {
+  border: 2px dashed #334155;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  background: #0f172a;
+}
+
+.drop-zone:hover,
+.drop-zone.dragover {
+  border-color: #7c3aed;
+  background: #1a103a;
+}
+
+.drop-zone .icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.drop-zone p { color: #64748b; font-size: 0.88rem; }
+
+.drop-zone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+/* Webcam */
+#video-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+}
+
+#webcam {
+  width: 100%;
+  border-radius: 10px;
+  background: #0f172a;
+  display: block;
+}
+
+#scan-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  transition: border-color 0.3s;
+  pointer-events: none;
+}
+
+#scan-overlay.scanning { border-color: #7c3aed; }
+#scan-overlay.found    { border-color: #059669; }
+
+.webcam-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Result */
+.result-box {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.result-box .result-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.result-box .result-text {
+  font-size: 0.95rem;
+  color: #a78bfa;
+  word-break: break-all;
+  line-height: 1.6;
+}
+
+.result-box .result-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.preview-img {
+  max-width: 200px;
+  border-radius: 8px;
+  border: 3px solid #334155;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+#scan-status {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  min-height: 1.2rem;
+}
+{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h2>Read QR Code</h2>
+
+  <div class="read-tabs">
+    <button class="read-tab active" onclick="switchReadTab('upload')">
+      📁 Upload Image
+    </button>
+    <button class="read-tab" onclick="switchReadTab('webcam')">
+      📷 Webcam
+    </button>
+  </div>
+
+  <!-- Upload panel -->
+  <div class="read-panel active" id="read-panel-upload">
+    <form method="POST" action="/read" enctype="multipart/form-data" id="upload-form">
+      <div class="drop-zone" id="drop-zone">
+        <div class="icon">🖼</div>
+        <p>Drop a QR code image here, or click to select</p>
+        <p style="font-size:0.75rem; margin-top:0.3rem;">PNG, JPG, GIF, BMP, WebP</p>
+        <input type="file" name="qr_image" id="file-input"
+               accept="image/*" onchange="this.form.submit()">
+      </div>
+    </form>
+
+    {% if upload_result is defined %}
+    <div class="result-box" id="upload-result">
+      {% if upload_preview %}
+      <img class="preview-img" src="data:image/png;base64,{{ upload_preview }}" alt="Uploaded QR">
+      {% endif %}
+      <div class="result-label">Decoded Content</div>
+      {% if upload_result %}
+        <div class="result-text" id="upload-text">{{ upload_result }}</div>
+        <div class="result-actions">
+          {% if upload_result.startswith('http') %}
+            <a href="{{ upload_result }}" target="_blank" class="btn btn-primary">
+              🔗 Open URL
+            </a>
+          {% endif %}
+          <button class="btn btn-secondary" onclick="copyText('upload-text')">
+            📋 Copy
+          </button>
+        </div>
+      {% else %}
+        <div class="result-text" style="color:#f87171;">
+          ❌ No QR code detected in this image.
+        </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Webcam panel -->
+  <div class="read-panel" id="read-panel-webcam">
+    <div style="text-align:center;">
+      <div id="video-container">
+        <video id="webcam" autoplay playsinline></video>
+        <div id="scan-overlay"></div>
+      </div>
+      <div id="scan-status">Click "Start Camera" to begin scanning.</div>
+    </div>
+
+    <div class="webcam-controls">
+      <button class="btn btn-primary" id="start-btn" onclick="startCamera()">
+        ▶️ Start Camera
+      </button>
+      <button class="btn btn-success" id="scan-btn" onclick="manualScan()" disabled>
+        🔍 Scan Now
+      </button>
+      <button class="btn btn-secondary" id="stop-btn" onclick="stopCamera()" disabled>
+        ⏹ Stop
+      </button>
+    </div>
+
+    <!-- Captured frame preview -->
+    <div id="capture-preview" style="display:none; margin-top:1rem;">
+      <div style="font-size:0.75rem; color:#64748b; margin-bottom:0.4rem;">
+        Captured frame:
+      </div>
+      <canvas id="capture-canvas"
+              style="border:2px solid #334155; border-radius:8px; max-width:100%;"></canvas>
+    </div>
+
+    <div class="result-box" id="webcam-result" style="display:none;">
+      <div class="result-label">Scanned Content</div>
+      <div class="result-text" id="webcam-text"></div>
+      <div class="result-actions" id="webcam-actions"></div>
+    </div>
+  </div>
+</div>
+
+<!-- jsQR for webcam scanning -->
+
+<script>
+  // ── Tab switching ─────────────────────────────────────────────── //
+  function switchReadTab(tab) {
+    document.querySelectorAll('.read-tab').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.read-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('read-panel-' + tab).classList.add('active');
+    event.target.classList.add('active');
+    if (tab !== 'webcam') stopCamera();
+  }
+
+  // ── Drag & drop ───────────────────────────────────────────────── //
+  const dropZone = document.getElementById('drop-zone');
+  dropZone.addEventListener('dragover', e => {
+    e.preventDefault();
+    dropZone.classList.add('dragover');
+  });
+  dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+  dropZone.addEventListener('drop', e => {
+    e.preventDefault();
+    dropZone.classList.remove('dragover');
+    const file = e.dataTransfer.files[0];
+    if (file) {
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      document.getElementById('file-input').files = dt.files;
+      document.getElementById('upload-form').submit();
+    }
+  });
+
+  // ── Copy helper ───────────────────────────────────────────────── //
+  function copyText(id) {
+    const text = document.getElementById(id).textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Copied to clipboard!');
+    });
+  }
+
+  // ── Webcam scanning ───────────────────────────────────────────── //
+  let stream     = null;
+  let scanLoop   = null;
+
+  const procCanvas = document.createElement('canvas');
+  const procCtx    = procCanvas.getContext('2d', { willReadFrequently: true });
+
+  async function startCamera() {
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({
+        video: {
+          facingMode: 'environment',
+          width:  { ideal: 1280 },
+          height: { ideal: 720 }
+        }
+      });
+      const video = document.getElementById('webcam');
+      video.srcObject = stream;
+
+      video.addEventListener('loadedmetadata', () => {
+        document.getElementById('start-btn').disabled = true;
+        document.getElementById('stop-btn').disabled  = false;
+        document.getElementById('scan-btn').disabled  = false;
+        document.getElementById('scan-overlay').className = 'scanning';
+        document.getElementById('scan-status').textContent =
+          '✅ Camera ready — press Scan Now to decode';
+      }, { once: true });
+
+    } catch (err) {
+      document.getElementById('scan-status').textContent =
+        '❌ Camera error: ' + err.message;
+    }
+  }
+
+  function stopCamera() {
+    if (stream) {
+      stream.getTracks().forEach(t => t.stop());
+      stream = null;
+    }
+    if (scanLoop) { clearInterval(scanLoop); scanLoop = null; }
+    const video = document.getElementById('webcam');
+    video.srcObject = null;
+    document.getElementById('start-btn').disabled = false;
+    document.getElementById('stop-btn').disabled  = true;
+    document.getElementById('scan-btn').disabled  = true;
+    document.getElementById('scan-overlay').className = '';
+    document.getElementById('scan-status').textContent =
+      'Click "Start Camera" to begin scanning.';
+    document.getElementById('capture-preview').style.display = 'none';
+  }
+
+  function captureFrame() {
+    const video = document.getElementById('webcam');
+    if (!video || video.readyState < video.HAVE_ENOUGH_DATA) return null;
+    if (video.videoWidth === 0 || video.videoHeight === 0) return null;
+    procCanvas.width  = video.videoWidth;
+    procCanvas.height = video.videoHeight;
+    procCtx.drawImage(video, 0, 0, procCanvas.width, procCanvas.height);
+    return true;
+  }
+
+  function manualScan() {
+    const video = document.getElementById('webcam');
+    if (!video || !stream) return;
+
+    if (!captureFrame()) {
+      document.getElementById('scan-status').textContent = '⚠️ Could not capture frame.';
+      return;
+    }
+
+    // Show captured frame
+    const displayCanvas = document.getElementById('capture-canvas');
+    displayCanvas.width  = procCanvas.width;
+    displayCanvas.height = procCanvas.height;
+    displayCanvas.getContext('2d').drawImage(procCanvas, 0, 0);
+    document.getElementById('capture-preview').style.display = 'block';
+
+    document.getElementById('scan-status').textContent = '⏳ Sending to server...';
+    document.getElementById('scan-btn').disabled = true;
+
+    // Send to server as base64 JSON
+    const dataURL = procCanvas.toDataURL('image/png');
+
+    fetch('/scan_frame', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ image: dataURL })
+    })
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('scan-btn').disabled = false;
+        if (data.result) {
+          showWebcamResult(data.result);
+        } else {
+          document.getElementById('scan-overlay').className = 'scanning';
+          document.getElementById('scan-status').textContent =
+            '❌ No QR code found. Adjust position and try again.';
+        }
+      })
+      .catch(err => {
+        document.getElementById('scan-btn').disabled = false;
+        document.getElementById('scan-status').textContent = '❌ Server error: ' + err.message;
+      });
+  }
+
+  function showWebcamResult(text) {
+    document.getElementById('scan-overlay').className = 'found';
+    document.getElementById('scan-status').textContent = '✅ QR Code decoded!';
+
+    const resultBox     = document.getElementById('webcam-result');
+    const resultText    = document.getElementById('webcam-text');
+    const resultActions = document.getElementById('webcam-actions');
+
+    resultText.textContent  = text;
+    resultBox.style.display = 'block';
+
+    let actionsHTML = `<button class="btn btn-secondary" onclick="copyText('webcam-text')">📋 Copy</button>`;
+    if (text.startsWith('http')) {
+      actionsHTML = `<a href="${text}" target="_blank" class="btn btn-primary">🔗 Open URL</a>` + actionsHTML;
+    }
+    resultActions.innerHTML = actionsHTML;
+  }
+
+</script>
+{% endblock %}

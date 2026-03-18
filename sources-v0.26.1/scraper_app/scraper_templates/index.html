@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% block title %}Web Scraper{% endblock %}
+
+{% block extra_style %}
+.url-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.url-row .form-group { flex: 1; margin-bottom: 0; }
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border 0.15s;
+}
+
+.option-item:hover { border-color: #38bdf8; }
+.option-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #38bdf8;
+  cursor: pointer;
+}
+
+.option-item label {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.advanced-toggle {
+  font-size: 0.82rem;
+  color: #64748b;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.advanced-toggle:hover { color: #38bdf8; }
+
+.advanced-opts {
+  display: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #334155;
+}
+
+.advanced-opts.open { display: block; }
+
+.adv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tip {
+  font-size: 0.75rem;
+  color: #475569;
+  margin-top: 0.3rem;
+}
+{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h2>Scrape a Web Page</h2>
+
+  <form method="POST" action="/scrape">
+    <div class="url-row">
+      <div class="form-group">
+        <label>URL</label>
+        <input type="url" name="url"
+               placeholder="https://example.com"
+               value="{{ last_url or '' }}"
+               required autofocus>
+      </div>
+      <button type="submit" class="btn btn-primary">🕷 Scrape</button>
+    </div>
+
+    <div class="options-grid">
+      <div class="option-item">
+        <input type="checkbox" name="get_meta"     id="get_meta"     checked>
+        <label for="get_meta">📋 Meta Tags</label>
+      </div>
+      <div class="option-item">
+        <input type="checkbox" name="get_headings" id="get_headings" checked>
+        <label for="get_headings">📰 Headings</label>
+      </div>
+      <div class="option-item">
+        <input type="checkbox" name="get_links"    id="get_links"    checked>
+        <label for="get_links">🔗 Links</label>
+      </div>
+      <div class="option-item">
+        <input type="checkbox" name="get_images"   id="get_images"   checked>
+        <label for="get_images">🖼 Images</label>
+      </div>
+      <div class="option-item">
+        <input type="checkbox" name="get_text"     id="get_text">
+        <label for="get_text">📝 Page Text</label>
+      </div>
+      <div class="option-item">
+        <input type="checkbox" name="get_tables"   id="get_tables">
+        <label for="get_tables">📊 Tables</label>
+      </div>
+    </div>
+
+    <span class="advanced-toggle" onclick="toggleAdvanced()">
+      ⚙️ Advanced options ▾
+    </span>
+
+    <div class="advanced-opts" id="advanced-opts">
+      <div class="adv-grid">
+        <div class="form-group">
+          <label>Timeout (seconds)</label>
+          <input type="text" name="timeout" value="10">
+          <div class="tip">Max wait time for the page to respond.</div>
+        </div>
+        <div class="form-group">
+          <label>Max Links</label>
+          <input type="text" name="max_links" value="50">
+          <div class="tip">Limit number of links returned.</div>
+        </div>
+        <div class="form-group">
+          <label>Max Images</label>
+          <input type="text" name="max_images" value="30">
+          <div class="tip">Limit number of images returned.</div>
+        </div>
+        <div class="form-group">
+          <label>User Agent</label>
+          <select name="user_agent">
+            <option value="default">Default (Python requests)</option>
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="bot">Googlebot</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  function toggleAdvanced() {
+    const el = document.getElementById('advanced-opts');
+    el.classList.toggle('open');
+  }
+</script>
+{% endblock %}

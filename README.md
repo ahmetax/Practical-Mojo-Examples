@@ -67,7 +67,7 @@ Version numbers of Mojo used while testing example codes will be included both i
 
 More detailed explanations for the explanations can be found at https://gurmezin.com/category/mojo/.
 
-Here is the code list table
+Here is the code list table (covers more than 60 examples).
 
 | <b>Explanation</b> | <b>Category</b> | <b>Mojo version</b> | <b>Code name</b> |
 | :------------------------------------ | :----------| :-------------: | :--------------------------------------------- |

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}History — Web Scraper{% endblock %}
+
+{% block extra_style %}
+.history-list { list-style: none; }
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #1e293b;
+  flex-wrap: wrap;
+}
+
+.history-item:last-child { border-bottom: none; }
+
+.history-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  flex: 1;
+  min-width: 200px;
+}
+
+.history-url {
+  font-size: 0.78rem;
+  color: #475569;
+  word-break: break-all;
+}
+
+.history-meta {
+  font-size: 0.75rem;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.empty {
+  text-align: center;
+  color: #475569;
+  padding: 3rem 0;
+}
+{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+    <h2 style="margin:0;">Scrape History</h2>
+    {% if history %}
+    <form method="POST" action="/history/clear"
+          onsubmit="return confirm('Clear all history?')">
+      <button type="submit" class="btn btn-danger" style="font-size:0.82rem;">
+        🗑 Clear All
+      </button>
+    </form>
+    {% endif %}
+  </div>
+
+  {% if history %}
+  <ul class="history-list">
+    {% for item in history %}
+    <li class="history-item">
+      <div style="flex:1;">
+        <div class="history-title">{{ item.title or 'No title' }}</div>
+        <div class="history-url">{{ item.url }}</div>
+      </div>
+      <div class="history-meta">{{ item.scraped_at }}</div>
+      <a href="/result/{{ item.id }}" class="btn btn-secondary"
+         style="font-size:0.8rem; padding:0.3rem 0.8rem;">View</a>
+      <a href="/download/{{ item.id }}" class="btn btn-success"
+         style="font-size:0.8rem; padding:0.3rem 0.8rem;">⬇️ JSON</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="empty">No scrape history yet. <a href="/" style="color:#38bdf8;">Start scraping!</a></div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,351 @@
+{% extends "base.html" %}
+{% block title %}Mojo vs Python Benchmark{% endblock %}
+
+{% block extra_style %}
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.control-group label {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.result-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+
+.result-card .test-name {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.result-card .times {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.time-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #94a3b8;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-mojo   { background: #f97316; }
+.dot-python { background: #3b82f6; }
+
+.time-val { font-weight: 700; font-family: monospace; font-size: 0.92rem; }
+.time-mojo   { color: #f97316; }
+.time-python { color: #3b82f6; }
+
+.speedup {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #1e293b;
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.speedup .val {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.speedup .val.faster { color: #22c55e; }
+.speedup .val.slower { color: #ef4444; }
+
+.bar-wrap {
+  margin-top: 0.4rem;
+  height: 4px;
+  background: #1e293b;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #f97316, #fb923c);
+  transition: width 0.5s;
+}
+
+.summary-box {
+  background: linear-gradient(135deg, #1c1a10, #1a1a0a);
+  border: 1px solid #854d0e;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+}
+
+.summary-box .avg {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #f97316;
+}
+
+.summary-box .avg-label {
+  font-size: 0.82rem;
+  color: #92400e;
+  margin-top: 0.2rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #475569;
+}
+
+.loading .spinner {
+  font-size: 2rem;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.badge-mojo   { background: #431407; color: #fb923c; }
+.badge-python { background: #1e3a5f; color: #60a5fa; }
+{% endblock %}
+
+{% block content %}
+
+<!-- Controls -->
+<div class="card">
+  <h2>Benchmark Settings</h2>
+  <form method="POST" action="/run" id="bench-form">
+    <div class="controls">
+      <div class="control-group">
+        <label>Fibonacci N</label>
+        <input type="number" name="fib_n" value="{{ params.fib_n or 35 }}"
+               min="10" max="45" style="width:100px;">
+      </div>
+      <div class="control-group">
+        <label>Primes up to</label>
+        <input type="number" name="prime_limit" value="{{ params.prime_limit or 1000000 }}"
+               min="1000" max="5000000" style="width:130px;">
+      </div>
+      <div class="control-group">
+        <label>Factorial N</label>
+        <input type="number" name="fact_n" value="{{ params.fact_n or 10000 }}"
+               min="100" max="50000" style="width:100px;">
+      </div>
+      <div class="control-group">
+        <label>Sum N</label>
+        <input type="number" name="sum_n" value="{{ params.sum_n or 10000000 }}"
+               min="100000" max="100000000" style="width:130px;">
+      </div>
+      <button type="submit" class="btn btn-primary" id="run-btn">
+        ⚡ Run Benchmark
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- Loading -->
+<div class="loading" id="loading" style="display:none;">
+  <div class="spinner">⚙️</div>
+  <div style="margin-top:1rem;">Running benchmarks...</div>
+  <div style="font-size:0.8rem; color:#334155; margin-top:0.5rem;">
+    This may take a few seconds.
+  </div>
+</div>
+
+{% if results %}
+
+<!-- Summary -->
+<div class="card">
+  <h2>Summary</h2>
+  <div style="display:grid; grid-template-columns: 1fr auto; gap:1.5rem; align-items:center;">
+    <div class="result-grid" style="margin-bottom:0;">
+      {% for r in results %}
+      <div class="result-card">
+        <div class="test-name">{{ r.name }}</div>
+        <div class="times">
+          <div class="time-row">
+            <span class="time-label">
+              <span class="dot dot-mojo"></span> Mojo
+            </span>
+            <span class="time-val time-mojo">{{ r.mojo_ns }} ns</span>
+          </div>
+          <div class="time-row">
+            <span class="time-label">
+              <span class="dot dot-python"></span> Python
+            </span>
+            <span class="time-val time-python">{{ r.python_ns }} ns</span>
+          </div>
+        </div>
+        <div class="speedup">
+          Mojo is
+          <span class="val {{ 'faster' if r.speedup >= 1 else 'slower' }}">
+            {{ r.speedup }}×
+          </span>
+          {{ 'faster' if r.speedup >= 1 else 'slower' }}
+        </div>
+        <div class="bar-wrap">
+          <div class="bar-fill"
+               style="width:{{ [r.bar_pct, 100] | min }}%"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="summary-box">
+      <div class="avg">{{ avg_speedup }}×</div>
+      <div class="avg-label">Average Speedup</div>
+      <div style="font-size:0.75rem; color:#64748b; margin-top:0.5rem;">
+        Mojo vs Python
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Charts -->
+<div class="chart-grid">
+  <div class="card">
+    <h2>Execution Time (ns) — Lower is Better</h2>
+    <canvas id="timeChart"></canvas>
+  </div>
+  <div class="card">
+    <h2>Speedup Factor — Higher is Better</h2>
+    <canvas id="speedupChart"></canvas>
+  </div>
+</div>
+
+<script>
+  const labels   = {{ labels | tojson }};
+  const mojoMs   = {{ mojo_times | tojson }};
+  const pythonMs = {{ python_times | tojson }};
+  const speedups = {{ speedups | tojson }};
+
+  // Time comparison bar chart
+  new Chart(document.getElementById('timeChart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Mojo (ns)',
+          data: mojoMs,
+          backgroundColor: '#f9731688',
+          borderColor: '#f97316',
+          borderWidth: 1,
+          borderRadius: 4
+        },
+        {
+          label: 'Python (ns)',
+          data: pythonMs,
+          backgroundColor: '#3b82f688',
+          borderColor: '#3b82f6',
+          borderWidth: 1,
+          borderRadius: 4
+        }
+      ]
+    },
+    options: {
+      plugins: { legend: { labels: { color: '#94a3b8' } } },
+      scales: {
+        x: { ticks: { color: '#64748b' }, grid: { color: '#1e293b' } },
+        y: { ticks: { color: '#64748b' }, grid: { color: '#1e293b' },
+             beginAtZero: true }
+      }
+    }
+  });
+
+  // Speedup bar chart
+  new Chart(document.getElementById('speedupChart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Speedup (×)',
+        data: speedups,
+        backgroundColor: speedups.map(s =>
+          s >= 1 ? '#22c55e88' : '#ef444488'),
+        borderColor: speedups.map(s =>
+          s >= 1 ? '#22c55e' : '#ef4444'),
+        borderWidth: 1,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      plugins: {
+        legend: { labels: { color: '#94a3b8' } },
+        annotation: {}
+      },
+      scales: {
+        x: { ticks: { color: '#64748b' }, grid: { color: '#1e293b' } },
+        y: { ticks: { color: '#64748b' }, grid: { color: '#1e293b' },
+             beginAtZero: true }
+      }
+    }
+  });
+</script>
+
+{% endif %}
+
+<script>
+  document.getElementById('bench-form').addEventListener('submit', function() {
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('run-btn').disabled = true;
+    document.getElementById('run-btn').textContent = '⏳ Running...';
+  });
+</script>
+
+{% endblock %}

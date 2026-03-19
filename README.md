@@ -135,4 +135,5 @@ Here is the code list table (covers more than 60 examples).
 | Library REST API built with Mojo + Flask + SQLite. | Flask + SQLite | 0.26.1 | library_api/ |
 | QR Code Creator & Reader web application built with Mojo + Flask. | Flask | 0.26.1 | qrcode_app/ |
 | General-purpose Web Scraper built with Mojo + Flask + BeautifulSoup. | Flask + BeautifulSoup | 0.26.1 | scraper_app/ |
+| Mojo vs Python Mathematical Benchmark Application. | Flask + Chart.js | 0.26.1 | benchmark_app/ |
 

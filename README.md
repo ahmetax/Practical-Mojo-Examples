@@ -136,4 +136,5 @@ Here is the code list table (covers more than 60 examples).
 | QR Code Creator & Reader web application built with Mojo + Flask. | Flask | 0.26.1 | qrcode_app/ |
 | General-purpose Web Scraper built with Mojo + Flask + BeautifulSoup. | Flask + BeautifulSoup | 0.26.1 | scraper_app/ |
 | Mojo vs Python Mathematical Benchmark Application. | Flask + Chart.js | 0.26.1 | benchmark_app/ |
+| Sorting Algorithm Benchmark — Mojo vs Python. | Flask + Chart.js | 0.26.1 | sorting_app/ |
 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Sorting Benchmark{% endblock %}</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 { font-size: 1.2rem; font-weight: 700; color: #a78bfa; }
+    header span { font-size: 0.82rem; color: #475569; }
+
+    main {
+      max-width: 1060px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card h2 {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #64748b;
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 0.3rem;
+    }
+
+    input[type="number"], select {
+      padding: 0.55rem 0.85rem;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+      outline: none;
+      font-family: inherit;
+    }
+
+    input:focus, select:focus { border-color: #a78bfa; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.3rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      font-family: inherit;
+    }
+
+    .btn:hover { opacity: 0.85; }
+    .btn-primary { background: #7c3aed; color: white; }
+
+    {% block extra_style %}{% endblock %}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔀 Sorting Algorithm Benchmark</h1>
+    <span>Mojo vs Python</span>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

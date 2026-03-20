@@ -1,0 +1,412 @@
+{% extends "base.html" %}
+{% block title %}Sorting Benchmark — Mojo vs Python{% endblock %}
+
+{% block extra_style %}
+.controls {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.control-group { display: flex; flex-direction: column; gap: 0.3rem; }
+
+.algo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.algo-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+}
+
+.algo-card.skipped {
+  opacity: 0.45;
+  border-style: dashed;
+}
+
+.algo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.algo-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.complexity-badge {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  background: #1e293b;
+  color: #64748b;
+  font-family: monospace;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.83rem;
+  margin-bottom: 0.3rem;
+}
+
+.time-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #94a3b8;
+}
+
+.dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.dot-mojo   { background: #a78bfa; }
+.dot-python { background: #38bdf8; }
+
+.time-val { font-weight: 700; font-family: monospace; font-size: 0.85rem; }
+.time-mojo   { color: #a78bfa; }
+.time-python { color: #38bdf8; }
+
+.speedup-row {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #1e293b;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.speedup-val { font-weight: 700; }
+.speedup-val.faster { color: #22c55e; }
+.speedup-val.slower { color: #ef4444; }
+
+.bar-wrap {
+  margin-top: 0.4rem;
+  height: 3px;
+  background: #1e293b;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+
+.skipped-label {
+  font-size: 0.78rem;
+  color: #475569;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Ranking table */
+.rank-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.rank-table th {
+  text-align: left;
+  padding: 0.55rem 0.8rem;
+  background: #0f172a;
+  color: #64748b;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.rank-table td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #1e293b;
+  color: #cbd5e1;
+}
+
+.rank-table tr:last-child td { border-bottom: none; }
+.rank-table tr:hover td { background: #0f172a; }
+
+.rank-num {
+  font-weight: 700;
+  color: #a78bfa;
+  font-size: 1rem;
+}
+
+.rank-num.gold   { color: #fbbf24; }
+.rank-num.silver { color: #94a3b8; }
+.rank-num.bronze { color: #b45309; }
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.summary-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.summary-pill span { color: #a78bfa; font-weight: 700; }
+
+.error-box {
+  background: #450a0a;
+  border: 1px solid #7f1d1d;
+  color: #fca5a5;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #475569;
+  display: none;
+}
+{% endblock %}
+
+{% block content %}
+
+<!-- Controls -->
+<div class="card">
+  <h2>Benchmark Settings</h2>
+  <form method="POST" action="/run" id="bench-form">
+    <div class="controls">
+      <div class="control-group">
+        <label>List Size</label>
+        <select name="size">
+          <option value="1000"   {{ 'selected' if params.get('size')==1000   }}>1,000</option>
+          <option value="5000"   {{ 'selected' if params.get('size')==5000   }} selected>5,000</option>
+          <option value="10000"  {{ 'selected' if params.get('size')==10000  }}>10,000</option>
+          <option value="50000"  {{ 'selected' if params.get('size')==50000  }}>50,000</option>
+          <option value="100000" {{ 'selected' if params.get('size')==100000 }}>100,000</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label>Random Seed</label>
+        <input type="number" name="seed" value="{{ params.get('seed', 42) }}"
+               min="1" max="999999" style="width:110px;">
+      </div>
+      <button type="submit" class="btn btn-primary" id="run-btn">
+        🔀 Run Benchmark
+      </button>
+    </div>
+    <div style="font-size:0.75rem; color:#475569; margin-top:0.75rem;">
+      ⚠️ Bubble / Selection / Insertion Sort skipped for sizes &gt; 10,000 (Python side too slow).
+    </div>
+  </form>
+  <div class="loading" id="loading">
+    ⚙️ Running benchmarks, please wait...
+  </div>
+</div>
+
+{% if error is defined and error %}
+<div class="error-box">{{ error }}</div>
+{% endif %}
+
+{% if results %}
+
+<!-- Summary pills -->
+<div style="margin-bottom:1.5rem;">
+  <div class="summary-pill">List size: <span>{{ params.size | int | format_int }}</span></div>
+  <div class="summary-pill">Seed: <span>{{ params.seed }}</span></div>
+  <div class="summary-pill">Avg speedup: <span>{{ avg_speedup }}×</span></div>
+  <div class="summary-pill">
+    Fastest (Mojo): <span>{{ ranked[0].name }}</span>
+  </div>
+</div>
+
+<!-- Algorithm cards -->
+<div class="algo-grid">
+  {% for r in results %}
+  <div class="algo-card {{ 'skipped' if r.skipped }}">
+    <div class="algo-header">
+      <span class="algo-name">{{ r.name }}</span>
+      <span class="complexity-badge">{{ r.complexity }}</span>
+    </div>
+
+    {% if not r.skipped %}
+    <div class="time-row">
+      <span class="time-label"><span class="dot dot-mojo"></span> Mojo</span>
+      <span class="time-val time-mojo">{{ "{:,}".format(r.mojo_ns) }} ns</span>
+    </div>
+    <div class="time-row">
+      <span class="time-label"><span class="dot dot-python"></span> Python</span>
+      <span class="time-val time-python">{{ "{:,}".format(r.python_ns) }} ns</span>
+    </div>
+    <div class="speedup-row">
+      Mojo is
+      <span class="speedup-val {{ 'faster' if r.speedup >= 1 else 'slower' }}">
+        {{ r.speedup }}×
+      </span>
+      {{ 'faster' if r.speedup >= 1 else 'slower' }}
+      <div class="bar-wrap">
+        <div class="bar-fill"
+             style="width:{{ [r.speedup / 20 * 100, 100] | min | int }}%"></div>
+      </div>
+    </div>
+    {% else %}
+    <div class="skipped-label">
+      Skipped — O(n²) too slow for {{ params.size | int }} elements
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Ranking table -->
+<div class="card">
+  <h2>Mojo Ranking — Fastest to Slowest</h2>
+  <table class="rank-table">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Algorithm</th>
+        <th>Complexity</th>
+        <th>Mojo (ns)</th>
+        <th>Python (ns)</th>
+        <th>Speedup</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in ranked %}
+      <tr>
+        <td>
+          <span class="rank-num
+            {{ 'gold'   if r.rank == 1 }}
+            {{ 'silver' if r.rank == 2 }}
+            {{ 'bronze' if r.rank == 3 }}">
+            {{ r.rank }}
+          </span>
+        </td>
+        <td>{{ r.name }}</td>
+        <td style="font-family:monospace; color:#64748b;">{{ r.complexity }}</td>
+        <td style="font-family:monospace; color:#a78bfa;">
+          {{ "{:,}".format(r.mojo_ns) }}
+        </td>
+        <td style="font-family:monospace; color:#38bdf8;">
+          {% if r.skipped %}—{% else %}{{ "{:,}".format(r.python_ns) }}{% endif %}
+        </td>
+        <td>
+          {% if r.skipped %}
+            <span style="color:#475569;">skipped</span>
+          {% else %}
+            <span class="{{ 'faster' if r.speedup >= 1 else 'slower' }}"
+                  style="font-weight:700;">
+              {{ r.speedup }}×
+            </span>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- Charts -->
+<div class="chart-grid">
+  <div class="card">
+    <h2>Execution Time (ns) — Lower is Better</h2>
+    <canvas id="timeChart"></canvas>
+  </div>
+  <div class="card">
+    <h2>Speedup Factor — Higher is Better</h2>
+    <canvas id="speedupChart"></canvas>
+  </div>
+</div>
+
+<script>
+  const labels      = {{ labels | tojson }};
+  const mojoTimes   = {{ mojo_times | tojson }};
+  const pythonTimes = {{ python_times | tojson }};
+  const speedups    = {{ speedups | tojson }};
+
+  const gridColor = '#1e293b';
+  const tickColor = '#64748b';
+
+  new Chart(document.getElementById('timeChart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Mojo (ns)',
+          data: mojoTimes,
+          backgroundColor: '#7c3aed88',
+          borderColor: '#a78bfa',
+          borderWidth: 1,
+          borderRadius: 4
+        },
+        {
+          label: 'Python (ns)',
+          data: pythonTimes,
+          backgroundColor: '#0284c788',
+          borderColor: '#38bdf8',
+          borderWidth: 1,
+          borderRadius: 4
+        }
+      ]
+    },
+    options: {
+      plugins: { legend: { labels: { color: '#94a3b8' } } },
+      scales: {
+        x: { ticks: { color: tickColor }, grid: { color: gridColor } },
+        y: { ticks: { color: tickColor }, grid: { color: gridColor },
+             beginAtZero: true }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('speedupChart'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Speedup (×)',
+        data: speedups,
+        backgroundColor: speedups.map(s => s >= 1 ? '#22c55e88' : '#ef444488'),
+        borderColor: speedups.map(s => s >= 1 ? '#22c55e' : '#ef4444'),
+        borderWidth: 1,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      plugins: { legend: { labels: { color: '#94a3b8' } } },
+      scales: {
+        x: { ticks: { color: tickColor }, grid: { color: gridColor } },
+        y: { ticks: { color: tickColor }, grid: { color: gridColor },
+             beginAtZero: true }
+      }
+    }
+  });
+</script>
+
+{% endif %}
+
+<script>
+  document.getElementById('bench-form').addEventListener('submit', function() {
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('run-btn').disabled = true;
+    document.getElementById('run-btn').textContent = '⏳ Running...';
+  });
+</script>
+
+{% endblock %}

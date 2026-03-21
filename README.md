@@ -65,7 +65,9 @@ into sources-v0.26.1 folder.  I hope it will be more readable.
 
 Version numbers of Mojo used while testing example codes will be included both in the table, and in the headers in the files.
 
-More detailed explanations for the explanations can be found at https://gurmezin.com/category/mojo/.
+Mojo version numbers are used also as the name of main folders as sources-v0.26.1 or sources-v0.26.2.0.
+
+More detailed explanations for the explanations will be shared at https://gurmezin.com/category/mojo/.
 
 Here is the code list table (covers more than 60 examples).
 
@@ -137,4 +139,6 @@ Here is the code list table (covers more than 60 examples).
 | General-purpose Web Scraper built with Mojo + Flask + BeautifulSoup. | Flask + BeautifulSoup | 0.26.1 | scraper_app/ |
 | Mojo vs Python Mathematical Benchmark Application. | Flask + Chart.js | 0.26.1 | benchmark_app/ |
 | Sorting Algorithm Benchmark — Mojo vs Python. | Flask + Chart.js | 0.26.1 | sorting_app/ |
+| Sudoku Creator / Solver web application. | Flask + Python | 0.26.2.0 | sudoku_app/ |
+
 

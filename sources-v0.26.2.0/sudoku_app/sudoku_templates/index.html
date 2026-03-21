@@ -1,0 +1,709 @@
+{% extends "base.html" %}
+{% block title %}Sudoku Creator / Solver{% endblock %}
+
+{% block extra_style %}
+.layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* ── Sudoku Grid ── */
+.grid-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sudoku-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 52px);
+  grid-template-rows: repeat(9, 52px);
+  gap: 2px;
+  background: #334155;
+  border: 3px solid #34d399;
+  border-radius: 6px;
+  padding: 3px;
+  user-select: none;
+}
+
+.sudoku-grid .cell {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #1e293b;
+  color: #e2e8f0;
+  transition: background 0.1s, color 0.1s;
+  position: relative;
+}
+
+/* 3x3 box borders */
+.cell[data-col="2"], .cell[data-col="5"] {
+  border-right: 2px solid #64748b;
+}
+.cell[data-row="2"], .cell[data-row="5"] {
+  border-bottom: 2px solid #64748b;
+}
+
+.cell.given     { color: #34d399; background: #0f2a1e; }
+.cell.solved-py { color: #60a5fa; }
+.cell.solved-mj { color: #f97316; }
+.cell.selected  { background: #1e3a5f !important; outline: 2px solid #38bdf8; }
+.cell.error     { background: #450a0a !important; color: #fca5a5 !important; }
+.cell.highlight { background: #172033; }
+.cell.step-place     { background: #052e16; color: #86efac; }
+.cell.step-backtrack { background: #450a0a; color: #fca5a5; }
+
+/* ── Controls panel ── */
+.controls-panel { display: flex; flex-direction: column; gap: 1rem; }
+
+.control-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(5, 44px);
+  gap: 0.4rem;
+}
+
+.numpad button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.numpad button:hover { background: #1e3a5f; border-color: #38bdf8; }
+.numpad button.erase { color: #ef4444; font-size: 0.8rem; }
+
+/* ── Status / timing ── */
+.status-box {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.status-row:last-child { border-bottom: none; }
+.status-label { color: #64748b; }
+.status-val { font-weight: 700; font-family: monospace; }
+.val-green  { color: #34d399; }
+.val-blue   { color: #60a5fa; }
+.val-orange { color: #f97316; }
+
+/* ── Animation controls ── */
+.anim-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.anim-speed {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.step-counter {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-family: monospace;
+  min-width: 120px;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #334155;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #059669, #34d399);
+  border-radius: 2px;
+  transition: width 0.1s;
+  width: 0%;
+}
+
+/* ── Legend ── */
+.legend {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #64748b;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+{% endblock %}
+
+{% block content %}
+<div class="layout">
+
+  <!-- Left: Sudoku grid -->
+  <div class="grid-wrap">
+    <div class="sudoku-grid" id="grid"></div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#0f2a1e; border:1px solid #34d399;"></div>
+        Given
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#1e293b; border:1px solid #334155;"></div>
+        User input
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#1e3a5f;"></div>
+        Python solved
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#1a1a0a; border:1px solid #f97316;"></div>
+        Mojo solved
+      </div>
+    </div>
+
+    <!-- Progress bar for animation -->
+    <div style="width:480px;">
+      <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Right: Controls -->
+  <div class="controls-panel">
+
+    <!-- Generate -->
+    <div class="card">
+      <h2>Generate Puzzle</h2>
+      <div class="control-row">
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <input type="number" id="seed" placeholder="Seed (optional)"
+               min="1" max="999999" style="width:150px;">
+        <button class="btn btn-primary" onclick="generatePuzzle()">
+          🎲 Generate
+        </button>
+      </div>
+    </div>
+
+    <!-- Numpad -->
+    <div class="card">
+      <h2>Input</h2>
+      <div class="numpad" id="numpad">
+        <button onclick="inputNum(1)">1</button>
+        <button onclick="inputNum(2)">2</button>
+        <button onclick="inputNum(3)">3</button>
+        <button onclick="inputNum(4)">4</button>
+        <button onclick="inputNum(5)">5</button>
+        <button onclick="inputNum(6)">6</button>
+        <button onclick="inputNum(7)">7</button>
+        <button onclick="inputNum(8)">8</button>
+        <button onclick="inputNum(9)">9</button>
+        <button class="erase" onclick="inputNum(0)">✕ Clear</button>
+      </div>
+    </div>
+
+    <!-- Solve -->
+    <div class="card">
+      <h2>Solve</h2>
+      <div class="control-row" style="margin-bottom:0.75rem;">
+        <button class="btn btn-blue" id="solve-py-btn" onclick="solvePython()">
+          🐍 Solve (Python)
+        </button>
+        <button class="btn btn-orange" id="solve-mj-btn" onclick="solveMojo()">
+          ⚡ Solve (Mojo)
+        </button>
+        <button class="btn btn-purple" id="compare-btn" onclick="compareSolvers()">
+          ⚖️ Compare
+        </button>
+      </div>
+      <div class="control-row">
+        <button class="btn btn-secondary" onclick="resetToGiven()">
+          ↩ Reset
+        </button>
+        <button class="btn btn-secondary" onclick="clearAll()">
+          🗑 Clear All
+        </button>
+        <button class="btn btn-secondary" onclick="validateBoard()">
+          ✓ Validate
+        </button>
+      </div>
+    </div>
+
+    <!-- Animation -->
+    <div class="card">
+      <h2>Step-by-Step Animation</h2>
+      <div class="anim-bar" style="margin-bottom:0.75rem;">
+        <button class="btn btn-primary" id="anim-btn" onclick="toggleAnimation()" disabled>
+          ▶ Play
+        </button>
+        <button class="btn btn-secondary" onclick="stepForward()" id="step-btn" disabled>
+          ⏭ Step
+        </button>
+        <button class="btn btn-secondary" onclick="resetAnimation()" id="reset-anim-btn" disabled>
+          ⏮ Reset
+        </button>
+      </div>
+      <div class="anim-speed">
+        Speed:
+        <input type="range" id="speed-range" min="1" max="5" value="3"
+               style="width:100px; accent-color:#34d399;">
+        <span id="speed-label">Normal</span>
+      </div>
+      <div class="step-counter" id="step-counter">No steps loaded.</div>
+    </div>
+
+    <!-- Status -->
+    <div class="status-box" id="status-box">
+      <div class="status-row">
+        <span class="status-label">Status</span>
+        <span class="status-val" id="st-status">—</span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Python time</span>
+        <span class="status-val val-blue" id="st-py-time">—</span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Mojo time</span>
+        <span class="status-val val-orange" id="st-mj-time">—</span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Speedup</span>
+        <span class="status-val val-green" id="st-speedup">—</span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">Steps (backtrack)</span>
+        <span class="status-val" id="st-steps">—</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ── State ─────────────────────────────────────────────────────────── //
+let puzzle   = Array(81).fill(0);   // current board (0=empty)
+let given    = Array(81).fill(false); // which cells are "given"
+let selected = -1;                  // selected cell index
+
+let animSteps    = [];
+let animIndex    = 0;
+let animTimer    = null;
+let animRunning  = false;
+let animBoard    = [];              // snapshot of board before anim
+
+const SPEED_MS = { 1: 200, 2: 80, 3: 30, 4: 10, 5: 1 };
+const SPEED_LABELS = { 1:'Slow', 2:'Medium', 3:'Normal', 4:'Fast', 5:'Max' };
+
+// ── Grid rendering ─────────────────────────────────────────────────── //
+function buildGrid() {
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  for (let r = 0; r < 9; r++) {
+    for (let c = 0; c < 9; c++) {
+      const idx  = r * 9 + c;
+      const cell = document.createElement('div');
+      cell.className   = 'cell';
+      cell.dataset.idx = idx;
+      cell.dataset.row = r;
+      cell.dataset.col = c;
+      cell.addEventListener('click', () => selectCell(idx));
+      grid.appendChild(cell);
+    }
+  }
+  renderGrid();
+}
+
+function renderGrid(overrideBoard=null, stepIdx=-1) {
+  const board = overrideBoard || puzzle;
+  for (let i = 0; i < 81; i++) {
+    const cell = document.querySelector(`.cell[data-idx="${i}"]`);
+    if (!cell) continue;
+    const val = board[i];
+    cell.textContent = val || '';
+    cell.className = 'cell';
+    if (given[i])    cell.classList.add('given');
+    if (i === selected && !given[i]) cell.classList.add('selected');
+  }
+}
+
+function renderWithStepClass(board, idx, action) {
+  renderGrid(board);
+  if (idx >= 0) {
+    const cell = document.querySelector(`.cell[data-idx="${idx}"]`);
+    if (cell) {
+      cell.classList.remove('given');
+      cell.classList.add(action === 'place' ? 'step-place' : 'step-backtrack');
+    }
+  }
+}
+
+// ── Cell selection & input ─────────────────────────────────────────── //
+function selectCell(idx) {
+  if (given[idx]) { selected = -1; renderGrid(); return; }
+  selected = idx;
+  renderGrid();
+}
+
+function inputNum(num) {
+  if (selected < 0 || given[selected]) return;
+  puzzle[selected] = num;
+  renderGrid();
+  selected = -1;
+}
+
+document.addEventListener('keydown', e => {
+  if (selected < 0) return;
+  const n = parseInt(e.key);
+  if (n >= 1 && n <= 9) inputNum(n);
+  if (e.key === 'Backspace' || e.key === 'Delete' || e.key === '0') inputNum(0);
+});
+
+// ── Generate ──────────────────────────────────────────────────────── //
+async function generatePuzzle() {
+  const difficulty = document.getElementById('difficulty').value;
+  const seedVal    = document.getElementById('seed').value;
+  setStatus('Generating...');
+  stopAnimation();
+
+  const body = { difficulty };
+  if (seedVal) body.seed = seedVal;
+
+  const res  = await fetch('/generate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  const data = await res.json();
+
+  puzzle = data.puzzle;
+  given  = puzzle.map(v => v !== 0);
+  animSteps = [];
+  updateAnimControls();
+  renderGrid();
+  clearStatus();
+  setStatus('Puzzle generated — ' + difficulty);
+}
+
+// ── Solve ─────────────────────────────────────────────────────────── //
+function getPuzzleFlat() {
+  return puzzle.map(v => v || 0).join('');
+}
+
+async function solvePython() {
+  stopAnimation();
+  setStatus('Solving with Python...');
+  disableSolveButtons(true);
+
+  const res  = await fetch('/solve', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ flat: getPuzzleFlat(), compare: false })
+  });
+  const data = await res.json();
+
+  if (data.py_solved) {
+    puzzle = data.py_solution;
+    // Mark solved cells
+    for (let i = 0; i < 81; i++) {
+      if (!given[i] && puzzle[i]) {
+        const cell = document.querySelector(`.cell[data-idx="${i}"]`);
+        if (cell) cell.classList.add('solved-py');
+      }
+    }
+    renderGrid();
+    document.getElementById('st-py-time').textContent = fmtNs(data.py_ns);
+    document.getElementById('st-steps').textContent =
+      data.step_count + ' (' +
+      data.steps.filter(s=>s.action==='backtrack').length + ' backtracks)';
+    setStatus('✅ Solved by Python');
+
+    // Load steps for animation
+    animSteps  = data.steps;
+    animBoard  = given.map((g,i) => g ? puzzle[i] : 0);
+    // Rebuild animBoard from given values
+    animBoard  = Array(81).fill(0).map((_, i) => given[i] ? puzzle[i] : 0);
+    animIndex  = 0;
+    updateAnimControls();
+  } else {
+    setStatus('❌ No solution found');
+  }
+  disableSolveButtons(false);
+}
+
+async function solveMojo() {
+  stopAnimation();
+  setStatus('Solving with Mojo...');
+  disableSolveButtons(true);
+
+  const res  = await fetch('/solve', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ flat: getPuzzleFlat(), compare: true })
+  });
+  const data = await res.json();
+
+  if (data.mojo_solved) {
+    puzzle = data.py_solution || puzzle;
+    renderGrid();
+    // Color mojo-solved cells
+    for (let i = 0; i < 81; i++) {
+      if (!given[i] && puzzle[i]) {
+        const cell = document.querySelector(`.cell[data-idx="${i}"]`);
+        if (cell) { cell.classList.remove('solved-py'); cell.classList.add('solved-mj'); }
+      }
+    }
+    document.getElementById('st-mj-time').textContent = fmtNs(data.mojo_ns);
+    document.getElementById('st-py-time').textContent = fmtNs(data.py_ns);
+    setStatus('✅ Solved by Mojo');
+  } else {
+    setStatus('❌ Mojo: no solution');
+  }
+  disableSolveButtons(false);
+}
+
+async function compareSolvers() {
+  stopAnimation();
+  setStatus('Comparing Python vs Mojo...');
+  disableSolveButtons(true);
+
+  const res  = await fetch('/solve', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ flat: getPuzzleFlat(), compare: true })
+  });
+  const data = await res.json();
+
+  puzzle = data.py_solution || puzzle;
+  renderGrid();
+
+  document.getElementById('st-py-time').textContent = fmtNs(data.py_ns);
+  document.getElementById('st-mj-time').textContent = fmtNs(data.mojo_ns || 0);
+  document.getElementById('st-speedup').textContent =
+    data.speedup ? data.speedup + '×' : '—';
+  document.getElementById('st-steps').textContent =
+    data.step_count + ' (' +
+    (data.steps||[]).filter(s=>s.action==='backtrack').length + ' backtracks)';
+  setStatus(data.py_solved ? '✅ Both solved' : '❌ No solution');
+
+  // Load steps
+  animSteps = data.steps || [];
+  animBoard = Array(81).fill(0).map((_, i) => given[i] ? puzzle[i] : 0);
+  animIndex = 0;
+  updateAnimControls();
+  disableSolveButtons(false);
+}
+
+// ── Validate ──────────────────────────────────────────────────────── //
+async function validateBoard() {
+  const res  = await fetch('/validate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ cells: puzzle })
+  });
+  const data = await res.json();
+
+  // Clear error classes
+  document.querySelectorAll('.cell').forEach(c => c.classList.remove('error'));
+
+  if (data.valid) {
+    setStatus('✅ Board is valid so far');
+  } else {
+    data.errors.forEach(idx => {
+      const cell = document.querySelector(`.cell[data-idx="${idx}"]`);
+      if (cell) cell.classList.add('error');
+    });
+    setStatus('❌ ' + data.errors.length + ' conflict(s) found');
+  }
+}
+
+// ── Reset / Clear ──────────────────────────────────────────────────── //
+function resetToGiven() {
+  stopAnimation();
+  puzzle = puzzle.map((v, i) => given[i] ? v : 0);
+  renderGrid();
+  animSteps = [];
+  updateAnimControls();
+  clearStatus();
+}
+
+function clearAll() {
+  stopAnimation();
+  puzzle = Array(81).fill(0);
+  given  = Array(81).fill(false);
+  animSteps = [];
+  updateAnimControls();
+  renderGrid();
+  clearStatus();
+}
+
+// ── Animation ─────────────────────────────────────────────────────── //
+function toggleAnimation() {
+  if (animRunning) pauseAnimation();
+  else startAnimation();
+}
+
+function startAnimation() {
+  if (!animSteps.length || animIndex >= animSteps.length) return;
+  animRunning = true;
+  document.getElementById('anim-btn').textContent = '⏸ Pause';
+  runAnimStep();
+}
+
+function pauseAnimation() {
+  animRunning = false;
+  clearTimeout(animTimer);
+  document.getElementById('anim-btn').textContent = '▶ Play';
+}
+
+function stopAnimation() {
+  pauseAnimation();
+  animIndex = 0;
+}
+
+function runAnimStep() {
+  if (!animRunning || animIndex >= animSteps.length) {
+    if (animIndex >= animSteps.length) {
+      animRunning = false;
+      document.getElementById('anim-btn').textContent = '▶ Play';
+    }
+    return;
+  }
+  applyStep(animIndex);
+  animIndex++;
+  updateStepCounter();
+
+  const speed = parseInt(document.getElementById('speed-range').value);
+  animTimer = setTimeout(runAnimStep, SPEED_MS[speed]);
+}
+
+function stepForward() {
+  if (animIndex >= animSteps.length) return;
+  applyStep(animIndex);
+  animIndex++;
+  updateStepCounter();
+}
+
+function resetAnimation() {
+  stopAnimation();
+  animIndex = 0;
+  renderGrid();
+  updateStepCounter();
+}
+
+function applyStep(idx) {
+  const step = animSteps[idx];
+  const cellIdx = step.row * 9 + step.col;
+
+  // Build current board up to this step
+  let board = [...animBoard];
+  for (let i = 0; i <= idx; i++) {
+    const s = animSteps[i];
+    board[s.row * 9 + s.col] = s.num;
+  }
+
+  renderWithStepClass(board, cellIdx, step.action);
+
+  // Update progress
+  const pct = (idx / animSteps.length * 100).toFixed(1);
+  document.getElementById('progress').style.width = pct + '%';
+}
+
+function updateStepCounter() {
+  const total  = animSteps.length;
+  const place  = animSteps.slice(0, animIndex).filter(s=>s.action==='place').length;
+  const btk    = animSteps.slice(0, animIndex).filter(s=>s.action==='backtrack').length;
+  document.getElementById('step-counter').textContent =
+    `Step ${animIndex} / ${total} — ✅ ${place} placed, ↩ ${btk} backtracks`;
+}
+
+function updateAnimControls() {
+  const has = animSteps.length > 0;
+  document.getElementById('anim-btn').disabled      = !has;
+  document.getElementById('step-btn').disabled      = !has;
+  document.getElementById('reset-anim-btn').disabled = !has;
+  if (!has) document.getElementById('step-counter').textContent = 'No steps loaded.';
+  else updateStepCounter();
+}
+
+document.getElementById('speed-range').addEventListener('input', function() {
+  document.getElementById('speed-label').textContent = SPEED_LABELS[this.value];
+});
+
+// ── Helpers ───────────────────────────────────────────────────────── //
+function fmtNs(ns) {
+  if (!ns) return '—';
+  if (ns < 1000)      return ns + ' ns';
+  if (ns < 1_000_000) return (ns/1000).toFixed(2) + ' µs';
+  if (ns < 1_000_000_000) return (ns/1_000_000).toFixed(2) + ' ms';
+  return (ns/1_000_000_000).toFixed(3) + ' s';
+}
+
+function setStatus(msg) {
+  document.getElementById('st-status').textContent = msg;
+}
+
+function clearStatus() {
+  document.getElementById('st-py-time').textContent  = '—';
+  document.getElementById('st-mj-time').textContent  = '—';
+  document.getElementById('st-speedup').textContent  = '—';
+  document.getElementById('st-steps').textContent    = '—';
+}
+
+function disableSolveButtons(v) {
+  ['solve-py-btn','solve-mj-btn','compare-btn'].forEach(id => {
+    document.getElementById(id).disabled = v;
+  });
+}
+
+// ── Init ──────────────────────────────────────────────────────────── //
+buildGrid();
+generatePuzzle();
+</script>
+{% endblock %}

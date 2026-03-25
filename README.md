@@ -143,5 +143,6 @@ Here is the code list table (covers more than 60 examples).
 | Ollama Chat Web Application built with Mojo + Flask. | Flask | 0.26.2.0 | ollama_chat_app/ |
 | Gemini Chat Web Application | Flask | 0.26.2.0 | gemini_chat_app/ |
 | Several ML algorithms | Pure Mojo | 0.26.2.0 | ml_algorithms/ |
+| Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.2.0 |weather_app.mojo weather_helpers.py weather_templates/ |
 
 

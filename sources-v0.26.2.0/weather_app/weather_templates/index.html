@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+{% block title %}
+  {% if weather %}{{ weather.city }} — Weather{% else %}Weather App{% endif %}
+{% endblock %}
+
+{% block extra_style %}
+.search-form {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.search-form input { flex: 1; }
+
+/* Current weather */
+.current-main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.weather-icon { font-size: 5rem; line-height: 1; }
+
+.city-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.country { opacity: 0.7; font-size: 1rem; }
+
+.temp-big {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1rem;
+  opacity: 0.85;
+  text-transform: capitalize;
+  margin-top: 0.3rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+.detail-box {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  text-align: center;
+}
+
+.detail-box .val {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.detail-box .lbl {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 0.2rem;
+}
+
+/* 5-day forecast */
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+}
+
+.forecast-card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+.forecast-card .day {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin-bottom: 0.4rem;
+}
+
+.forecast-card .icon { font-size: 2rem; margin: 0.3rem 0; }
+
+.forecast-card .temp-hi {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.forecast-card .temp-lo {
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+.forecast-card .desc {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-top: 0.3rem;
+  text-transform: capitalize;
+}
+
+.recent-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.recent-list a {
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.recent-list a:hover { background: rgba(255,255,255,0.3); }
+{% endblock %}
+
+{% block content %}
+
+<!-- Search -->
+<div class="card">
+  <form class="search-form" method="GET" action="/">
+    <input type="text" name="city"
+           placeholder="Enter city name... e.g. Istanbul, London, Tokyo"
+           value="{{ query or '' }}"
+           autofocus>
+    <button type="submit" class="btn btn-primary">🔍 Search</button>
+  </form>
+
+  {% if recent %}
+  <div style="margin-top:1rem;">
+    <div style="font-size:0.78rem; opacity:0.6; margin-bottom:0.5rem;">Recent searches:</div>
+    <div class="recent-list">
+      {% for city in recent %}
+      <a href="/?city={{ city }}">{{ city }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+{% if weather %}
+
+<!-- Current weather -->
+<div class="card">
+  <div class="current-main">
+    <div class="weather-icon">{{ weather.icon }}</div>
+    <div>
+      <div class="city-name">
+        {{ weather.city }}, <span class="country">{{ weather.country }}</span>
+      </div>
+      <div class="temp-big">{{ weather.temp }}°C</div>
+      <div class="description">{{ weather.description }}</div>
+      <div style="font-size:0.8rem; opacity:0.6; margin-top:0.3rem;">
+        Feels like {{ weather.feels_like }}°C
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-grid">
+    <div class="detail-box">
+      <div class="val">{{ weather.humidity }}%</div>
+      <div class="lbl">💧 Humidity</div>
+    </div>
+    <div class="detail-box">
+      <div class="val">{{ weather.wind_speed }} m/s</div>
+      <div class="lbl">💨 Wind</div>
+    </div>
+    <div class="detail-box">
+      <div class="val">{{ weather.pressure }} hPa</div>
+      <div class="lbl">🌡 Pressure</div>
+    </div>
+    <div class="detail-box">
+      <div class="val">{{ weather.visibility }} km</div>
+      <div class="lbl">👁 Visibility</div>
+    </div>
+    <div class="detail-box">
+      <div class="val">{{ weather.sunrise }}</div>
+      <div class="lbl">🌅 Sunrise</div>
+    </div>
+    <div class="detail-box">
+      <div class="val">{{ weather.sunset }}</div>
+      <div class="lbl">🌇 Sunset</div>
+    </div>
+  </div>
+</div>
+
+<!-- 5-day forecast -->
+{% if forecast %}
+<div class="card">
+  <h2>5-Day Forecast</h2>
+  <div class="forecast-grid">
+    {% for day in forecast %}
+    <div class="forecast-card">
+      <div class="day">{{ day.date }}</div>
+      <div class="icon">{{ day.icon }}</div>
+      <div class="temp-hi">{{ day.temp_max }}°</div>
+      <div class="temp-lo">{{ day.temp_min }}°</div>
+      <div class="desc">{{ day.description }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% endif %}
+
+{% endblock %}

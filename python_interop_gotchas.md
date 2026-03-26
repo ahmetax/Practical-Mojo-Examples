@@ -1,7 +1,7 @@
 # Python Interop Gotchas in Mojo
 
 Common pitfalls when using Python modules and objects in Mojo.
-Tested on Mojo version 0.26.1, Ubuntu, Python 3.12.
+Tested on Mojo version 0.26.2, Ubuntu, Python 3.12.
 
 Each entry includes the problem, the error message you will see,
 and the correct solution with a working code example.
@@ -208,8 +208,6 @@ This is particularly useful for:
 - Building tuples (see #1)
 - Passing key functions to Python's `sorted()`, `max()`, `nlargest()` etc.
 - Any Python expression that has no direct Mojo equivalent
-
----
 
 ---
 
@@ -492,8 +490,6 @@ before the `"""` must end with `.`.
 
 ---
 
----
-
 ## 18. Functions may not have multiple `out` arguments
 
 **Problem:**
@@ -572,7 +568,7 @@ fn run_game() raises:
 
 ---
 
-## 20. Python list creation with `Python.evaluate("list")([...])`  fails
+## 20. Python list creation with `Python.evaluate("list")([...])` fails
 
 **Problem:**
 Calling `Python.evaluate("list")` returns the Python `list` type, but passing
@@ -599,8 +595,6 @@ bx.append(cx - 1)
 bx.append(cx - 2)
 s["body_x"] = bx
 ```
-
----
 
 ---
 
@@ -855,6 +849,494 @@ conn.execute(
 
 ---
 
+## 30. `from time import now` — `now` has been removed
+
+**Problem:**
+In older Mojo versions, `from time import now` provided a nanosecond timer.
+This import was removed in Mojo 0.26.1.
+
+**Error:**
+```
+package 'time' does not contain 'now'
+```
+
+**Wrong:**
+```mojo
+from time import now
+var t0 = now()
+var elapsed = (now() - t0) / 1_000_000.0
+```
+
+**Correct:**
+```mojo
+from time import perf_counter_ns
+var t0 = perf_counter_ns()
+var elapsed = Float64(perf_counter_ns() - t0) / 1_000_000.0  # ns → ms
+```
+
+---
+
+## 31. `fn` functions cannot be passed as Python arguments
+
+**Problem:**
+Mojo `fn` functions do not satisfy the `ConvertibleToPython` trait and
+therefore cannot be passed directly to `Python.evaluate()` or any Python call.
+
+**Error:**
+```
+invalid call to '__call__': could not convert element of 'args' with type
+'fn(...) raises -> PythonObject' to expected type 'ConvertibleToPython & Copyable'
+```
+
+**Wrong:**
+```mojo
+fn my_func(x: Int) -> Int:
+    return x * 2
+
+var wrapper = Python.evaluate("lambda f: f")(my_func)  # ERROR
+```
+
+**Correct:**
+```mojo
+# Use def — def functions satisfy ConvertibleToPython
+def my_func(x: Int) -> Int:
+    return x * 2
+
+var wrapper = Python.evaluate("lambda f: f")(my_func)  # works
+```
+
+Alternatively, share results through a shared `Python.dict()` instead of
+passing the function as a value.
+
+---
+
+## 32. Flask + Threading: `app.run()` blocks the main thread
+
+**Problem:**
+`app.run()` is a blocking call. Running Flask on the main Mojo thread and
+attempting to run a separate Mojo loop is not possible — Flask acquires the
+GIL and Mojo code never resumes.
+
+**Wrong:**
+```mojo
+# Flask on a thread, Mojo loop on the main thread — DOES NOT WORK
+var flask_thread = threading.Thread(target=app.run, ...)
+flask_thread.start()
+while True:          # this loop never runs
+    do_mojo_work()
+```
+
+**Correct — Option 1: subprocess**
+```mojo
+# Run the Mojo benchmark script as a subprocess
+# benchmark_app.mojo  — only starts Flask
+# mojo_bench.mojo     — accepts parameters, outputs JSON
+# Python side calls subprocess.run(['mojo', 'mojo_bench.mojo', ...])
+```
+
+**Correct — Option 2: Flask on a daemon thread, Mojo loop on the main thread**
+```mojo
+var run_flask = Python.evaluate("""
+lambda app: __import__('threading').Thread(
+    target=app.run,
+    kwargs={'host':'0.0.0.0','port':8117,'debug':False,'use_reloader':False},
+    daemon=True
+)
+""")
+var flask_thread = run_flask(app)
+flask_thread.start()
+
+# Main thread stays in Mojo
+while True:
+    time_mod.sleep(0.05)
+    do_mojo_work()
+```
+
+---
+
+## 33. HTML `onclick` + `disabled` prevents form submission
+
+**Problem:**
+JavaScript that disables a submit button inside an `onclick` handler will
+prevent the form from being submitted, because the button is disabled before
+the browser can fire the submit event.
+
+**Wrong:**
+```html
+<button type="submit" id="run-btn" onclick="showLoading()">Run</button>
+
+<script>
+function showLoading() {
+    document.getElementById('run-btn').disabled = true;  // blocks submit!
+}
+</script>
+```
+
+**Correct:**
+```html
+<button type="submit" id="run-btn">Run</button>
+
+<script>
+// Listen on the form's submit event — do NOT disable the button
+document.getElementById('my-form').addEventListener('submit', function() {
+    document.getElementById('run-btn').disabled = true;
+    document.getElementById('run-btn').textContent = 'Running...';
+});
+</script>
+```
+
+---
+
+## 34. Flask template folder name conflict
+
+**Problem:**
+When multiple Flask projects share the same parent directory and each uses
+a `templates/` folder, Flask may load the wrong template or raise a
+`TemplateNotFound` error.
+
+**Wrong:**
+```
+project_dir/
+  todo_app/
+    todo_app.mojo
+    templates/         ← conflict
+  expense_app/
+    expense_app.mojo
+    templates/         ← conflict
+```
+
+**Correct:**
+```
+project_dir/
+  todo_app/
+    todo_app.mojo
+    todo_templates/    ← project-prefixed
+  expense_app/
+    expense_app.mojo
+    expense_templates/ ← project-prefixed
+```
+
+Specify `template_folder` explicitly when creating the Flask app:
+```mojo
+var app = flask.Flask(
+    builtins.str("__main__"),
+    template_folder=builtins.str("todo_templates")
+)
+```
+
+---
+
+## 35. `mojo build` — Python files are not bundled into the executable
+
+**Problem:**
+The executable produced by `mojo build` does not include the `.py` helper
+files used via Python interop. When the executable is run from a different
+directory, the Python modules cannot be found.
+
+**Error:**
+```
+ModuleNotFoundError: No module named 'sudoku_helpers'
+```
+
+**Wrong:**
+```bash
+# Copying only the executable
+mojo build sudoku_app.mojo -o sudoku
+cp sudoku /other/folder/
+./sudoku   # ERROR — Python files not found
+```
+
+**Correct:**
+```bash
+# Always distribute the entire project folder together
+sudoku_app/
+  ├── sudoku              ← compiled executable
+  ├── sudoku_helpers.py   ← required
+  ├── sudoku_engine.py    ← required
+  └── sudoku_templates/   ← required
+```
+
+The executable must always run from the same directory as its Python source files.
+
+**Root cause:**
+Mojo runs Python code through an embedded CPython interpreter that loads
+`.py` files dynamically at runtime — they cannot be bundled at compile time.
+
+**Deployment options:**
+
+| Method | Description | Protection |
+|---|---|---|
+| Folder package | `.py` files alongside binary | None |
+| PyInstaller | Bundle the Python side | Moderate |
+| Cython | Compile `.py` → `.so` | Good |
+| Pure Mojo | Remove Python dependency entirely | Best |
+
+For commercial projects, migrating critical business logic to pure Mojo
+is the safest and most performant option. The Flask/web layer will continue
+to require Python until Mojo v1.0.
+
+---
+
+## 36. `owned` keyword deprecated — use `var`
+
+**Problem:**
+The `owned` keyword was deprecated in Mojo 0.26.1.
+Use `var` when passing non-copyable types such as `List` into a function
+that will transfer ownership to a struct field.
+
+**Warning:**
+```
+'owned' is deprecated, use 'var' instead
+```
+
+**Wrong:**
+```mojo
+fn __init__(out self, owned data: List[Float64]):
+    self.data = data^
+```
+
+**Correct:**
+```mojo
+fn __init__(out self, var data: List[Float64]):
+    self.data = data^
+```
+
+The `^` transfer operator is still required to move ownership from the
+parameter into the struct field.
+
+---
+
+## 37. `List[CustomStruct]` — Copyable trait issue
+
+**Problem:**
+Using a custom struct inside a `List` requires the struct to satisfy the
+`Copyable` trait. Adding `__copyinit__` alone may not be sufficient —
+`List[CustomStruct]` can still fail to compile.
+
+**Error:**
+```
+cannot bind type 'MyStruct' to trait 'Copyable'
+```
+
+**Wrong:**
+```mojo
+struct TreeNode:
+    var value: Int
+    fn __copyinit__(out self, other: TreeNode):
+        self.value = other.value
+
+var nodes = List[TreeNode]()   # error — Copyable not satisfied
+```
+
+**Correct — Option 1: Parallel lists**
+```mojo
+# Use one List per field
+var node_value  : List[Int]     = List[Int]()
+var node_label  : List[Int]     = List[Int]()
+var node_left   : List[Int]     = List[Int]()
+# node i → node_value[i], node_label[i], node_left[i]
+```
+
+**Correct — Option 2: `@fieldwise_init` + explicit trait conformance**
+```mojo
+# @value is deprecated — declare traits explicitly
+struct MyStruct(Copyable, Movable):
+    var x: Int
+    var y: Float64
+```
+
+Parallel lists are the more reliable approach — `Int` and `Float64` are
+always `Copyable`, so `List[Int]` works without any extra boilerplate.
+
+---
+
+## 38. `@value` decorator has been removed
+
+**Problem:**
+The `@value` decorator was deprecated and then removed in Mojo 0.26.1.
+Use `@fieldwise_init` and explicit `Copyable`/`Movable` conformance instead.
+
+**Warning/Error:**
+```
+'@value' has been removed, please use '@fieldwise_init'
+and explicit Copyable and Movable conformances instead
+```
+
+**Wrong:**
+```mojo
+@value
+struct Point:
+    var x: Float64
+    var y: Float64
+```
+
+**Correct:**
+```mojo
+struct Point(Copyable, Movable):
+    var x: Float64
+    var y: Float64
+
+    fn __init__(out self, x: Float64, y: Float64):
+        self.x = x
+        self.y = y
+
+    fn __copyinit__(out self, other: Point):
+        self.x = other.x
+        self.y = other.y
+
+    fn __moveinit__(out self, owned other: Point):
+        self.x = other.x
+        self.y = other.y
+```
+
+For simple data structs, using parallel lists eliminates this complexity
+entirely (see gotcha #37).
+
+---
+
+## 39. `if/else` inside a `while` loop causes indentation error
+
+**Problem:**
+Using an `if/else` block inside a `while` loop can trigger a
+"statement has excess indentation" error, particularly with
+`while not condition:` combined with an inner `if/else`.
+
+**Error:**
+```
+statement has excess indentation
+```
+
+**Wrong:**
+```mojo
+while not self.nodes[idx].is_leaf():
+    var f = self.nodes[idx].feature
+    if x[f] <= threshold:
+        idx = self.nodes[idx].left_idx
+    else:
+        idx = self.nodes[idx].right_idx   # indentation error
+```
+
+**Correct — use a boolean control variable:**
+```mojo
+var go = not self._is_leaf(idx)
+while go:
+    var f = self.node_feature[idx]
+    var t = self.node_threshold[idx]
+    if x[f] <= t:
+        idx = self.node_left[idx]
+    else:
+        idx = self.node_right[idx]
+    go = not self._is_leaf(idx)
+```
+
+---
+
+## 40. Tuple return type — use a small struct or `out` parameters
+
+**Problem:**
+Mojo functions cannot return tuple types such as `(Int, Int)`.
+This is a problem for helper functions that need to return multiple values.
+
+**Error:**
+```
+no matching function in initialization
+```
+
+**Wrong:**
+```mojo
+fn best_split(...) -> (Int, Int):
+    return (best_feature, best_threshold)
+```
+
+**Correct — define a small struct:**
+```mojo
+struct SplitResult:
+    var feature  : Int
+    var threshold: Int
+
+    fn __init__(out self, feature: Int, threshold: Int):
+        self.feature   = feature
+        self.threshold = threshold
+
+    fn __copyinit__(out self, other: SplitResult):
+        self.feature   = other.feature
+        self.threshold = other.threshold
+
+fn best_split(...) -> SplitResult:
+    return SplitResult(best_feature, best_threshold)
+```
+
+Alternatively, use `out` parameters (one per return value, subject to
+the single-`out` limit in gotcha #18):
+```mojo
+fn best_split(..., out feature: Int, out threshold: Int):
+    feature   = best_f
+    threshold = best_t
+```
+
+---
+
+## 41. `alias` deprecated — use `comptime` (v0.26.2)
+
+**Problem:**
+The `alias` keyword was deprecated in Mojo v0.26.2.
+Use `comptime` for compile-time constants.
+
+**Warning:**
+```
+'alias' is deprecated, use 'comptime' instead
+```
+
+**Wrong:**
+```mojo
+alias PI = 3.141592653589793
+alias MAX_SIZE = 1000
+```
+
+**Correct:**
+```mojo
+comptime PI = 3.141592653589793
+comptime MAX_SIZE = 1000
+```
+
+---
+
+## 42. Returning `List[T]` from a function — use the transfer operator `^`
+
+**Problem:**
+`List[T]` does not implement `ImplicitlyCopyable`. Returning a local
+`List` variable without the transfer operator causes a compile error.
+
+**Error:**
+```
+value of type 'List[Float64]' cannot be implicitly copied,
+it does not conform to 'ImplicitlyCopyable'
+```
+
+**Wrong:**
+```mojo
+fn zeros(rows: Int, cols: Int) -> List[Float64]:
+    var m = List[Float64]()
+    for i in range(rows * cols):
+        m.append(0.0)
+    return m        # ERROR — implicit copy not allowed
+```
+
+**Correct:**
+```mojo
+fn zeros(rows: Int, cols: Int) -> List[Float64]:
+    var m = List[Float64]()
+    for i in range(rows * cols):
+        m.append(0.0)
+    return m^       # transfer ownership to the caller
+```
+
+The `^` operator transfers ownership of the local variable to the return
+value without copying. Apply it to every `return` statement that returns
+a `List`, `String`, or any other non-copyable owned type.
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -872,19 +1354,32 @@ conn.execute(
 | List initialization | `List[String]("a", "b")` | `list.append("a"); list.append("b")` |
 | String alignment | `"{:<16}".format(val)` | `Python.import_module("builtins").format(val, "<16")` |
 | Decimal int string | `Int(String("5.0"))` | `Int(Float64(String(py_obj)))` |
-| NumPy slicing | `arr[:, :, 0]` | helper `.py` modülüne taşı |
-| Multi-line evaluate | `Python.evaluate("""...""")` | helper `.py` modülüne taşı |
+| NumPy slicing | `arr[:, :, 0]` | move to a helper `.py` module |
+| Multi-line evaluate | `Python.evaluate("""...""")` | move to a helper `.py` module |
 | Mojo sys vs Python sys | `import sys` | `Python.import_module("sys")` |
 | Docstring period | `"""Load image"""` | `"""Load image."""` |
-| Multiple out args | `fn f(out a: Int, out b: Int)` | tek `Python.dict()` içinde tut |
-| Global constants | `alias X = 0` veya `comptime var X = 0` | `comptime X = 0` |
+| Multiple out args | `fn f(out a: Int, out b: Int)` | use a single `Python.dict()` |
+| Global constants | `alias X = 0` or `comptime var X = 0` | `comptime X = 0` |
 | Python list creation | `Python.evaluate("list")([a, b])` | `builtins.list()` + `.append()` |
 | `str()` not defined | `str(obj)` | `String(obj)` |
 | String iteration | `for ch in s:` | `for ch in s.codepoint_slices():` |
-| Tuple return type | `fn f() -> (Int, Int)` | iki ayrı `fn` veya `Python.dict()` |
-| Unused variable | `var x = val` (kullanılmıyor) | `_ = val` veya tanımı kaldır |
-| Mojo `len()` to Python | `random.randint(0, len(mojo_list))` | `builtins.len(py_list)` kullan |
-| Flask route handlers | `Python.evaluate("""@app.route...""")` | ayrı `flask_helpers.py` dosyası |
+| Tuple return type | `fn f() -> (Int, Int)` | two separate `fn`s or `Python.dict()` |
+| Unused variable | `var x = val` (unused) | `_ = val` or remove the declaration |
+| Mojo `len()` to Python | `random.randint(0, len(mojo_list))` | use `builtins.len(py_list)` |
+| Flask route handlers | `Python.evaluate("""@app.route...""")` | separate `flask_helpers.py` file |
 | Flask app name | `flask.Flask("__main__")` | `flask.Flask(builtins.str("__main__"))` |
-| SQLite row key | `row["title"]` | `row[String("title")]` veya `row[0]` |
+| SQLite row key | `row["title"]` | `row[String("title")]` or `row[0]` |
 | SQLite parameters | `execute(sql, (val,))` | `execute(sql, Python.evaluate("lambda x: (x,)")(val))` |
+| `time.now` removed | `from time import now` | `from time import perf_counter_ns` |
+| `fn` not passable to Python | `Python.evaluate(...)(my_fn)` | use `def` or pass results via dict |
+| Flask threading | `flask_thread.start(); while True: mojo_work()` | subprocess or daemon thread |
+| onclick + disabled | `onclick="btn.disabled=true"` | `form.addEventListener('submit', ...)` |
+| Template folder conflict | `templates/` | `todo_templates/`, `expense_templates/`, etc. |
+| `mojo build` Python limitation | copy only the executable | distribute the entire folder or use Cython/pure Mojo |
+| `owned` deprecated | `owned data: List[T]` | `var data: List[T]` + `self.field = data^` |
+| `List[CustomStruct]` Copyable | `List[MyStruct]` | parallel `List[Int]` / `List[Float64]` |
+| `@value` removed | `@value struct S` | `struct S(Copyable, Movable)` + explicit inits |
+| `while` + `if/else` indent | `while cond: if..else` | `var go = cond; while go: ...` |
+| Tuple return | `fn f() -> (Int, Int)` | small struct or `out` parameters |
+| `alias` deprecated (v0.26.2) | `alias X = 3.14` | `comptime X = 3.14` |
+| Returning `List[T]` | `return m` | `return m^` (transfer operator) |

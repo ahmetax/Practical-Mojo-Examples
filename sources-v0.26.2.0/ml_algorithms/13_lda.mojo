@@ -1,10 +1,10 @@
-"""
-Author: Ahmet Aksoy
-Date: 2026-03-25
+"""Author: Ahmet Aksoy
+Date: 2026-03-26
 Mojo version: 0.26.2 | Python 3.12 | Ubuntu
 AI: Claude Sonnet 4.6
 
 13_lda.mojo — Linear Discriminant Analysis (pure Mojo)
+
 
 Algorithm:
   1. Compute class means and overall mean

@@ -1337,6 +1337,46 @@ a `List`, `String`, or any other non-copyable owned type.
 
 ---
 
+## 43. Unused loop variable warning — use `_` as the loop variable
+
+**Problem:**
+When a `for` loop counter is never used inside the loop body, Mojo warns
+that the variable should be replaced with `_`.
+
+**Warning:**
+```
+ref 'i' was never used, remove it?
+```
+
+**Wrong:**
+```mojo
+for i in range(rows * cols):
+    m.append(0.0)
+
+for i in range(10):
+    y.append(0)
+
+for it in range(n_iter):
+    var w = mat_vec(...)   # 'it' never referenced inside body
+```
+
+**Correct:**
+```mojo
+for _ in range(rows * cols):
+    m.append(0.0)
+
+for _ in range(10):
+    y.append(0)
+
+for _ in range(n_iter):
+    var w = mat_vec(...)
+```
+
+Use `_` whenever the loop index is needed only for repetition count,
+not for indexing or any computation inside the body.
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -1383,3 +1423,4 @@ a `List`, `String`, or any other non-copyable owned type.
 | Tuple return | `fn f() -> (Int, Int)` | small struct or `out` parameters |
 | `alias` deprecated (v0.26.2) | `alias X = 3.14` | `comptime X = 3.14` |
 | Returning `List[T]` | `return m` | `return m^` (transfer operator) |
+| Unused loop variable | `for i in range(n): body_not_using_i` | `for _ in range(n):` |

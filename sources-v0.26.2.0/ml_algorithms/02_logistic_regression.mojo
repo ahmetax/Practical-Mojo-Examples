@@ -1,7 +1,7 @@
 """
 Author: Ahmet Aksoy
 Date: 2026-03-20
-Mojo version: 0.26.2.0
+Mojo version: 0.26.2 | Python 3.12 | Ubuntu
 AI: Claude Sonnet 4.6
 
 Logistic Regression — Pure Mojo Implementation
@@ -160,7 +160,7 @@ struct LogisticRegression:
         """Train the model using Gradient Descent."""
         var n = Float64(len(x))
 
-        for epoch in range(self.epochs):
+        for _ in range(self.epochs):
             # Forward pass — sigmoid(w*x + b)
             var y_pred = List[Float64]()
             for i in range(len(x)):

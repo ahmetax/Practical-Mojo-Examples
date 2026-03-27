@@ -1,7 +1,7 @@
 """
 Author: Ahmet Aksoy
 Date: 2026-03-23
-Mojo version: 0.26.2
+Mojo version: 0.26.2 | Python 3.12 | Ubuntu
 AI: Claude Sonnet 4.6
 
 Principal Component Analysis (PCA) — Pure Mojo Implementation

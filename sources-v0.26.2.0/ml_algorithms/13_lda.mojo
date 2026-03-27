@@ -1,10 +1,10 @@
-"""Author: Ahmet Aksoy
+"""
+Author: Ahmet Aksoy
 Date: 2026-03-26
 Mojo version: 0.26.2 | Python 3.12 | Ubuntu
 AI: Claude Sonnet 4.6
 
 13_lda.mojo — Linear Discriminant Analysis (pure Mojo)
-
 
 Algorithm:
   1. Compute class means and overall mean
@@ -342,7 +342,7 @@ fn compute_centroids(
     mut centroids: List[Float64]
 ):
     var counts = List[Float64]()
-    for _ in range(n_classes):
+    for c in range(n_classes):
         counts.append(0.0)
 
     for i in range(n_samples):

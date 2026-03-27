@@ -1,7 +1,7 @@
 """
 Author: Ahmet Aksoy
 Date: 2026-03-20
-Mojo version: 0.26.2.0
+Mojo version: 0.26.2 | Python 3.12 | Ubuntu
 AI: Claude Sonnet 4.6
 
 K-Means Clustering — Pure Mojo Implementation
@@ -145,7 +145,7 @@ struct KMeans:
 
         # Step 1: pick the point farthest from the mean
         var mean_pt = List[Float64]()
-        for d in range(dims):
+        for _ in range(dims):
             mean_pt.append(0.0)
         for i in range(n):
             for d in range(dims):

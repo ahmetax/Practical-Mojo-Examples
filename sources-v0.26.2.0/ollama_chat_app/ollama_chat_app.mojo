@@ -1,8 +1,7 @@
 """
 Author: Ahmet Aksoy
 Date: 2026-03-19
-Revision Date: 2026-03-20
-Mojo version no: 0.26.2.0
+Mojo version: 0.26.2 | Python 3.12 | Ubuntu
 
 Description:
     Ollama Chat Web Application built with Mojo + Flask.

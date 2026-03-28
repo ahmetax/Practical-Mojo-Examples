@@ -2,7 +2,6 @@
 Author: Ahmet Aksoy
 Date: 2026-03-21
 Mojo version: 0.26.2 | Python 3.12 | Ubuntu
-AI: Claude Sonnet 4.6
 
 Neural Network — Pure Mojo Implementation
 ==========================================

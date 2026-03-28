@@ -1,8 +1,7 @@
 """
 Author: Ahmet Aksoy
 Date: 2026-03-12
-Revision Date: 2026-03-12
-Mojo version no: 0.26.2
+Mojo version: 0.26.2 | Python 3.12 | Ubuntu
 
 Description:
     Weather App built with Mojo + Flask + OpenWeatherMap API.

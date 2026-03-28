@@ -1377,6 +1377,93 @@ not for indexing or any computation inside the body.
 
 ---
 
+## 44. Assigning `List[T]` to another variable — use index-based copy
+
+**Problem:**
+`List[T]` does not implement `ImplicitlyCopyable`. Assigning a `List`
+variable to another variable (e.g. to remember the "best" candidate
+inside a loop) triggers a compile error.
+
+**Error:**
+```
+value of type 'List[Int]' cannot be implicitly copied,
+it does not conform to 'ImplicitlyCopyable'
+```
+
+**Wrong:**
+```mojo
+var best_left = List[Int]()
+for f in range(n_features):
+    var left_idx = List[Int]()
+    # ... fill left_idx ...
+    if gain > best_gain:
+        best_left = left_idx   # ERROR -- implicit copy
+```
+
+**Correct -- record only the scalar split parameters, re-split once at the end:**
+```mojo
+var best_feature = -1
+var best_thresh  = 0.0
+# find best_feature / best_thresh inside the loop (scalars only)
+...
+# after the loop, rebuild the two index lists once:
+var best_left  = List[Int]()
+var best_right = List[Int]()
+for i in range(len(indices)):
+    var idx = indices[i]
+    if X[idx * n_features + best_feature] <= best_thresh:
+        best_left.append(idx)
+    else:
+        best_right.append(idx)
+```
+
+The same issue appears when trying to "save" any `List` in a loop.
+Always save only scalars inside the loop and reconstruct the list once
+after the loop with the winning parameters.
+
+---
+
+## 45. Baum-Welch (EM) with uniform initialisation gets stuck at a symmetric local minimum
+
+**Problem:**
+When all rows of the emission matrix B (or transition matrix A) are
+initialised identically, the Baum-Welch EM algorithm cannot break the
+symmetry between hidden states. Every EM iteration keeps the states
+identical, so the model never learns distinct state behaviour.
+
+**Symptom:**
+```
+Learned emission B:
+  State0: 13 16 13 16 10 30
+  State1: 13 16 13 16  9 29   <- nearly identical to State0
+```
+
+**Wrong:**
+```mojo
+# Uniform init -- all states look the same
+for o in range(n_obs):
+    B[0 * n_obs + o] = 1.0 / Float64(n_obs)
+    B[1 * n_obs + o] = 1.0 / Float64(n_obs)
+```
+
+**Correct -- break symmetry with an asymmetric initialisation:**
+```mojo
+# State 0: roughly uniform (fair die)
+for o in range(n_obs):
+    B[0 * n_obs + o] = 1.0 / Float64(n_obs)
+
+# State 1: biased toward the last observation (loaded die)
+for o in range(n_obs - 1):
+    B[1 * n_obs + o] = 0.12
+B[1 * n_obs + (n_obs - 1)] = 0.40
+```
+
+This applies to any EM-based algorithm (GMM, HMM, k-means with soft
+assignments): at least one parameter must differ between components at
+initialisation, otherwise the gradient is zero and EM is stuck.
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -1424,3 +1511,5 @@ not for indexing or any computation inside the body.
 | `alias` deprecated (v0.26.2) | `alias X = 3.14` | `comptime X = 3.14` |
 | Returning `List[T]` | `return m` | `return m^` (transfer operator) |
 | Unused loop variable | `for i in range(n): body_not_using_i` | `for _ in range(n):` |
+| Saving `List` in a loop | `best_list = candidate_list` | save scalar params; rebuild list after loop |
+| EM uniform init (HMM/GMM) | all B rows identical | asymmetric init to break symmetry |

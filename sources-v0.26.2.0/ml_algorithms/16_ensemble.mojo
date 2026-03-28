@@ -2,7 +2,6 @@
 Author: Ahmet Aksoy
 Date: 2026-03-27
 Mojo version: 0.26.2 | Python 3.12 | Ubuntu
-AI: Claude Sonnet 4.6
 
 16_ensemble.mojo -- Ensemble Methods: Voting + Stacking (pure Mojo)
 

@@ -2,7 +2,6 @@
 Author: Ahmet Aksoy
 Date: 2026-03-24
 Mojo version: 0.26.2 | Python 3.12 | Ubuntu
-AI: Claude Sonnet 4.6
 
 Gradient Boosting Regressor — Pure Mojo Implementation
 =======================================================

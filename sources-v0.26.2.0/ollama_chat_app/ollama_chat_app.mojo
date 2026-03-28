@@ -3,7 +3,6 @@ Author: Ahmet Aksoy
 Date: 2026-03-19
 Revision Date: 2026-03-20
 Mojo version no: 0.26.2.0
-AI: Claude Sonnet 4.6
 
 Description:
     Ollama Chat Web Application built with Mojo + Flask.

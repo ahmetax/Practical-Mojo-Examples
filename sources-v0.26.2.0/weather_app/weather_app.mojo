@@ -2,8 +2,7 @@
 Author: Ahmet Aksoy
 Date: 2026-03-12
 Revision Date: 2026-03-12
-Mojo version no: 0.26.1
-AI: Claude Sonnet 4.6
+Mojo version no: 0.26.2
 
 Description:
     Weather App built with Mojo + Flask + OpenWeatherMap API.

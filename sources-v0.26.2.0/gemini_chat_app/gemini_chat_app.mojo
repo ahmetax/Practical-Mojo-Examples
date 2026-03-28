@@ -2,7 +2,6 @@
 Author: Ahmet Aksoy
 Date: 2026-03-22
 Mojo version: 0.26.2
-AI: Claude Sonnet 4.6
 
 Gemini Chat Web Application — Mojo + Flask + Google AI Studio
 =============================================================

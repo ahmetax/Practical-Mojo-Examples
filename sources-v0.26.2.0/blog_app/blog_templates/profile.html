@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}Profile — MojoBlog{% endblock %}
+
+{% block extra_style %}
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .profile-grid { grid-template-columns: 1fr; }
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #1e293b;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid #eef2ff;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.info-row .lbl {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.info-row .val {
+  font-size: 0.95rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.danger-zone {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #fee2e2;
+}
+
+.danger-zone h3 {
+  color: #ef4444;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+{% endblock %}
+
+{% block content %}
+<div class="profile-grid">
+
+  <!-- Account info -->
+  <div class="card">
+    <div class="section-title">👤 Account Info</div>
+
+    <div class="info-row">
+      <span class="lbl">Username</span>
+      <span class="val">{{ user.username }}</span>
+    </div>
+    <div class="info-row">
+      <span class="lbl">Email</span>
+      <span class="val">{{ user.email }}</span>
+    </div>
+    <div class="info-row">
+      <span class="lbl">Member since</span>
+      <span class="val">{{ user.created_at[:10] }}</span>
+    </div>
+    <div class="info-row">
+      <span class="lbl">Total posts</span>
+      <span class="val">{{ post_count }}</span>
+    </div>
+  </div>
+
+  <!-- Change password -->
+  <div class="card">
+    <div class="section-title">🔑 Change Password</div>
+
+    <form method="POST" action="/profile/password">
+      <div class="form-group">
+        <label>Current Password</label>
+        <input type="password" name="current_password"
+               placeholder="••••••••" required>
+      </div>
+      <div class="form-group">
+        <label>New Password</label>
+        <input type="password" name="new_password"
+               placeholder="••••••••" required minlength="6">
+      </div>
+      <div class="form-group">
+        <label>Confirm New Password</label>
+        <input type="password" name="new_password2"
+               placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        🔒 Update Password
+      </button>
+    </form>
+
+    <div class="danger-zone">
+      <h3>⚠️ Danger Zone</h3>
+      <form method="POST" action="/profile/delete"
+            onsubmit="return confirm('Are you sure? This will permanently delete your account and all your posts!')">
+        <button type="submit" class="btn btn-danger" style="font-size:0.85rem;">
+          🗑 Delete My Account
+        </button>
+      </form>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

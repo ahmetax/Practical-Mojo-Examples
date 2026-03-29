@@ -1464,6 +1464,80 @@ initialisation, otherwise the gradient is zero and EM is stuck.
 
 ---
 
+## 46. SIMD comparison operators `>`, `<`, `>=`, `<=` cause errors — use static methods
+
+**Problem:**
+The infix comparison operators `>`, `<`, `>=`, `<=` do not work on
+`SIMD` values in Mojo 0.26.2. Only `==` and `!=` work as infix operators,
+but they do not produce lane-wise masks (see gotcha #47).
+The ordered comparisons must be called as static methods on the `SIMD` type.
+
+**Error:**
+```
+invalid call to '__gt__' ...   (or __lt__, __ge__, __le__)
+```
+
+**Wrong:**
+```mojo
+var a = SIMD[DType.float32, 4](1.0, 5.0, 3.0, 7.0)
+var b = SIMD[DType.float32, 4](2.0, 4.0, 3.0, 6.0)
+print(a >  b)   # Error
+print(a <  b)   # Error
+print(a >= b)   # Error
+print(a <= b)   # Error
+```
+
+**Correct:**
+```mojo
+print(SIMD.gt(a, b))    # element-wise a > b  -> [False, True, False, True]
+print(SIMD.lt(a, b))    # element-wise a < b
+print(SIMD.ge(a, b))    # element-wise a >= b
+print(SIMD.le(a, b))    # element-wise a <= b
+print(SIMD.gt(a, 3.0))  # scalar broadcast works too
+```
+
+---
+
+## 47. SIMD `==` and `!=` infix operators reduce to a single bool, not a lane-wise mask
+
+**Problem:**
+Unlike `SIMD.gt`, `SIMD.lt` etc. which return a per-lane bool mask,
+the infix `==` and `!=` operators collapse the entire vector into a
+single `Bool`. This is rarely what you want when working with SIMD.
+
+**Observed behaviour:**
+```
+a = [1.0, 5.0, 3.0, 7.0]
+b = [2.0, 4.0, 3.0, 6.0]
+a == b  ->  False    # single bool: are ALL lanes equal?
+a != b  ->  True     # single bool: do ANY lanes differ?
+```
+
+**Wrong:**
+```mojo
+# Trying to get a lane-wise equality mask:
+var mask = a == b    # returns a single Bool, not a mask
+```
+
+**Correct — use SIMD static methods for lane-wise results:**
+```mojo
+var eq_mask = SIMD.eq(a, b)   # -> [False, False, True, False]
+var ne_mask = SIMD.ne(a, b)   # -> [True,  True,  False, True]
+```
+
+Summary of all SIMD comparison methods:
+
+| Operation | Infix | Static method (lane-wise) |
+|---|---|---|
+| equal     | `a == b` (single bool) | `SIMD.eq(a, b)` |
+| not equal | `a != b` (single bool) | `SIMD.ne(a, b)` |
+| greater   | ❌ error | `SIMD.gt(a, b)` |
+| less      | ❌ error | `SIMD.lt(a, b)` |
+| greater=  | ❌ error | `SIMD.ge(a, b)` |
+| less=     | ❌ error | `SIMD.le(a, b)` |
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -1513,3 +1587,6 @@ initialisation, otherwise the gradient is zero and EM is stuck.
 | Unused loop variable | `for i in range(n): body_not_using_i` | `for _ in range(n):` |
 | Saving `List` in a loop | `best_list = candidate_list` | save scalar params; rebuild list after loop |
 | EM uniform init (HMM/GMM) | all B rows identical | asymmetric init to break symmetry |
+| SIMD comparison ops | `a > b`, `a < b`, `a >= b`, `a <= b` | `SIMD.gt(a,b)`, `SIMD.lt(a,b)`, `SIMD.ge(a,b)`, `SIMD.le(a,b)` |
+| SIMD `==` / `!=` infix | `a == b` → single bool | `SIMD.eq(a,b)`, `SIMD.ne(a,b)` for lane-wise mask |
+

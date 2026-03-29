@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% block title %}Report — Expense Tracker{% endblock %}
+
+{% block extra_style %}
+.month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.month-nav a {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  background: #e5e7eb;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.month-nav a:hover { background: #0f766e; color: white; }
+
+.month-nav h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  min-width: 160px;
+  text-align: center;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-box {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+.summary-box .val {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.summary-box .lbl {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 0.2rem;
+}
+
+.cat-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.amount-cell { font-weight: 600; color: #0f766e; }
+{% endblock %}
+
+{% block content %}
+
+<!-- Month navigation -->
+<div class="month-nav">
+  <a href="/report?year={{ prev_year }}&month={{ prev_month }}">← Prev</a>
+  <h2>{{ month_name }} {{ year }}</h2>
+  <a href="/report?year={{ next_year }}&month={{ next_month }}">Next →</a>
+</div>
+
+<!-- Monthly summary -->
+<div class="summary-grid">
+  <div class="summary-box">
+    <div class="val">${{ "%.2f"|format(monthly_total) }}</div>
+    <div class="lbl">Total Spent</div>
+  </div>
+  <div class="summary-box">
+    <div class="val">{{ entry_count }}</div>
+    <div class="lbl">Entries</div>
+  </div>
+  <div class="summary-box">
+    <div class="val">${{ "%.2f"|format(daily_avg) }}</div>
+    <div class="lbl">Daily Average</div>
+  </div>
+  <div class="summary-box">
+    <div class="val">{{ top_category }}</div>
+    <div class="lbl">Top Category</div>
+  </div>
+</div>
+
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem;">
+
+  <!-- Bar chart: daily spending -->
+  <div class="card">
+    <h2>Daily Spending</h2>
+    {% if daily_data %}
+    <canvas id="dailyChart" height="200"></canvas>
+    {% else %}
+    <p style="color:#9ca3af; text-align:center; padding:2rem 0;">No data for this month.</p>
+    {% endif %}
+  </div>
+
+  <!-- Category breakdown -->
+  <div class="card">
+    <h2>By Category</h2>
+    {% if cat_data %}
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Amount</th><th>Entries</th></tr>
+      </thead>
+      <tbody>
+        {% for row in cat_data %}
+        <tr>
+          <td><span class="cat-badge">{{ row.category }}</span></td>
+          <td class="amount-cell">${{ "%.2f"|format(row.total) }}</td>
+          <td style="color:#6b7280;">{{ row.cnt }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p style="color:#9ca3af; text-align:center; padding:2rem 0;">No data for this month.</p>
+    {% endif %}
+  </div>
+
+</div>
+
+<!-- All entries this month -->
+<div class="card">
+  <h2>All Entries — {{ month_name }} {{ year }}</h2>
+  {% if expenses %}
+  <table>
+    <thead>
+      <tr><th>Date</th><th>Description</th><th>Category</th><th>Amount</th><th></th></tr>
+    </thead>
+    <tbody>
+      {% for e in expenses %}
+      <tr>
+        <td style="color:#6b7280;">{{ e.date }}</td>
+        <td>{{ e.description }}</td>
+        <td><span class="cat-badge">{{ e.category }}</span></td>
+        <td class="amount-cell">${{ "%.2f"|format(e.amount) }}</td>
+        <td>
+          <form method="POST" action="/delete/{{ e.id }}"
+                onsubmit="return confirm('Delete this entry?')">
+            <button type="submit" class="btn btn-danger"
+                    style="padding:0.2rem 0.6rem; font-size:0.78rem;">🗑</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color:#9ca3af; text-align:center; padding:2rem 0;">No entries this month.</p>
+  {% endif %}
+</div>
+
+{% if daily_data %}
+<script>
+  new Chart(document.getElementById('dailyChart'), {
+    type: 'bar',
+    data: {
+      labels: {{ daily_labels | tojson }},
+      datasets: [{
+        label: 'Daily Spending ($)',
+        data: {{ daily_values | tojson }},
+        backgroundColor: '#0f766e88',
+        borderColor: '#0f766e',
+        borderWidth: 1,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { beginAtZero: true, ticks: { font: { size: 10 } } },
+        x: { ticks: { font: { size: 10 } } }
+      }
+    }
+  });
+</script>
+{% endif %}
+
+{% endblock %}

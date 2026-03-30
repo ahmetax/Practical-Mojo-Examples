@@ -144,5 +144,5 @@ Here is the code list table (covers more than 60 examples).
 | Gemini Chat Web Application | Flask | 0.26.2.0 | gemini_chat_app/ |
 | Several ML algorithms | Pure Mojo | 0.26.2.0 | ml_algorithms/ |
 | Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.2.0 |weather_app.mojo weather_helpers.py weather_templates/ |
-
+| Several file related examples | Pure Mojo | 0.26.2.0 | file_apps/ |
 

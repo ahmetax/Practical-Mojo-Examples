@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}{{ filename }} — Preview{% endblock %}
+
+{% block extra_style %}
+.preview-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.preview-header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  flex: 1;
+}
+
+.meta-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.meta-grid span strong { color: #374151; }
+
+.preview-box {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.preview-box img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.preview-box iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  display: block;
+}
+
+.preview-box pre {
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #1e293b;
+  font-family: 'Courier New', monospace;
+  background: #f9fafb;
+}
+
+.no-preview {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #9ca3af;
+}
+
+.no-preview .icon { font-size: 4rem; margin-bottom: 1rem; }
+{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="preview-header">
+    <a href="/" class="btn btn-secondary">← Back</a>
+    <h2>{{ filename }}</h2>
+    <a href="/download/{{ filename }}" class="btn btn-success">⬇️ Download</a>
+    <form method="POST" action="/delete/{{ filename }}"
+          onsubmit="return confirm('Delete {{ filename }}?')"
+          style="display:inline;">
+      <button type="submit" class="btn btn-danger">🗑 Delete</button>
+    </form>
+  </div>
+
+  <div class="meta-grid">
+    <span>📦 Size: <strong>{{ size }}</strong></span>
+    <span>📅 Uploaded: <strong>{{ date }}</strong></span>
+    <span>🏷 Type: <strong>{{ mime }}</strong></span>
+  </div>
+
+  <div class="preview-box">
+    {% if file_type == 'image' %}
+      <img src="/uploads/{{ filename }}" alt="{{ filename }}">
+
+    {% elif file_type == 'pdf' %}
+      <iframe src="/uploads/{{ filename }}" type="application/pdf"></iframe>
+
+    {% elif file_type == 'text' %}
+      <pre>{{ content }}</pre>
+
+    {% else %}
+      <div class="no-preview">
+        <div class="icon">{{ icon }}</div>
+        <p>No preview available for this file type.</p>
+        <a href="/download/{{ filename }}" class="btn btn-primary" style="margin-top:1rem;">
+          ⬇️ Download to view
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

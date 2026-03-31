@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Web Scraper{% endblock %}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 { font-size: 1.2rem; font-weight: 700; color: #38bdf8; }
+
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: all 0.15s;
+    }
+
+    nav a:hover { background: #334155; color: #e2e8f0; }
+    nav a.active { background: #0c4a6e; color: #38bdf8; font-weight: 600; }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card h2 {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #64748b;
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 0.3rem;
+    }
+
+    input[type="text"], input[type="url"], select {
+      width: 100%;
+      padding: 0.65rem 0.9rem;
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      color: #e2e8f0;
+      font-size: 0.92rem;
+      outline: none;
+      transition: border 0.2s;
+      font-family: inherit;
+    }
+
+    input:focus, select:focus { border-color: #38bdf8; }
+
+    .form-group { margin-bottom: 1rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.3rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .btn:hover { opacity: 0.85; }
+    .btn-primary   { background: #0284c7; color: white; }
+    .btn-secondary { background: #334155; color: #e2e8f0; }
+    .btn-success   { background: #059669; color: white; }
+    .btn-danger    { background: #dc2626; color: white; }
+
+    .flash {
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-size: 0.88rem;
+    }
+
+    .flash-error   { background: #450a0a; border: 1px solid #7f1d1d; color: #fca5a5; }
+    .flash-success { background: #052e16; border: 1px solid #14532d; color: #86efac; }
+    .flash-info    { background: #0c1a2e; border: 1px solid #1e3a5f; color: #7dd3fc; }
+
+    {% block extra_style %}{% endblock %}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🕷 Web Scraper</h1>
+    <nav>
+      <a href="/" class="{{ 'active' if request.path == '/' }}">Scrape</a>
+      <a href="/history" class="{{ 'active' if request.path == '/history' }}">History</a>
+    </nav>
+  </header>
+
+  <main>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <div class="flash flash-{{ category }}">{{ message }}</div>
+      {% endfor %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

@@ -1,0 +1,325 @@
+{% extends "base.html" %}
+{% block title %}Results — {{ result.url | truncate(40) }}{% endblock %}
+
+{% block extra_style %}
+.result-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.result-url {
+  font-size: 0.82rem;
+  color: #38bdf8;
+  word-break: break-all;
+  text-decoration: none;
+}
+
+.result-url:hover { text-decoration: underline; }
+
+.stat-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.stat-pill {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 20px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.stat-pill span { color: #38bdf8; font-weight: 700; }
+
+.section-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  margin-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.meta-key {
+  color: #64748b;
+  font-weight: 600;
+}
+
+.meta-val {
+  color: #cbd5e1;
+  word-break: break-word;
+}
+
+.heading-list { list-style: none; }
+
+.heading-item {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #1e293b;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.heading-item:last-child { border-bottom: none; }
+
+.h-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #38bdf8;
+  background: #0c4a6e;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.link-list { list-style: none; max-height: 320px; overflow-y: auto; }
+
+.link-item {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #1e293b;
+  font-size: 0.82rem;
+}
+
+.link-item:last-child { border-bottom: none; }
+
+.link-item a {
+  color: #38bdf8;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.link-item a:hover { text-decoration: underline; }
+
+.link-text {
+  color: #64748b;
+  font-size: 0.78rem;
+  margin-top: 0.1rem;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.img-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.72rem;
+}
+
+.img-card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  display: block;
+  background: #1e293b;
+}
+
+.img-card .img-alt {
+  padding: 0.4rem 0.5rem;
+  color: #64748b;
+  word-break: break-word;
+}
+
+.page-text {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+th {
+  background: #0f172a;
+  color: #38bdf8;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border: 1px solid #334155;
+}
+
+td {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #1e293b;
+  color: #cbd5e1;
+  word-break: break-word;
+}
+
+tr:nth-child(even) td { background: #0f172a; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+<div class="result-header">
+  <div>
+    <div style="font-size:1rem; font-weight:700; margin-bottom:0.3rem;">
+      {{ result.title or 'No title' }}
+    </div>
+    <a class="result-url" href="{{ result.url }}" target="_blank">
+      {{ result.url }}
+    </a>
+    <div style="font-size:0.75rem; color:#475569; margin-top:0.3rem;">
+      Scraped in {{ result.elapsed }}s · {{ result.status_code }}
+    </div>
+  </div>
+  <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+    <a href="/download/{{ result.id }}" class="btn btn-success">
+      ⬇️ JSON
+    </a>
+    <a href="/" class="btn btn-secondary">← New</a>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stat-row">
+  {% if result.headings is defined %}
+  <div class="stat-pill">Headings: <span>{{ result.headings | length }}</span></div>
+  {% endif %}
+  {% if result.links is defined %}
+  <div class="stat-pill">Links: <span>{{ result.links | length }}</span></div>
+  {% endif %}
+  {% if result.images is defined %}
+  <div class="stat-pill">Images: <span>{{ result.images | length }}</span></div>
+  {% endif %}
+  {% if result.tables is defined %}
+  <div class="stat-pill">Tables: <span>{{ result.tables | length }}</span></div>
+  {% endif %}
+</div>
+
+<!-- Meta -->
+{% if result.meta %}
+<div class="card">
+  <div class="section-title">📋 Meta Tags</div>
+  <div class="meta-grid">
+    {% for key, val in result.meta.items() %}
+    <div class="meta-key">{{ key }}</div>
+    <div class="meta-val">{{ val }}</div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- Headings -->
+{% if result.headings %}
+<div class="card">
+  <div class="section-title">📰 Headings ({{ result.headings | length }})</div>
+  <ul class="heading-list">
+    {% for h in result.headings %}
+    <li class="heading-item">
+      <span class="h-tag">{{ h.tag }}</span>
+      {{ h.text }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<!-- Links + Images side by side -->
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+
+{% if result.links %}
+<div class="card">
+  <div class="section-title">🔗 Links ({{ result.links | length }})</div>
+  <ul class="link-list">
+    {% for link in result.links %}
+    <li class="link-item">
+      <a href="{{ link.href }}" target="_blank">{{ link.href | truncate(60) }}</a>
+      {% if link.text %}
+      <div class="link-text">{{ link.text | truncate(50) }}</div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if result.images %}
+<div class="card">
+  <div class="section-title">🖼 Images ({{ result.images | length }})</div>
+  <div class="img-grid">
+    {% for img in result.images %}
+    <div class="img-card">
+      <img src="{{ img.src }}" alt="{{ img.alt }}"
+           onerror="this.style.display='none'">
+      <div class="img-alt">{{ img.alt or img.src | truncate(40) }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+</div>
+
+<!-- Tables -->
+{% if result.tables %}
+{% for tbl in result.tables %}
+<div class="card">
+  <div class="section-title">📊 Table {{ loop.index }}</div>
+  <div class="table-wrap">
+    <table>
+      {% if tbl.headers %}
+      <thead>
+        <tr>{% for h in tbl.headers %}<th>{{ h }}</th>{% endfor %}</tr>
+      </thead>
+      {% endif %}
+      <tbody>
+        {% for row in tbl.rows %}
+        <tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- Page text -->
+{% if result.text %}
+<div class="card">
+  <div class="section-title">📝 Page Text</div>
+  <div class="page-text">{{ result.text }}</div>
+</div>
+{% endif %}
+
+{% endblock %}

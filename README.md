@@ -145,4 +145,6 @@ Here is the code list table (covers more than 60 examples).
 | Several ML algorithms | Pure Mojo | 0.26.2.0 | ml_algorithms/ |
 | Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.2.0 |weather_app.mojo weather_helpers.py weather_templates/ |
 | Several file related examples | Pure Mojo | 0.26.2.0 | file_apps/ |
+| Blog / Content Management System built with Mojo + Flask + SQLite.| Flask + SQLite | 0.26.2.0 | blog_app/ |
+| Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.2.0 | expense_app.mojo expense_helpers.py expense_templates/ |
 

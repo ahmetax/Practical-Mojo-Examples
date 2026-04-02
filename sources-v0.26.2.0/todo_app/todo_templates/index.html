@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+
+{% block title %}To-Do List{% endblock %}
+
+{% block extra_style %}
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.add-form input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.filters a {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  background: #e5e7eb;
+  color: #374151;
+  transition: background 0.2s;
+}
+
+.filters a.active,
+.filters a:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+.task-list { list-style: none; }
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.task-item:last-child { border-bottom: none; }
+
+.task-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4f46e5;
+}
+
+.task-title {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.task-title.done {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task-meta {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
+.priority-badge {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.priority-high   { background: #fee2e2; color: #991b1b; }
+.priority-medium { background: #fef3c7; color: #92400e; }
+.priority-low    { background: #d1fae5; color: #065f46; }
+
+.task-actions { display: flex; gap: 0.4rem; }
+
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  padding: 2rem 0;
+  font-size: 0.95rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.stat-box .num {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.stat-box .label {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+{% endblock %}
+
+{% block content %}
+
+<!-- Stats -->
+<div class="card">
+  <div class="stats">
+    <div class="stat-box">
+      <div class="num">{{ stats.total }}</div>
+      <div class="label">Total</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ stats.pending }}</div>
+      <div class="label">Pending</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ stats.done }}</div>
+      <div class="label">Done</div>
+    </div>
+    <div class="stat-box">
+      <div class="num">{{ stats.high }}</div>
+      <div class="label">High Priority</div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Task -->
+<div class="card">
+  <h2>Add Task</h2>
+  <form method="POST" action="/add">
+    <div class="add-form">
+      <input type="text" name="title" placeholder="What needs to be done?" required>
+      <select name="priority" style="width:auto;">
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+      </select>
+      <button type="submit" class="btn btn-primary">+ Add</button>
+    </div>
+  </form>
+</div>
+
+<!-- Task List -->
+<div class="card">
+  <h2>Tasks</h2>
+
+  <!-- Filters -->
+  <div class="filters">
+    <a href="/"               class="{{ 'active' if filter == 'all'     }}">All ({{ stats.total }})</a>
+    <a href="/?filter=pending"class="{{ 'active' if filter == 'pending' }}">Pending ({{ stats.pending }})</a>
+    <a href="/?filter=done"   class="{{ 'active' if filter == 'done'    }}">Done ({{ stats.done }})</a>
+    <a href="/?filter=high"   class="{{ 'active' if filter == 'high'    }}">High Priority ({{ stats.high }})</a>
+  </div>
+
+  {% if tasks %}
+  <ul class="task-list">
+    {% for task in tasks %}
+    <li class="task-item">
+      <!-- Toggle done -->
+      <form method="POST" action="/toggle/{{ task.id }}">
+        <input type="checkbox"
+               onchange="this.form.submit()"
+               {{ 'checked' if task.done }}>
+      </form>
+
+      <span class="task-title {{ 'done' if task.done }}">
+        {{ task.title }}
+      </span>
+
+      <span class="priority-badge priority-{{ task.priority }}">
+        {{ task.priority }}
+      </span>
+
+      <span class="task-meta">{{ task.created_at }}</span>
+
+      <div class="task-actions">
+        <a href="/edit/{{ task.id }}" class="btn btn-warning" style="padding:0.3rem 0.7rem;font-size:0.8rem;">✏️</a>
+        <form method="POST" action="/delete/{{ task.id }}"
+              onsubmit="return confirm('Delete this task?')">
+          <button type="submit" class="btn btn-danger" style="padding:0.3rem 0.7rem;font-size:0.8rem;">🗑</button>
+        </form>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="empty">No tasks found. Add one above! 🎉</div>
+  {% endif %}
+
+  {% if stats.done > 0 %}
+  <div style="margin-top:1rem; text-align:right;">
+    <form method="POST" action="/clear_done"
+          onsubmit="return confirm('Remove all completed tasks?')">
+      <button type="submit" class="btn btn-secondary" style="font-size:0.8rem;">
+        🧹 Clear Completed ({{ stats.done }})
+      </button>
+    </form>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

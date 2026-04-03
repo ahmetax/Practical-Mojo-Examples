@@ -1538,6 +1538,269 @@ Summary of all SIMD comparison methods:
 
 ---
 
+## 48. `from sys.info import simdwidthof` — add `std.` prefix
+
+**Problem:**
+In Mojo 0.26.2, standard library imports require the `std.` prefix.
+Importing without it causes a module-not-found error.
+
+**Error:**
+```
+unable to find module 'sys'
+unable to find module 'algorithm'
+```
+
+**Wrong:**
+```mojo
+from sys.info import simdwidthof
+from algorithm import vectorize
+```
+
+**Correct:**
+```mojo
+from std.sys.info import simdwidthof
+from std.algorithm import vectorize
+```
+
+This applies to all standard library modules: `sys`, `algorithm`,
+`math`, `memory`, `time`, `collections`, etc.
+
+---
+
+## 49. `@parameter if` and `@parameter for` are deprecated — use `comptime if` / `comptime for`
+
+**Problem:**
+`@parameter if` and `@parameter for` were deprecated in Mojo 0.26.2.
+Use `comptime if` and `comptime for` instead.
+
+**Warning:**
+```
+'@parameter if' is deprecated, use 'comptime if' instead
+'@parameter for' is deprecated, use 'comptime for' instead
+```
+
+**Wrong:**
+```mojo
+@parameter
+if DEBUG:
+    print("debug mode")
+
+@parameter
+for lane in range(width):
+    v[lane] = Float32(lane + 1)
+```
+
+**Correct:**
+```mojo
+comptime if DEBUG:
+    print("debug mode")
+
+comptime for lane in range(width):
+    v[lane] = Float32(lane + 1)
+```
+
+Note: `@parameter` on a function definition (for parametric/generic
+functions) is still valid — only the `if` and `for` forms are deprecated.
+
+---
+
+## 50. `simdwidthof` is in `std.sys` not `std.sys.info`
+
+**Problem:**
+`simdwidthof` is not exported from `std.sys.info` in Mojo 0.26.2.
+It must be imported directly from `std.sys`.
+
+**Error:**
+```
+module 'info' does not contain 'simdwidthof'
+```
+
+**Wrong:**
+```mojo
+from std.sys.info import simdwidthof
+```
+
+**Correct:**
+```mojo
+from std.sys import simdwidthof
+```
+
+---
+
+## 51. Closures (nested `fn`) cannot have compile-time parameters `[...]`
+
+**Problem:**
+In Mojo 0.26.2, a `fn` defined inside another `fn` (a closure) cannot
+declare compile-time parameters with `[...]`. This restriction applies
+to functions passed to `vectorize`, `parallelize`, and similar higher-
+order functions.
+
+**Error:**
+```
+TODO: closures cannot have parameters
+```
+
+**Wrong:**
+```mojo
+fn my_outer():
+    fn add_chunk[width: Int](i: Int):   # ERROR -- closure with parameter
+        ...
+    vectorize[add_chunk, W](n)
+```
+
+**Correct — move the parametric function to module level:**
+```mojo
+# At module level (outside any fn):
+fn add_chunk[width: Int](i: Int):
+    ...
+
+fn my_outer():
+    vectorize[add_chunk, W](n)
+```
+
+---
+
+## 52. `perf_counter_ns()` returns `UInt`, not `Int`
+
+**Problem:**
+`perf_counter_ns()` returns `UInt` in Mojo 0.26.2.
+Passing it to a function that expects `Int` causes a type error.
+Subtraction of two `UInt` values also returns `UInt`.
+
+**Error:**
+```
+invalid call to 'ms': value passed to 'ns' cannot be converted from 'UInt' to 'Int'
+```
+
+**Wrong:**
+```mojo
+fn ms(ns: Int) -> String: ...
+
+var t0 = perf_counter_ns()
+var t1 = perf_counter_ns()
+var elapsed = ms(t1 - t0)   # t1 - t0 is UInt, not Int
+```
+
+**Correct — use `Int()` to convert, or change the parameter type to `UInt`:**
+```mojo
+fn ms(ns: UInt) -> String:
+    return String(ns // 1_000_000) + "." + String((ns % 1_000_000) // 1000) + " ms"
+
+var t0 = perf_counter_ns()
+var t1 = perf_counter_ns()
+var elapsed = ms(t1 - t0)   # both UInt -- OK
+```
+
+---
+
+## 53. Global `var` declarations are not supported at module level
+
+**Problem:**
+Mojo 0.26.2 does not allow `var` declarations at module (global) scope.
+Only `comptime` constants are allowed at module level.
+
+**Error:**
+```
+global vars are not supported
+```
+
+**Wrong:**
+```mojo
+# At module level:
+var _buf_a = List[Float32]()   # ERROR
+var count   = 0                # ERROR
+```
+
+**Correct:**
+```mojo
+# comptime constants only at module level:
+comptime MAX_N = 1024
+
+# Runtime variables must live inside fn:
+fn main():
+    var buf_a = List[Float32]()
+    var count = 0
+```
+
+This means the workaround of using global buffers to share state
+between a module-level parametric function and its caller does not work.
+For `vectorize`-style patterns, pass data via function parameters instead
+or restructure the algorithm to avoid shared mutable state.
+
+---
+
+## 54. `UnsafePointer.alloc()` does not exist — use `List` as backing buffer
+
+**Problem:**
+`UnsafePointer[T].alloc(n)` does not exist in Mojo 0.26.2.
+There is also no standalone `alloc` or `free` function in `std.memory`.
+
+**Error:**
+```
+'UnsafePointer[Float32, ?]' value has no attribute 'alloc'
+package 'memory' does not contain 'free'
+```
+
+**Wrong:**
+```mojo
+var p = UnsafePointer[Float32].alloc(8)   # ERROR
+p.free()                                   # ERROR
+```
+
+**Correct — use List as the heap buffer, get a pointer via unsafe_ptr():**
+```mojo
+var buf = List[Float32]()
+for _ in range(8):
+    buf.append(0.0)
+var p = buf.unsafe_ptr()   # zero-copy pointer to List's internal buffer
+p.store(my_simd_vec)       # write directly
+var v = p.load[width=8]()  # read back as SIMD
+# No free() needed -- List owns and manages the memory
+```
+
+**Correct — pointer to an existing variable:**
+```mojo
+var x = Float32(3.14)
+var p = UnsafePointer(to=x)   # shares memory with x
+p[0] = 99.0                    # modifies x
+```
+
+**Key UnsafePointer constructors in Mojo 0.26.2:**
+- `UnsafePointer(to=x)` — pointer to existing variable
+- `list.unsafe_ptr()` — pointer to List's internal buffer
+- `UnsafePointer(unsafe_from_address=addr)` — from raw integer address
+
+---
+
+## 55. `UnsafePointer[T]` in function parameters requires `origin` — use `_` to unbind
+
+**Problem:**
+When `UnsafePointer[T]` is used as a function parameter type in Mojo 0.26.2,
+the compiler cannot infer the `origin` parameter and raises an error.
+
+**Error:**
+```
+'UnsafePointer' failed to infer parameter 'origin',
+specify the parameter or use '_' or '...' to unbind the parameter explicitly
+```
+
+**Wrong:**
+```mojo
+fn dot(pa: UnsafePointer[Float32], pb: UnsafePointer[Float32]) -> Float32:
+    ...
+```
+
+**Correct — use `_` to leave origin unbound:**
+```mojo
+fn dot(pa: UnsafePointer[Float32, _], pb: UnsafePointer[Float32, _]) -> Float32:
+    ...
+```
+
+The `_` tells the compiler to accept any origin, making the function
+work with pointers from any source (List buffer, stack variable, etc.).
+
+---
+
 ## Summary Table
 
 | Pitfall | Wrong | Correct |
@@ -1589,4 +1852,11 @@ Summary of all SIMD comparison methods:
 | EM uniform init (HMM/GMM) | all B rows identical | asymmetric init to break symmetry |
 | SIMD comparison ops | `a > b`, `a < b`, `a >= b`, `a <= b` | `SIMD.gt(a,b)`, `SIMD.lt(a,b)`, `SIMD.ge(a,b)`, `SIMD.le(a,b)` |
 | SIMD `==` / `!=` infix | `a == b` → single bool | `SIMD.eq(a,b)`, `SIMD.ne(a,b)` for lane-wise mask |
-
+| stdlib missing `std.` prefix | `from sys.info import ...` | `from std.sys.info import ...` |
+| `@parameter if/for` deprecated | `@parameter if`, `@parameter for` | `comptime if`, `comptime for` |
+| `simdwidthof` wrong module | `from std.sys.info import simdwidthof` | `from std.sys import simdwidthof` |
+| Closure with parameters | `fn inner[w: Int](i: Int):` inside a fn | move to module level |
+| `perf_counter_ns()` returns UInt | `fn ms(ns: Int)` | `fn ms(ns: UInt)` |
+| Global `var` not supported | `var x = List[...]()` at module level | move inside `fn` |
+| `UnsafePointer.alloc()` missing | `UnsafePointer[T].alloc(n)` | `List` as buffer + `unsafe_ptr()` |
+| `UnsafePointer[T]` in fn params | `pa: UnsafePointer[Float32]` | `pa: UnsafePointer[Float32, _]` |

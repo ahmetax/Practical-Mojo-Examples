@@ -1860,3 +1860,111 @@ work with pointers from any source (List buffer, stack variable, etc.).
 | Global `var` not supported | `var x = List[...]()` at module level | move inside `fn` |
 | `UnsafePointer.alloc()` missing | `UnsafePointer[T].alloc(n)` | `List` as buffer + `unsafe_ptr()` |
 | `UnsafePointer[T]` in fn params | `pa: UnsafePointer[Float32]` | `pa: UnsafePointer[Float32, _]` |
+| `List[Int32]` → SIMD slow | `List[Int32]` with SIMD indexing | use `unsafe_ptr().load[width=W]()` |
+
+---
+
+## 56. `List[Int32]` element-by-element SIMD construction is very slow — always use `unsafe_ptr()`
+
+**Problem:**
+Loading `List[Int32]` elements one by one into `SIMD[DType.int32, W]`
+is dramatically slower than `unsafe_ptr().load[width=W]()`.
+The overhead comes from the element conversion path, not from integer
+arithmetic itself.
+
+**Wrong:**
+```mojo
+var va = SIMD[DType.int32, W](a[i], a[i+1], ..., a[i+7])  # very slow
+```
+
+**Correct:**
+```mojo
+var pa = a.unsafe_ptr()
+var va = (pa + i).load[width=W]()   # single SIMD load instruction
+```
+
+**Corrected benchmark (n=1024, W=8, 500k repeats, unsafe_ptr used):**
+```
+int32   dot product: 49 ms   <- FASTER than float32!
+float32 dot product: 60 ms
+```
+
+With `unsafe_ptr()`, int32 is actually ~1.2x faster than float32 for
+dot product because there is no FPU rounding overhead.
+
+**Summary:**
+- Element-by-element `SIMD[DType.int32, W](a[i], ...)` → very slow
+- `unsafe_ptr().load[width=W]()` → int32 is fast, comparable or faster than float32
+- Always use `unsafe_ptr()` for SIMD loads from any `List[T]`
+
+---
+
+## 57. Benchmark loop eliminated by compiler — accumulate results to prevent dead code elimination
+
+**Problem:**
+When a benchmark loop assigns its result to `_` (discard), the Mojo
+compiler recognises that the computation has no observable effect and
+eliminates the entire loop. The benchmark then shows 0 ms/us.
+
+**Wrong:**
+```mojo
+var t0 = perf_counter_ns()
+for _ in range(REPEAT):
+    _ = dot_product(a, b, n)   # result discarded -> loop eliminated!
+var t1 = perf_counter_ns()
+print(t1 - t0)   # prints 0
+```
+
+**Correct — accumulate results across iterations:**
+```mojo
+var keep = Float32(0.0)
+var t0 = perf_counter_ns()
+for _ in range(REPEAT):
+    keep += dot_product(a, b, n)   # result used -> loop preserved
+var t1 = perf_counter_ns()
+_ = keep   # prevent 'unused variable' warning without re-eliminating loop
+print(t1 - t0)
+```
+
+---
+
+---
+
+## 58. `UnsafePointer` loses mutability when passed as `_`-origin function parameter — use `mut List` instead
+
+**Problem:**
+Both `list.unsafe_ptr()` and `UnsafePointer(to=list[0])` lose write
+mutability when passed into a function as `UnsafePointer[T, _]`.
+Attempting to write through such a parameter causes a compile error.
+
+**Error:**
+```
+expression must be mutable in assignment
+no matching method in call to 'store'
+```
+
+**Wrong:**
+```mojo
+fn relu(pc: UnsafePointer[Float32, _], n: Int):
+    pc[0] = 1.0   # ERROR -- not mutable through _ origin
+```
+
+**Correct — pass the List as `mut` and write through it directly:**
+```mojo
+fn relu(a: List[Float32], mut c: List[Float32], n: Int):
+    var pa = a.unsafe_ptr()   # read: OK
+    # write via List index -- always mutable
+    c[i] = result
+```
+
+For reading, `unsafe_ptr()` is still the fastest path (avoids bounds
+checking). For writing, use `mut List[T]` parameter and index directly.
+
+---
+
+## Summary Table
+
+| Pitfall | Wrong | Correct |
+|---|---|---|
+| Benchmark loop eliminated | `_ = fn()` in loop | `keep += fn()` then `_ = keep` |
+| `unsafe_ptr()` is immutable for writes | `c.unsafe_ptr().store(v)` | `UnsafePointer(to=c[0]).store(v)` |

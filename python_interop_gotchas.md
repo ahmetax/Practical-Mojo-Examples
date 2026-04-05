@@ -1968,3 +1968,52 @@ checking). For writing, use `mut List[T]` parameter and index directly.
 |---|---|---|
 | Benchmark loop eliminated | `_ = fn()` in loop | `keep += fn()` then `_ = keep` |
 | `unsafe_ptr()` is immutable for writes | `c.unsafe_ptr().store(v)` | `UnsafePointer(to=c[0]).store(v)` |
+| `parallelize` task syntax | `fn task(i)` or `def task(i)` | `def task(i: Int) capturing:` inside a fn |
+| `parallelize` on memory-bound work | parallel List access | use SIMD or ensure CPU-bound work per task |
+
+---
+
+## 60. `parallelize` does not speed up memory-bound work — only CPU-bound work benefits
+
+**Problem:**
+`parallelize` creates multiple threads that share the same memory bus.
+When the bottleneck is memory access (reading/writing a `List`), more
+threads create cache-line contention and memory bus saturation, making
+parallel code *slower* than serial.
+
+**Memory-bound observed (List sum of squares, N=5M):**
+```
+Serial       : 12 ms  (baseline)
+Parallel w=2 : 19 ms  <- slower!
+Parallel w=4 : 14 ms  <- still slower
+Parallel w=8 : 16 ms  <- still slower
+```
+
+**CPU-bound observed (heavy float chain, N=1000, 50K iters each):**
+```
+Serial        : 1624 ms  (baseline)
+Parallel w=2  :  868 ms  speedup=1.8x
+Parallel w=4  :  460 ms  speedup=3.5x
+Parallel w=8  :  318 ms  speedup=5.0x
+Parallel w=16 :  322 ms  speedup=5.0x  <- CPU core limit reached
+```
+
+**Rule of thumb:**
+- Memory-bound (large array reads/writes) → use SIMD, not parallelism
+- CPU-bound (heavy computation per element, fits in registers) → use parallelize
+- Speedup plateaus at the physical CPU core count
+
+**Correct CPU-bound pattern:**
+```mojo
+fn heavy(x: Float64, iters: Int) -> Float64:
+    for _ in range(iters):
+        x = sqrt(x * 1.0000001 + 0.5) * (x - 0.3)
+    return x
+
+def worker(wid: Int) capturing:
+    for i in range(start, end):
+        results[i] = heavy(Float64(i) / Float64(n), iters)
+
+parallelize[worker](num_workers)
+```
+

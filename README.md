@@ -143,12 +143,15 @@ Here is the code list table (covers more than 60 examples).
 | Sudoku Creator / Solver web application. | Flask + Python | 0.26.2.0 | sudoku_app/ |
 | Ollama Chat Web Application built with Mojo + Flask. | Flask | 0.26.2.0 | ollama_chat_app/ |
 | Gemini Chat Web Application | Flask | 0.26.2.0 | gemini_chat_app/ |
-| Several ML algorithms | Pure Mojo | 0.26.2.0 | ml_algorithms/ |
+| 17 ML algorithms | Pure Mojo | 0.26.2.0 | ml_algorithms/ |
 | Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.2.0 |weather_app/ |
-| Several file related examples | Pure Mojo | 0.26.2.0 | file_apps/ |
+| 3 file related examples | Pure Mojo | 0.26.2.0 | file_apps/ |
 | Blog / Content Management System built with Mojo + Flask + SQLite.| Flask + SQLite | 0.26.2.0 | blog_app/ |
 | Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.2.0 | expense_app/ |
 | Mojo vs Python Mathematical Benchmark Application. | Flask + Chart.js | 0.26.2.0 | benchmark_app/ |
 | General File Manager web application built with Mojo + Flask. | Flask | 0.26.2.0 | filemanager_app/ |
 | General-purpose Web Scraper built with Mojo + Flask + BeautifulSoup. | Flask + BeautifulSoup | 0.26.2.0 | scraper_app/ |
 | QR Code Creator & Reader web application built with Mojo + Flask. | Flask | 0.26.2.0 | qrcode_app/ |
+| Classic Snake game implemented in Mojo using Python's tkinter library. |Games| 0.26.2.0 | snake_game/ |
+| A To-Do List web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.2.0 | todo_app/ |
+| 8 SIMD examples | Pure Mojo |  0.26.2.0 | simd_basics/ |

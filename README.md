@@ -139,12 +139,15 @@ Here is the code list table (covers more than 60 examples).
 | General-purpose Web Scraper built with Mojo + Flask + BeautifulSoup. | Flask + BeautifulSoup | 0.26.1 | scraper_app/ |
 | Mojo vs Python Mathematical Benchmark Application. | Flask + Chart.js | 0.26.1 | benchmark_app/ |
 | Sorting Algorithm Benchmark — Mojo vs Python. | Flask + Chart.js | 0.26.1 | sorting_app/ |
+| Version 0.26.2.0 Examples | ***** |  ***** | *****  |
 | Sudoku Creator / Solver web application. | Flask + Python | 0.26.2.0 | sudoku_app/ |
 | Ollama Chat Web Application built with Mojo + Flask. | Flask | 0.26.2.0 | ollama_chat_app/ |
 | Gemini Chat Web Application | Flask | 0.26.2.0 | gemini_chat_app/ |
 | Several ML algorithms | Pure Mojo | 0.26.2.0 | ml_algorithms/ |
-| Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.2.0 |weather_app.mojo weather_helpers.py weather_templates/ |
+| Weather App built with Mojo + Flask + OpenWeatherMap API. | Flask + Sqlite | 0.26.2.0 |weather_app/ |
 | Several file related examples | Pure Mojo | 0.26.2.0 | file_apps/ |
 | Blog / Content Management System built with Mojo + Flask + SQLite.| Flask + SQLite | 0.26.2.0 | blog_app/ |
-| Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.2.0 | expense_app.mojo expense_helpers.py expense_templates/ |
+| Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.2.0 | expense_app/ |
+| Mojo vs Python Mathematical Benchmark Application. | Flask + Chart.js | 0.26.2.0 | benchmark_app/ |
+| General File Manager web application built with Mojo + Flask. | Flask | 0.26.2.0 | filemanager_app/ |
 

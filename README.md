@@ -150,4 +150,5 @@ Here is the code list table (covers more than 60 examples).
 | Expense Tracker web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.2.0 | expense_app/ |
 | Mojo vs Python Mathematical Benchmark Application. | Flask + Chart.js | 0.26.2.0 | benchmark_app/ |
 | General File Manager web application built with Mojo + Flask. | Flask | 0.26.2.0 | filemanager_app/ |
+| General-purpose Web Scraper built with Mojo + Flask + BeautifulSoup. | Flask + BeautifulSoup | 0.26.2.0 | scraper_app/ |
 

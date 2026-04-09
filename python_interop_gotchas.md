@@ -2017,3 +2017,154 @@ def worker(wid: Int) capturing:
 parallelize[worker](num_workers)
 ```
 
+---
+
+## 61. `sys.info` functions renamed from `flatcase` to `snake_case` in 0.26.2
+
+**Problem:**
+Several functions in `sys.info` were renamed to follow `snake_case` convention.
+Using the old names raises an `unknown declaration` error.
+
+**Error:**
+```
+use of unknown declaration 'sizeof'
+use of unknown declaration 'simdwidthof'
+```
+
+**Wrong (old flatcase names):**
+```mojo
+from sys.info import sizeof, alignof, bitwidthof
+from sys.info import simdbitwidth, simdbytewidth, simdwidthof
+```
+
+**Correct (new snake_case names):**
+```mojo
+from std.sys.info import size_of, align_of, bit_width_of
+from std.sys.info import simd_bit_width, simd_byte_width, simd_width_of
+```
+
+Full rename table:
+
+| Old name | New name |
+|---|---|
+| `sizeof()` | `size_of()` |
+| `alignof()` | `align_of()` |
+| `bitwidthof()` | `bit_width_of()` |
+| `simdbitwidth()` | `simd_bit_width()` |
+| `simdbytewidth()` | `simd_byte_width()` |
+| `simdwidthof()` | `simd_width_of()` |
+
+---
+
+## 62. No safe null-pointer constructor for `UnsafePointer` in 0.26.2
+
+**Problem:**
+There is no public API to construct a null (zero-address) `UnsafePointer` in
+Mojo 0.26.2. Both the no-argument form and `unsafe_from_address=0` fail to
+compile. `is_null()` exists as a method but intentionally creating a null
+pointer is not supported in the safe public API.
+
+**Error:**
+```
+no matching function in initialization
+candidate not viable: failed to infer parameter 'mut'
+candidate not viable: unknown keyword argument: 'unsafe_from_address'
+```
+
+**Wrong:**
+```mojo
+var p = UnsafePointer[Float32]()                      # no-arg form -- error
+var p = UnsafePointer[Float32](unsafe_from_address=0) # unknown kwarg -- error
+```
+
+**Correct:**
+Use `Optional[T]` to represent a value that may be absent instead of relying
+on a null pointer.
+```mojo
+var maybe: Optional[Float32] = None
+if maybe:
+    print(maybe.value())
+```
+
+If a raw null address is truly needed for C interop, obtain it through
+an `extern` call or `Int`-to-pointer casting — not through the public
+`UnsafePointer` constructors.
+
+---
+
+## Summary Table (additions for #61 and #62)
+
+| Pitfall | Wrong | Correct |
+|---|---|---|
+| `sizeof` renamed | `from sys.info import sizeof` | `from std.sys.info import size_of` |
+| `simdwidthof` renamed | `from sys.info import simdwidthof` | `from std.sys.info import simd_width_of` |
+| Null `UnsafePointer` | `UnsafePointer[T]()` or `(unsafe_from_address=0)` | Use `Optional[T]` instead |
+
+---
+
+## 63. `memcpy` requires keyword arguments in 0.26.2
+
+**Problem:**
+`memcpy` does not accept positional arguments in Mojo 0.26.2.
+All three parameters must be passed as keyword arguments.
+
+**Error:**
+```
+invalid call to 'memcpy': missing 3 required keyword-only arguments: 'dest', 'src', 'count'
+```
+
+**Wrong:**
+```mojo
+memcpy(dst_ptr, src_ptr, N)
+```
+
+**Correct:**
+```mojo
+memcpy(dest=dst_ptr, src=src_ptr, count=N)
+```
+
+Note: `memset` does accept positional arguments and does not require this workaround.
+
+---
+
+## Summary Table (addition for #63)
+
+| Pitfall | Wrong | Correct |
+|---|---|---|
+| `memcpy` positional args | `memcpy(dst, src, N)` | `memcpy(dest=dst, src=src, count=N)` |
+
+---
+
+## 64. `is_null()` removed in 0.26.2 -- use `Int(ptr) == 0`
+
+**Problem:**
+`UnsafePointer.is_null()` no longer exists in Mojo 0.26.2.
+Calling it raises a compile error.
+
+**Error:**
+```
+'UnsafePointer[Float32, ptr.origin]' value has no attribute 'is_null'
+```
+
+**Wrong:**
+```mojo
+if ptr.is_null():
+    print("null pointer")
+```
+
+**Correct:**
+```mojo
+if Int(ptr) == 0:
+    print("null pointer")
+```
+
+`Int(ptr)` casts the pointer to its integer address without dereferencing it.
+This is safe to call on any pointer, including one that holds address 0.
+
+---
+
+## Summary Table (addition for #64)
+
+| Pitfall | Wrong | Correct |
+|---|---|---|
+| Null pointer check | `ptr.is_null()` | `Int(ptr) == 0` |

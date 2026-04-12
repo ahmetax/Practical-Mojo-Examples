@@ -156,4 +156,5 @@ Here is the code list table (covers more than 60 examples).
 | A To-Do List web application built with Mojo + Flask + SQLite. | Flask + Sqlite | 0.26.2.0 | todo_app/ |
 | 8 SIMD examples | Pure Mojo |  0.26.2.0 | simd_basics/ |
 | 8 memory examples | Pure Mojo |  0.26.2.0 | memory_basics/ |
+| Check if a number is Armstrong Number  or not | Pure Mojo| 0.26.2.0 | armstrong_number/ |
 

@@ -159,4 +159,5 @@ Here is the code list table (covers more than 60 examples).
 | Check if a number is Armstrong Number  or not | Pure Mojo| 0.26.2.0 | armstrong_number/ |
 | Reading and processing CSV files | PythonObjects | 0.26.2.0 | csv_processing/ |
 | http examples | Pure Mojo |  0.26.2.0 | http_basics/ |
+| flask examples | Flask |  0.26.2.0 | flask_examples/ |
 
